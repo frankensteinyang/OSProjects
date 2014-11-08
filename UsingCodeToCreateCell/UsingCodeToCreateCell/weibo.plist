@@ -23,8 +23,6 @@
 		<string>一旦我发现数学有题目不会做了，我就跳过，这一跳我发现根本停不下来！</string>
 		<key>icon</key>
 		<string>011.png</string>
-		<key>image</key>
-		<string></string>
 		<key>name</key>
 		<string>西门抽筋</string>
 		<key>source</key>
@@ -71,8 +69,6 @@
 		<string>二逼青年伤不起啊，有木有啊啊啊啊</string>
 		<key>icon</key>
 		<string>013.png</string>
-		<key>image</key>
-		<string>3.png</string>
 		<key>name</key>
 		<string>哇哈哈</string>
 		<key>source</key>

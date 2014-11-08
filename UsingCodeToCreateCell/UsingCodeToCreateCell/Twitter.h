@@ -19,6 +19,6 @@
 @property (nonatomic, assign) BOOL isVip;
 
 - (id)initWithDict:(NSDictionary *)dict;
-+ (id)twitterWithDick:(NSDictionary *)dict;
++ (id)twitterWithDict:(NSDictionary *)dict;
 
 @end

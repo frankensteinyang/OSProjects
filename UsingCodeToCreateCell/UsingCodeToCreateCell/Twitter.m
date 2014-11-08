@@ -23,7 +23,7 @@
     return self;
 }
 
-+ (id)twitterWithDick:(NSDictionary *)dict {
++ (id)twitterWithDict:(NSDictionary *)dict {
     return  [[self alloc] initWithDict:dict];
 }
 

@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-@class Twitter;
+@class TwitterFrame;
 
 @interface TwitterCell : UITableViewCell
 
-@property (nonatomic, strong) Twitter *twitter;
+@property (nonatomic, strong) TwitterFrame *twitterFrame;
 
 @end

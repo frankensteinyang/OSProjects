@@ -42,6 +42,7 @@
 		E45B84A21A0E6FFE00F368F0 /* 9.png in Resources */ = {isa = PBXBuildFile; fileRef = E45B84871A0E6FFE00F368F0 /* 9.png */; };
 		E45B84A31A0E6FFE00F368F0 /* vip.png in Resources */ = {isa = PBXBuildFile; fileRef = E45B84881A0E6FFE00F368F0 /* vip.png */; };
 		E45B84A41A0E6FFE00F368F0 /* weibo.plist in Resources */ = {isa = PBXBuildFile; fileRef = E45B84891A0E6FFE00F368F0 /* weibo.plist */; };
+		E45B84A71A0E71AC00F368F0 /* Twitter.m in Sources */ = {isa = PBXBuildFile; fileRef = E45B84A61A0E71AC00F368F0 /* Twitter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,8 @@
 		E45B84871A0E6FFE00F368F0 /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 9.png; sourceTree = "<group>"; };
 		E45B84881A0E6FFE00F368F0 /* vip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = vip.png; sourceTree = "<group>"; };
 		E45B84891A0E6FFE00F368F0 /* weibo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = weibo.plist; sourceTree = "<group>"; };
+		E45B84A51A0E71AC00F368F0 /* Twitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Twitter.h; sourceTree = "<group>"; };
+		E45B84A61A0E71AC00F368F0 /* Twitter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Twitter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,8 @@
 				E45B840A1A0E2A0800F368F0 /* Supporting Files */,
 				E45B84301A0E2C5500F368F0 /* TwitterCell.h */,
 				E45B84311A0E2C5500F368F0 /* TwitterCell.m */,
+				E45B84A51A0E71AC00F368F0 /* Twitter.h */,
+				E45B84A61A0E71AC00F368F0 /* Twitter.m */,
 			);
 			path = UsingCodeToCreateCell;
 			sourceTree = "<group>";
@@ -360,6 +365,7 @@
 				E45B84101A0E2A0800F368F0 /* AppDelegate.m in Sources */,
 				E45B840D1A0E2A0800F368F0 /* main.m in Sources */,
 				E45B84321A0E2C5500F368F0 /* TwitterCell.m in Sources */,
+				E45B84A71A0E71AC00F368F0 /* Twitter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

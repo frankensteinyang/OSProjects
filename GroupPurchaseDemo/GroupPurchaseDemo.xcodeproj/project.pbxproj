@@ -16,6 +16,10 @@
 		E45B83E51A0DF23600F368F0 /* GroupPurchaseDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45B83E41A0DF23600F368F0 /* GroupPurchaseDemoTests.m */; };
 		E45B83F11A0DF48A00F368F0 /* PurchaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45B83F01A0DF48A00F368F0 /* PurchaseCell.xib */; };
 		E45B83F31A0DF68200F368F0 /* new.png in Resources */ = {isa = PBXBuildFile; fileRef = E45B83F21A0DF68200F368F0 /* new.png */; };
+		E45B83F61A0E002100F368F0 /* PurchaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E45B83F51A0E002100F368F0 /* PurchaseCell.m */; };
+		E45B83F91A0E04E300F368F0 /* Purchase.m in Sources */ = {isa = PBXBuildFile; fileRef = E45B83F81A0E04E300F368F0 /* Purchase.m */; };
+		E45B83FC1A0E0CA800F368F0 /* news_01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E45B83FA1A0E0CA800F368F0 /* news_01.jpg */; };
+		E45B83FD1A0E0CA800F368F0 /* news_02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E45B83FB1A0E0CA800F368F0 /* news_02.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,12 @@
 		E45B83E41A0DF23600F368F0 /* GroupPurchaseDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GroupPurchaseDemoTests.m; sourceTree = "<group>"; };
 		E45B83F01A0DF48A00F368F0 /* PurchaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PurchaseCell.xib; sourceTree = "<group>"; };
 		E45B83F21A0DF68200F368F0 /* new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = new.png; path = "../../../../Faith can move mountains/北京ios培训[传智播客]/1201/代码/03-UITableView02-团购/03-UITableView02-团购/new.png"; sourceTree = "<group>"; };
+		E45B83F41A0E002100F368F0 /* PurchaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PurchaseCell.h; sourceTree = "<group>"; };
+		E45B83F51A0E002100F368F0 /* PurchaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PurchaseCell.m; sourceTree = "<group>"; };
+		E45B83F71A0E04E300F368F0 /* Purchase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Purchase.h; sourceTree = "<group>"; };
+		E45B83F81A0E04E300F368F0 /* Purchase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Purchase.m; sourceTree = "<group>"; };
+		E45B83FA1A0E0CA800F368F0 /* news_01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_01.jpg; path = "../../../../Faith can move mountains/北京ios培训[传智播客]/1201/代码/01-UITableView01-自定义Cell01-通过xib/01-UITableView01-自定义Cell01-通过xib/news/news_01.jpg"; sourceTree = "<group>"; };
+		E45B83FB1A0E0CA800F368F0 /* news_02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = news_02.jpg; path = "../../../../Faith can move mountains/北京ios培训[传智播客]/1201/代码/01-UITableView01-自定义Cell01-通过xib/01-UITableView01-自定义Cell01-通过xib/news/news_02.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +104,10 @@
 				E45B83D71A0DF23600F368F0 /* LaunchScreen.xib */,
 				E45B83C81A0DF23600F368F0 /* Supporting Files */,
 				E45B83F01A0DF48A00F368F0 /* PurchaseCell.xib */,
+				E45B83F41A0E002100F368F0 /* PurchaseCell.h */,
+				E45B83F51A0E002100F368F0 /* PurchaseCell.m */,
+				E45B83F71A0E04E300F368F0 /* Purchase.h */,
+				E45B83F81A0E04E300F368F0 /* Purchase.m */,
 			);
 			path = GroupPurchaseDemo;
 			sourceTree = "<group>";
@@ -101,6 +115,8 @@
 		E45B83C81A0DF23600F368F0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E45B83FA1A0E0CA800F368F0 /* news_01.jpg */,
+				E45B83FB1A0E0CA800F368F0 /* news_02.jpg */,
 				E45B83F21A0DF68200F368F0 /* new.png */,
 				E45B83C91A0DF23600F368F0 /* Info.plist */,
 				E45B83CA1A0DF23600F368F0 /* main.m */,
@@ -206,9 +222,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45B83F31A0DF68200F368F0 /* new.png in Resources */,
+				E45B83FC1A0E0CA800F368F0 /* news_01.jpg in Resources */,
 				E45B83F11A0DF48A00F368F0 /* PurchaseCell.xib in Resources */,
 				E45B83D41A0DF23600F368F0 /* Main.storyboard in Resources */,
 				E45B83D91A0DF23600F368F0 /* LaunchScreen.xib in Resources */,
+				E45B83FD1A0E0CA800F368F0 /* news_02.jpg in Resources */,
 				E45B83D61A0DF23600F368F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,6 +245,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45B83F61A0E002100F368F0 /* PurchaseCell.m in Sources */,
+				E45B83F91A0E04E300F368F0 /* Purchase.m in Sources */,
 				E45B83D11A0DF23600F368F0 /* ViewController.m in Sources */,
 				E45B83CE1A0DF23600F368F0 /* AppDelegate.m in Sources */,
 				E45B83CB1A0DF23600F368F0 /* main.m in Sources */,

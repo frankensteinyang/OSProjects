@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>8</integer>
+		<key>icon</key>
+		<string>news_00.jpg</string>
+		<key>title</key>
+		<string>iPhone 6X概念设计: 4.8英寸屏幕的可能性</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>0</integer>
+		<key>icon</key>
+		<string>news_01.jpg</string>
+		<key>title</key>
+		<string>雅虎2013热门搜索词汇科技榜:iPhone第一</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>威威良</string>
+		<key>comments</key>
+		<integer>4</integer>
+		<key>icon</key>
+		<string>news_02.jpg</string>
+		<key>title</key>
+		<string>日本国内 iPhone5s 库存紧张状态得到缓解</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>26</integer>
+		<key>icon</key>
+		<string>news_03.jpg</string>
+		<key>title</key>
+		<string>扁平黄色iPhone 6概念设计 略似iPad mini</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>6</integer>
+		<key>icon</key>
+		<string>news_04.jpg</string>
+		<key>title</key>
+		<string>第三季度 iPhone 出货量同比去年增长25%</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>黄晓闷</string>
+		<key>comments</key>
+		<integer>9</integer>
+		<key>icon</key>
+		<string>news_05.jpg</string>
+		<key>title</key>
+		<string>iPhone 5s/5c 在印度表现良好 超三星旗舰</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>13</integer>
+		<key>icon</key>
+		<string>news_06.jpg</string>
+		<key>title</key>
+		<string>iPhone 5s/5c占十月日本智能手机销售76%</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>16</integer>
+		<key>icon</key>
+		<string>news_07.jpg</string>
+		<key>title</key>
+		<string>iPhone 5s生产：经过600人之手 日产50万</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>8</integer>
+		<key>icon</key>
+		<string>news_08.jpg</string>
+		<key>title</key>
+		<string>苹果与助听器公司合作开发新品 明年初上市</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>87</integer>
+		<key>icon</key>
+		<string>news_09.jpg</string>
+		<key>title</key>
+		<string>狂拽酷炫的概念设计： 三面屏幕 iPhone 6</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>colorpig</string>
+		<key>comments</key>
+		<integer>37</integer>
+		<key>icon</key>
+		<string>news_10.jpg</string>
+		<key>title</key>
+		<string>日本国内手机销量新排名：iPhone垄断前十</string>
+	</dict>
+	<dict>
+		<key>author</key>
+		<string>水木之向</string>
+		<key>comments</key>
+		<integer>51</integer>
+		<key>icon</key>
+		<string>news_11.jpg</string>
+		<key>title</key>
+		<string>iPhone 5s 发布后两个月仍能吸引排队长龙</string>
+	</dict>
+</array>
+</plist>

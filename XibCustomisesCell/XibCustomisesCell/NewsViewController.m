@@ -7,8 +7,12 @@
 //
 
 #import "NewsViewController.h"
+#import "News.h"
+#import "NewsCell.h"
 
-@interface NewsViewController ()
+@interface NewsViewController () {
+    NSMutableArray *_news;
+}
 
 @end
 
@@ -25,8 +29,19 @@
     BOOL res;
     res = [self.view isEqual:self.tableView];
     NSLog(@"相同%d",res); //结果是1 YES
-    
+  
     self.tableView.rowHeight = 80;
+    
+    
+    // 加载plist数据
+    // arrayWithContentsOfFile 一旦涉及到file，一定是全路径，用Bundle获取
+    NSArray *array = [NSArray arrayWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"news.plist" ofType:nil]];
+    
+    _news = [NSMutableArray array];
+    
+    for (NSDictionary *dict in array) {
+        [_news addObject:[News newsWithDict:dict]];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,14 +54,13 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 20;
+    return _news.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *ID = @"CellID";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    NewsCell *cell = [tableView dequeueReusableCellWithIdentifier:[NewsCell ID]];
     
     if (cell == nil) {
 //        NSArray *objects = [[NSBundle mainBundle] loadNibNamed:@"NewsCell" owner:nil options:nil];
@@ -54,10 +68,16 @@
         // 一个nib对象就是一个xib文件
         // ***** bundle:[NSBundle mainBundle] OR bundle:nil *****
         // The bundle in which to search for the nib file. If you specify nil, this method looks for the nib file in the main bundle.
-        UINib *nib = [UINib nibWithNibName:@"NewsCell" bundle:nil];
-        NSArray *objects = [nib instantiateWithOwner:nil options:nil];
-        cell = objects[0];
+//        UINib *nib = [UINib nibWithNibName:@"NewsCell" bundle:nil];
+//        NSArray *objects = [nib instantiateWithOwner:nil options:nil];
+//        cell = objects[0];
+        
+        cell = [NewsCell newsCell];
     }
+        
+    // 传递模型数据
+    cell.news = _news[indexPath.row];
+    
     
     return cell;
 }

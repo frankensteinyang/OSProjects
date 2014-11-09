@@ -30,6 +30,7 @@
 		E4FEAB661A0FF39400039888 /* news_09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4FEAB591A0FF39400039888 /* news_09.jpg */; };
 		E4FEAB671A0FF39400039888 /* news_10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4FEAB5A1A0FF39400039888 /* news_10.jpg */; };
 		E4FEAB681A0FF39400039888 /* news_11.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4FEAB5B1A0FF39400039888 /* news_11.jpg */; };
+		E4FEAB6B1A0FF4D300039888 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = E4FEAB6A1A0FF4D300039888 /* News.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,8 @@
 		E4FEAB591A0FF39400039888 /* news_09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news_09.jpg; sourceTree = "<group>"; };
 		E4FEAB5A1A0FF39400039888 /* news_10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news_10.jpg; sourceTree = "<group>"; };
 		E4FEAB5B1A0FF39400039888 /* news_11.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = news_11.jpg; sourceTree = "<group>"; };
+		E4FEAB691A0FF4D300039888 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		E4FEAB6A1A0FF4D300039888 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +131,8 @@
 				E4FEAB491A0FE47C00039888 /* NewsCell.h */,
 				E4FEAB4A1A0FE47C00039888 /* NewsCell.m */,
 				E4FEAB4C1A0FE52A00039888 /* NewsCell.xib */,
+				E4FEAB691A0FF4D300039888 /* News.h */,
+				E4FEAB6A1A0FF4D300039888 /* News.m */,
 			);
 			path = XibCustomisesCell;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			files = (
 				E4FEAB291A0FDF1600039888 /* ViewController.m in Sources */,
 				E4FEAB261A0FDF1600039888 /* AppDelegate.m in Sources */,
+				E4FEAB6B1A0FF4D300039888 /* News.m in Sources */,
 				E4FEAB231A0FDF1600039888 /* main.m in Sources */,
 				E4FEAB4B1A0FE47C00039888 /* NewsCell.m in Sources */,
 				E4FEAB481A0FE29900039888 /* NewsViewController.m in Sources */,

@@ -1,6 +1,6 @@
 //
-//  XibCustomisesCellTests.m
-//  XibCustomisesCellTests
+//  ReusingXibAndCellTests.m
+//  ReusingXibAndCellTests
 //
 //  Created by Hannibal Yang on 11/10/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface XibCustomisesCellTests : XCTestCase
+@interface ReusingXibAndCellTests : XCTestCase
 
 @end
 
-@implementation XibCustomisesCellTests
+@implementation ReusingXibAndCellTests
 
 - (void)setUp {
     [super setUp];

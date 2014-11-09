@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>XibCustomisesCell.xcscheme</key>
+		<key>ReusingXibAndCell.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4FEAB1C1A0FDF1600039888</key>
+		<key>E4FEAB741A1011DF00039888</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4FEAB351A0FDF1700039888</key>
+		<key>E4FEAB8D1A1011DF00039888</key>
 		<dict>
 			<key>primary</key>
 			<true/>

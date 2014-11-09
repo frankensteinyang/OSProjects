@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4FEAB1C1A0FDF1600039888"
-               BuildableName = "XibCustomisesCell.app"
-               BlueprintName = "XibCustomisesCell"
-               ReferencedContainer = "container:XibCustomisesCell.xcodeproj">
+               BlueprintIdentifier = "E4FEAB741A1011DF00039888"
+               BuildableName = "ReusingXibAndCell.app"
+               BlueprintName = "ReusingXibAndCell"
+               ReferencedContainer = "container:ReusingXibAndCell.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4FEAB351A0FDF1700039888"
-               BuildableName = "XibCustomisesCellTests.xctest"
-               BlueprintName = "XibCustomisesCellTests"
-               ReferencedContainer = "container:XibCustomisesCell.xcodeproj">
+               BlueprintIdentifier = "E4FEAB8D1A1011DF00039888"
+               BuildableName = "ReusingXibAndCellTests.xctest"
+               BlueprintName = "ReusingXibAndCellTests"
+               ReferencedContainer = "container:ReusingXibAndCell.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4FEAB351A0FDF1700039888"
-               BuildableName = "XibCustomisesCellTests.xctest"
-               BlueprintName = "XibCustomisesCellTests"
-               ReferencedContainer = "container:XibCustomisesCell.xcodeproj">
+               BlueprintIdentifier = "E4FEAB8D1A1011DF00039888"
+               BuildableName = "ReusingXibAndCellTests.xctest"
+               BlueprintName = "ReusingXibAndCellTests"
+               ReferencedContainer = "container:ReusingXibAndCell.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4FEAB1C1A0FDF1600039888"
-            BuildableName = "XibCustomisesCell.app"
-            BlueprintName = "XibCustomisesCell"
-            ReferencedContainer = "container:XibCustomisesCell.xcodeproj">
+            BlueprintIdentifier = "E4FEAB741A1011DF00039888"
+            BuildableName = "ReusingXibAndCell.app"
+            BlueprintName = "ReusingXibAndCell"
+            ReferencedContainer = "container:ReusingXibAndCell.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4FEAB1C1A0FDF1600039888"
-            BuildableName = "XibCustomisesCell.app"
-            BlueprintName = "XibCustomisesCell"
-            ReferencedContainer = "container:XibCustomisesCell.xcodeproj">
+            BlueprintIdentifier = "E4FEAB741A1011DF00039888"
+            BuildableName = "ReusingXibAndCell.app"
+            BlueprintName = "ReusingXibAndCell"
+            ReferencedContainer = "container:ReusingXibAndCell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4FEAB1C1A0FDF1600039888"
-            BuildableName = "XibCustomisesCell.app"
-            BlueprintName = "XibCustomisesCell"
-            ReferencedContainer = "container:XibCustomisesCell.xcodeproj">
+            BlueprintIdentifier = "E4FEAB741A1011DF00039888"
+            BuildableName = "ReusingXibAndCell.app"
+            BlueprintName = "ReusingXibAndCell"
+            ReferencedContainer = "container:ReusingXibAndCell.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

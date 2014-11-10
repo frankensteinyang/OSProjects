@@ -21,6 +21,5 @@ typedef enum {
 @property (nonatomic, assign) MessageType type;
 
 + (id)messageWithDict:(NSDictionary *)dict;
-- (id)initWithDict:(NSDictionary *)dict;
 
 @end

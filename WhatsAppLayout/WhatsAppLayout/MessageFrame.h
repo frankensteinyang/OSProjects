@@ -13,11 +13,11 @@
 @interface MessageFrame : NSObject
 
 // 此处用readonly，不允许别人改值，编程经验的体现
-@property (nonatomic, assign, readonly) CGRect *iconF;
-@property (nonatomic, assign, readonly) CGRect *contentF;
-@property (nonatomic, assign, readonly) CGRect *timeF;
+@property (nonatomic, assign, readonly) CGRect iconF;
+@property (nonatomic, assign, readonly) CGRect contentF;
+@property (nonatomic, assign, readonly) CGRect timeF;
 
-@property (nonatomic, assign, readonly) CGFloat *cellHeight;
+@property (nonatomic, assign, readonly) CGFloat cellHeight;
 
 @property (nonatomic, strong) Message *message;
 

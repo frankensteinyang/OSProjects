@@ -10,9 +10,9 @@
 
 @implementation Message
 
-+(id)messageWithDict:(NSDictionary *)dict {
++ (id)messageWithDict:(NSDictionary *)dict {
     
-    Message *msg = [[self alloc] initWithDict:dict];
+    Message *msg = [[self alloc] init];
     msg.time = dict[@"time"];
     msg.icon = dict[@"icon"];
     msg.type = [dict[@"type"] intValue];
@@ -20,7 +20,4 @@
     return msg;
 }
 
--(id)initWithDict:(NSDictionary *)dict {
-    return dict;
-}
 @end

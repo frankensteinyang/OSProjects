@@ -7,11 +7,12 @@
 //
 
 #import "ViewController.h"
+#import "MessageFrame.h"
 #import "MessageCell.h"
 #import "Message.h"
 
 @interface ViewController () {
-    NSMutableArray *_messages;
+    NSMutableArray *_messageFrame;
 }
 
 @end
@@ -49,18 +50,19 @@
 //    NSLog(@"%@", arrayFour);
     
     // 将字典转成模型
-    _messages = [NSMutableArray array];
+    _messageFrame = [NSMutableArray array];
     for (NSDictionary *dict in array) {
         Message *msg = [Message messageWithDict:dict];
-        
-        [_messages addObject:msg];
+        MessageFrame *mf = [[MessageFrame alloc] init];
+        mf.message = msg;
+        [_messageFrame addObject:mf];
     }
     
     
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _messages.count;
+    return _messageFrame.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -71,13 +73,13 @@
         cell = [[MessageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[MessageCell ID]];
     }
     
-//    cell.
+    cell.messageFrame = _messageFrame[indexPath.row];
     
     return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 80;
+    return [_messageFrame[indexPath.row] cellHeight];
 }
 
 @end

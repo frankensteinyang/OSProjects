@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MessageCell : UITableViewCell
+@class MessageFrame;
 
+@interface MessageCell : UITableViewCell
+@property (nonatomic, strong) MessageFrame *messageFrame;
 + (id)ID;
 
 @end

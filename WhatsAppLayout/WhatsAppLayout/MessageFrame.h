@@ -6,6 +6,12 @@
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //  一个frame对象对应一个cell，一个frame对象描述一个cell内部所有子控件的位置和尺寸
 
+// 时间的字体
+#define kTimeFont [UIFont systemFontOfSize:13]
+
+// 内容的字体
+#define kContentFont [UIFont systemFontOfSize:15]
+
 #import <UIKit/UIKit.h>
 
 @class Message;

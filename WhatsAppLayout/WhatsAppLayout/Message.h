@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 
 // 固定取值一定要用枚举，体现自己的编程经验、水平和思想
+// 枚举常量以枚举类型开头 MessageTypeMe -> 编程规范
+// 或者枚举常量以 k + 枚举类型 开头
 typedef enum {
     MessageTypeMe = 0, // 我发的信息状态
     MessageTypeOther = 1 // 别人发的信息状态

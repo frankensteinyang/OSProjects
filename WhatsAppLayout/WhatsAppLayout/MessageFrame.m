@@ -9,12 +9,6 @@
 // cell的边框
 #define kCellBorderW 10
 
-// 时间的字体
-#define kTimeFont [UIFont systemFontOfSize:13]
-
-// 内容的字体
-#define kContentFont [UIFont systemFontOfSize:15]
-
 // 内容的最大宽度
 #define kContentMaxW 200
 

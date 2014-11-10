@@ -26,8 +26,9 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _timeBtn = [[UIButton alloc] init];
-        // 设置文字颜色；注：凡是一次性的设置，都在init方法中进行
+        // 设置文字颜色
         [_timeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        _timeBtn.titleLabel.font = kTimeFont;
         [self.contentView addSubview:_timeBtn];
   
         // 按钮中默认有两个子控件_timeBtn.titleLabel和_timeBtn.imageView
@@ -36,12 +37,22 @@
         // 设置背景图片，调用setBackgroundImage设置的图片跟_timeBtn.imageView没关系
         // [_timeBtn setBackgroundImage:<#(UIImage *)#> forState:<#(UIControlState)#>];
         
+        // **********************************************************
+        // _timeBtn.titleLabel.text = @"hannibal";
+        // _timeBtn.titleLabel.textColor = [UIColor blackColor];
+        // 按钮是讲究状态的，上面两行代码均未传forState的状态，所以用上面两行代码代替下面两行没有任何效果
+        // [_timeBtn setTitle:<#(NSString *)#> forState:<#(UIControlState)#>];
+        // [_timeBtn setTitleColor:<#(UIColor *)#> forState:<#(UIControlState)#>];
+        // _contentBtn.titleLabel.numberOfLines不分状态，故可用
+        // **********************************************************
+        
         _iconView = [[UIImageView alloc] init];
         [self.contentView addSubview:_iconView];
         
         _contentBtn = [[UIButton alloc] init];
         [_contentBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [_contentBtn.titleLabel numberOfLines];
+        _contentBtn.titleLabel.font = kContentFont;
+        _contentBtn.titleLabel.numberOfLines = 0;
         [self.contentView addSubview:_contentBtn];
     }
     return self;

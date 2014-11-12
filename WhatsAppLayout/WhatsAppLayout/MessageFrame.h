@@ -12,6 +12,12 @@
 // 内容的字体
 #define kContentFont [UIFont systemFontOfSize:15]
 
+// 按钮左右的间距
+#define kContentWMargin 10
+
+// 按钮上下的间距
+#define kContentHMargin 10
+
 #import <UIKit/UIKit.h>
 
 @class Message;
@@ -22,9 +28,11 @@
 @property (nonatomic, assign, readonly) CGRect iconF;
 @property (nonatomic, assign, readonly) CGRect contentF;
 @property (nonatomic, assign, readonly) CGRect timeF;
-
 @property (nonatomic, assign, readonly) CGFloat cellHeight;
 
+@property (nonatomic, assign) BOOL showTime;
 @property (nonatomic, strong) Message *message;
+
+- (void)setMessage:(Message *)message showTime:(BOOL)showTime;
 
 @end

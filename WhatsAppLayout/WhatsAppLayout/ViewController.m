@@ -51,14 +51,36 @@
     
     // 将字典转成模型
     _messageFrame = [NSMutableArray array];
+    Message *previousMsg = nil;
     for (NSDictionary *dict in array) {
-        Message *msg = [Message messageWithDict:dict];
+        
+        // 时间的显示
+//        if ([msg.time isEqualToString:previousMsg.time]) {
+//            mf.showTime = NO;
+//        } else {
+//            mf.showTime = YES;
+//        }
+//        mf.showTime = ![msg.time isEqualToString:previousMsg.time];
+//        mf.message = msg;
+        
         MessageFrame *mf = [[MessageFrame alloc] init];
-        mf.message = msg;
+        Message *msg = [Message messageWithDict:dict];
+        BOOL showTime = ![msg.time isEqualToString:previousMsg.time];
+        [mf setMessage:msg showTime:showTime];
         [_messageFrame addObject:mf];
+        previousMsg = msg;
     }
     
+    // 禁止Cell处理点击事件
+    self.tableView.allowsSelection = NO;
     
+    // 去除分隔线
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    
+    // 设置背景图片两种方法：1.把图片转为颜色
+//    self.tableView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"chat_bg_default.jpg"]];
+    // 2.initWithImage
+    self.tableView.backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"chat_bg_default.jpg"]];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -68,12 +90,15 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     MessageCell *cell = [tableView dequeueReusableCellWithIdentifier:[MessageCell ID]];
-    
     if (cell == nil) {
         cell = [[MessageCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:[MessageCell ID]];
     }
     
     cell.messageFrame = _messageFrame[indexPath.row];
+    
+    // 在之前的版本中UITableViewCell的backgroundColor是透明背景的，但是在iOS7中是默认白色背景
+    // 如果在TableView后面加入背景的应用要注意了，在创建UITableViewCell的时候把backgroundColor设置为[UIColor clearColor]
+    cell.backgroundColor = [UIColor clearColor];
     
     return cell;
 }

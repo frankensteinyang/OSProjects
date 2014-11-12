@@ -23,19 +23,24 @@
 - (void)setMessage:(Message *)message {
     
     _message = message;
-    
     CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     
     // 1.Time
-    CGFloat timeY = kCellBorderW;
-    CGSize timeSize = [message.time sizeWithFont:kTimeFont];
-    CGFloat timeW = timeSize.width;
-    CGFloat timeX = (screenW - timeW) * 0.5;
-    CGFloat timeH = timeSize.height;
-    _timeF = CGRectMake(timeX, timeY, timeW, timeH);
+    if (_showTime) {
+        CGFloat timeY = kCellBorderW;
+        CGSize timeSize = [message.time sizeWithFont:kTimeFont];
+        CGFloat timeW = timeSize.width + 18;
+        CGFloat timeX = (screenW - timeW) * 0.5;
+        CGFloat timeH = timeSize.height + 6;
+        _timeF = CGRectMake(timeX, timeY, timeW, timeH);
+    }
     
     // 2.Icon
     CGFloat iconX = kCellBorderW;
+    if (message.type == MessageTypeMe) {
+        iconX = screenW - kIconWH - kCellBorderW;
+    }
+    
     CGFloat iconY = CGRectGetMaxY(_timeF) + kCellBorderW;
     _iconF = CGRectMake(iconX, iconY, kIconWH, kIconWH);
     
@@ -43,13 +48,25 @@
     CGFloat contentX = CGRectGetMaxX(_iconF) + kCellBorderW;
     CGFloat contentY = iconY;
     CGSize contentSize = [message.content sizeWithFont:kContentFont constrainedToSize:CGSizeMake(kContentMaxW, MAXFLOAT)];
-    CGFloat contentW = contentSize.width;
-    CGFloat contentH = contentSize.height;
+    CGFloat contentW = contentSize.width + kContentWMargin * 2;
+    CGFloat contentH = contentSize.height + kContentHMargin * 2;
+    if (message.type == MessageTypeMe) {
+        contentX = _iconF.origin.x - kCellBorderW - contentW;
+    }
     _contentF = CGRectMake(contentX, contentY, contentW, contentH);
     
     // 4.CellHeight
     CGFloat max = MAX(CGRectGetMaxY(_iconF), CGRectGetMaxY(_contentF));
     _cellHeight = max + kCellBorderW;
+    
+}
+
+- (void)setMessage:(Message *)message showTime:(BOOL)showTime {
+    
+    _showTime = showTime;
+    
+    // self.message = message 等于 [self setMessage:message]
+    self.message = message;
     
 }
 

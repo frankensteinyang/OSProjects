@@ -26,9 +26,11 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
         _timeBtn = [[UIButton alloc] init];
+        _timeBtn.enabled = NO;
         // 设置文字颜色
-        [_timeBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [_timeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _timeBtn.titleLabel.font = kTimeFont;
+        [_timeBtn setBackgroundImage:[UIImage imageNamed:@"chat_timeline_bg.png"] forState:UIControlStateNormal];
         [self.contentView addSubview:_timeBtn];
   
         // 按钮中默认有两个子控件_timeBtn.titleLabel和_timeBtn.imageView
@@ -49,10 +51,22 @@
         _iconView = [[UIImageView alloc] init];
         [self.contentView addSubview:_iconView];
         
-        _contentBtn = [[UIButton alloc] init];
+        // iOS SDK 7 控件特性 UIButtonTypeRoundedRect圆角失效
+        // iOS SDK 6 按钮显示Border；iOS SDK 7中默认为透明无Border
+        // iOS SDK 7 下按钮四角都是方形，UIButtonTypeRoundedRect无效
+        _contentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        // 设置按钮圆角半径
+        [_contentBtn.layer setCornerRadius:8];
+        [_contentBtn setBackgroundColor:[UIColor redColor]];
+        
+        // 设置字体颜色
         [_contentBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        // 设置字体
         _contentBtn.titleLabel.font = kContentFont;
+        // 是否换行
         _contentBtn.titleLabel.numberOfLines = 0;
+        // 设置按钮内边缘的空白间距（此范围中不会显示文字以及图片）
+        _contentBtn.contentEdgeInsets = UIEdgeInsetsMake(kContentHMargin, kContentWMargin, kContentHMargin, kContentWMargin);
         [self.contentView addSubview:_contentBtn];
     }
     return self;

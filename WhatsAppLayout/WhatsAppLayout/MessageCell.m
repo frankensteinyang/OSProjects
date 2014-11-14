@@ -51,7 +51,6 @@
         _iconView = [[UIImageView alloc] init];
         [self.contentView addSubview:_iconView];
         
-        // iOS SDK 7 控件特性 UIButtonTypeRoundedRect圆角失效
         // iOS SDK 6 按钮显示Border；iOS SDK 7中默认为透明无Border
         // iOS SDK 7 下按钮四角都是方形，UIButtonTypeRoundedRect无效
         _contentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
@@ -80,14 +79,41 @@
     // 具体数据
     Message *msg = messageFrame.message;
     
-    _timeBtn.frame = messageFrame.timeF;
-    [_timeBtn setTitle:msg.time forState:UIControlStateNormal];
+    // Time
+    if (messageFrame.showTime) {
+        _timeBtn.hidden = NO;
+        _timeBtn.frame = messageFrame.timeF;
+        [_timeBtn setTitle:msg.time forState:UIControlStateNormal];
+    } else {
+        _timeBtn.hidden = YES;
+    }
     
+    // Icon
     _iconView.frame = messageFrame.iconF;
     _iconView.image = [UIImage imageNamed:msg.icon];
     
+    // Content
     _contentBtn.frame = messageFrame.contentF;
     [_contentBtn setTitle:msg.content forState:UIControlStateNormal];
+    if (msg.type == MessageTypeMe) {
+        
+        UIImage *normal = [UIImage imageNamed:@"chatto_bg_normal.png"];
+        CGFloat nLeft = normal.size.width * 0.5;
+        CGFloat nTop = normal.size.height * 0.8;
+        normal = [normal stretchableImageWithLeftCapWidth:nLeft topCapHeight:nTop];
+        
+        UIImage *focused = [UIImage imageNamed:@"chatto_bg_focused.png"];
+        CGFloat fLeft = focused.size.width * 0.5;
+        CGFloat fTop = focused.size.height * 0.8;
+        focused = [focused stretchableImageWithLeftCapWidth:fLeft topCapHeight:fTop];
+        
+        [_contentBtn setBackgroundImage:normal forState:UIControlStateNormal];
+        [_contentBtn setBackgroundImage:focused forState:UIControlStateNormal];
+    } else {
+        
+        [_contentBtn setBackgroundImage:[UIImage imageNamed:@"chatfrom_bg_normal.png"] forState:UIControlStateNormal];
+        [_contentBtn setBackgroundImage:[UIImage imageNamed:@"chatfrom_bg_focused.png"] forState:UIControlStateNormal];
+    }
     
 }
 

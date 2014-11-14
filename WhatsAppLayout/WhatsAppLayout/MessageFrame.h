@@ -13,10 +13,10 @@
 #define kContentFont [UIFont systemFontOfSize:15]
 
 // 按钮左右的间距
-#define kContentWMargin 10
+#define kContentWMargin 8
 
 // 按钮上下的间距
-#define kContentHMargin 10
+#define kContentHMargin 4
 
 #import <UIKit/UIKit.h>
 

@@ -9,6 +9,7 @@
 #import "MessageCell.h"
 #import "MessageFrame.h"
 #import "Message.h"
+#import "UIImage+Resize.h"
 
 // 创建的子控件要拿到setMessageFrame中装配子控件，用成员变量，所以用类扩展
 @interface MessageCell() {
@@ -30,7 +31,8 @@
         // 设置文字颜色
         [_timeBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _timeBtn.titleLabel.font = kTimeFont;
-        [_timeBtn setBackgroundImage:[UIImage imageNamed:@"chat_timeline_bg.png"] forState:UIControlStateNormal];
+//        [_timeBtn setBackgroundImage:[UIImage imageNamed:@"chat_timeline_bg.png"] forState:UIControlStateNormal];
+        [_timeBtn setBackgroundImage:[UIImage resizedImage:@"chat_timeline_bg.png"] forState:UIControlStateNormal];
         [self.contentView addSubview:_timeBtn];
   
         // 按钮中默认有两个子控件_timeBtn.titleLabel和_timeBtn.imageView
@@ -55,8 +57,8 @@
         // iOS SDK 7 下按钮四角都是方形，UIButtonTypeRoundedRect无效
         _contentBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         // 设置按钮圆角半径
-        [_contentBtn.layer setCornerRadius:8];
-        [_contentBtn setBackgroundColor:[UIColor redColor]];
+//        [_contentBtn.layer setCornerRadius:8];
+//        [_contentBtn setBackgroundColor:[UIColor redColor]];
         
         // 设置字体颜色
         [_contentBtn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
@@ -65,7 +67,7 @@
         // 是否换行
         _contentBtn.titleLabel.numberOfLines = 0;
         // 设置按钮内边缘的空白间距（此范围中不会显示文字以及图片）
-        _contentBtn.contentEdgeInsets = UIEdgeInsetsMake(kContentHMargin, kContentWMargin, kContentHMargin, kContentWMargin);
+//        _contentBtn.contentEdgeInsets = UIEdgeInsetsMake(kContentHMargin, kContentLeftMargin, kContentHMargin, kContentRightMargin);
         [self.contentView addSubview:_contentBtn];
     }
     return self;
@@ -95,25 +97,20 @@
     // Content
     _contentBtn.frame = messageFrame.contentF;
     [_contentBtn setTitle:msg.content forState:UIControlStateNormal];
+    
+    NSString *normal = nil, *focused = nil;
     if (msg.type == MessageTypeMe) {
-        
-        UIImage *normal = [UIImage imageNamed:@"chatto_bg_normal.png"];
-        CGFloat nLeft = normal.size.width * 0.5;
-        CGFloat nTop = normal.size.height * 0.8;
-        normal = [normal stretchableImageWithLeftCapWidth:nLeft topCapHeight:nTop];
-        
-        UIImage *focused = [UIImage imageNamed:@"chatto_bg_focused.png"];
-        CGFloat fLeft = focused.size.width * 0.5;
-        CGFloat fTop = focused.size.height * 0.8;
-        focused = [focused stretchableImageWithLeftCapWidth:fLeft topCapHeight:fTop];
-        
-        [_contentBtn setBackgroundImage:normal forState:UIControlStateNormal];
-        [_contentBtn setBackgroundImage:focused forState:UIControlStateNormal];
+        normal = @"chatto_bg_normal.png";
+        focused = @"chatto_bg_focused.png";
+        _contentBtn.contentEdgeInsets = UIEdgeInsetsMake(kContentHTopMargin, kContentWMinMargin, kContentHBottomMargin, kContentWMaxMargin);
     } else {
-        
-        [_contentBtn setBackgroundImage:[UIImage imageNamed:@"chatfrom_bg_normal.png"] forState:UIControlStateNormal];
-        [_contentBtn setBackgroundImage:[UIImage imageNamed:@"chatfrom_bg_focused.png"] forState:UIControlStateNormal];
+        normal = @"chatfrom_bg_normal.png";
+        focused = @"chatfrom_bg_focused.png";
+        _contentBtn.contentEdgeInsets = UIEdgeInsetsMake(kContentHTopMargin, kContentWMaxMargin, kContentHBottomMargin, kContentWMinMargin);
     }
+    
+    [_contentBtn setBackgroundImage:[UIImage resizedImage:normal left:0.5 top:0.7] forState:UIControlStateNormal];
+    [_contentBtn setBackgroundImage:[UIImage resizedImage:focused left:0.5 top:0.7] forState:UIControlStateHighlighted];
     
 }
 

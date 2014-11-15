@@ -4,7 +4,7 @@
 <array>
 	<dict>
 		<key>content</key>
-		<string>喂，2B！</string>
+		<string>喂！</string>
 		<key>icon</key>
 		<string>icon01.png</string>
 		<key>time</key>
@@ -24,17 +24,17 @@
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>你妹夫啊，你才2B！说，什么事？</string>
+		<string>说，什么事？</string>
 		<key>icon</key>
 		<string>icon02.png</string>
 		<key>time</key>
-		<string>昨天 20:05</string>
+		<string>昨天 20:05 2014年11月16日</string>
 		<key>type</key>
 		<integer>1</integer>
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>你姐夫啊，我就想问下：你是不是我最好的朋友？</string>
+		<string>我就想问下：你是不是我最好的朋友？</string>
 		<key>icon</key>
 		<string>icon01.png</string>
 		<key>time</key>
@@ -54,7 +54,7 @@
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>借你妹夫啊，哥又不穷，不是找你借钱。你就回答“是”或者“不是”。</string>
+		<string>我又不穷，不是找你借钱。你就回答“是”或者“不是”。</string>
 		<key>icon</key>
 		<string>icon01.png</string>
 		<key>time</key>
@@ -84,13 +84,23 @@
 	</dict>
 	<dict>
 		<key>content</key>
-		<string>你妈B的！！！滚！！！</string>
+		<string>晕！！！</string>
 		<key>icon</key>
 		<string>icon02.png</string>
 		<key>time</key>
 		<string>昨天 20:15</string>
 		<key>type</key>
 		<integer>1</integer>
+	</dict>
+	<dict>
+		<key>content</key>
+		<string>悟空！在哪里？</string>
+		<key>icon</key>
+		<string>icon01.png</string>
+		<key>time</key>
+		<string>04:40</string>
+		<key>type</key>
+		<integer>0</integer>
 	</dict>
 </array>
 </plist>

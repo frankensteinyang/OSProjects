@@ -48,8 +48,8 @@
     CGFloat contentX = CGRectGetMaxX(_iconF) + kCellBorderW;
     CGFloat contentY = iconY;
     CGSize contentSize = [message.content sizeWithFont:kContentFont constrainedToSize:CGSizeMake(kContentMaxW, MAXFLOAT)];
-    CGFloat contentW = contentSize.width + kContentWMargin * 2;
-    CGFloat contentH = contentSize.height + kContentHMargin * 2;
+    CGFloat contentW = contentSize.width + kContentWMinMargin + kContentWMaxMargin;
+    CGFloat contentH = contentSize.height + kContentHTopMargin + kContentHBottomMargin;
     if (message.type == MessageTypeMe) {
         contentX = _iconF.origin.x - kCellBorderW - contentW;
     }

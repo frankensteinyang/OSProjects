@@ -10,8 +10,11 @@
 
 @implementation Person
 
--(void)getNews {
-    NSLog(@"%@获得了的新闻。", _name);
+-(void)getNews:(NSNotification *)notification {
+    
+    NSString *title = notification.userInfo[@"title"];
+    NSString *source = notification.userInfo[@"source"];
+    NSLog(@"%@从%@获得了一条标题为“%@”的新闻。", _name, source, title);
 }
 
 @end

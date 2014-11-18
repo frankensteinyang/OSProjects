@@ -12,6 +12,6 @@
 
 @property (nonatomic, copy) NSString *name;
 
-- (void)getNews;
+- (void)getNews:(NSNotification *)notification;
 
 @end

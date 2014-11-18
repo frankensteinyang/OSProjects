@@ -11,7 +11,7 @@
 #import "MessageCell.h"
 #import "Message.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate> {
+@interface ViewController () <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate> {
     NSMutableArray *_messageFrame;
 }
 
@@ -45,6 +45,36 @@
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
     
     
+}
+
+#pragma mark - TextField的代理方法
+#pragma mark 点击了return key对应的按钮就会调用（键盘右下角的按钮）
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    
+    // 取得文字
+    NSString *text = textField.text;
+    
+    // 发动一条WhatsApp信息(更改模型数据，刷新表格)
+    MessageFrame *mf = [[MessageFrame alloc] init];
+    Message *m = [[Message alloc] init];
+    m.content = text;
+    m.time = @"04:30";
+    m.type = MessageTypeMe;
+    m.icon = @"icon01.png";
+    MessageFrame *previousMF = [_messageFrame lastObject];
+    NSString *previousTime = previousMF.message.time;
+    BOOL showTime = ![m.time isEqualToString:previousTime];
+    [mf setMessage:m showTime:showTime];
+    [_messageFrame addObject:mf];
+    [self.tableView reloadData];
+    
+    // 清空文本框内容
+    textField.text = nil;
+    
+    // 滚动tableView到最后一行
+    NSIndexPath *path = [NSIndexPath indexPathForRow:_messageFrame.count - 1 inSection:0];
+    [self.tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    return YES;
 }
 
 #pragma mark - 键盘处理
@@ -96,6 +126,7 @@
 // 开始拖拽的时候调用一次
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
     
+    // 退出键盘
     [self.view endEditing:YES];
 }
 

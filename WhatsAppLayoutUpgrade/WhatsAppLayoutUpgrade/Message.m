@@ -10,6 +10,7 @@
 
 @implementation Message
 
+// self只能放在构造方法中赋值，构造方法必须以init开头，并且init后面单词的首字母必须大写
 - (id)initWithDict:(NSDictionary *)dict {
     
     if (self = [super init]) {

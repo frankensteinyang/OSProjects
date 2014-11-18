@@ -33,7 +33,7 @@ int main(int argc, const char * argv[]) {
 //        [center addObserver:p1 selector:@selector(getNews:) name:@"tech_news" object:sina];
         
         // 不管是谁发布的通知，只要通知名称是tech_news，就能拦截到
-//        [center addObserver:p selector:@selector(getNews:) name:@"tech_news" object:nil];
+        [center addObserver:p selector:@selector(getNews:) name:@"tech_news" object:nil];
         
         // 拦截所有通知
         [center addObserver:p1 selector:@selector(getNews:) name:nil object:nil];
@@ -48,15 +48,15 @@ int main(int argc, const char * argv[]) {
 //        [center postNotification:notification];
         
         // 3.
-        [center postNotificationName:@"tech_news" object:tencent userInfo:@{
-                                                                            @"title" : @"Go away!",
-                                                                            @"source" : @"iFeng"
-                                                                            }];
-        
-        [center postNotificationName:@"tech_news" object:sina userInfo:@{
-                                                                         @"title" : @"Hey you!",
-                                                                         @"source" : @"BBC"
-                                                                         }];
+//        [center postNotificationName:@"tech_news" object:tencent userInfo:@{
+//                                                                            @"title" : @"Go away!",
+//                                                                            @"source" : @"iFeng"
+//                                                                            }];
+//        
+//        [center postNotificationName:@"tech_news" object:sina userInfo:@{
+//                                                                         @"title" : @"Hey you!",
+//                                                                         @"source" : @"BBC"
+//                                                                         }];
         
         // 发布通知的时候一定要有名称 √postNotificationName，拦截通知的时候不一定要有名称
         [center postNotificationName:nil object:nil userInfo:@{

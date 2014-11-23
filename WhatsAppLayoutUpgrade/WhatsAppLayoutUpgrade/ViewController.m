@@ -43,8 +43,6 @@
     // 监听系统发出的键盘通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
-    
-    
 }
 
 #pragma mark - TextField的代理方法
@@ -58,7 +56,14 @@
     MessageFrame *mf = [[MessageFrame alloc] init];
     Message *m = [[Message alloc] init];
     m.content = text;
-    m.time = @"04:30";
+    
+    // 设置时间
+    NSDate *date = [NSDate date];
+    NSDateFormatter *df = [[NSDateFormatter alloc] init];
+    df.dateFormat = @"HH:mm"; // 格式
+    // 将date转成对应格式的字符串
+    m.time = [df stringFromDate:date];
+    
     m.type = MessageTypeMe;
     m.icon = @"icon01.png";
     MessageFrame *previousMF = [_messageFrame lastObject];

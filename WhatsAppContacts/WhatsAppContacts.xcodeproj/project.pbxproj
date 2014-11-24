@@ -26,6 +26,10 @@
 		E409B4871A2364BA006606F3 /* contacts.plist in Resources */ = {isa = PBXBuildFile; fileRef = E409B4861A2364BA006606F3 /* contacts.plist */; };
 		E409B4961A236AD6006606F3 /* WhatsAppCrowd.m in Sources */ = {isa = PBXBuildFile; fileRef = E409B4951A236AD6006606F3 /* WhatsAppCrowd.m */; };
 		E409B4991A236AF7006606F3 /* WhatsAppContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = E409B4981A236AF7006606F3 /* WhatsAppContacts.m */; };
+		E409B49C1A23A0BD006606F3 /* WhatsAppCrowdHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = E409B49B1A23A0BD006606F3 /* WhatsAppCrowdHeader.xib */; };
+		E409B4A01A23A43B006606F3 /* buddy_header_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E409B49D1A23A43B006606F3 /* buddy_header_arrow.png */; };
+		E409B4A11A23A43B006606F3 /* buddy_header_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E409B49E1A23A43B006606F3 /* buddy_header_nor.png */; };
+		E409B4A21A23A43B006606F3 /* buddy_header_press.png in Resources */ = {isa = PBXBuildFile; fileRef = E409B49F1A23A43B006606F3 /* buddy_header_press.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +71,10 @@
 		E409B4971A236AF7006606F3 /* WhatsAppContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppContacts.h; sourceTree = "<group>"; };
 		E409B4981A236AF7006606F3 /* WhatsAppContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppContacts.m; sourceTree = "<group>"; };
 		E409B49A1A23751B006606F3 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		E409B49B1A23A0BD006606F3 /* WhatsAppCrowdHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WhatsAppCrowdHeader.xib; sourceTree = "<group>"; };
+		E409B49D1A23A43B006606F3 /* buddy_header_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddy_header_arrow.png; sourceTree = "<group>"; };
+		E409B49E1A23A43B006606F3 /* buddy_header_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddy_header_nor.png; sourceTree = "<group>"; };
+		E409B49F1A23A43B006606F3 /* buddy_header_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddy_header_press.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +129,7 @@
 				E409B4971A236AF7006606F3 /* WhatsAppContacts.h */,
 				E409B4981A236AF7006606F3 /* WhatsAppContacts.m */,
 				E409B49A1A23751B006606F3 /* Common.h */,
+				E409B49B1A23A0BD006606F3 /* WhatsAppCrowdHeader.xib */,
 			);
 			path = WhatsAppContacts;
 			sourceTree = "<group>";
@@ -155,6 +164,9 @@
 		E409B4731A23645C006606F3 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				E409B49D1A23A43B006606F3 /* buddy_header_arrow.png */,
+				E409B49E1A23A43B006606F3 /* buddy_header_nor.png */,
+				E409B49F1A23A43B006606F3 /* buddy_header_press.png */,
 				E409B4861A2364BA006606F3 /* contacts.plist */,
 				E409B4741A2364A5006606F3 /* 001.png */,
 				E409B4751A2364A5006606F3 /* 002.png */,
@@ -254,14 +266,18 @@
 				E409B4841A2364A5006606F3 /* 008.png in Resources */,
 				E409B4851A2364A5006606F3 /* 009.png in Resources */,
 				E409B45E1A2362C7006606F3 /* LaunchScreen.xib in Resources */,
+				E409B4A11A23A43B006606F3 /* buddy_header_nor.png in Resources */,
 				E409B4831A2364A5006606F3 /* 007.png in Resources */,
 				E409B45B1A2362C7006606F3 /* Images.xcassets in Resources */,
 				E409B47F1A2364A5006606F3 /* 003.png in Resources */,
+				E409B49C1A23A0BD006606F3 /* WhatsAppCrowdHeader.xib in Resources */,
 				E409B47E1A2364A5006606F3 /* 002.png in Resources */,
 				E409B4821A2364A5006606F3 /* 006.png in Resources */,
+				E409B4A21A23A43B006606F3 /* buddy_header_press.png in Resources */,
 				E409B47D1A2364A5006606F3 /* 001.png in Resources */,
 				E409B4811A2364A5006606F3 /* 005.png in Resources */,
 				E409B4871A2364BA006606F3 /* contacts.plist in Resources */,
+				E409B4A01A23A43B006606F3 /* buddy_header_arrow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

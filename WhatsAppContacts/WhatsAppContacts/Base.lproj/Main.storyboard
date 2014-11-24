@@ -17,6 +17,7 @@
                             <outlet property="delegate" destination="veR-g9-alN" id="mTM-hD-sTo"/>
                         </connections>
                     </tableView>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qhw-6l-xJ6" userLabel="First Responder" sceneMemberID="firstResponder"/>

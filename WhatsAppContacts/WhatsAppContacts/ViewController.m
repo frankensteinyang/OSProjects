@@ -29,6 +29,9 @@
         WhatsAppCrowd *crowd = [WhatsAppCrowd crowdWithDict:dict];
         [_crowd addObject:crowd];
     }
+    
+    // 设置每组头部控件的高度
+    self.tableView.sectionHeaderHeight = 44;
 }
 
 #pragma mark - 数据源方法
@@ -79,11 +82,21 @@
 }
 
 #pragma mark 返回每组的标题
-- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
+//
+////    WhatsAppCrowd *crowd = _crowd[section];
+////    return crowd.crowdName;
+//    return [_crowd[section] crowdName];
+//}
 
-//    WhatsAppCrowd *crowd = _crowd[section];
-//    return crowd.crowdName;
-    return [_crowd[section] crowdName];
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+
+    return [[NSBundle mainBundle] loadNibNamed:@"WhatsAppCrowdHeader" owner:nil options:nil][0];
 }
+
+//- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+//    
+//    return 44;
+//}
 
 @end

@@ -43,6 +43,13 @@
     // 监听系统发出的键盘通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillShow:) name:UIKeyboardWillShowNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillHide:) name:UIKeyboardWillHideNotification object:nil];
+    
+    // 设置发送信息文本框的填充view
+    UIView *paddingView = [[UIView alloc] init];
+    paddingView.frame = CGRectMake(0, 0, 10, 0);
+    paddingView.backgroundColor = [UIColor clearColor];
+    _messageField.leftView = paddingView;
+    _messageField.leftViewMode = UITextFieldViewModeAlways;
 }
 
 #pragma mark - TextField的代理方法
@@ -52,7 +59,26 @@
     // 取得文字
     NSString *text = textField.text;
     
-    // 发动一条WhatsApp信息(更改模型数据，刷新表格)
+    // 添加一条WhatsApp信息(更改模型数据，刷新表格)
+    [self addNewMessage:text icon:@"icon01.png" type:MessageTypeMe];
+    
+    // 自动回复
+    [self addNewMessage:[text stringByAppendingString:@"-.- [I will be right back!]"] icon:@"icon02.png" type:MessageTypeOther];
+    
+    [self.tableView reloadData];
+    
+    // 清空文本框内容
+    textField.text = nil;
+    
+    // 滚动tableView到最后一行
+    NSIndexPath *path = [NSIndexPath indexPathForRow:_messageFrame.count - 1 inSection:0];
+    [self.tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
+    return YES;
+}
+
+#pragma mark 添加一条新的消息
+- (void)addNewMessage:(NSString *)text icon:(NSString *)icon type:(MessageType)type {
+    
     MessageFrame *mf = [[MessageFrame alloc] init];
     Message *m = [[Message alloc] init];
     m.content = text;
@@ -64,22 +90,13 @@
     // 将date转成对应格式的字符串
     m.time = [df stringFromDate:date];
     
-    m.type = MessageTypeMe;
-    m.icon = @"icon01.png";
+    m.type = type;
+    m.icon = icon;
     MessageFrame *previousMF = [_messageFrame lastObject];
     NSString *previousTime = previousMF.message.time;
     BOOL showTime = ![m.time isEqualToString:previousTime];
     [mf setMessage:m showTime:showTime];
     [_messageFrame addObject:mf];
-    [self.tableView reloadData];
-    
-    // 清空文本框内容
-    textField.text = nil;
-    
-    // 滚动tableView到最后一行
-    NSIndexPath *path = [NSIndexPath indexPathForRow:_messageFrame.count - 1 inSection:0];
-    [self.tableView scrollToRowAtIndexPath:path atScrollPosition:UITableViewScrollPositionBottom animated:YES];
-    return YES;
 }
 
 #pragma mark - 键盘处理
@@ -156,4 +173,31 @@
     return [_messageFrame[indexPath.row] cellHeight];
 }
 
+#pragma mark 监听语音按钮点击
+- (IBAction)voiceChat:(UIButton *)sender {
+    
+    if (_messageField.hidden) { // 显示文本框、隐藏语音按钮
+        _messageField.hidden = NO;
+        _holdToTalk.hidden = YES;
+        // 用户体验优化：弹出键盘
+        [_messageField becomeFirstResponder];
+        
+        // 更换为语音图片
+        [sender setBackgroundImage:[UIImage imageNamed:@"chat_bottom_voice_nor.png"] forState:UIControlStateNormal];
+        [sender setBackgroundImage:[UIImage imageNamed:@"chat_bottom_voice_press.png"] forState:UIControlStateHighlighted];
+        
+    } else { // 隐藏文本框，显示语音按钮
+        _messageField.hidden = YES;
+        _holdToTalk.hidden = NO;
+        
+        // 用户体验优化：退出键盘
+        [_messageField resignFirstResponder];
+        // 退出键盘第二种方法
+//        [self.view endEditing:YES];
+        
+        // 更换为键盘图片
+        [sender setBackgroundImage:[UIImage imageNamed:@"chat_bottom_keyboard_nor.png"] forState:UIControlStateNormal];
+        [sender setBackgroundImage:[UIImage imageNamed:@"chat_bottom_keyboard_press.png"] forState:UIControlStateHighlighted];
+    }
+}
 @end

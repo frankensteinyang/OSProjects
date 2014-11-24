@@ -27,6 +27,9 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <state key="highlighted" backgroundImage="chat_bottom_voice_press.png"/>
+                                        <connections>
+                                            <action selector="voiceChat:" destination="gAZ-ke-qoH" eventType="touchUpInside" id="ih9-z1-Gxt"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gih-Uq-gwE">
                                         <rect key="frame" x="244" y="5" width="34" height="34"/>
@@ -44,7 +47,7 @@
                                         </state>
                                         <state key="highlighted" backgroundImage="chat_bottom_up_press.png"/>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" background="chat_bottom_textfield.png" id="cdl-zx-MU3">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Yo! What's up?" minimumFontSize="17" background="chat_bottom_textfield.png" id="cdl-zx-MU3">
                                         <rect key="frame" x="34" y="5" width="207" height="34"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -53,6 +56,13 @@
                                             <outlet property="delegate" destination="gAZ-ke-qoH" id="Y85-xe-b6D"/>
                                         </connections>
                                     </textField>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hEc-ef-Bzo">
+                                        <rect key="frame" x="34" y="5" width="207" height="34"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Hold to talk" backgroundImage="chat_bottom_textfield.png">
+                                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -70,6 +80,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
+                        <outlet property="holdToTalk" destination="hEc-ef-Bzo" id="sH0-OO-9uA"/>
+                        <outlet property="messageField" destination="cdl-zx-MU3" id="98w-Rx-Gbn"/>
                         <outlet property="tableView" destination="F0D-hi-Nmk" id="VUM-0d-QSL"/>
                     </connections>
                 </viewController>

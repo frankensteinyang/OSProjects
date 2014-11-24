@@ -12,5 +12,11 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
+@property (weak, nonatomic) IBOutlet UITextField *messageField;
+
+- (IBAction)voiceChat:(UIButton *)sender;
+
+@property (weak, nonatomic) IBOutlet UIButton *holdToTalk;
+
 @end
 

@@ -14,6 +14,7 @@
 		E409B4C31A24D8BC006606F3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E409B4C21A24D8BC006606F3 /* Images.xcassets */; };
 		E409B4C61A24D8BC006606F3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E409B4C41A24D8BC006606F3 /* LaunchScreen.xib */; };
 		E409B4D21A24D8BC006606F3 /* OnlineFoodOrderingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E409B4D11A24D8BC006606F3 /* OnlineFoodOrderingTests.m */; };
+		E409B4DC1A24EB37006606F3 /* foods.plist in Resources */ = {isa = PBXBuildFile; fileRef = E409B4DB1A24EB37006606F3 /* foods.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		E409B4CB1A24D8BC006606F3 /* OnlineFoodOrderingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OnlineFoodOrderingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E409B4D01A24D8BC006606F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E409B4D11A24D8BC006606F3 /* OnlineFoodOrderingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OnlineFoodOrderingTests.m; sourceTree = "<group>"; };
+		E409B4DB1A24EB37006606F3 /* foods.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = foods.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 		E409B4B51A24D8BC006606F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E409B4DB1A24EB37006606F3 /* foods.plist */,
 				E409B4B61A24D8BC006606F3 /* Info.plist */,
 				E409B4B71A24D8BC006606F3 /* main.m */,
 			);
@@ -199,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E409B4DC1A24EB37006606F3 /* foods.plist in Resources */,
 				E409B4C11A24D8BC006606F3 /* Main.storyboard in Resources */,
 				E409B4C61A24D8BC006606F3 /* LaunchScreen.xib in Resources */,
 				E409B4C31A24D8BC006606F3 /* Images.xcassets in Resources */,

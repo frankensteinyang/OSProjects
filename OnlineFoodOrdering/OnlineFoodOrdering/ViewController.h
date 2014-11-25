@@ -10,6 +10,15 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *fruit;
+
+@property (weak, nonatomic) IBOutlet UILabel *dish;
+
+@property (weak, nonatomic) IBOutlet UILabel *drinks;
+
+- (IBAction)randomFood:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UIPickerView *pickerViewOFO;
 
 @end
 

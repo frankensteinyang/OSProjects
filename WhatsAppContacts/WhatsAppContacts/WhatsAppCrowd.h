@@ -14,6 +14,7 @@
 @property (nonatomic, copy) NSString *crowdName; // 组名
 @property (nonatomic, assign) int onlineContacts; // 在线人数
 @property (nonatomic, strong) NSArray *contactsArray; // 组中联系人
+@property (nonatomic, assign) BOOL crowdStatus; // 组的闭合状态
 
 kInitH(crowd)
 

@@ -30,6 +30,7 @@
 		E409B4A01A23A43B006606F3 /* buddy_header_arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = E409B49D1A23A43B006606F3 /* buddy_header_arrow.png */; };
 		E409B4A11A23A43B006606F3 /* buddy_header_nor.png in Resources */ = {isa = PBXBuildFile; fileRef = E409B49E1A23A43B006606F3 /* buddy_header_nor.png */; };
 		E409B4A21A23A43B006606F3 /* buddy_header_press.png in Resources */ = {isa = PBXBuildFile; fileRef = E409B49F1A23A43B006606F3 /* buddy_header_press.png */; };
+		E409B4A51A24712E006606F3 /* WhatsAppCrowdHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = E409B4A41A24712E006606F3 /* WhatsAppCrowdHeader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,8 @@
 		E409B49D1A23A43B006606F3 /* buddy_header_arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddy_header_arrow.png; sourceTree = "<group>"; };
 		E409B49E1A23A43B006606F3 /* buddy_header_nor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddy_header_nor.png; sourceTree = "<group>"; };
 		E409B49F1A23A43B006606F3 /* buddy_header_press.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buddy_header_press.png; sourceTree = "<group>"; };
+		E409B4A31A24712E006606F3 /* WhatsAppCrowdHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WhatsAppCrowdHeader.h; sourceTree = "<group>"; };
+		E409B4A41A24712E006606F3 /* WhatsAppCrowdHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WhatsAppCrowdHeader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +133,8 @@
 				E409B4981A236AF7006606F3 /* WhatsAppContacts.m */,
 				E409B49A1A23751B006606F3 /* Common.h */,
 				E409B49B1A23A0BD006606F3 /* WhatsAppCrowdHeader.xib */,
+				E409B4A31A24712E006606F3 /* WhatsAppCrowdHeader.h */,
+				E409B4A41A24712E006606F3 /* WhatsAppCrowdHeader.m */,
 			);
 			path = WhatsAppContacts;
 			sourceTree = "<group>";
@@ -295,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E409B4A51A24712E006606F3 /* WhatsAppCrowdHeader.m in Sources */,
 				E409B4561A2362C7006606F3 /* ViewController.m in Sources */,
 				E409B4531A2362C7006606F3 /* AppDelegate.m in Sources */,
 				E409B4961A236AD6006606F3 /* WhatsAppCrowd.m in Sources */,
@@ -421,6 +427,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WhatsAppContacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -431,6 +438,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = WhatsAppContacts/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -490,6 +498,7 @@
 				E409B46F1A2362C8006606F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E409B4701A2362C8006606F3 /* Build configuration list for PBXNativeTarget "WhatsAppContactsTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				E409B4721A2362C8006606F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

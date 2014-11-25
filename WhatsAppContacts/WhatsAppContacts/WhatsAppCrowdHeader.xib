@@ -6,7 +6,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="Ls5-xt-MyY">
+        <view contentMode="scaleToFill" id="Ls5-xt-MyY" customClass="WhatsAppCrowdHeader">
             <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
@@ -23,6 +23,9 @@
                     <state key="highlighted" backgroundImage="buddy_header_press.png">
                         <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </state>
+                    <connections>
+                        <action selector="crowdClick:" destination="Ls5-xt-MyY" eventType="touchUpInside" id="OYe-1G-Rhy"/>
+                    </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12/32" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="fTc-aR-Z3B">
                     <rect key="frame" x="238" y="0.0" width="74" height="44"/>
@@ -35,6 +38,10 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nameBtn" destination="zhb-Vf-bPV" id="JrI-yK-VUO"/>
+                <outlet property="onlineLabel" destination="fTc-aR-Z3B" id="1t4-nA-9ta"/>
+            </connections>
             <point key="canvasLocation" x="310" y="394"/>
         </view>
     </objects>

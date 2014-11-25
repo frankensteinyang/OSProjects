@@ -9,8 +9,9 @@
 #import "ViewController.h"
 #import "WhatsAppCrowd.h"
 #import "WhatsAppContacts.h"
+#import "WhatsAppCrowdHeader.h"
 
-@interface ViewController () <UITableViewDataSource, UITableViewDelegate> {
+@interface ViewController () {
     
     NSMutableArray *_crowd;
 }
@@ -47,7 +48,7 @@
     WhatsAppCrowd *crowd = _crowd[section];
     
     // 返回此组中联系人个数
-    return crowd.contactsArray.count;
+    return crowd.crowdStatus ? crowd.contactsArray.count : 0;
 }
 
 
@@ -91,7 +92,10 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
 
-    return [[NSBundle mainBundle] loadNibNamed:@"WhatsAppCrowdHeader" owner:nil options:nil][0];
+    WhatsAppCrowdHeader *header = [WhatsAppCrowdHeader crowdHeader];
+    header.crowd = _crowd[section];
+    header.tableView = tableView;
+    return header;
 }
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

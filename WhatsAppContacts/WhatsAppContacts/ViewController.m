@@ -10,10 +10,12 @@
 #import "WhatsAppCrowd.h"
 #import "WhatsAppContacts.h"
 #import "WhatsAppCrowdHeader.h"
+#import "WhatsAppContactsCell.h"
 
-@interface ViewController () {
+@interface ViewController () <WhatsAppCrowdHeaderDelegate> {
     
     NSMutableArray *_crowd;
+    NSMutableArray *_headers;
 }
 @end
 
@@ -33,6 +35,9 @@
     
     // 设置每组头部控件的高度
     self.tableView.sectionHeaderHeight = 44;
+    
+    // 此数组只创建一次，故写在viewDidLoad
+    _headers = [NSMutableArray array];
 }
 
 #pragma mark - 数据源方法
@@ -57,11 +62,11 @@
     static NSString *ID = @"WhatsAppID";
     
     // 去缓存池中取出可循环利用的cell
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    WhatsAppContactsCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
     
     // 如果缓存中没有可循环利用的cell，创建一个cell，并标识cell
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+        cell = [[WhatsAppContactsCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
     
     // 显示数据：取出indexPath.section组对应的WhatsAppCrowd模型
@@ -69,16 +74,7 @@
     
     // 取出indexPath.row这行对应的联系人
     WhatsAppContacts *contacts = crowd.contactsArray[indexPath.row];
-    
-    // 显示名称
-    cell.textLabel.text = contacts.name;
-    
-    // 显示联系人签名
-    cell.detailTextLabel.text = contacts.introduction;
-    
-    // 显示头像
-    cell.imageView.image = [UIImage imageNamed:contacts.icon];
-    
+    cell.contactsCell = contacts;
     return  cell;
 }
 
@@ -92,10 +88,22 @@
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
 
-    WhatsAppCrowdHeader *header = [WhatsAppCrowdHeader crowdHeader];
-    header.crowd = _crowd[section];
-    header.tableView = tableView;
-    return header;
+    // 循环利用header
+    if (_headers.count <= section) {
+        WhatsAppCrowdHeader *header = [WhatsAppCrowdHeader crowdHeader];
+        header.crowd = _crowd[section];
+        header.delegate = self;
+        [_headers addObject:header];
+        return header;
+    } else {
+        return _headers[section];
+    }
+}
+
+#pragma mark 代理方法的实现
+- (void)crowdHeaderClick:(WhatsAppCrowdHeader *)header {
+
+    [self.tableView reloadData];
 }
 
 //- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {

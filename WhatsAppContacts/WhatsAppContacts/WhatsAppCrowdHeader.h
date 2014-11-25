@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-@class WhatsAppCrowd;
+@class WhatsAppCrowd, WhatsAppCrowdHeader;
+
+@protocol WhatsAppCrowdHeaderDelegate <NSObject>
+@optional
+- (void)crowdHeaderClick:(WhatsAppCrowdHeader *)header;
+@end
 
 @interface WhatsAppCrowdHeader : UIView
 
@@ -17,11 +22,13 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *onlineLabel;
 
-@property (nonatomic, weak) UITableView *tableView;
+// 代理属性
+@property (nonatomic, weak) id<WhatsAppCrowdHeaderDelegate> delegate;
 
 // 监听组点击
 - (IBAction)crowdClick:(UIButton *)sender;
 
+// 返回创建好的Header控件对象
 + (id)crowdHeader;
 
 @end

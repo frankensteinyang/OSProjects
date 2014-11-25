@@ -9,9 +9,9 @@
 				<key>icon</key>
 				<string>001.png</string>
 				<key>intro</key>
-				<string>我的好友好友-0的个性签名就是这么拽</string>
+				<string>唉！</string>
 				<key>name</key>
-				<string>我的好友好友-0</string>
+				<string>Fred</string>
 				<key>vip</key>
 				<integer>1</integer>
 			</dict>
@@ -19,9 +19,9 @@
 				<key>icon</key>
 				<string>005.png</string>
 				<key>intro</key>
-				<string>我的好友好友-1的个性签名就是这么拽</string>
+				<string>What&apos;s going on?</string>
 				<key>name</key>
-				<string>我的好友好友-1</string>
+				<string>Hannibal</string>
 				<key>vip</key>
 				<integer>0</integer>
 			</dict>
@@ -29,9 +29,9 @@
 				<key>icon</key>
 				<string>006.png</string>
 				<key>intro</key>
-				<string>我的好友好友-2的个性签名就是这么拽</string>
+				<string>天气很好！</string>
 				<key>name</key>
-				<string>我的好友好友-2</string>
+				<string>农民工</string>
 				<key>vip</key>
 				<integer>1</integer>
 			</dict>
@@ -39,9 +39,9 @@
 				<key>icon</key>
 				<string>003.png</string>
 				<key>intro</key>
-				<string>我的好友好友-3的个性签名就是这么拽</string>
+				<string>空气很好！</string>
 				<key>name</key>
-				<string>我的好友好友-3</string>
+				<string>木匠</string>
 				<key>vip</key>
 				<integer>1</integer>
 			</dict>
@@ -49,9 +49,9 @@
 				<key>icon</key>
 				<string>008.png</string>
 				<key>intro</key>
-				<string>我的好友好友-4的个性签名就是这么拽</string>
+				<string>饿啊！</string>
 				<key>name</key>
-				<string>我的好友好友-4</string>
+				<string>Devil</string>
 				<key>vip</key>
 				<integer>0</integer>
 			</dict>
@@ -59,9 +59,9 @@
 				<key>icon</key>
 				<string>005.png</string>
 				<key>intro</key>
-				<string>我的好友好友-5的个性签名就是这么拽</string>
+				<string>Don&apos;t do that!</string>
 				<key>name</key>
-				<string>我的好友好友-5</string>
+				<string>Einstein</string>
 				<key>vip</key>
 				<integer>1</integer>
 			</dict>
@@ -69,9 +69,9 @@
 				<key>icon</key>
 				<string>008.png</string>
 				<key>intro</key>
-				<string>我的好友好友-6的个性签名就是这么拽</string>
+				<string>I am a hero!</string>
 				<key>name</key>
-				<string>我的好友好友-6</string>
+				<string>Frank</string>
 				<key>vip</key>
 				<integer>1</integer>
 			</dict>
@@ -79,9 +79,9 @@
 				<key>icon</key>
 				<string>006.png</string>
 				<key>intro</key>
-				<string>我的好友好友-7的个性签名就是这么拽</string>
+				<string>No! No way!</string>
 				<key>name</key>
-				<string>我的好友好友-7</string>
+				<string>Constantine</string>
 				<key>vip</key>
 				<integer>0</integer>
 			</dict>
@@ -89,9 +89,9 @@
 				<key>icon</key>
 				<string>008.png</string>
 				<key>intro</key>
-				<string>我的好友好友-8的个性签名就是这么拽</string>
+				<string>It doesn&apos;t matter!</string>
 				<key>name</key>
-				<string>我的好友好友-8</string>
+				<string>John</string>
 				<key>vip</key>
 				<integer>1</integer>
 			</dict>
@@ -99,15 +99,15 @@
 				<key>icon</key>
 				<string>006.png</string>
 				<key>intro</key>
-				<string>我的好友好友-9的个性签名就是这么拽</string>
+				<string>Booyah!</string>
 				<key>name</key>
-				<string>我的好友好友-9</string>
+				<string>Goodman</string>
 				<key>vip</key>
 				<integer>0</integer>
 			</dict>
 		</array>
 		<key>name</key>
-		<string>我的好友</string>
+		<string>好友</string>
 		<key>onlineContacts</key>
 		<integer>3</integer>
 	</dict>
@@ -818,398 +818,11 @@
 	</dict>
 	<dict>
 		<key>contacts</key>
-		<array>
-			<dict>
-				<key>icon</key>
-				<string>009.png</string>
-				<key>intro</key>
-				<string>欠我钱的好友-0的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>欠我钱的好友-0</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>欠我钱的好友-1的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>欠我钱的好友-1</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>006.png</string>
-				<key>intro</key>
-				<string>欠我钱的好友-2的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>欠我钱的好友-2</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-		</array>
+		<array/>
 		<key>name</key>
-		<string>欠我钱的</string>
+		<string>危险的外星人</string>
 		<key>onlineContacts</key>
-		<integer>3</integer>
-	</dict>
-	<dict>
-		<key>contacts</key>
-		<array>
-			<dict>
-				<key>icon</key>
-				<string>002.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-0的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-0</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>007.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-1的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-1</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>006.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-2的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-2</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>003.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-3的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-3</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>006.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-4的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-4</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-5的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-5</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>007.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-6的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-6</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>004.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-7的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-7</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-8的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-8</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-9的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-9</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>002.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-10的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-10</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>008.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-11的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-11</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>006.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-12的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-12</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>蛋疼的好友-13的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>蛋疼的好友-13</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>蛋疼的</string>
-		<key>onlineContacts</key>
-		<integer>6</integer>
-	</dict>
-	<dict>
-		<key>contacts</key>
-		<array>
-			<dict>
-				<key>icon</key>
-				<string>001.png</string>
-				<key>intro</key>
-				<string>有病的好友-0的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>有病的好友-0</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>008.png</string>
-				<key>intro</key>
-				<string>有病的好友-1的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>有病的好友-1</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>001.png</string>
-				<key>intro</key>
-				<string>有病的好友-2的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>有病的好友-2</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>002.png</string>
-				<key>intro</key>
-				<string>有病的好友-3的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>有病的好友-3</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>001.png</string>
-				<key>intro</key>
-				<string>有病的好友-4的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>有病的好友-4</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>007.png</string>
-				<key>intro</key>
-				<string>有病的好友-5的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>有病的好友-5</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>有病的</string>
-		<key>onlineContacts</key>
-		<integer>6</integer>
-	</dict>
-	<dict>
-		<key>contacts</key>
-		<array>
-			<dict>
-				<key>icon</key>
-				<string>004.png</string>
-				<key>intro</key>
-				<string>傻B好友-0的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>傻B好友-0</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>003.png</string>
-				<key>intro</key>
-				<string>傻B好友-1的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>傻B好友-1</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>傻B好友-2的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>傻B好友-2</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>001.png</string>
-				<key>intro</key>
-				<string>傻B好友-3的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>傻B好友-3</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>009.png</string>
-				<key>intro</key>
-				<string>傻B好友-4的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>傻B好友-4</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>007.png</string>
-				<key>intro</key>
-				<string>傻B好友-5的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>傻B好友-5</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>傻B好友-6的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>傻B好友-6</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>傻B</string>
-		<key>onlineContacts</key>
-		<integer>5</integer>
-	</dict>
-	<dict>
-		<key>contacts</key>
-		<array>
-			<dict>
-				<key>icon</key>
-				<string>001.png</string>
-				<key>intro</key>
-				<string>2B好友-0的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>2B好友-0</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>009.png</string>
-				<key>intro</key>
-				<string>2B好友-1的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>2B好友-1</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>008.png</string>
-				<key>intro</key>
-				<string>2B好友-2的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>2B好友-2</string>
-				<key>vip</key>
-				<integer>1</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>004.png</string>
-				<key>intro</key>
-				<string>2B好友-3的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>2B好友-3</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>icon</key>
-				<string>005.png</string>
-				<key>intro</key>
-				<string>2B好友-4的个性签名就是这么拽</string>
-				<key>name</key>
-				<string>2B好友-4</string>
-				<key>vip</key>
-				<integer>0</integer>
-			</dict>
-		</array>
-		<key>name</key>
-		<string>2B</string>
-		<key>onlineContacts</key>
-		<integer>2</integer>
+		<integer>0</integer>
 	</dict>
 </array>
 </plist>

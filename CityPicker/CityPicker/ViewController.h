@@ -10,7 +10,7 @@
 
 @interface ViewController : UIViewController
 
-@property (weak, nonatomic) IBOutlet UIPickerView *cityPickerView;
+@property (weak, nonatomic) IBOutlet UILabel *pickerLabel;
 
 @end
 

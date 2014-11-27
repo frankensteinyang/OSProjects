@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  HandlingKeyboard
+//  HandlingKeyboardEncapsulation
 //
-//  Created by Hannibal Yang on 11/27/14.
+//  Created by Hannibal Yang on 11/28/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 

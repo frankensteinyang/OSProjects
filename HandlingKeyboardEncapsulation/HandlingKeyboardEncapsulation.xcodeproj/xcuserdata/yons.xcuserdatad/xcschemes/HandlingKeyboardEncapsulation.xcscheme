@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4BC9A591A2775BA00BC4C2C"
-               BuildableName = "HandlingKeyboard.app"
-               BlueprintName = "HandlingKeyboard"
-               ReferencedContainer = "container:HandlingKeyboard.xcodeproj">
+               BlueprintIdentifier = "E4731C971A27D68E004110B7"
+               BuildableName = "HandlingKeyboardEncapsulation.app"
+               BlueprintName = "HandlingKeyboardEncapsulation"
+               ReferencedContainer = "container:HandlingKeyboardEncapsulation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4BC9A721A2775BB00BC4C2C"
-               BuildableName = "HandlingKeyboardTests.xctest"
-               BlueprintName = "HandlingKeyboardTests"
-               ReferencedContainer = "container:HandlingKeyboard.xcodeproj">
+               BlueprintIdentifier = "E4731CB01A27D68E004110B7"
+               BuildableName = "HandlingKeyboardEncapsulationTests.xctest"
+               BlueprintName = "HandlingKeyboardEncapsulationTests"
+               ReferencedContainer = "container:HandlingKeyboardEncapsulation.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4BC9A721A2775BB00BC4C2C"
-               BuildableName = "HandlingKeyboardTests.xctest"
-               BlueprintName = "HandlingKeyboardTests"
-               ReferencedContainer = "container:HandlingKeyboard.xcodeproj">
+               BlueprintIdentifier = "E4731CB01A27D68E004110B7"
+               BuildableName = "HandlingKeyboardEncapsulationTests.xctest"
+               BlueprintName = "HandlingKeyboardEncapsulationTests"
+               ReferencedContainer = "container:HandlingKeyboardEncapsulation.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4BC9A591A2775BA00BC4C2C"
-            BuildableName = "HandlingKeyboard.app"
-            BlueprintName = "HandlingKeyboard"
-            ReferencedContainer = "container:HandlingKeyboard.xcodeproj">
+            BlueprintIdentifier = "E4731C971A27D68E004110B7"
+            BuildableName = "HandlingKeyboardEncapsulation.app"
+            BlueprintName = "HandlingKeyboardEncapsulation"
+            ReferencedContainer = "container:HandlingKeyboardEncapsulation.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4BC9A591A2775BA00BC4C2C"
-            BuildableName = "HandlingKeyboard.app"
-            BlueprintName = "HandlingKeyboard"
-            ReferencedContainer = "container:HandlingKeyboard.xcodeproj">
+            BlueprintIdentifier = "E4731C971A27D68E004110B7"
+            BuildableName = "HandlingKeyboardEncapsulation.app"
+            BlueprintName = "HandlingKeyboardEncapsulation"
+            ReferencedContainer = "container:HandlingKeyboardEncapsulation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4BC9A591A2775BA00BC4C2C"
-            BuildableName = "HandlingKeyboard.app"
-            BlueprintName = "HandlingKeyboard"
-            ReferencedContainer = "container:HandlingKeyboard.xcodeproj">
+            BlueprintIdentifier = "E4731C971A27D68E004110B7"
+            BuildableName = "HandlingKeyboardEncapsulation.app"
+            BlueprintName = "HandlingKeyboardEncapsulation"
+            ReferencedContainer = "container:HandlingKeyboardEncapsulation.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

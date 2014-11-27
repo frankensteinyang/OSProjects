@@ -1,19 +1,19 @@
 //
-//  HandlingKeyboardTests.m
-//  HandlingKeyboardTests
+//  HandlingKeyboardEncapsulationTests.m
+//  HandlingKeyboardEncapsulationTests
 //
-//  Created by Hannibal Yang on 11/27/14.
+//  Created by Hannibal Yang on 11/28/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface HandlingKeyboardTests : XCTestCase
+@interface HandlingKeyboardEncapsulationTests : XCTestCase
 
 @end
 
-@implementation HandlingKeyboardTests
+@implementation HandlingKeyboardEncapsulationTests
 
 - (void)setUp {
     [super setUp];

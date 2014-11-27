@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>HandlingKeyboard.xcscheme</key>
+		<key>HandlingKeyboardEncapsulation.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4BC9A591A2775BA00BC4C2C</key>
+		<key>E4731C971A27D68E004110B7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4BC9A721A2775BB00BC4C2C</key>
+		<key>E4731CB01A27D68E004110B7</key>
 		<dict>
 			<key>primary</key>
 			<true/>

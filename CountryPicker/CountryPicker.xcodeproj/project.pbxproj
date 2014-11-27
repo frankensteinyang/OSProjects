@@ -30,6 +30,8 @@
 		E4BC9A431A27500E00BC4C2C /* ying.gif in Resources */ = {isa = PBXBuildFile; fileRef = E4BC9A341A27500E00BC4C2C /* ying.gif */; };
 		E4BC9A441A27500E00BC4C2C /* zhongguo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E4BC9A351A27500E00BC4C2C /* zhongguo.jpg */; };
 		E4BC9A4B1A27525300BC4C2C /* CPCountry.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC9A4A1A27525300BC4C2C /* CPCountry.m */; };
+		E4BC9A4D1A275A4200BC4C2C /* CPCountryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4BC9A4C1A275A4200BC4C2C /* CPCountryView.xib */; };
+		E4BC9A501A275C9D00BC4C2C /* CPCountryView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC9A4F1A275C9D00BC4C2C /* CPCountryView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +76,9 @@
 		E4BC9A481A27516F00BC4C2C /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E4BC9A491A27525300BC4C2C /* CPCountry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCountry.h; sourceTree = "<group>"; };
 		E4BC9A4A1A27525300BC4C2C /* CPCountry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCountry.m; sourceTree = "<group>"; };
+		E4BC9A4C1A275A4200BC4C2C /* CPCountryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CPCountryView.xib; sourceTree = "<group>"; };
+		E4BC9A4E1A275C9D00BC4C2C /* CPCountryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPCountryView.h; sourceTree = "<group>"; };
+		E4BC9A4F1A275C9D00BC4C2C /* CPCountryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPCountryView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +131,9 @@
 				E4BC9A481A27516F00BC4C2C /* Common.h */,
 				E4BC9A491A27525300BC4C2C /* CPCountry.h */,
 				E4BC9A4A1A27525300BC4C2C /* CPCountry.m */,
+				E4BC9A4C1A275A4200BC4C2C /* CPCountryView.xib */,
+				E4BC9A4E1A275C9D00BC4C2C /* CPCountryView.h */,
+				E4BC9A4F1A275C9D00BC4C2C /* CPCountryView.m */,
 			);
 			path = CountryPicker;
 			sourceTree = "<group>";
@@ -260,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BC9A0C1A273E5B00BC4C2C /* Main.storyboard in Resources */,
+				E4BC9A4D1A275A4200BC4C2C /* CPCountryView.xib in Resources */,
 				E4BC9A3B1A27500E00BC4C2C /* hanguo.gif in Resources */,
 				E4BC9A381A27500E00BC4C2C /* deguo.gif in Resources */,
 				E4BC9A3C1A27500E00BC4C2C /* helan.gif in Resources */,
@@ -295,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4BC9A091A273E5B00BC4C2C /* ViewController.m in Sources */,
+				E4BC9A501A275C9D00BC4C2C /* CPCountryView.m in Sources */,
 				E4BC9A4B1A27525300BC4C2C /* CPCountry.m in Sources */,
 				E4BC9A061A273E5B00BC4C2C /* AppDelegate.m in Sources */,
 				E4BC9A031A273E5B00BC4C2C /* main.m in Sources */,

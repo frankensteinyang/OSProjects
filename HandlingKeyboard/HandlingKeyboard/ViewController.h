@@ -10,6 +10,14 @@
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UIButton *maleBtn;
 
+@property (weak, nonatomic) IBOutlet UIButton *femaleBtn;
+
+@property (weak, nonatomic) IBOutlet UITextField *birthdayField;
+
+@property (weak, nonatomic) IBOutlet UITextField *cityField;
+
+- (IBAction)selectGender:(UIButton *)sender;
 @end
 

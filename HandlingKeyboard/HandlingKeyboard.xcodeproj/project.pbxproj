@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4731C871A27B9D4004110B7 /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = E4731C861A27B9D4004110B7 /* cities.plist */; };
+		E4731C8D1A27BD63004110B7 /* HKProvince.m in Sources */ = {isa = PBXBuildFile; fileRef = E4731C8C1A27BD63004110B7 /* HKProvince.m */; };
 		E4BC9A601A2775BA00BC4C2C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC9A5F1A2775BA00BC4C2C /* main.m */; };
 		E4BC9A631A2775BA00BC4C2C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC9A621A2775BA00BC4C2C /* AppDelegate.m */; };
 		E4BC9A661A2775BA00BC4C2C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4BC9A651A2775BA00BC4C2C /* ViewController.m */; };
@@ -29,6 +31,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4731C861A27B9D4004110B7 /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		E4731C8B1A27BD63004110B7 /* HKProvince.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKProvince.h; sourceTree = "<group>"; };
+		E4731C8C1A27BD63004110B7 /* HKProvince.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKProvince.m; sourceTree = "<group>"; };
+		E4731C8E1A27C0E0004110B7 /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
 		E4BC9A5A1A2775BA00BC4C2C /* HandlingKeyboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HandlingKeyboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4BC9A5E1A2775BA00BC4C2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4BC9A5F1A2775BA00BC4C2C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,6 +99,9 @@
 				E4BC9A6A1A2775BA00BC4C2C /* Images.xcassets */,
 				E4BC9A6C1A2775BA00BC4C2C /* LaunchScreen.xib */,
 				E4BC9A5D1A2775BA00BC4C2C /* Supporting Files */,
+				E4731C8B1A27BD63004110B7 /* HKProvince.h */,
+				E4731C8C1A27BD63004110B7 /* HKProvince.m */,
+				E4731C8E1A27C0E0004110B7 /* Common.h */,
 			);
 			path = HandlingKeyboard;
 			sourceTree = "<group>";
@@ -100,6 +109,7 @@
 		E4BC9A5D1A2775BA00BC4C2C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4731C861A27B9D4004110B7 /* cities.plist */,
 				E4BC9A831A277A0000BC4C2C /* checkbox_checked.png */,
 				E4BC9A841A277A0000BC4C2C /* checkbox_normal.png */,
 				E4BC9A5E1A2775BA00BC4C2C /* Info.plist */,
@@ -208,6 +218,7 @@
 				E4BC9A851A277A0000BC4C2C /* checkbox_checked.png in Resources */,
 				E4BC9A691A2775BA00BC4C2C /* Main.storyboard in Resources */,
 				E4BC9A6E1A2775BA00BC4C2C /* LaunchScreen.xib in Resources */,
+				E4731C871A27B9D4004110B7 /* cities.plist in Resources */,
 				E4BC9A861A277A0000BC4C2C /* checkbox_normal.png in Resources */,
 				E4BC9A6B1A2775BA00BC4C2C /* Images.xcassets in Resources */,
 			);
@@ -227,6 +238,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4731C8D1A27BD63004110B7 /* HKProvince.m in Sources */,
 				E4BC9A661A2775BA00BC4C2C /* ViewController.m in Sources */,
 				E4BC9A631A2775BA00BC4C2C /* AppDelegate.m in Sources */,
 				E4BC9A601A2775BA00BC4C2C /* main.m in Sources */,
@@ -351,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HandlingKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -361,6 +374,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = HandlingKeyboard/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -420,6 +434,7 @@
 				E4BC9A7F1A2775BB00BC4C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4BC9A801A2775BB00BC4C2C /* Build configuration list for PBXNativeTarget "HandlingKeyboardTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +443,7 @@
 				E4BC9A821A2775BB00BC4C2C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

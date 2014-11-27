@@ -59,13 +59,13 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请选择您的生日" minimumFontSize="17" clearButtonMode="always" id="lAw-48-C6S">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请选择您的生日" minimumFontSize="17" id="lAw-48-C6S">
                                 <rect key="frame" x="92" y="169" width="181" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请选择您所在的城市" minimumFontSize="17" clearButtonMode="always" id="l3C-9p-lOo">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请选择您所在的城市" minimumFontSize="17" id="l3C-9p-lOo">
                                 <rect key="frame" x="92" y="219" width="181" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -79,6 +79,10 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled" image="checkbox_checked.png"/>
+                                <connections>
+                                    <action selector="selectGender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Ksh-4h-0DL"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="xXY-Fc-5sC">
                                 <rect key="frame" x="92" y="78" width="67" height="22"/>
@@ -88,12 +92,23 @@
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="disabled" image="checkbox_checked.png"/>
                                 <state key="highlighted">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="selectGender:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="i5I-tr-6qq"/>
+                                </connections>
                             </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="1X4-Mv-pmY">
+                                <rect key="frame" x="92" y="271" width="181" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="foE-TL-nb3">
-                                <rect key="frame" x="26" y="265" width="68" height="21"/>
+                                <rect key="frame" x="26" y="271" width="68" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -104,6 +119,12 @@
                     </view>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="birthdayField" destination="lAw-48-C6S" id="K7g-qH-E5H"/>
+                        <outlet property="cityField" destination="l3C-9p-lOo" id="BUe-jm-gFR"/>
+                        <outlet property="femaleBtn" destination="Psa-jg-uE4" id="oUO-0U-nMH"/>
+                        <outlet property="maleBtn" destination="xXY-Fc-5sC" id="8PE-MA-Wth"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -111,6 +132,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkbox_checked.png" width="15" height="15"/>
         <image name="checkbox_normal.png" width="15" height="15"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

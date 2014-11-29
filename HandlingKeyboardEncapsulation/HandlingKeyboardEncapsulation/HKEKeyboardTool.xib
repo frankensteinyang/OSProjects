@@ -36,6 +36,10 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="nextBtnItem" destination="pOc-Qv-upo" id="arr-52-jSy"/>
+                <outlet property="previousBtnItem" destination="r3R-Fu-AJr" id="Fym-5M-MfQ"/>
+            </connections>
             <point key="canvasLocation" x="445" y="851"/>
         </view>
     </objects>

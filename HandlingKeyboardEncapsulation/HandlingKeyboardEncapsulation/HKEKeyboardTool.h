@@ -26,6 +26,10 @@ typedef enum {
 
 @interface HKEKeyboardTool : UIView
 
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *previousBtnItem;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextBtnItem;
+
 @property (nonatomic, weak) id<HKEKeyboardToolDelegate> delegate;
 
 - (IBAction)previous;

@@ -10,4 +10,15 @@
 
 @implementation HKEArea
 
+- (id)initWithDict:(NSDictionary *)dict {
+
+    if (self = [super init]) {
+        self.provinceName = dict[@"name"];
+        self.citiesArray = dict[@"cities"];
+    }
+    return self;
+}
+
+kInitM(area)
+
 @end

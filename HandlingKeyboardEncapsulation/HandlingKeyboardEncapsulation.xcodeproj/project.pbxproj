@@ -20,6 +20,10 @@
 		E4731CC91A27D7AE004110B7 /* HKEGenderCheckBox.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4731CC81A27D7AE004110B7 /* HKEGenderCheckBox.xib */; };
 		E4731CCC1A27D7DF004110B7 /* HKEGenderCheckBox.m in Sources */ = {isa = PBXBuildFile; fileRef = E4731CCB1A27D7DF004110B7 /* HKEGenderCheckBox.m */; };
 		E4731CCF1A27D845004110B7 /* HKEArea.m in Sources */ = {isa = PBXBuildFile; fileRef = E4731CCE1A27D845004110B7 /* HKEArea.m */; };
+		E493A9661A291BC8006A1DF4 /* HKECityPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493A9651A291BC8006A1DF4 /* HKECityPicker.xib */; };
+		E493A9691A291C6C006A1DF4 /* HKECityPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = E493A9681A291C6C006A1DF4 /* HKECityPicker.m */; };
+		E493A96E1A2935AA006A1DF4 /* HKEKeyboardTool.xib in Resources */ = {isa = PBXBuildFile; fileRef = E493A96D1A2935AA006A1DF4 /* HKEKeyboardTool.xib */; };
+		E493A9711A293D6E006A1DF4 /* HKEKeyboardTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E493A9701A293D6E006A1DF4 /* HKEKeyboardTool.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +59,12 @@
 		E4731CCB1A27D7DF004110B7 /* HKEGenderCheckBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKEGenderCheckBox.m; sourceTree = "<group>"; };
 		E4731CCD1A27D845004110B7 /* HKEArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKEArea.h; sourceTree = "<group>"; };
 		E4731CCE1A27D845004110B7 /* HKEArea.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKEArea.m; sourceTree = "<group>"; };
+		E493A9651A291BC8006A1DF4 /* HKECityPicker.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKECityPicker.xib; sourceTree = "<group>"; };
+		E493A9671A291C6C006A1DF4 /* HKECityPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKECityPicker.h; sourceTree = "<group>"; };
+		E493A9681A291C6C006A1DF4 /* HKECityPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKECityPicker.m; sourceTree = "<group>"; };
+		E493A96D1A2935AA006A1DF4 /* HKEKeyboardTool.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HKEKeyboardTool.xib; sourceTree = "<group>"; };
+		E493A96F1A293D6E006A1DF4 /* HKEKeyboardTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKEKeyboardTool.h; sourceTree = "<group>"; };
+		E493A9701A293D6E006A1DF4 /* HKEKeyboardTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKEKeyboardTool.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +106,9 @@
 		E4731C9A1A27D68E004110B7 /* HandlingKeyboardEncapsulation */ = {
 			isa = PBXGroup;
 			children = (
+				E493A96C1A293585006A1DF4 /* KeyboardTool */,
+				E493A96B1A2933FB006A1DF4 /* CityPicker */,
+				E493A96A1A2933A1006A1DF4 /* GenderCheckBox */,
 				E4731C9F1A27D68E004110B7 /* AppDelegate.h */,
 				E4731CA01A27D68E004110B7 /* AppDelegate.m */,
 				E4731CA21A27D68E004110B7 /* ViewController.h */,
@@ -104,12 +117,6 @@
 				E4731CA81A27D68E004110B7 /* Images.xcassets */,
 				E4731CAA1A27D68E004110B7 /* LaunchScreen.xib */,
 				E4731C9B1A27D68E004110B7 /* Supporting Files */,
-				E4731CC71A27D77A004110B7 /* Common.h */,
-				E4731CC81A27D7AE004110B7 /* HKEGenderCheckBox.xib */,
-				E4731CCA1A27D7DF004110B7 /* HKEGenderCheckBox.h */,
-				E4731CCB1A27D7DF004110B7 /* HKEGenderCheckBox.m */,
-				E4731CCD1A27D845004110B7 /* HKEArea.h */,
-				E4731CCE1A27D845004110B7 /* HKEArea.m */,
 			);
 			path = HandlingKeyboardEncapsulation;
 			sourceTree = "<group>";
@@ -117,9 +124,6 @@
 		E4731C9B1A27D68E004110B7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E4731CC11A27D6E8004110B7 /* checkbox_checked.png */,
-				E4731CC21A27D6E8004110B7 /* checkbox_normal.png */,
-				E4731CC31A27D6E8004110B7 /* cities.plist */,
 				E4731C9C1A27D68E004110B7 /* Info.plist */,
 				E4731C9D1A27D68E004110B7 /* main.m */,
 			);
@@ -141,6 +145,42 @@
 				E4731CB61A27D68E004110B7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E493A96A1A2933A1006A1DF4 /* GenderCheckBox */ = {
+			isa = PBXGroup;
+			children = (
+				E4731CC11A27D6E8004110B7 /* checkbox_checked.png */,
+				E4731CC21A27D6E8004110B7 /* checkbox_normal.png */,
+				E4731CC81A27D7AE004110B7 /* HKEGenderCheckBox.xib */,
+				E4731CCA1A27D7DF004110B7 /* HKEGenderCheckBox.h */,
+				E4731CCB1A27D7DF004110B7 /* HKEGenderCheckBox.m */,
+			);
+			name = GenderCheckBox;
+			sourceTree = "<group>";
+		};
+		E493A96B1A2933FB006A1DF4 /* CityPicker */ = {
+			isa = PBXGroup;
+			children = (
+				E4731CC71A27D77A004110B7 /* Common.h */,
+				E4731CCD1A27D845004110B7 /* HKEArea.h */,
+				E4731CCE1A27D845004110B7 /* HKEArea.m */,
+				E4731CC31A27D6E8004110B7 /* cities.plist */,
+				E493A9651A291BC8006A1DF4 /* HKECityPicker.xib */,
+				E493A9671A291C6C006A1DF4 /* HKECityPicker.h */,
+				E493A9681A291C6C006A1DF4 /* HKECityPicker.m */,
+			);
+			name = CityPicker;
+			sourceTree = "<group>";
+		};
+		E493A96C1A293585006A1DF4 /* KeyboardTool */ = {
+			isa = PBXGroup;
+			children = (
+				E493A96D1A2935AA006A1DF4 /* HKEKeyboardTool.xib */,
+				E493A96F1A293D6E006A1DF4 /* HKEKeyboardTool.h */,
+				E493A9701A293D6E006A1DF4 /* HKEKeyboardTool.m */,
+			);
+			name = KeyboardTool;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,8 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4731CC41A27D6E8004110B7 /* checkbox_checked.png in Resources */,
+				E493A9661A291BC8006A1DF4 /* HKECityPicker.xib in Resources */,
 				E4731CA71A27D68E004110B7 /* Main.storyboard in Resources */,
 				E4731CAC1A27D68E004110B7 /* LaunchScreen.xib in Resources */,
+				E493A96E1A2935AA006A1DF4 /* HKEKeyboardTool.xib in Resources */,
 				E4731CC61A27D6E8004110B7 /* cities.plist in Resources */,
 				E4731CC51A27D6E8004110B7 /* checkbox_normal.png in Resources */,
 				E4731CC91A27D7AE004110B7 /* HKEGenderCheckBox.xib in Resources */,
@@ -248,9 +290,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4731CA41A27D68E004110B7 /* ViewController.m in Sources */,
+				E493A9691A291C6C006A1DF4 /* HKECityPicker.m in Sources */,
 				E4731CA11A27D68E004110B7 /* AppDelegate.m in Sources */,
 				E4731CCC1A27D7DF004110B7 /* HKEGenderCheckBox.m in Sources */,
 				E4731CCF1A27D845004110B7 /* HKEArea.m in Sources */,
+				E493A9711A293D6E006A1DF4 /* HKEKeyboardTool.m in Sources */,
 				E4731C9E1A27D68E004110B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -444,6 +488,7 @@
 				E4731CBD1A27D68E004110B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4731CBE1A27D68E004110B7 /* Build configuration list for PBXNativeTarget "HandlingKeyboardEncapsulationTests" */ = {
 			isa = XCConfigurationList;
@@ -452,6 +497,7 @@
 				E4731CC01A27D68E004110B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

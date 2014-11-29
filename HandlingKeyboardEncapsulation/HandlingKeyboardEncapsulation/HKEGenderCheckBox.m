@@ -10,4 +10,20 @@
 
 @implementation HKEGenderCheckBox
 
+- (IBAction)selectGender:(UIButton *)sender {
+    
+    if (_maleBtn.enabled) {
+        _maleBtn.enabled = NO;
+        _femaleBtn.enabled = YES;
+    } else {
+        _femaleBtn.enabled = NO;
+        _maleBtn.enabled = YES;
+    }
+}
+
++ (id)genderCheckbox {
+
+    return [[NSBundle mainBundle] loadNibNamed:@"HKEGenderCheckBox" owner:nil options:nil][0];
+}
+
 @end

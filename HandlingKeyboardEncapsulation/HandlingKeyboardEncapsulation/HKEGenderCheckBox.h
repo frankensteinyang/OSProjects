@@ -10,4 +10,12 @@
 
 @interface HKEGenderCheckBox : UIView
 
+@property (weak, nonatomic) IBOutlet UIButton *femaleBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *maleBtn;
+
+- (IBAction)selectGender:(UIButton *)sender;
+
++ (id)genderCheckbox;
+
 @end

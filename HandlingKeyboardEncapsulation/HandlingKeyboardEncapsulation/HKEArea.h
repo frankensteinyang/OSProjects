@@ -7,7 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Common.h"
 
 @interface HKEArea : NSObject
+
+@property (nonatomic, copy) NSString *provinceName;
+@property (nonatomic, strong) NSArray *citiesArray;
+
+kInitH(area)
 
 @end

@@ -12,6 +12,7 @@
 		E4A7068D1A2BA22800BBA633 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4A7068C1A2BA22800BBA633 /* Images.xcassets */; };
 		E4A7069C1A2BA22800BBA633 /* Xcode61EmptyApplicationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A7069B1A2BA22800BBA633 /* Xcode61EmptyApplicationTests.m */; };
 		E4A706A71A2BAA3800BBA633 /* MyFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A706A61A2BAA3800BBA633 /* MyFirstViewController.m */; };
+		E4A706A91A2BB0C300BBA633 /* MyFirstStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4A706A81A2BB0C300BBA633 /* MyFirstStoryboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E4A7069B1A2BA22800BBA633 /* Xcode61EmptyApplicationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Xcode61EmptyApplicationTests.m; sourceTree = "<group>"; };
 		E4A706A51A2BAA3800BBA633 /* MyFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFirstViewController.h; sourceTree = "<group>"; };
 		E4A706A61A2BAA3800BBA633 /* MyFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFirstViewController.m; sourceTree = "<group>"; };
+		E4A706A81A2BB0C300BBA633 /* MyFirstStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MyFirstStoryboard.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 				E4A7067F1A2BA22800BBA633 /* Supporting Files */,
 				E4A706A51A2BAA3800BBA633 /* MyFirstViewController.h */,
 				E4A706A61A2BAA3800BBA633 /* MyFirstViewController.m */,
+				E4A706A81A2BB0C300BBA633 /* MyFirstStoryboard.storyboard */,
 			);
 			path = Xcode61EmptyApplication;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A706A91A2BB0C300BBA633 /* MyFirstStoryboard.storyboard in Resources */,
 				E4A7068D1A2BA22800BBA633 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

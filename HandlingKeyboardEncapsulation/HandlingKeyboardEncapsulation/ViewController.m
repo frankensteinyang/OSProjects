@@ -44,6 +44,10 @@
     // 取得当前聚焦文本框最下面的Y值
     CGFloat fieldMaxY = CGRectGetMaxY(_focusedField.frame);
     
+    // 补充：获得不从view层中的文本框
+//    CGRect fieldRect = [_focusedField.superview convertRect:_focusedField.frame toView:self.view];
+//    CGFloat fieldMaxY = CGRectGetMaxY(fieldRect);
+    
     // 取出键盘的高度
     CGFloat keyboardH = [notification.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue].size.height;
     

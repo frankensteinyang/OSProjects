@@ -26,9 +26,10 @@ typedef enum {
 
 @interface HKEKeyboardTool : UIView
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *previousBtnItem;
+#warning 此处加上readonly后，有警告，需要搞清楚此处的警告
+@property (weak, nonatomic, readonly) IBOutlet UIBarButtonItem *previousBtnItem;
 
-@property (weak, nonatomic) IBOutlet UIBarButtonItem *nextBtnItem;
+@property (weak, nonatomic, readonly) IBOutlet UIBarButtonItem *nextBtnItem;
 
 @property (nonatomic, weak) id<HKEKeyboardToolDelegate> delegate;
 

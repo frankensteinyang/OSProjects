@@ -15,6 +15,8 @@
 		E45E2B7E1A2CD03B00A9A529 /* NCFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B7C1A2CD03B00A9A529 /* NCFirstViewController.xib */; };
 		E45E2B821A2CD05300A9A529 /* NCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B801A2CD05300A9A529 /* NCSecondViewController.m */; };
 		E45E2B831A2CD05300A9A529 /* NCSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B811A2CD05300A9A529 /* NCSecondViewController.xib */; };
+		E45E2B871A2CE85D00A9A529 /* NCThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B851A2CE85D00A9A529 /* NCThirdViewController.m */; };
+		E45E2B881A2CE85D00A9A529 /* NCThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B861A2CE85D00A9A529 /* NCThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		E45E2B7F1A2CD05300A9A529 /* NCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSecondViewController.h; sourceTree = "<group>"; };
 		E45E2B801A2CD05300A9A529 /* NCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCSecondViewController.m; sourceTree = "<group>"; };
 		E45E2B811A2CD05300A9A529 /* NCSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCSecondViewController.xib; sourceTree = "<group>"; };
+		E45E2B841A2CE85D00A9A529 /* NCThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCThirdViewController.h; sourceTree = "<group>"; };
+		E45E2B851A2CE85D00A9A529 /* NCThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCThirdViewController.m; sourceTree = "<group>"; };
+		E45E2B861A2CE85D00A9A529 /* NCThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +99,9 @@
 				E45E2B7F1A2CD05300A9A529 /* NCSecondViewController.h */,
 				E45E2B801A2CD05300A9A529 /* NCSecondViewController.m */,
 				E45E2B811A2CD05300A9A529 /* NCSecondViewController.xib */,
+				E45E2B841A2CE85D00A9A529 /* NCThirdViewController.h */,
+				E45E2B851A2CE85D00A9A529 /* NCThirdViewController.m */,
+				E45E2B861A2CE85D00A9A529 /* NCThirdViewController.xib */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -205,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45E2B831A2CD05300A9A529 /* NCSecondViewController.xib in Resources */,
+				E45E2B881A2CE85D00A9A529 /* NCThirdViewController.xib in Resources */,
 				E45E2B7E1A2CD03B00A9A529 /* NCFirstViewController.xib in Resources */,
 				E45E2B621A2CCE1300A9A529 /* Images.xcassets in Resources */,
 			);
@@ -227,6 +236,7 @@
 				E45E2B5A1A2CCE1300A9A529 /* AppDelegate.m in Sources */,
 				E45E2B571A2CCE1300A9A529 /* main.m in Sources */,
 				E45E2B7D1A2CD03B00A9A529 /* NCFirstViewController.m in Sources */,
+				E45E2B871A2CE85D00A9A529 /* NCThirdViewController.m in Sources */,
 				E45E2B821A2CD05300A9A529 /* NCSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

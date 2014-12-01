@@ -10,4 +10,6 @@
 
 @interface NCFirstViewController : UIViewController
 
+- (IBAction)skipToSecond;
+
 @end

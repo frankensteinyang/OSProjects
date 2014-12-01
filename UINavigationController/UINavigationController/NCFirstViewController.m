@@ -7,6 +7,7 @@
 //
 
 #import "NCFirstViewController.h"
+#import "NCSecondViewController.h"
 
 @interface NCFirstViewController ()
 
@@ -17,21 +18,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"First";
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:UIBarButtonItemStylePlain target:self action:@selector(addClick)];
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemTrash target:nil action:nil];
+    self.navigationController.navigationBar.tintColor = [UIColor blueColor];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)addClick {
+
+    NSLog(@"What's up?");
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+                                                                                                                                                       
+- (IBAction)skipToSecond {
+    
+    NCSecondViewController *second = [[NCSecondViewController alloc] init];
+    [self.navigationController pushViewController:second animated:YES];
 }
-*/
-
 @end

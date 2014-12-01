@@ -1,5 +1,5 @@
 //
-//  NCSecondViewController.h
+//  NCThirdViewController.h
 //  UINavigationController
 //
 //  Created by Hannibal Yang on 12/2/14.
@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NCSecondViewController : UIViewController
+@interface NCThirdViewController : UIViewController
 
-- (IBAction)skipToThird;
+- (IBAction)skipToSecond;
+
+- (IBAction)skipToFirst;
+
 @end

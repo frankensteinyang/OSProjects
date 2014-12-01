@@ -1,15 +1,12 @@
 //
 //  AppDelegate.m
-//  UsingXibCreateController
+//  UINavigationController
 //
-//  Created by Hannibal Yang on 12/1/14.
+//  Created by Hannibal Yang on 12/2/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MySecondViewController.h"
-#import "MyThirdViewController.h"
-#import "MyFourthViewController.h"
 
 @interface AppDelegate ()
 
@@ -22,22 +19,6 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-//    MySecondViewController *second = [[MySecondViewController alloc] initWithNibName:@"MySecondViewController" bundle:nil];
-//    self.window.rootViewController = second;
-    
-//    MyThirdViewController *third = [[MyThirdViewController alloc] initWithNibName:@"MyThirdViewController" bundle:nil];
-//    self.window.rootViewController = third;
-//    MyFourthViewController *fourth = [[MyFourthViewController alloc] initWithNibName:@"MyFourthViewController" bundle:nil];
-//    self.window.rootViewController = fourth;
-    
-    // 如果调用init方法创建控制器（MyFourthViewController），那么在加载控制器view的时候：
-    // 1. 优先查找“MyFourthView.xib”
-    // 2. 其次再查找同名的xib文件“MyFourthViewController.xib”
-    // 3. 如果没有找到上述的xib文件，会直接通过代码创建一个空白的view
-    // 控制器的init方法默认会去寻找跟控制器同名的xib文件
-    self.window.rootViewController = [[MyFourthViewController alloc] init];
-    
     [self.window makeKeyAndVisible];
     return YES;
 }

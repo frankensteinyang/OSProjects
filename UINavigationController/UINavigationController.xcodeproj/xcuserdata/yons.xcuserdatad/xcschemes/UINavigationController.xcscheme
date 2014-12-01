@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45E2B0D1A2CAF3100A9A529"
-               BuildableName = "UsingXibCreateController.app"
-               BlueprintName = "UsingXibCreateController"
-               ReferencedContainer = "container:UsingXibCreateController.xcodeproj">
+               BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
+               BuildableName = "UINavigationController.app"
+               BlueprintName = "UINavigationController"
+               ReferencedContainer = "container:UINavigationController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45E2B261A2CAF3200A9A529"
-               BuildableName = "UsingXibCreateControllerTests.xctest"
-               BlueprintName = "UsingXibCreateControllerTests"
-               ReferencedContainer = "container:UsingXibCreateController.xcodeproj">
+               BlueprintIdentifier = "E45E2B691A2CCE1300A9A529"
+               BuildableName = "UINavigationControllerTests.xctest"
+               BlueprintName = "UINavigationControllerTests"
+               ReferencedContainer = "container:UINavigationController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45E2B261A2CAF3200A9A529"
-               BuildableName = "UsingXibCreateControllerTests.xctest"
-               BlueprintName = "UsingXibCreateControllerTests"
-               ReferencedContainer = "container:UsingXibCreateController.xcodeproj">
+               BlueprintIdentifier = "E45E2B691A2CCE1300A9A529"
+               BuildableName = "UINavigationControllerTests.xctest"
+               BlueprintName = "UINavigationControllerTests"
+               ReferencedContainer = "container:UINavigationController.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E45E2B0D1A2CAF3100A9A529"
-            BuildableName = "UsingXibCreateController.app"
-            BlueprintName = "UsingXibCreateController"
-            ReferencedContainer = "container:UsingXibCreateController.xcodeproj">
+            BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
+            BuildableName = "UINavigationController.app"
+            BlueprintName = "UINavigationController"
+            ReferencedContainer = "container:UINavigationController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E45E2B0D1A2CAF3100A9A529"
-            BuildableName = "UsingXibCreateController.app"
-            BlueprintName = "UsingXibCreateController"
-            ReferencedContainer = "container:UsingXibCreateController.xcodeproj">
+            BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
+            BuildableName = "UINavigationController.app"
+            BlueprintName = "UINavigationController"
+            ReferencedContainer = "container:UINavigationController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E45E2B0D1A2CAF3100A9A529"
-            BuildableName = "UsingXibCreateController.app"
-            BlueprintName = "UsingXibCreateController"
-            ReferencedContainer = "container:UsingXibCreateController.xcodeproj">
+            BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
+            BuildableName = "UINavigationController.app"
+            BlueprintName = "UINavigationController"
+            ReferencedContainer = "container:UINavigationController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

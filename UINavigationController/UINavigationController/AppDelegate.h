@@ -1,8 +1,8 @@
 //
 //  AppDelegate.h
-//  UsingXibCreateController
+//  UINavigationController
 //
-//  Created by Hannibal Yang on 12/1/14.
+//  Created by Hannibal Yang on 12/2/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 

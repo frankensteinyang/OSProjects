@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UsingXibCreateController.xcscheme</key>
+		<key>UINavigationController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E45E2B0D1A2CAF3100A9A529</key>
+		<key>E45E2B501A2CCE1200A9A529</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E45E2B261A2CAF3200A9A529</key>
+		<key>E45E2B691A2CCE1300A9A529</key>
 		<dict>
 			<key>primary</key>
 			<true/>

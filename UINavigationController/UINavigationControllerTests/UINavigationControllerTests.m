@@ -1,19 +1,19 @@
 //
-//  UsingXibCreateControllerTests.m
-//  UsingXibCreateControllerTests
+//  UINavigationControllerTests.m
+//  UINavigationControllerTests
 //
-//  Created by Hannibal Yang on 12/1/14.
+//  Created by Hannibal Yang on 12/2/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface UsingXibCreateControllerTests : XCTestCase
+@interface UINavigationControllerTests : XCTestCase
 
 @end
 
-@implementation UsingXibCreateControllerTests
+@implementation UINavigationControllerTests
 
 - (void)setUp {
     [super setUp];

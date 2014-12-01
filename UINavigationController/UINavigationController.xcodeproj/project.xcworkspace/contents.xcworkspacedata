@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:UsingXibCreateController.xcodeproj">
+      location = "self:UINavigationController.xcodeproj">
    </FileRef>
 </Workspace>

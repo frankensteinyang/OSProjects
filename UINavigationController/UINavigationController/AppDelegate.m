@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "NCFirstViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,6 +20,9 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    NCFirstViewController *first = [[NCFirstViewController alloc] init];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:first];
     [self.window makeKeyAndVisible];
     return YES;
 }

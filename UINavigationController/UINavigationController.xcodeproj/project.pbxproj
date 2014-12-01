@@ -11,6 +11,10 @@
 		E45E2B5A1A2CCE1300A9A529 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B591A2CCE1300A9A529 /* AppDelegate.m */; };
 		E45E2B621A2CCE1300A9A529 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B611A2CCE1300A9A529 /* Images.xcassets */; };
 		E45E2B711A2CCE1300A9A529 /* UINavigationControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B701A2CCE1300A9A529 /* UINavigationControllerTests.m */; };
+		E45E2B7D1A2CD03B00A9A529 /* NCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B7B1A2CD03B00A9A529 /* NCFirstViewController.m */; };
+		E45E2B7E1A2CD03B00A9A529 /* NCFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B7C1A2CD03B00A9A529 /* NCFirstViewController.xib */; };
+		E45E2B821A2CD05300A9A529 /* NCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B801A2CD05300A9A529 /* NCSecondViewController.m */; };
+		E45E2B831A2CD05300A9A529 /* NCSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B811A2CD05300A9A529 /* NCSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +37,12 @@
 		E45E2B6A1A2CCE1300A9A529 /* UINavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UINavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45E2B6F1A2CCE1300A9A529 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45E2B701A2CCE1300A9A529 /* UINavigationControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerTests.m; sourceTree = "<group>"; };
+		E45E2B7A1A2CD03B00A9A529 /* NCFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCFirstViewController.h; sourceTree = "<group>"; };
+		E45E2B7B1A2CD03B00A9A529 /* NCFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCFirstViewController.m; sourceTree = "<group>"; };
+		E45E2B7C1A2CD03B00A9A529 /* NCFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCFirstViewController.xib; sourceTree = "<group>"; };
+		E45E2B7F1A2CD05300A9A529 /* NCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NCSecondViewController.h; sourceTree = "<group>"; };
+		E45E2B801A2CD05300A9A529 /* NCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NCSecondViewController.m; sourceTree = "<group>"; };
+		E45E2B811A2CD05300A9A529 /* NCSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NCSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +88,12 @@
 				E45E2B591A2CCE1300A9A529 /* AppDelegate.m */,
 				E45E2B611A2CCE1300A9A529 /* Images.xcassets */,
 				E45E2B541A2CCE1200A9A529 /* Supporting Files */,
+				E45E2B7A1A2CD03B00A9A529 /* NCFirstViewController.h */,
+				E45E2B7B1A2CD03B00A9A529 /* NCFirstViewController.m */,
+				E45E2B7C1A2CD03B00A9A529 /* NCFirstViewController.xib */,
+				E45E2B7F1A2CD05300A9A529 /* NCSecondViewController.h */,
+				E45E2B801A2CD05300A9A529 /* NCSecondViewController.m */,
+				E45E2B811A2CD05300A9A529 /* NCSecondViewController.xib */,
 			);
 			path = UINavigationController;
 			sourceTree = "<group>";
@@ -188,6 +204,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45E2B831A2CD05300A9A529 /* NCSecondViewController.xib in Resources */,
+				E45E2B7E1A2CD03B00A9A529 /* NCFirstViewController.xib in Resources */,
 				E45E2B621A2CCE1300A9A529 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +226,8 @@
 			files = (
 				E45E2B5A1A2CCE1300A9A529 /* AppDelegate.m in Sources */,
 				E45E2B571A2CCE1300A9A529 /* main.m in Sources */,
+				E45E2B7D1A2CD03B00A9A529 /* NCFirstViewController.m in Sources */,
+				E45E2B821A2CD05300A9A529 /* NCSecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

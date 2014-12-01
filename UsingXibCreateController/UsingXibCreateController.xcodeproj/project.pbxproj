@@ -12,6 +12,12 @@
 		E45E2B1F1A2CAF3100A9A529 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B1E1A2CAF3100A9A529 /* Images.xcassets */; };
 		E45E2B2E1A2CAF3200A9A529 /* UsingXibCreateControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B2D1A2CAF3200A9A529 /* UsingXibCreateControllerTests.m */; };
 		E45E2B391A2CAFEB00A9A529 /* MySecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B381A2CAFEB00A9A529 /* MySecondViewController.m */; };
+		E45E2B3B1A2CB42300A9A529 /* MySecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B3A1A2CB42300A9A529 /* MySecondViewController.xib */; };
+		E45E2B3E1A2CB7AE00A9A529 /* MyThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B3D1A2CB7AE00A9A529 /* MyThirdViewController.m */; };
+		E45E2B401A2CB7BC00A9A529 /* MyThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B3F1A2CB7BC00A9A529 /* MyThirdViewController.xib */; };
+		E45E2B441A2CBEB500A9A529 /* MyFourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2B421A2CBEB500A9A529 /* MyFourthViewController.m */; };
+		E45E2B451A2CBEB500A9A529 /* MyFourthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B431A2CBEB500A9A529 /* MyFourthViewController.xib */; };
+		E45E2B471A2CC23C00A9A529 /* MyFourthView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2B461A2CC23C00A9A529 /* MyFourthView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,14 @@
 		E45E2B2D1A2CAF3200A9A529 /* UsingXibCreateControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UsingXibCreateControllerTests.m; sourceTree = "<group>"; };
 		E45E2B371A2CAFEB00A9A529 /* MySecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySecondViewController.h; sourceTree = "<group>"; };
 		E45E2B381A2CAFEB00A9A529 /* MySecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySecondViewController.m; sourceTree = "<group>"; };
+		E45E2B3A1A2CB42300A9A529 /* MySecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MySecondViewController.xib; sourceTree = "<group>"; };
+		E45E2B3C1A2CB7AE00A9A529 /* MyThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyThirdViewController.h; sourceTree = "<group>"; };
+		E45E2B3D1A2CB7AE00A9A529 /* MyThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyThirdViewController.m; sourceTree = "<group>"; };
+		E45E2B3F1A2CB7BC00A9A529 /* MyThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyThirdViewController.xib; sourceTree = "<group>"; };
+		E45E2B411A2CBEB500A9A529 /* MyFourthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFourthViewController.h; sourceTree = "<group>"; };
+		E45E2B421A2CBEB500A9A529 /* MyFourthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFourthViewController.m; sourceTree = "<group>"; };
+		E45E2B431A2CBEB500A9A529 /* MyFourthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyFourthViewController.xib; sourceTree = "<group>"; };
+		E45E2B461A2CC23C00A9A529 /* MyFourthView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MyFourthView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,14 @@
 				E45E2B111A2CAF3100A9A529 /* Supporting Files */,
 				E45E2B371A2CAFEB00A9A529 /* MySecondViewController.h */,
 				E45E2B381A2CAFEB00A9A529 /* MySecondViewController.m */,
+				E45E2B3A1A2CB42300A9A529 /* MySecondViewController.xib */,
+				E45E2B3C1A2CB7AE00A9A529 /* MyThirdViewController.h */,
+				E45E2B3D1A2CB7AE00A9A529 /* MyThirdViewController.m */,
+				E45E2B3F1A2CB7BC00A9A529 /* MyThirdViewController.xib */,
+				E45E2B411A2CBEB500A9A529 /* MyFourthViewController.h */,
+				E45E2B421A2CBEB500A9A529 /* MyFourthViewController.m */,
+				E45E2B431A2CBEB500A9A529 /* MyFourthViewController.xib */,
+				E45E2B461A2CC23C00A9A529 /* MyFourthView.xib */,
 			);
 			path = UsingXibCreateController;
 			sourceTree = "<group>";
@@ -193,7 +215,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45E2B451A2CBEB500A9A529 /* MyFourthViewController.xib in Resources */,
+				E45E2B3B1A2CB42300A9A529 /* MySecondViewController.xib in Resources */,
 				E45E2B1F1A2CAF3100A9A529 /* Images.xcassets in Resources */,
+				E45E2B471A2CC23C00A9A529 /* MyFourthView.xib in Resources */,
+				E45E2B401A2CB7BC00A9A529 /* MyThirdViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E45E2B171A2CAF3100A9A529 /* AppDelegate.m in Sources */,
+				E45E2B441A2CBEB500A9A529 /* MyFourthViewController.m in Sources */,
 				E45E2B141A2CAF3100A9A529 /* main.m in Sources */,
+				E45E2B3E1A2CB7AE00A9A529 /* MyThirdViewController.m in Sources */,
 				E45E2B391A2CAFEB00A9A529 /* MySecondViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

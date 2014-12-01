@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Xcode61EmptyApplication.xcscheme</key>
+		<key>UsingXibCreateController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4A7067B1A2BA22800BBA633</key>
+		<key>E45E2B0D1A2CAF3100A9A529</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4A706941A2BA22800BBA633</key>
+		<key>E45E2B261A2CAF3200A9A529</key>
 		<dict>
 			<key>primary</key>
 			<true/>

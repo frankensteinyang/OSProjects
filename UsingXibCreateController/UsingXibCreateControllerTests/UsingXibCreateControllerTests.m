@@ -1,6 +1,6 @@
 //
-//  Xcode61EmptyApplicationTests.m
-//  Xcode61EmptyApplicationTests
+//  UsingXibCreateControllerTests.m
+//  UsingXibCreateControllerTests
 //
 //  Created by Hannibal Yang on 12/1/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface Xcode61EmptyApplicationTests : XCTestCase
+@interface UsingXibCreateControllerTests : XCTestCase
 
 @end
 
-@implementation Xcode61EmptyApplicationTests
+@implementation UsingXibCreateControllerTests
 
 - (void)setUp {
     [super setUp];

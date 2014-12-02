@@ -16,6 +16,10 @@
 		E45E2BC31A2DF24B00A9A529 /* MHAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BC11A2DF24B00A9A529 /* MHAAboutViewController.m */; };
 		E45E2BC41A2DF24B00A9A529 /* MHAAboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BC21A2DF24B00A9A529 /* MHAAboutViewController.xib */; };
 		E45E2BC81A2DFA8900A9A529 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BC71A2DFA8900A9A529 /* about.html */; };
+		E45E2BCD1A2E0EDA00A9A529 /* MHAHomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BCB1A2E0EDA00A9A529 /* MHAHomepageViewController.m */; };
+		E45E2BCE1A2E0EDA00A9A529 /* MHAHomepageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BCC1A2E0EDA00A9A529 /* MHAHomepageViewController.xib */; };
+		E45E2BD51A2E117200A9A529 /* MHAEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BD31A2E117200A9A529 /* MHAEditViewController.m */; };
+		E45E2BD61A2E117200A9A529 /* MHAEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BD41A2E117200A9A529 /* MHAEditViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,12 @@
 		E45E2BC11A2DF24B00A9A529 /* MHAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAAboutViewController.m; sourceTree = "<group>"; };
 		E45E2BC21A2DF24B00A9A529 /* MHAAboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHAAboutViewController.xib; sourceTree = "<group>"; };
 		E45E2BC71A2DFA8900A9A529 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		E45E2BCA1A2E0EDA00A9A529 /* MHAHomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAHomepageViewController.h; sourceTree = "<group>"; };
+		E45E2BCB1A2E0EDA00A9A529 /* MHAHomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAHomepageViewController.m; sourceTree = "<group>"; };
+		E45E2BCC1A2E0EDA00A9A529 /* MHAHomepageViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHAHomepageViewController.xib; sourceTree = "<group>"; };
+		E45E2BD21A2E117200A9A529 /* MHAEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAEditViewController.h; sourceTree = "<group>"; };
+		E45E2BD31A2E117200A9A529 /* MHAEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAEditViewController.m; sourceTree = "<group>"; };
+		E45E2BD41A2E117200A9A529 /* MHAEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHAEditViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,16 +96,14 @@
 		E45E2B941A2DEC4300A9A529 /* MyHomepageApp */ = {
 			isa = PBXGroup;
 			children = (
+				E45E2BD11A2E115600A9A529 /* Edit */,
+				E45E2BD01A2E0EFA00A9A529 /* About */,
+				E45E2BCF1A2E0EE400A9A529 /* Login */,
+				E45E2BC91A2E0EAC00A9A529 /* Homepage */,
 				E45E2B991A2DEC4300A9A529 /* AppDelegate.h */,
 				E45E2B9A1A2DEC4300A9A529 /* AppDelegate.m */,
 				E45E2BA21A2DEC4300A9A529 /* Images.xcassets */,
 				E45E2B951A2DEC4300A9A529 /* Supporting Files */,
-				E45E2BBB1A2DED5100A9A529 /* MHALoginViewController.h */,
-				E45E2BBC1A2DED5100A9A529 /* MHALoginViewController.m */,
-				E45E2BBD1A2DED5100A9A529 /* MHALoginViewController.xib */,
-				E45E2BC01A2DF24B00A9A529 /* MHAAboutViewController.h */,
-				E45E2BC11A2DF24B00A9A529 /* MHAAboutViewController.m */,
-				E45E2BC21A2DF24B00A9A529 /* MHAAboutViewController.xib */,
 			);
 			path = MyHomepageApp;
 			sourceTree = "<group>";
@@ -125,6 +133,46 @@
 				E45E2BB01A2DEC4300A9A529 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E45E2BC91A2E0EAC00A9A529 /* Homepage */ = {
+			isa = PBXGroup;
+			children = (
+				E45E2BCA1A2E0EDA00A9A529 /* MHAHomepageViewController.h */,
+				E45E2BCB1A2E0EDA00A9A529 /* MHAHomepageViewController.m */,
+				E45E2BCC1A2E0EDA00A9A529 /* MHAHomepageViewController.xib */,
+			);
+			name = Homepage;
+			sourceTree = "<group>";
+		};
+		E45E2BCF1A2E0EE400A9A529 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				E45E2BBB1A2DED5100A9A529 /* MHALoginViewController.h */,
+				E45E2BBC1A2DED5100A9A529 /* MHALoginViewController.m */,
+				E45E2BBD1A2DED5100A9A529 /* MHALoginViewController.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		E45E2BD01A2E0EFA00A9A529 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				E45E2BC01A2DF24B00A9A529 /* MHAAboutViewController.h */,
+				E45E2BC11A2DF24B00A9A529 /* MHAAboutViewController.m */,
+				E45E2BC21A2DF24B00A9A529 /* MHAAboutViewController.xib */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		E45E2BD11A2E115600A9A529 /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				E45E2BD21A2E117200A9A529 /* MHAEditViewController.h */,
+				E45E2BD31A2E117200A9A529 /* MHAEditViewController.m */,
+				E45E2BD41A2E117200A9A529 /* MHAEditViewController.xib */,
+			);
+			name = Edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,6 +255,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45E2BCE1A2E0EDA00A9A529 /* MHAHomepageViewController.xib in Resources */,
+				E45E2BD61A2E117200A9A529 /* MHAEditViewController.xib in Resources */,
 				E45E2BC81A2DFA8900A9A529 /* about.html in Resources */,
 				E45E2BC41A2DF24B00A9A529 /* MHAAboutViewController.xib in Resources */,
 				E45E2BA31A2DEC4300A9A529 /* Images.xcassets in Resources */,
@@ -232,6 +282,8 @@
 				E45E2BBE1A2DED5100A9A529 /* MHALoginViewController.m in Sources */,
 				E45E2B981A2DEC4300A9A529 /* main.m in Sources */,
 				E45E2BC31A2DF24B00A9A529 /* MHAAboutViewController.m in Sources */,
+				E45E2BCD1A2E0EDA00A9A529 /* MHAHomepageViewController.m in Sources */,
+				E45E2BD51A2E117200A9A529 /* MHAEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

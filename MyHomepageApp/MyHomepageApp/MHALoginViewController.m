@@ -8,6 +8,7 @@
 
 #import "MHALoginViewController.h"
 #import "MHAAboutViewController.h"
+#import "MHAHomepageViewController.h"
 
 @interface MHALoginViewController ()
 
@@ -31,4 +32,27 @@
     
 }
 
+- (void)alert:(NSString *)message {
+
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"友情提示" message:message delegate:nil cancelButtonTitle:@"好的" otherButtonTitles:nil, nil];
+    [alert show];
+    
+}
+
+- (IBAction)login {
+    
+    if (_usernameField.text.length == 0) {
+        [self alert:_usernameField.placeholder];
+        return;
+    }
+    
+    if (_passwordField.text.length == 0) {
+        [self alert:_passwordField.placeholder];
+        return;
+    }
+    
+    MHAHomepageViewController *homepage = [[MHAHomepageViewController alloc] init];
+    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+    [self.navigationController pushViewController:homepage animated:YES];
+}
 @end

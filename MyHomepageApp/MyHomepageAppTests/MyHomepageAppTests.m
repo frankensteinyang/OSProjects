@@ -1,6 +1,6 @@
 //
-//  UINavigationControllerTests.m
-//  UINavigationControllerTests
+//  MyHomepageAppTests.m
+//  MyHomepageAppTests
 //
 //  Created by Hannibal Yang on 12/2/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface UINavigationControllerTests : XCTestCase
+@interface MyHomepageAppTests : XCTestCase
 
 @end
 
-@implementation UINavigationControllerTests
+@implementation MyHomepageAppTests
 
 - (void)setUp {
     [super setUp];

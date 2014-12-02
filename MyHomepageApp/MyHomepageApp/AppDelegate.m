@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  UINavigationController
+//  MyHomepageApp
 //
 //  Created by Hannibal Yang on 12/2/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "NCFirstViewController.h"
+#import "MHALoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,9 +20,12 @@
     // Override point for customization after application launch.
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    NCFirstViewController *first = [[NCFirstViewController alloc] init];
-    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:first];
+    MHALoginViewController *loginController = [[MHALoginViewController alloc] init];
+    // 显示导航控制器
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:loginController];
+    // 不让navigationBar挡住覆盖界面
+    navigationController.navigationBar.translucent = NO;
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     return YES;
 }

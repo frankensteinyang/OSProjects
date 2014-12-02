@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
-               BuildableName = "UINavigationController.app"
-               BlueprintName = "UINavigationController"
-               ReferencedContainer = "container:UINavigationController.xcodeproj">
+               BlueprintIdentifier = "E45E2B911A2DEC4300A9A529"
+               BuildableName = "MyHomepageApp.app"
+               BlueprintName = "MyHomepageApp"
+               ReferencedContainer = "container:MyHomepageApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45E2B691A2CCE1300A9A529"
-               BuildableName = "UINavigationControllerTests.xctest"
-               BlueprintName = "UINavigationControllerTests"
-               ReferencedContainer = "container:UINavigationController.xcodeproj">
+               BlueprintIdentifier = "E45E2BAA1A2DEC4300A9A529"
+               BuildableName = "MyHomepageAppTests.xctest"
+               BlueprintName = "MyHomepageAppTests"
+               ReferencedContainer = "container:MyHomepageApp.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E45E2B691A2CCE1300A9A529"
-               BuildableName = "UINavigationControllerTests.xctest"
-               BlueprintName = "UINavigationControllerTests"
-               ReferencedContainer = "container:UINavigationController.xcodeproj">
+               BlueprintIdentifier = "E45E2BAA1A2DEC4300A9A529"
+               BuildableName = "MyHomepageAppTests.xctest"
+               BlueprintName = "MyHomepageAppTests"
+               ReferencedContainer = "container:MyHomepageApp.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
-            BuildableName = "UINavigationController.app"
-            BlueprintName = "UINavigationController"
-            ReferencedContainer = "container:UINavigationController.xcodeproj">
+            BlueprintIdentifier = "E45E2B911A2DEC4300A9A529"
+            BuildableName = "MyHomepageApp.app"
+            BlueprintName = "MyHomepageApp"
+            ReferencedContainer = "container:MyHomepageApp.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
-            BuildableName = "UINavigationController.app"
-            BlueprintName = "UINavigationController"
-            ReferencedContainer = "container:UINavigationController.xcodeproj">
+            BlueprintIdentifier = "E45E2B911A2DEC4300A9A529"
+            BuildableName = "MyHomepageApp.app"
+            BlueprintName = "MyHomepageApp"
+            ReferencedContainer = "container:MyHomepageApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E45E2B501A2CCE1200A9A529"
-            BuildableName = "UINavigationController.app"
-            BlueprintName = "UINavigationController"
-            ReferencedContainer = "container:UINavigationController.xcodeproj">
+            BlueprintIdentifier = "E45E2B911A2DEC4300A9A529"
+            BuildableName = "MyHomepageApp.app"
+            BlueprintName = "MyHomepageApp"
+            ReferencedContainer = "container:MyHomepageApp.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

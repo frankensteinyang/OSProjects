@@ -7,7 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MHAEditViewController;
+
+@protocol MHAEditViewControllerDelegate <NSObject>
+
+@optional
+- (void)editViewController:(MHAEditViewController *)edit didSaveWithName:(NSString *)name phoneNumber:(NSString *)number intro:(NSString *)intro;
+
+@end
 
 @interface MHAEditViewController : UIViewController
+
+@property (weak, nonatomic) IBOutlet UITextField *nicknameField;
+
+@property (weak, nonatomic) IBOutlet UITextField *phoneField;
+
+@property (weak, nonatomic) IBOutlet UITextView *introduction;
+
+@property (weak, nonatomic) id<MHAEditViewControllerDelegate> delegate;
 
 @end

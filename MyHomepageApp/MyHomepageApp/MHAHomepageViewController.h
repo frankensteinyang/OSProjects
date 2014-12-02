@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface MHAHomepageViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
+@property (weak, nonatomic) IBOutlet UITextView *introductionView;
 
 @end

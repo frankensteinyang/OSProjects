@@ -8,6 +8,8 @@
 
 #import "MHAHomepageViewController.h"
 #import "MHAEditViewController.h"
+#import "MHAEditedInfo.h"
+#import "MHAStatusViewController.h"
 
 @interface MHAHomepageViewController () <UIActionSheetDelegate, MHAEditViewControllerDelegate>
 
@@ -26,8 +28,9 @@
 
     MHAEditViewController *edit = [[MHAEditViewController alloc] init];
     edit.delegate = self;
+    edit.editedInfo = [MHAEditedInfo editedInfoWithName:_nicknameLabel.text phone:[_phoneLabel.text intValue] introduction:_introductionView.text];
     [self.navigationController pushViewController:edit animated:YES];
-    self.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:nil action:nil];
+
 }
 
 - (void)logout {
@@ -44,12 +47,20 @@
     
 }
 
-- (void)editViewController:(MHAEditViewController *)edit didSaveWithName:(NSString *)name phoneNumber:(NSString *)number intro:(NSString *)intro {
-
-    _nicknameLabel.text = name;
-    _phoneLabel.text = number;
-    _introductionView.text = intro;
+- (void)editViewController:(MHAEditViewController *)edit didSaveWithEditedInfo:(MHAEditedInfo *)info {
+    
+    _nicknameLabel.text = info.nickname;
+    _phoneLabel.text = [NSString stringWithFormat:@"%d", info.phoneNumber];
+    if ([_phoneLabel.text isEqualToString:@"0"]) {
+        _phoneLabel.text = nil;
+    }
+    _introductionView.text = info.introduction;
     
 }
 
+- (IBAction)goToStatus {
+    
+    MHAStatusViewController *status = [[MHAStatusViewController alloc] init];
+    [self.navigationController pushViewController:status animated:YES];
+}
 @end

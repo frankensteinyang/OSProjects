@@ -13,4 +13,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *phoneLabel;
 @property (weak, nonatomic) IBOutlet UITextView *introductionView;
 
+- (IBAction)goToStatus;
 @end

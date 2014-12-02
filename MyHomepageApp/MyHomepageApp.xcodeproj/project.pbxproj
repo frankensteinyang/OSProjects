@@ -20,6 +20,9 @@
 		E45E2BCE1A2E0EDA00A9A529 /* MHAHomepageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BCC1A2E0EDA00A9A529 /* MHAHomepageViewController.xib */; };
 		E45E2BD51A2E117200A9A529 /* MHAEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BD31A2E117200A9A529 /* MHAEditViewController.m */; };
 		E45E2BD61A2E117200A9A529 /* MHAEditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BD41A2E117200A9A529 /* MHAEditViewController.xib */; };
+		E45E2BD91A2E3EF900A9A529 /* MHAEditedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BD81A2E3EF900A9A529 /* MHAEditedInfo.m */; };
+		E45E2BDE1A2E5DC100A9A529 /* MHAStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BDC1A2E5DC100A9A529 /* MHAStatusViewController.m */; };
+		E45E2BDF1A2E5DC100A9A529 /* MHAStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BDD1A2E5DC100A9A529 /* MHAStatusViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,11 @@
 		E45E2BD21A2E117200A9A529 /* MHAEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAEditViewController.h; sourceTree = "<group>"; };
 		E45E2BD31A2E117200A9A529 /* MHAEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAEditViewController.m; sourceTree = "<group>"; };
 		E45E2BD41A2E117200A9A529 /* MHAEditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHAEditViewController.xib; sourceTree = "<group>"; };
+		E45E2BD71A2E3EF900A9A529 /* MHAEditedInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAEditedInfo.h; sourceTree = "<group>"; };
+		E45E2BD81A2E3EF900A9A529 /* MHAEditedInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAEditedInfo.m; sourceTree = "<group>"; };
+		E45E2BDB1A2E5DC100A9A529 /* MHAStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAStatusViewController.h; sourceTree = "<group>"; };
+		E45E2BDC1A2E5DC100A9A529 /* MHAStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAStatusViewController.m; sourceTree = "<group>"; };
+		E45E2BDD1A2E5DC100A9A529 /* MHAStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHAStatusViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,7 @@
 		E45E2B941A2DEC4300A9A529 /* MyHomepageApp */ = {
 			isa = PBXGroup;
 			children = (
+				E45E2BDA1A2E5D4F00A9A529 /* Status */,
 				E45E2BD11A2E115600A9A529 /* Edit */,
 				E45E2BD01A2E0EFA00A9A529 /* About */,
 				E45E2BCF1A2E0EE400A9A529 /* Login */,
@@ -104,6 +113,8 @@
 				E45E2B9A1A2DEC4300A9A529 /* AppDelegate.m */,
 				E45E2BA21A2DEC4300A9A529 /* Images.xcassets */,
 				E45E2B951A2DEC4300A9A529 /* Supporting Files */,
+				E45E2BD71A2E3EF900A9A529 /* MHAEditedInfo.h */,
+				E45E2BD81A2E3EF900A9A529 /* MHAEditedInfo.m */,
 			);
 			path = MyHomepageApp;
 			sourceTree = "<group>";
@@ -173,6 +184,16 @@
 				E45E2BD41A2E117200A9A529 /* MHAEditViewController.xib */,
 			);
 			name = Edit;
+			sourceTree = "<group>";
+		};
+		E45E2BDA1A2E5D4F00A9A529 /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				E45E2BDB1A2E5DC100A9A529 /* MHAStatusViewController.h */,
+				E45E2BDC1A2E5DC100A9A529 /* MHAStatusViewController.m */,
+				E45E2BDD1A2E5DC100A9A529 /* MHAStatusViewController.xib */,
+			);
+			name = Status;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +278,7 @@
 			files = (
 				E45E2BCE1A2E0EDA00A9A529 /* MHAHomepageViewController.xib in Resources */,
 				E45E2BD61A2E117200A9A529 /* MHAEditViewController.xib in Resources */,
+				E45E2BDF1A2E5DC100A9A529 /* MHAStatusViewController.xib in Resources */,
 				E45E2BC81A2DFA8900A9A529 /* about.html in Resources */,
 				E45E2BC41A2DF24B00A9A529 /* MHAAboutViewController.xib in Resources */,
 				E45E2BA31A2DEC4300A9A529 /* Images.xcassets in Resources */,
@@ -278,10 +300,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E45E2BD91A2E3EF900A9A529 /* MHAEditedInfo.m in Sources */,
 				E45E2B9B1A2DEC4300A9A529 /* AppDelegate.m in Sources */,
 				E45E2BBE1A2DED5100A9A529 /* MHALoginViewController.m in Sources */,
 				E45E2B981A2DEC4300A9A529 /* main.m in Sources */,
 				E45E2BC31A2DF24B00A9A529 /* MHAAboutViewController.m in Sources */,
+				E45E2BDE1A2E5DC100A9A529 /* MHAStatusViewController.m in Sources */,
 				E45E2BCD1A2E0EDA00A9A529 /* MHAHomepageViewController.m in Sources */,
 				E45E2BD51A2E117200A9A529 /* MHAEditViewController.m in Sources */,
 			);

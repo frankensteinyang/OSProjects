@@ -9,6 +9,7 @@
                 <outlet property="introductionView" destination="Upj-Fu-jBq" id="aXe-yl-NDP"/>
                 <outlet property="nicknameLabel" destination="Bev-sK-cel" id="zYS-uw-74m"/>
                 <outlet property="phoneLabel" destination="A3t-yo-9OQ" id="Nk0-Le-FNr"/>
+                <outlet property="tableView" destination="f8m-D5-pPI" id="Ehr-Zy-9Bs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -61,17 +62,13 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="Upj-Fu-jBq">
-                    <rect key="frame" x="40" y="106" width="240" height="73"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" red="1" green="0.41414919887659818" blue="0.35800002716957546" alpha="1" colorSpace="calibratedRGB"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                </textView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f8m-D5-pPI">
                     <rect key="frame" x="40" y="211" width="240" height="180"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <color key="backgroundColor" red="1" green="0.41414919887659818" blue="0.35800002716957546" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="ivZ-PQ-4CH"/>
+                    </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HqH-Cr-1ZH">
                     <rect key="frame" x="220" y="186" width="60" height="21"/>
@@ -83,11 +80,18 @@
                         <action selector="goToStatus" destination="-1" eventType="touchUpInside" id="7e8-Vn-R6l"/>
                     </connections>
                 </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" id="Upj-Fu-jBq">
+                    <rect key="frame" x="40" y="105" width="240" height="73"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="1" green="0.41414919887659818" blue="0.35800002716957546" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
             </subviews>
             <color key="backgroundColor" red="1" green="0.50429172952992518" blue="0.48846508517194553" alpha="1" colorSpace="calibratedRGB"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="406" y="392"/>
+            <point key="canvasLocation" x="42" y="122"/>
         </view>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

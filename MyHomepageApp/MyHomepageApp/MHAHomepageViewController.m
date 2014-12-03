@@ -10,8 +10,11 @@
 #import "MHAEditViewController.h"
 #import "MHAEditedInfo.h"
 #import "MHAStatusViewController.h"
+#import "MHAStatus.h"
 
-@interface MHAHomepageViewController () <UIActionSheetDelegate, MHAEditViewControllerDelegate>
+@interface MHAHomepageViewController () <UIActionSheetDelegate, MHAEditViewControllerDelegate, MHAStatusViewControllerDelegate, UITableViewDataSource> {
+    NSMutableArray *_statuses;
+}
 
 @end
 
@@ -22,6 +25,7 @@
     self.title = @"个人主页";
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCompose target:self action:@selector(goToEdit)];
     self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"注销" style:UIBarButtonItemStylePlain target:self action:@selector(logout)];
+    _statuses = [NSMutableArray array];
 }
 
 - (void)goToEdit {
@@ -61,6 +65,35 @@
 - (IBAction)goToStatus {
     
     MHAStatusViewController *status = [[MHAStatusViewController alloc] init];
+    status.delegate = self;
     [self.navigationController pushViewController:status animated:YES];
+}
+
+- (void)statusViewController:(MHAStatusViewController *)statusController didSendStatus:(MHAStatus *)status {
+    
+    // 将新的说说对象插入数组的最前面
+    [_statuses insertObject:status atIndex:0];
+    [_tableView reloadData];
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    
+    return _statuses.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    static NSString *ID = @"MHACell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
+    MHAStatus *status = _statuses[indexPath.row];
+    cell.textLabel.text = status.statusContent;
+    NSDateFormatter *fmt = [[NSDateFormatter alloc] init];
+    fmt.dateFormat = @"yyyy-MM-dd HH:mm:ss";
+    cell.detailTextLabel.text = [fmt stringFromDate:status.statusTime];
+    [cell setBackgroundColor:[UIColor clearColor]];
+    return cell;
 }
 @end

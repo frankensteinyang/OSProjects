@@ -38,8 +38,8 @@
 
 - (void)save {
     
-    if ([_delegate respondsToSelector:@selector(editViewController:didSaveWithEditedInfo:)]) {
-        [_delegate editViewController:self didSaveWithEditedInfo:[MHAEditedInfo editedInfoWithName:_nicknameField.text phone:[_phoneField.text intValue] introduction:_introduction.text]];
+    if ([_delegate respondsToSelector:@selector(editViewController:didSaveEditedInfo:)]) {
+        [_delegate editViewController:self didSaveEditedInfo:[MHAEditedInfo editedInfoWithName:_nicknameField.text phone:[_phoneField.text intValue] introduction:_introduction.text]];
         [self.navigationController popViewControllerAnimated:YES];
     }
 }

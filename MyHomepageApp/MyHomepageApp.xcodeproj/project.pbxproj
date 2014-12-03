@@ -23,6 +23,7 @@
 		E45E2BD91A2E3EF900A9A529 /* MHAEditedInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BD81A2E3EF900A9A529 /* MHAEditedInfo.m */; };
 		E45E2BDE1A2E5DC100A9A529 /* MHAStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E2BDC1A2E5DC100A9A529 /* MHAStatusViewController.m */; };
 		E45E2BDF1A2E5DC100A9A529 /* MHAStatusViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E45E2BDD1A2E5DC100A9A529 /* MHAStatusViewController.xib */; };
+		E4F682011A2F3D1100D08F8A /* MHAStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F682001A2F3D1100D08F8A /* MHAStatus.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		E45E2BDB1A2E5DC100A9A529 /* MHAStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAStatusViewController.h; sourceTree = "<group>"; };
 		E45E2BDC1A2E5DC100A9A529 /* MHAStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAStatusViewController.m; sourceTree = "<group>"; };
 		E45E2BDD1A2E5DC100A9A529 /* MHAStatusViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MHAStatusViewController.xib; sourceTree = "<group>"; };
+		E4F681FF1A2F3D1100D08F8A /* MHAStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAStatus.h; sourceTree = "<group>"; };
+		E4F682001A2F3D1100D08F8A /* MHAStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAStatus.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +107,10 @@
 		E45E2B941A2DEC4300A9A529 /* MyHomepageApp */ = {
 			isa = PBXGroup;
 			children = (
+				E45E2BD71A2E3EF900A9A529 /* MHAEditedInfo.h */,
+				E45E2BD81A2E3EF900A9A529 /* MHAEditedInfo.m */,
+				E4F681FF1A2F3D1100D08F8A /* MHAStatus.h */,
+				E4F682001A2F3D1100D08F8A /* MHAStatus.m */,
 				E45E2BDA1A2E5D4F00A9A529 /* Status */,
 				E45E2BD11A2E115600A9A529 /* Edit */,
 				E45E2BD01A2E0EFA00A9A529 /* About */,
@@ -113,8 +120,6 @@
 				E45E2B9A1A2DEC4300A9A529 /* AppDelegate.m */,
 				E45E2BA21A2DEC4300A9A529 /* Images.xcassets */,
 				E45E2B951A2DEC4300A9A529 /* Supporting Files */,
-				E45E2BD71A2E3EF900A9A529 /* MHAEditedInfo.h */,
-				E45E2BD81A2E3EF900A9A529 /* MHAEditedInfo.m */,
 			);
 			path = MyHomepageApp;
 			sourceTree = "<group>";
@@ -300,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F682011A2F3D1100D08F8A /* MHAStatus.m in Sources */,
 				E45E2BD91A2E3EF900A9A529 /* MHAEditedInfo.m in Sources */,
 				E45E2B9B1A2DEC4300A9A529 /* AppDelegate.m in Sources */,
 				E45E2BBE1A2DED5100A9A529 /* MHALoginViewController.m in Sources */,
@@ -481,6 +487,7 @@
 				E45E2BB71A2DEC4300A9A529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E45E2BB81A2DEC4300A9A529 /* Build configuration list for PBXNativeTarget "MyHomepageAppTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +496,7 @@
 				E45E2BBA1A2DEC4300A9A529 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

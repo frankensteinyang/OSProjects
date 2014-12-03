@@ -7,7 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MHAStatusViewController, MHAStatus;
+
+@protocol MHAStatusViewControllerDelegate <NSObject>
+
+@optional
+- (void)statusViewController:(MHAStatusViewController *)statusController didSendStatus:(MHAStatus *)status;
+
+@end
 
 @interface MHAStatusViewController : UIViewController
+
+@property (nonatomic, weak) id<MHAStatusViewControllerDelegate> delegate;
+
+@property (weak, nonatomic) IBOutlet UITextView *statusView;
 
 @end

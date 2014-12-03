@@ -12,7 +12,7 @@
 @protocol MHAEditViewControllerDelegate <NSObject>
 
 @optional
-- (void)editViewController:(MHAEditViewController *)edit didSaveWithEditedInfo:(MHAEditedInfo *)info;
+- (void)editViewController:(MHAEditViewController *)edit didSaveEditedInfo:(MHAEditedInfo *)info;
 
 @end
 

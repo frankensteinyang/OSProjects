@@ -7,8 +7,9 @@
 //
 
 #import "MHAStatusViewController.h"
+#import "MHAStatus.h"
 
-@interface MHAStatusViewController () <UIAlertViewDelegate>
+@interface MHAStatusViewController () <UIAlertViewDelegate, UITextViewDelegate>
 
 @end
 
@@ -22,12 +23,26 @@
     
 //    [self.navigationItem setHidesBackButton:YES];
     [self.navigationItem setBackBarButtonItem:self.navigationItem.leftBarButtonItem];
-    
+    _statusView.text = @"What's on your mind?";
+    _statusView.textColor = [UIColor lightGrayColor];
+    _statusView.delegate = self;
+}
+
+- (BOOL)textViewShouldBeginEditing:(UITextView *)textView {
+
+    _statusView.text = nil;
+    _statusView.textColor = [UIColor blackColor];
+    return YES;
 }
 
 - (void)sendStatus {
 
-    [self.navigationController popViewControllerAnimated:YES];
+    if ([_delegate respondsToSelector:@selector(statusViewController:didSendStatus:)]) {
+        MHAStatus *status = [MHAStatus statusWithStatusContent:_statusView.text];
+        [_delegate statusViewController:self didSendStatus:status];
+        [self.navigationController popViewControllerAnimated:YES];
+        
+    }
 }
 
 - (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {

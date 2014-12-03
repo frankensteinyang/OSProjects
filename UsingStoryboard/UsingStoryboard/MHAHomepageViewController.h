@@ -10,4 +10,6 @@
 
 @interface MHAHomepageViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *nicknameLabel;
+
 @end

@@ -16,6 +16,9 @@
 		E4F682361A2F820000D08F8A /* MHALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F682351A2F820000D08F8A /* MHALoginViewController.m */; };
 		E4F682391A2F89A000D08F8A /* MHAAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F682381A2F89A000D08F8A /* MHAAboutViewController.m */; };
 		E4F6823F1A2F8BF200D08F8A /* MHAHomepageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6823E1A2F8BF200D08F8A /* MHAHomepageViewController.m */; };
+		E4F682411A2F9C3700D08F8A /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = E4F682401A2F9C3700D08F8A /* about.html */; };
+		E4F682451A2FA00200D08F8A /* MHAEditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F682441A2FA00200D08F8A /* MHAEditViewController.m */; };
+		E4F6824B1A2FA36300D08F8A /* MHAInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F6824A1A2FA36300D08F8A /* MHAInformation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +49,11 @@
 		E4F682381A2F89A000D08F8A /* MHAAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAAboutViewController.m; sourceTree = "<group>"; };
 		E4F6823D1A2F8BF200D08F8A /* MHAHomepageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAHomepageViewController.h; sourceTree = "<group>"; };
 		E4F6823E1A2F8BF200D08F8A /* MHAHomepageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAHomepageViewController.m; sourceTree = "<group>"; };
+		E4F682401A2F9C3700D08F8A /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		E4F682431A2FA00200D08F8A /* MHAEditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAEditViewController.h; sourceTree = "<group>"; };
+		E4F682441A2FA00200D08F8A /* MHAEditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAEditViewController.m; sourceTree = "<group>"; };
+		E4F682491A2FA36300D08F8A /* MHAInformation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAInformation.h; sourceTree = "<group>"; };
+		E4F6824A1A2FA36300D08F8A /* MHAInformation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAInformation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +95,9 @@
 		E4F6820D1A2F7E2100D08F8A /* UsingStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				E4F682491A2FA36300D08F8A /* MHAInformation.h */,
+				E4F6824A1A2FA36300D08F8A /* MHAInformation.m */,
+				E4F682421A2F9FE700D08F8A /* Edit */,
 				E4F6823C1A2F8BD900D08F8A /* Homepage */,
 				E4F6823B1A2F89B700D08F8A /* Login */,
 				E4F6823A1A2F89A400D08F8A /* About */,
@@ -103,6 +114,7 @@
 		E4F6820E1A2F7E2100D08F8A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4F682401A2F9C3700D08F8A /* about.html */,
 				E4F6820F1A2F7E2100D08F8A /* Info.plist */,
 				E4F682101A2F7E2100D08F8A /* main.m */,
 			);
@@ -151,6 +163,15 @@
 				E4F6823E1A2F8BF200D08F8A /* MHAHomepageViewController.m */,
 			);
 			name = Homepage;
+			sourceTree = "<group>";
+		};
+		E4F682421A2F9FE700D08F8A /* Edit */ = {
+			isa = PBXGroup;
+			children = (
+				E4F682431A2FA00200D08F8A /* MHAEditViewController.h */,
+				E4F682441A2FA00200D08F8A /* MHAEditViewController.m */,
+			);
+			name = Edit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4F682411A2F9C3700D08F8A /* about.html in Resources */,
 				E4F6821A1A2F7E2100D08F8A /* Main.storyboard in Resources */,
 				E4F6821F1A2F7E2100D08F8A /* LaunchScreen.xib in Resources */,
 				E4F6821C1A2F7E2100D08F8A /* Images.xcassets in Resources */,
@@ -257,7 +279,9 @@
 				E4F682361A2F820000D08F8A /* MHALoginViewController.m in Sources */,
 				E4F682111A2F7E2100D08F8A /* main.m in Sources */,
 				E4F682391A2F89A000D08F8A /* MHAAboutViewController.m in Sources */,
+				E4F6824B1A2FA36300D08F8A /* MHAInformation.m in Sources */,
 				E4F6823F1A2F8BF200D08F8A /* MHAHomepageViewController.m in Sources */,
+				E4F682451A2FA00200D08F8A /* MHAEditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

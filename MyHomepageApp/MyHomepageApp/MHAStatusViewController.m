@@ -54,7 +54,7 @@
 
 - (void)toEnsureSaved {
 
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"友情提示" message:@"状态未保存，确定要退出吗？" delegate:self cancelButtonTitle:@"确定" otherButtonTitles:@"继续编辑", nil];
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"友情提示" message:@"状态未保存，确定要退出吗？" delegate:self cancelButtonTitle:@"退出编辑" otherButtonTitles:@"继续编辑", nil];
     [alert show];
 }
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E40A153B1A2FFEEC004332BE /* MHAStatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E40A153A1A2FFEEC004332BE /* MHAStatusViewController.m */; };
 		E4F682111A2F7E2100D08F8A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F682101A2F7E2100D08F8A /* main.m */; };
 		E4F682141A2F7E2100D08F8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F682131A2F7E2100D08F8A /* AppDelegate.m */; };
 		E4F6821A1A2F7E2100D08F8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4F682181A2F7E2100D08F8A /* Main.storyboard */; };
@@ -32,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E40A15391A2FFEEC004332BE /* MHAStatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MHAStatusViewController.h; sourceTree = "<group>"; };
+		E40A153A1A2FFEEC004332BE /* MHAStatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MHAStatusViewController.m; sourceTree = "<group>"; };
 		E4F6820B1A2F7E2100D08F8A /* UsingStoryboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingStoryboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4F6820F1A2F7E2100D08F8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4F682101A2F7E2100D08F8A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E40A15381A2FFDA1004332BE /* Status */ = {
+			isa = PBXGroup;
+			children = (
+				E40A15391A2FFEEC004332BE /* MHAStatusViewController.h */,
+				E40A153A1A2FFEEC004332BE /* MHAStatusViewController.m */,
+			);
+			name = Status;
+			sourceTree = "<group>";
+		};
 		E4F682021A2F7E2100D08F8A = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +107,7 @@
 		E4F6820D1A2F7E2100D08F8A /* UsingStoryboard */ = {
 			isa = PBXGroup;
 			children = (
+				E40A15381A2FFDA1004332BE /* Status */,
 				E4F682491A2FA36300D08F8A /* MHAInformation.h */,
 				E4F6824A1A2FA36300D08F8A /* MHAInformation.m */,
 				E4F682421A2F9FE700D08F8A /* Edit */,
@@ -280,6 +293,7 @@
 				E4F682111A2F7E2100D08F8A /* main.m in Sources */,
 				E4F682391A2F89A000D08F8A /* MHAAboutViewController.m in Sources */,
 				E4F6824B1A2FA36300D08F8A /* MHAInformation.m in Sources */,
+				E40A153B1A2FFEEC004332BE /* MHAStatusViewController.m in Sources */,
 				E4F6823F1A2F8BF200D08F8A /* MHAHomepageViewController.m in Sources */,
 				E4F682451A2FA00200D08F8A /* MHAEditViewController.m in Sources */,
 			);
@@ -474,6 +488,7 @@
 				E4F682301A2F7E2100D08F8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4F682311A2F7E2100D08F8A /* Build configuration list for PBXNativeTarget "UsingStoryboardTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +497,7 @@
 				E4F682331A2F7E2100D08F8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

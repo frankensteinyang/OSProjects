@@ -9,7 +9,7 @@
 #import "MHAEditViewController.h"
 #import "MHAInformation.h"
 
-@interface MHAEditViewController ()
+@interface MHAEditViewController () <UIAlertViewDelegate>
 
 @end
 
@@ -17,7 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"退出编辑" style:UIBarButtonItemStylePlain target:self action:@selector(toEnsureSaved)];
     _nicknameField.text = _temporaryName;
 }
 
@@ -27,6 +27,17 @@
         [_delegate editViewController:self didSaveInfo:[MHAInformation informationWithName:_nicknameField.text]];
         [self.navigationController popViewControllerAnimated:YES];
     }
+}
+
+- (void)toEnsureSaved {
     
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"友情提示" message:@"编辑内容还没保存，确定要退出吗？" delegate:self cancelButtonTitle:@"退出编辑" otherButtonTitles:@"继续编辑", nil];
+    [alertView show];
+}
+
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex {
+
+    if (buttonIndex) return;
+    [self.navigationController popViewControllerAnimated:YES];
 }
 @end

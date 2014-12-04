@@ -42,12 +42,14 @@
 #pragma mark 在执行segue跳转之前会调用一次（自动调用）
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 
-    // 取得目标控制器
-    MHAEditViewController *dest = segue.destinationViewController;
-    // 设置MHAEditViewController的代理
-    dest.delegate = self;
-    // 给MHAEditViewController传递数据
-    dest.temporaryName = _nicknameLabel.text;
+    if ([segue.identifier isEqual:@"homepage2Edit"]) {
+        // 取得目标控制器
+        MHAEditViewController *dest = segue.destinationViewController;
+        // 设置MHAEditViewController的代理
+        dest.delegate = self;
+        // 给MHAEditViewController传递数据
+        dest.temporaryName = _nicknameLabel.text;
+    }
     
 }
 

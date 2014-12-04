@@ -14,9 +14,15 @@
 
 @implementation MHAAboutViewController
 
+- (void)loadView {
+    
+    [super loadView];
+    [_webView loadRequest:[NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"about.html" withExtension:nil]]];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [_webView loadRequest:[NSURLRequest requestWithURL:[[NSBundle mainBundle] URLForResource:@"about.html" withExtension:nil]]];
+
 }
 
 @end

@@ -44,15 +44,17 @@
 }
 
 /*
- 给一个控制器顶部增加一个导航栏的最快方法：
- 1. 给这个控制器包装一个导航控制器
- 
+ 给一个控制器顶部增加一个导航栏的最快方法：给这个控制器包装一个导航控制器
  */
 - (IBAction)skip2Third {
     
     MLThirdViewController *third = [[MLThirdViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:third];
     navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-    [self presentViewController:navigationController animated:YES completion:nil];
+    NSLog(@"展示前-> First的view的内存地址：%p, window的子控件：%@", self.view, [UIApplication sharedApplication].keyWindow.subviews);
+    [self presentViewController:navigationController animated:YES completion:^{
+        // 探究Third控制器窗口中的东西有哪些
+        NSLog(@"展示后-> 导航控制器的view的内存地址：%p, window的子控件：%@", navigationController.view, [UIApplication sharedApplication].keyWindow.subviews);
+    }];
 }
 @end

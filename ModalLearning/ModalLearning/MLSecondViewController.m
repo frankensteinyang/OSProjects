@@ -7,6 +7,7 @@
 //
 
 #import "MLSecondViewController.h"
+#import "MLThirdViewController.h"
 
 @interface MLSecondViewController ()
 
@@ -21,7 +22,11 @@
 
 - (IBAction)skip2First {
     
-    [self dismissViewControllerAnimated:YES completion:nil];
+    MLThirdViewController *third = [[MLThirdViewController alloc] init];
+    
+    [self presentViewController:third animated:YES completion:^{
+        NSLog(@"已经跳到第三个控制器了！");
+    }];
 }
 
 - (IBAction)cancel:(id)sender {

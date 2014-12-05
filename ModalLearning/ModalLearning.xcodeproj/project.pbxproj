@@ -15,6 +15,8 @@
 		E4C61D141A31FFF2003118A8 /* MLFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C61D121A31FFF2003118A8 /* MLFirstViewController.xib */; };
 		E4C61D181A320035003118A8 /* MLSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C61D161A320035003118A8 /* MLSecondViewController.m */; };
 		E4C61D191A320035003118A8 /* MLSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C61D171A320035003118A8 /* MLSecondViewController.xib */; };
+		E4C61D1D1A320BF8003118A8 /* MLThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C61D1B1A320BF8003118A8 /* MLThirdViewController.m */; };
+		E4C61D1E1A320BF8003118A8 /* MLThirdViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C61D1C1A320BF8003118A8 /* MLThirdViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,9 @@
 		E4C61D151A320035003118A8 /* MLSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLSecondViewController.h; sourceTree = "<group>"; };
 		E4C61D161A320035003118A8 /* MLSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLSecondViewController.m; sourceTree = "<group>"; };
 		E4C61D171A320035003118A8 /* MLSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLSecondViewController.xib; sourceTree = "<group>"; };
+		E4C61D1A1A320BF8003118A8 /* MLThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLThirdViewController.h; sourceTree = "<group>"; };
+		E4C61D1B1A320BF8003118A8 /* MLThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLThirdViewController.m; sourceTree = "<group>"; };
+		E4C61D1C1A320BF8003118A8 /* MLThirdViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MLThirdViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +97,9 @@
 				E4C61D151A320035003118A8 /* MLSecondViewController.h */,
 				E4C61D161A320035003118A8 /* MLSecondViewController.m */,
 				E4C61D171A320035003118A8 /* MLSecondViewController.xib */,
+				E4C61D1A1A320BF8003118A8 /* MLThirdViewController.h */,
+				E4C61D1B1A320BF8003118A8 /* MLThirdViewController.m */,
+				E4C61D1C1A320BF8003118A8 /* MLThirdViewController.xib */,
 				E4C61CF71A31FEED003118A8 /* Images.xcassets */,
 				E4C61CEA1A31FEED003118A8 /* Supporting Files */,
 			);
@@ -205,6 +213,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4C61D191A320035003118A8 /* MLSecondViewController.xib in Resources */,
+				E4C61D1E1A320BF8003118A8 /* MLThirdViewController.xib in Resources */,
 				E4C61D141A31FFF2003118A8 /* MLFirstViewController.xib in Resources */,
 				E4C61CF81A31FEED003118A8 /* Images.xcassets in Resources */,
 			);
@@ -228,6 +237,7 @@
 				E4C61CF01A31FEED003118A8 /* AppDelegate.m in Sources */,
 				E4C61CED1A31FEED003118A8 /* main.m in Sources */,
 				E4C61D181A320035003118A8 /* MLSecondViewController.m in Sources */,
+				E4C61D1D1A320BF8003118A8 /* MLThirdViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

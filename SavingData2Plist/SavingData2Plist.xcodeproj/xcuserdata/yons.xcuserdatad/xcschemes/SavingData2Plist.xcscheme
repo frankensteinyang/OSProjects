@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4C61D271A3223D0003118A8"
-               BuildableName = "RootViewController.app"
-               BlueprintName = "RootViewController"
-               ReferencedContainer = "container:RootViewController.xcodeproj">
+               BlueprintIdentifier = "E433CC071A324F1B008802B2"
+               BuildableName = "SavingData2Plist.app"
+               BlueprintName = "SavingData2Plist"
+               ReferencedContainer = "container:SavingData2Plist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4C61D401A3223D0003118A8"
-               BuildableName = "RootViewControllerTests.xctest"
-               BlueprintName = "RootViewControllerTests"
-               ReferencedContainer = "container:RootViewController.xcodeproj">
+               BlueprintIdentifier = "E433CC201A324F1C008802B2"
+               BuildableName = "SavingData2PlistTests.xctest"
+               BlueprintName = "SavingData2PlistTests"
+               ReferencedContainer = "container:SavingData2Plist.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4C61D401A3223D0003118A8"
-               BuildableName = "RootViewControllerTests.xctest"
-               BlueprintName = "RootViewControllerTests"
-               ReferencedContainer = "container:RootViewController.xcodeproj">
+               BlueprintIdentifier = "E433CC201A324F1C008802B2"
+               BuildableName = "SavingData2PlistTests.xctest"
+               BlueprintName = "SavingData2PlistTests"
+               ReferencedContainer = "container:SavingData2Plist.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4C61D271A3223D0003118A8"
-            BuildableName = "RootViewController.app"
-            BlueprintName = "RootViewController"
-            ReferencedContainer = "container:RootViewController.xcodeproj">
+            BlueprintIdentifier = "E433CC071A324F1B008802B2"
+            BuildableName = "SavingData2Plist.app"
+            BlueprintName = "SavingData2Plist"
+            ReferencedContainer = "container:SavingData2Plist.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4C61D271A3223D0003118A8"
-            BuildableName = "RootViewController.app"
-            BlueprintName = "RootViewController"
-            ReferencedContainer = "container:RootViewController.xcodeproj">
+            BlueprintIdentifier = "E433CC071A324F1B008802B2"
+            BuildableName = "SavingData2Plist.app"
+            BlueprintName = "SavingData2Plist"
+            ReferencedContainer = "container:SavingData2Plist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4C61D271A3223D0003118A8"
-            BuildableName = "RootViewController.app"
-            BlueprintName = "RootViewController"
-            ReferencedContainer = "container:RootViewController.xcodeproj">
+            BlueprintIdentifier = "E433CC071A324F1B008802B2"
+            BuildableName = "SavingData2Plist.app"
+            BlueprintName = "SavingData2Plist"
+            ReferencedContainer = "container:SavingData2Plist.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

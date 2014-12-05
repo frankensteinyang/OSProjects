@@ -1,6 +1,6 @@
 //
-//  RootViewControllerTests.m
-//  RootViewControllerTests
+//  SavingData2PlistTests.m
+//  SavingData2PlistTests
 //
 //  Created by Hannibal Yang on 12/6/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface RootViewControllerTests : XCTestCase
+@interface SavingData2PlistTests : XCTestCase
 
 @end
 
-@implementation RootViewControllerTests
+@implementation SavingData2PlistTests
 
 - (void)setUp {
     [super setUp];

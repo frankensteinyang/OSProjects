@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  RootViewController
+//  SavingData2Plist
 //
 //  Created by Hannibal Yang on 12/6/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "RVCFirstViewController.h"
 
 @interface AppDelegate ()
 
@@ -15,17 +14,9 @@
 
 @implementation AppDelegate
 
-// 全局变量
-RVCFirstViewController *first;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-//    self.window.rootViewController = [[RVCFirstViewController alloc] initWithNibName:@"RVCFirstViewController" bundle:nil];
-    // 防止RVCFirstViewController被销毁
-    first = [[RVCFirstViewController alloc] init];
-    self.window.rootViewController = first;
-    [self.window makeKeyAndVisible];
+    // Override point for customization after application launch.
     return YES;
 }
 

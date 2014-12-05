@@ -7,6 +7,7 @@
 //
 
 #import "MLFirstViewController.h"
+#import "MLSecondViewController.h"
 
 @interface MLFirstViewController ()
 
@@ -19,19 +20,10 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)skip2Second {
+    
+    MLSecondViewController *second = [[MLSecondViewController alloc] init];
+    // 以Modal形式展示其他控制器 (模态窗口：窗口挡在面前，后面的东西不能点击，就像javascript脚本实现：javascript:alert(1);的效果一样)
+    [self presentViewController:second animated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

@@ -10,4 +10,6 @@
 
 @interface MLFirstViewController : UIViewController
 
+- (IBAction)skip2Second;
+
 @end

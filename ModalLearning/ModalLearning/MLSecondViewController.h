@@ -10,4 +10,8 @@
 
 @interface MLSecondViewController : UIViewController
 
+- (IBAction)skip2First;
+
+- (IBAction)cancel:(id)sender;
+
 @end

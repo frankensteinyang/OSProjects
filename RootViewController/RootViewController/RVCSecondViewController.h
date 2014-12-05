@@ -1,5 +1,5 @@
 //
-//  RVCFirstViewController.h
+//  RVCSecondViewController.h
 //  RootViewController
 //
 //  Created by Hannibal Yang on 12/6/14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RVCFirstViewController : UIViewController
-
-- (IBAction)skip2Second;
+@interface RVCSecondViewController : UIViewController
 
 @end

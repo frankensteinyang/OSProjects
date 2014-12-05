@@ -13,6 +13,8 @@
 		E4C61D481A3223D0003118A8 /* RootViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C61D471A3223D0003118A8 /* RootViewControllerTests.m */; };
 		E4C61D541A3225A3003118A8 /* RVCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C61D521A3225A3003118A8 /* RVCFirstViewController.m */; };
 		E4C61D551A3225A3003118A8 /* RVCFirstViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C61D531A3225A3003118A8 /* RVCFirstViewController.xib */; };
+		E4C61D591A32284C003118A8 /* RVCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C61D571A32284C003118A8 /* RVCSecondViewController.m */; };
+		E4C61D5A1A32284C003118A8 /* RVCSecondViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4C61D581A32284C003118A8 /* RVCSecondViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,9 @@
 		E4C61D511A3225A3003118A8 /* RVCFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVCFirstViewController.h; sourceTree = "<group>"; };
 		E4C61D521A3225A3003118A8 /* RVCFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVCFirstViewController.m; sourceTree = "<group>"; };
 		E4C61D531A3225A3003118A8 /* RVCFirstViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVCFirstViewController.xib; sourceTree = "<group>"; };
+		E4C61D561A32284C003118A8 /* RVCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RVCSecondViewController.h; sourceTree = "<group>"; };
+		E4C61D571A32284C003118A8 /* RVCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RVCSecondViewController.m; sourceTree = "<group>"; };
+		E4C61D581A32284C003118A8 /* RVCSecondViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RVCSecondViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +89,9 @@
 				E4C61D511A3225A3003118A8 /* RVCFirstViewController.h */,
 				E4C61D521A3225A3003118A8 /* RVCFirstViewController.m */,
 				E4C61D531A3225A3003118A8 /* RVCFirstViewController.xib */,
+				E4C61D561A32284C003118A8 /* RVCSecondViewController.h */,
+				E4C61D571A32284C003118A8 /* RVCSecondViewController.m */,
+				E4C61D581A32284C003118A8 /* RVCSecondViewController.xib */,
 				E4C61D381A3223D0003118A8 /* Images.xcassets */,
 				E4C61D2B1A3223D0003118A8 /* Supporting Files */,
 			);
@@ -196,6 +204,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4C61D5A1A32284C003118A8 /* RVCSecondViewController.xib in Resources */,
 				E4C61D391A3223D0003118A8 /* Images.xcassets in Resources */,
 				E4C61D551A3225A3003118A8 /* RVCFirstViewController.xib in Resources */,
 			);
@@ -217,6 +226,7 @@
 			files = (
 				E4C61D311A3223D0003118A8 /* AppDelegate.m in Sources */,
 				E4C61D541A3225A3003118A8 /* RVCFirstViewController.m in Sources */,
+				E4C61D591A32284C003118A8 /* RVCSecondViewController.m in Sources */,
 				E4C61D2E1A3223D0003118A8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

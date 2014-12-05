@@ -7,6 +7,7 @@
 //
 
 #import "RVCFirstViewController.h"
+#import "RVCSecondViewController.h"
 
 @interface RVCFirstViewController ()
 
@@ -19,19 +20,12 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)skip2Second {
+    
+    RVCSecondViewController *second = [[RVCSecondViewController alloc] init];
+    // 拿到窗口的第一种方法：self.view.window 第二种方法：self.view.superview
+    // 拿到窗口的第三种方法：[UIApplication sharedApplication].keyWindow
+    [UIApplication sharedApplication].keyWindow.rootViewController = second;
+    
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

@@ -10,4 +10,6 @@
 
 @interface RVCSecondViewController : UIViewController
 
+- (IBAction)skip2First;
+
 @end

@@ -15,12 +15,16 @@
 
 @implementation AppDelegate
 
+// 全局变量
+RVCFirstViewController *first;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
 //    self.window.rootViewController = [[RVCFirstViewController alloc] initWithNibName:@"RVCFirstViewController" bundle:nil];
-    self.window.rootViewController = [[RVCFirstViewController alloc] init];
+    // 防止RVCFirstViewController被销毁
+    first = [[RVCFirstViewController alloc] init];
+    self.window.rootViewController = first;
     [self.window makeKeyAndVisible];
     return YES;
 }

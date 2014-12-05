@@ -1,19 +1,19 @@
 //
-//  UITabBarControllerTests.m
-//  UITabBarControllerTests
+//  ModalLearningTests.m
+//  ModalLearningTests
 //
-//  Created by Hannibal Yang on 12/4/14.
+//  Created by Hannibal Yang on 12/5/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface UITabBarControllerTests : XCTestCase
+@interface ModalLearningTests : XCTestCase
 
 @end
 
-@implementation UITabBarControllerTests
+@implementation ModalLearningTests
 
 - (void)setUp {
     [super setUp];

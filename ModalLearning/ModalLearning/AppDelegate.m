@@ -1,14 +1,13 @@
 //
 //  AppDelegate.m
-//  UITabBarController
+//  ModalLearning
 //
-//  Created by Hannibal Yang on 12/4/14.
+//  Created by Hannibal Yang on 12/5/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "UITBCChatsViewController.h"
-#import "UITBCContactsViewController.h"
+#import "MLFirstViewController.h"
 
 @interface AppDelegate ()
 
@@ -20,20 +19,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    UITabBarController *tabBarC = [[UITabBarController alloc] init];
     
-    UITBCChatsViewController *chats = [[UITBCChatsViewController alloc] init];
-    chats.tabBarItem.title = @"Chats";
-    chats.tabBarItem.image = [UIImage imageNamed:@"chats.png"];
-    UITBCContactsViewController *contacts = [[UITBCContactsViewController alloc] init];
-    contacts.tabBarItem.title = @"Contacts";
-    contacts.tabBarItem.image = [UIImage imageNamed:@"contacts.png"];
-    tabBarC.viewControllers = @[chats, contacts];
-//    [tabBarC addChildViewController:chats];
-//    [tabBarC addChildViewController:contacts];
-
-    self.window.rootViewController = tabBarC;
+    MLFirstViewController *first = [[MLFirstViewController alloc] init];
+    
+    self.window.rootViewController = first;
+    
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

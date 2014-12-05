@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E41410001A309E89004725D9"
-               BuildableName = "UITabBarController.app"
-               BlueprintName = "UITabBarController"
-               ReferencedContainer = "container:UITabBarController.xcodeproj">
+               BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
+               BuildableName = "ModalLearning.app"
+               BlueprintName = "ModalLearning"
+               ReferencedContainer = "container:ModalLearning.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E41410191A309E89004725D9"
-               BuildableName = "UITabBarControllerTests.xctest"
-               BlueprintName = "UITabBarControllerTests"
-               ReferencedContainer = "container:UITabBarController.xcodeproj">
+               BlueprintIdentifier = "E4C61CFF1A31FEED003118A8"
+               BuildableName = "ModalLearningTests.xctest"
+               BlueprintName = "ModalLearningTests"
+               ReferencedContainer = "container:ModalLearning.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E41410191A309E89004725D9"
-               BuildableName = "UITabBarControllerTests.xctest"
-               BlueprintName = "UITabBarControllerTests"
-               ReferencedContainer = "container:UITabBarController.xcodeproj">
+               BlueprintIdentifier = "E4C61CFF1A31FEED003118A8"
+               BuildableName = "ModalLearningTests.xctest"
+               BlueprintName = "ModalLearningTests"
+               ReferencedContainer = "container:ModalLearning.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E41410001A309E89004725D9"
-            BuildableName = "UITabBarController.app"
-            BlueprintName = "UITabBarController"
-            ReferencedContainer = "container:UITabBarController.xcodeproj">
+            BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
+            BuildableName = "ModalLearning.app"
+            BlueprintName = "ModalLearning"
+            ReferencedContainer = "container:ModalLearning.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E41410001A309E89004725D9"
-            BuildableName = "UITabBarController.app"
-            BlueprintName = "UITabBarController"
-            ReferencedContainer = "container:UITabBarController.xcodeproj">
+            BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
+            BuildableName = "ModalLearning.app"
+            BlueprintName = "ModalLearning"
+            ReferencedContainer = "container:ModalLearning.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E41410001A309E89004725D9"
-            BuildableName = "UITabBarController.app"
-            BlueprintName = "UITabBarController"
-            ReferencedContainer = "container:UITabBarController.xcodeproj">
+            BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
+            BuildableName = "ModalLearning.app"
+            BlueprintName = "ModalLearning"
+            ReferencedContainer = "container:ModalLearning.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

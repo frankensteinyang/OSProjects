@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>UITabBarController.xcscheme</key>
+		<key>ModalLearning.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E41410001A309E89004725D9</key>
+		<key>E4C61CE61A31FEED003118A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E41410191A309E89004725D9</key>
+		<key>E4C61CFF1A31FEED003118A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

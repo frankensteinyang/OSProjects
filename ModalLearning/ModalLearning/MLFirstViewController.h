@@ -12,4 +12,5 @@
 
 - (IBAction)skip2Second;
 
+- (IBAction)skip2Third;
 @end

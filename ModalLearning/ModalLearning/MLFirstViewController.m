@@ -8,6 +8,7 @@
 
 #import "MLFirstViewController.h"
 #import "MLSecondViewController.h"
+#import "MLThirdViewController.h"
 
 @interface MLFirstViewController ()
 
@@ -17,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeInfoDark];
+    btn.frame = CGRectMake(0, 244, 44, 44);
+    [self.view addSubview:btn];
 }
 
 - (IBAction)skip2Second {
@@ -37,5 +41,18 @@
     [self presentViewController:second animated:YES completion:^{
         NSLog(@"Oh my God! It's amazing!杨进忠");
     }];
+}
+
+/*
+ 给一个控制器顶部增加一个导航栏的最快方法：
+ 1. 给这个控制器包装一个导航控制器
+ 
+ */
+- (IBAction)skip2Third {
+    
+    MLThirdViewController *third = [[MLThirdViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:third];
+    navigationController.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 @end

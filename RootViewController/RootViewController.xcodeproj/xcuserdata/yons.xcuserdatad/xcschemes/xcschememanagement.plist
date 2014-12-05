@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>ModalLearning.xcscheme</key>
+		<key>RootViewController.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4C61CE61A31FEED003118A8</key>
+		<key>E4C61D271A3223D0003118A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4C61CFF1A31FEED003118A8</key>
+		<key>E4C61D401A3223D0003118A8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

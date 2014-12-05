@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:ModalLearning.xcodeproj">
+      location = "self:RootViewController.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,19 +1,19 @@
 //
-//  ModalLearningTests.m
-//  ModalLearningTests
+//  RootViewControllerTests.m
+//  RootViewControllerTests
 //
-//  Created by Hannibal Yang on 12/5/14.
+//  Created by Hannibal Yang on 12/6/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface ModalLearningTests : XCTestCase
+@interface RootViewControllerTests : XCTestCase
 
 @end
 
-@implementation ModalLearningTests
+@implementation RootViewControllerTests
 
 - (void)setUp {
     [super setUp];

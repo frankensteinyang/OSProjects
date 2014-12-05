@@ -1,13 +1,13 @@
 //
 //  AppDelegate.m
-//  ModalLearning
+//  RootViewController
 //
-//  Created by Hannibal Yang on 12/5/14.
+//  Created by Hannibal Yang on 12/6/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MLFirstViewController.h"
+#import "RVCFirstViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,13 +19,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    
-    MLFirstViewController *first = [[MLFirstViewController alloc] init];
-    
-    self.window.rootViewController = first;
-    
+//    self.window.rootViewController = [[RVCFirstViewController alloc] initWithNibName:@"RVCFirstViewController" bundle:nil];
+    self.window.rootViewController = [[RVCFirstViewController alloc] init];
     [self.window makeKeyAndVisible];
-    
     return YES;
 }
 

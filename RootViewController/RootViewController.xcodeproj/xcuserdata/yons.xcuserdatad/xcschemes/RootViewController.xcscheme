@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
-               BuildableName = "ModalLearning.app"
-               BlueprintName = "ModalLearning"
-               ReferencedContainer = "container:ModalLearning.xcodeproj">
+               BlueprintIdentifier = "E4C61D271A3223D0003118A8"
+               BuildableName = "RootViewController.app"
+               BlueprintName = "RootViewController"
+               ReferencedContainer = "container:RootViewController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4C61CFF1A31FEED003118A8"
-               BuildableName = "ModalLearningTests.xctest"
-               BlueprintName = "ModalLearningTests"
-               ReferencedContainer = "container:ModalLearning.xcodeproj">
+               BlueprintIdentifier = "E4C61D401A3223D0003118A8"
+               BuildableName = "RootViewControllerTests.xctest"
+               BlueprintName = "RootViewControllerTests"
+               ReferencedContainer = "container:RootViewController.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4C61CFF1A31FEED003118A8"
-               BuildableName = "ModalLearningTests.xctest"
-               BlueprintName = "ModalLearningTests"
-               ReferencedContainer = "container:ModalLearning.xcodeproj">
+               BlueprintIdentifier = "E4C61D401A3223D0003118A8"
+               BuildableName = "RootViewControllerTests.xctest"
+               BlueprintName = "RootViewControllerTests"
+               ReferencedContainer = "container:RootViewController.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
-            BuildableName = "ModalLearning.app"
-            BlueprintName = "ModalLearning"
-            ReferencedContainer = "container:ModalLearning.xcodeproj">
+            BlueprintIdentifier = "E4C61D271A3223D0003118A8"
+            BuildableName = "RootViewController.app"
+            BlueprintName = "RootViewController"
+            ReferencedContainer = "container:RootViewController.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
-            BuildableName = "ModalLearning.app"
-            BlueprintName = "ModalLearning"
-            ReferencedContainer = "container:ModalLearning.xcodeproj">
+            BlueprintIdentifier = "E4C61D271A3223D0003118A8"
+            BuildableName = "RootViewController.app"
+            BlueprintName = "RootViewController"
+            ReferencedContainer = "container:RootViewController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4C61CE61A31FEED003118A8"
-            BuildableName = "ModalLearning.app"
-            BlueprintName = "ModalLearning"
-            ReferencedContainer = "container:ModalLearning.xcodeproj">
+            BlueprintIdentifier = "E4C61D271A3223D0003118A8"
+            BuildableName = "RootViewController.app"
+            BlueprintName = "RootViewController"
+            ReferencedContainer = "container:RootViewController.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

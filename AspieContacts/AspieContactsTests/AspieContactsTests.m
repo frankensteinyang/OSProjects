@@ -1,19 +1,19 @@
 //
-//  NSCodingTests.m
-//  NSCodingTests
+//  AspieContactsTests.m
+//  AspieContactsTests
 //
-//  Created by Hannibal Yang on 12/6/14.
+//  Created by Hannibal Yang on 12/7/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface NSCodingTests : XCTestCase
+@interface AspieContactsTests : XCTestCase
 
 @end
 
-@implementation NSCodingTests
+@implementation AspieContactsTests
 
 - (void)setUp {
     [super setUp];

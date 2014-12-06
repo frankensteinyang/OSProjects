@@ -1,0 +1,406 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E47CE6AF1A33A5120019DEB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6AE1A33A5120019DEB7 /* main.m */; };
+		E47CE6B21A33A5120019DEB7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6B11A33A5120019DEB7 /* AppDelegate.m */; };
+		E47CE6BA1A33A5120019DEB7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47CE6B91A33A5120019DEB7 /* Images.xcassets */; };
+		E47CE6C91A33A5120019DEB7 /* AspieContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6C81A33A5120019DEB7 /* AspieContactsTests.m */; };
+		E47CE6D41A33A5680019DEB7 /* AspieContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6D31A33A5680019DEB7 /* AspieContactsViewController.m */; };
+		E47CE6D61A33A5910019DEB7 /* AspieContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47CE6D51A33A5910019DEB7 /* AspieContactsStoryboard.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E47CE6C31A33A5120019DEB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47CE6A11A33A5120019DEB7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E47CE6A81A33A5120019DEB7;
+			remoteInfo = AspieContacts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E47CE6A91A33A5120019DEB7 /* AspieContacts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AspieContacts.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47CE6AD1A33A5120019DEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47CE6AE1A33A5120019DEB7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E47CE6B01A33A5120019DEB7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E47CE6B11A33A5120019DEB7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E47CE6B91A33A5120019DEB7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E47CE6C21A33A5120019DEB7 /* AspieContactsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AspieContactsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47CE6C71A33A5120019DEB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47CE6C81A33A5120019DEB7 /* AspieContactsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AspieContactsTests.m; sourceTree = "<group>"; };
+		E47CE6D21A33A5680019DEB7 /* AspieContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspieContactsViewController.h; sourceTree = SOURCE_ROOT; };
+		E47CE6D31A33A5680019DEB7 /* AspieContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspieContactsViewController.m; sourceTree = SOURCE_ROOT; };
+		E47CE6D51A33A5910019DEB7 /* AspieContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AspieContactsStoryboard.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E47CE6A61A33A5120019DEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47CE6BF1A33A5120019DEB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E47CE6A01A33A5120019DEB7 = {
+			isa = PBXGroup;
+			children = (
+				E47CE6AB1A33A5120019DEB7 /* AspieContacts */,
+				E47CE6C51A33A5120019DEB7 /* AspieContactsTests */,
+				E47CE6AA1A33A5120019DEB7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E47CE6AA1A33A5120019DEB7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E47CE6A91A33A5120019DEB7 /* AspieContacts.app */,
+				E47CE6C21A33A5120019DEB7 /* AspieContactsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E47CE6AB1A33A5120019DEB7 /* AspieContacts */ = {
+			isa = PBXGroup;
+			children = (
+				E47CE6B01A33A5120019DEB7 /* AppDelegate.h */,
+				E47CE6B11A33A5120019DEB7 /* AppDelegate.m */,
+				E47CE6D21A33A5680019DEB7 /* AspieContactsViewController.h */,
+				E47CE6D31A33A5680019DEB7 /* AspieContactsViewController.m */,
+				E47CE6D51A33A5910019DEB7 /* AspieContactsStoryboard.storyboard */,
+				E47CE6B91A33A5120019DEB7 /* Images.xcassets */,
+				E47CE6AC1A33A5120019DEB7 /* Supporting Files */,
+			);
+			path = AspieContacts;
+			sourceTree = "<group>";
+		};
+		E47CE6AC1A33A5120019DEB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E47CE6AD1A33A5120019DEB7 /* Info.plist */,
+				E47CE6AE1A33A5120019DEB7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47CE6C51A33A5120019DEB7 /* AspieContactsTests */ = {
+			isa = PBXGroup;
+			children = (
+				E47CE6C81A33A5120019DEB7 /* AspieContactsTests.m */,
+				E47CE6C61A33A5120019DEB7 /* Supporting Files */,
+			);
+			path = AspieContactsTests;
+			sourceTree = "<group>";
+		};
+		E47CE6C61A33A5120019DEB7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E47CE6C71A33A5120019DEB7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E47CE6A81A33A5120019DEB7 /* AspieContacts */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47CE6CC1A33A5120019DEB7 /* Build configuration list for PBXNativeTarget "AspieContacts" */;
+			buildPhases = (
+				E47CE6A51A33A5120019DEB7 /* Sources */,
+				E47CE6A61A33A5120019DEB7 /* Frameworks */,
+				E47CE6A71A33A5120019DEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AspieContacts;
+			productName = AspieContacts;
+			productReference = E47CE6A91A33A5120019DEB7 /* AspieContacts.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E47CE6C11A33A5120019DEB7 /* AspieContactsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47CE6CF1A33A5120019DEB7 /* Build configuration list for PBXNativeTarget "AspieContactsTests" */;
+			buildPhases = (
+				E47CE6BE1A33A5120019DEB7 /* Sources */,
+				E47CE6BF1A33A5120019DEB7 /* Frameworks */,
+				E47CE6C01A33A5120019DEB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E47CE6C41A33A5120019DEB7 /* PBXTargetDependency */,
+			);
+			name = AspieContactsTests;
+			productName = AspieContactsTests;
+			productReference = E47CE6C21A33A5120019DEB7 /* AspieContactsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E47CE6A11A33A5120019DEB7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Hannibal Yang";
+				TargetAttributes = {
+					E47CE6A81A33A5120019DEB7 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					E47CE6C11A33A5120019DEB7 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = E47CE6A81A33A5120019DEB7;
+					};
+				};
+			};
+			buildConfigurationList = E47CE6A41A33A5120019DEB7 /* Build configuration list for PBXProject "AspieContacts" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E47CE6A01A33A5120019DEB7;
+			productRefGroup = E47CE6AA1A33A5120019DEB7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E47CE6A81A33A5120019DEB7 /* AspieContacts */,
+				E47CE6C11A33A5120019DEB7 /* AspieContactsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E47CE6A71A33A5120019DEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47CE6BA1A33A5120019DEB7 /* Images.xcassets in Resources */,
+				E47CE6D61A33A5910019DEB7 /* AspieContactsStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47CE6C01A33A5120019DEB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E47CE6A51A33A5120019DEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47CE6B21A33A5120019DEB7 /* AppDelegate.m in Sources */,
+				E47CE6AF1A33A5120019DEB7 /* main.m in Sources */,
+				E47CE6D41A33A5680019DEB7 /* AspieContactsViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47CE6BE1A33A5120019DEB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47CE6C91A33A5120019DEB7 /* AspieContactsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E47CE6C41A33A5120019DEB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E47CE6A81A33A5120019DEB7 /* AspieContacts */;
+			targetProxy = E47CE6C31A33A5120019DEB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E47CE6CA1A33A5120019DEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E47CE6CB1A33A5120019DEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E47CE6CD1A33A5120019DEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = AspieContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E47CE6CE1A33A5120019DEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = AspieContacts/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E47CE6D01A33A5120019DEB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AspieContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AspieContacts.app/AspieContacts";
+			};
+			name = Debug;
+		};
+		E47CE6D11A33A5120019DEB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AspieContactsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AspieContacts.app/AspieContacts";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E47CE6A41A33A5120019DEB7 /* Build configuration list for PBXProject "AspieContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47CE6CA1A33A5120019DEB7 /* Debug */,
+				E47CE6CB1A33A5120019DEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47CE6CC1A33A5120019DEB7 /* Build configuration list for PBXNativeTarget "AspieContacts" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47CE6CD1A33A5120019DEB7 /* Debug */,
+				E47CE6CE1A33A5120019DEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E47CE6CF1A33A5120019DEB7 /* Build configuration list for PBXNativeTarget "AspieContactsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47CE6D01A33A5120019DEB7 /* Debug */,
+				E47CE6D11A33A5120019DEB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E47CE6A11A33A5120019DEB7 /* Project object */;
+}

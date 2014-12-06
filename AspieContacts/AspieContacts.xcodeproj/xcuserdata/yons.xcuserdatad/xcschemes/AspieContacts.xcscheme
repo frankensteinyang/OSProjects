@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E433CC401A335886008802B2"
-               BuildableName = "NSCoding.app"
-               BlueprintName = "NSCoding"
-               ReferencedContainer = "container:NSCoding.xcodeproj">
+               BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
+               BuildableName = "AspieContacts.app"
+               BlueprintName = "AspieContacts"
+               ReferencedContainer = "container:AspieContacts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E433CC591A335886008802B2"
-               BuildableName = "NSCodingTests.xctest"
-               BlueprintName = "NSCodingTests"
-               ReferencedContainer = "container:NSCoding.xcodeproj">
+               BlueprintIdentifier = "E47CE6C11A33A5120019DEB7"
+               BuildableName = "AspieContactsTests.xctest"
+               BlueprintName = "AspieContactsTests"
+               ReferencedContainer = "container:AspieContacts.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E433CC591A335886008802B2"
-               BuildableName = "NSCodingTests.xctest"
-               BlueprintName = "NSCodingTests"
-               ReferencedContainer = "container:NSCoding.xcodeproj">
+               BlueprintIdentifier = "E47CE6C11A33A5120019DEB7"
+               BuildableName = "AspieContactsTests.xctest"
+               BlueprintName = "AspieContactsTests"
+               ReferencedContainer = "container:AspieContacts.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E433CC401A335886008802B2"
-            BuildableName = "NSCoding.app"
-            BlueprintName = "NSCoding"
-            ReferencedContainer = "container:NSCoding.xcodeproj">
+            BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
+            BuildableName = "AspieContacts.app"
+            BlueprintName = "AspieContacts"
+            ReferencedContainer = "container:AspieContacts.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E433CC401A335886008802B2"
-            BuildableName = "NSCoding.app"
-            BlueprintName = "NSCoding"
-            ReferencedContainer = "container:NSCoding.xcodeproj">
+            BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
+            BuildableName = "AspieContacts.app"
+            BlueprintName = "AspieContacts"
+            ReferencedContainer = "container:AspieContacts.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E433CC401A335886008802B2"
-            BuildableName = "NSCoding.app"
-            BlueprintName = "NSCoding"
-            ReferencedContainer = "container:NSCoding.xcodeproj">
+            BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
+            BuildableName = "AspieContacts.app"
+            BlueprintName = "AspieContacts"
+            ReferencedContainer = "container:AspieContacts.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

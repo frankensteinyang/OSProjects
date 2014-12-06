@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SavingData2Plist.xcscheme</key>
+		<key>NSCoding.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E433CC071A324F1B008802B2</key>
+		<key>E433CC401A335886008802B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E433CC201A324F1C008802B2</key>
+		<key>E433CC591A335886008802B2</key>
 		<dict>
 			<key>primary</key>
 			<true/>

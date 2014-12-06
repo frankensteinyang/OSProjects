@@ -16,6 +16,7 @@
 		E433CC281A324F1C008802B2 /* SavingData2PlistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E433CC271A324F1C008802B2 /* SavingData2PlistTests.m */; };
 		E433CC331A32507B008802B2 /* checkbox_checked.png in Resources */ = {isa = PBXBuildFile; fileRef = E433CC311A32507B008802B2 /* checkbox_checked.png */; };
 		E433CC341A32507B008802B2 /* checkbox_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E433CC321A32507B008802B2 /* checkbox_normal.png */; };
+		E433CC371A328967008802B2 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E433CC361A328967008802B2 /* PreferencesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,8 @@
 		E433CC271A324F1C008802B2 /* SavingData2PlistTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SavingData2PlistTests.m; sourceTree = "<group>"; };
 		E433CC311A32507B008802B2 /* checkbox_checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_checked.png; sourceTree = "<group>"; };
 		E433CC321A32507B008802B2 /* checkbox_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = checkbox_normal.png; sourceTree = "<group>"; };
+		E433CC351A328967008802B2 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		E433CC361A328967008802B2 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				E433CC101A324F1C008802B2 /* AppDelegate.m */,
 				E433CC121A324F1C008802B2 /* ViewController.h */,
 				E433CC131A324F1C008802B2 /* ViewController.m */,
+				E433CC351A328967008802B2 /* PreferencesViewController.h */,
+				E433CC361A328967008802B2 /* PreferencesViewController.m */,
 				E433CC151A324F1C008802B2 /* Main.storyboard */,
 				E433CC181A324F1C008802B2 /* Images.xcassets */,
 				E433CC1A1A324F1C008802B2 /* LaunchScreen.xib */,
@@ -230,6 +235,7 @@
 				E433CC141A324F1C008802B2 /* ViewController.m in Sources */,
 				E433CC111A324F1C008802B2 /* AppDelegate.m in Sources */,
 				E433CC0E1A324F1C008802B2 /* main.m in Sources */,
+				E433CC371A328967008802B2 /* PreferencesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +426,7 @@
 				E433CC2D1A324F1C008802B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E433CC2E1A324F1C008802B2 /* Build configuration list for PBXNativeTarget "SavingData2PlistTests" */ = {
 			isa = XCConfigurationList;
@@ -428,6 +435,7 @@
 				E433CC301A324F1C008802B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "PreferencesViewController.h"
 
 @interface ViewController ()
 
@@ -16,17 +17,20 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // 在iOS中，paths数组中永远只有一个元素，就是Documents文件夹的全路径
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
-    NSString *filePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"login.plist"];
+    NSString *path = [paths lastObject];
+    //    NSString *filePath = [[NSHomeDirectory() stringByAppendingPathComponent:@"Documents"] stringByAppendingPathComponent:@"login.plist"];
+    NSString *filePath = [path stringByAppendingPathComponent:@"login.plist"];
     
     NSDictionary *dictionary = [NSDictionary dictionaryWithContentsOfFile:filePath];
-    
     _username.text = dictionary[@"username"];
-    _password.text = dictionary[@"password"];
     _remember.selected = [dictionary[@"rmb_pwd"] boolValue];
     _autoLogin.selected = [dictionary[@"auto_login"] boolValue];
-    
-    
+    if (_remember.selected) {
+        _password.text = dictionary[@"password"];
+    }
 }
 
 - (IBAction)remember:(UIButton *)sender {
@@ -43,6 +47,11 @@
     if (sender.selected) {
         _remember.selected = YES;
     }
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    
 }
 
 - (IBAction)login {
@@ -64,10 +73,11 @@
                                  @"auto_login" : @(_autoLogin.selected)
                                  };
     
-    NSString *homePath = NSHomeDirectory();
+//    NSString *homePath = NSHomeDirectory();
 //    NSString *documentsPath = [homePath stringByAppendingString:@"/Documents"];
-    NSString *documentsPath = [homePath stringByAppendingPathComponent:@"Documents"];
+//    NSString *documentsPath = [homePath stringByAppendingPathComponent:@"Documents"];
     
+    NSString *documentsPath = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)[0];
     NSString *filePath = [documentsPath stringByAppendingPathComponent:@"login.plist"];
     
 //    NSLog(@"%@", filePath);
@@ -80,5 +90,11 @@
 //                                 @"age" : @27
 //                                 };
     [dictionary writeToFile:filePath atomically:YES];
+    
+    // 控制器跳转
+    PreferencesViewController *preferences = [self.storyboard instantiateViewControllerWithIdentifier:@"Preferences"];
+//    [self presentViewController:preferences animated:YES completion:nil];
+    self.view.window.rootViewController = preferences;
+    
 }
 @end

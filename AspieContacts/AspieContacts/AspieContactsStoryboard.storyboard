@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="DUt-FX-g3Z">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="luf-hd-wGr">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--Aspie Contacts View Controller-->
+        <!--联系人列表-->
         <scene sceneID="RGc-Zw-FX4">
             <objects>
                 <tableViewController id="DUt-FX-g3Z" customClass="AspieContactsViewController" sceneMemberID="viewController">
@@ -17,11 +17,111 @@
                             <outlet property="delegate" destination="DUt-FX-g3Z" id="YWp-nW-IKH"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="联系人列表" id="1gK-nC-l1D">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="WQz-SS-Qqh">
+                            <connections>
+                                <segue destination="kTG-0j-SVU" kind="presentation" id="r3x-W4-ep1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dFb-LB-Z5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="452" y="404"/>
+            <point key="canvasLocation" x="-743" y="1006"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="vIc-RX-vyK">
+            <objects>
+                <navigationController id="kTG-0j-SVU" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lUf-EE-I0a">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9Ut-ol-MHm" kind="relationship" relationship="rootViewController" id="vEq-nz-H60"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wnu-Sv-JdQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-352" y="1006"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xcq-pn-xDX">
+            <objects>
+                <navigationController id="luf-hd-wGr" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="xTQ-Wc-w2g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DUt-FX-g3Z" kind="relationship" relationship="rootViewController" id="QZl-8W-KdD"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHH-b5-gko" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="400"/>
+        </scene>
+        <!--Aspie Contacts Add View Controller-->
+        <scene sceneID="neN-Nd-jHi">
+            <objects>
+                <viewController id="9Ut-ol-MHm" customClass="AspieContactsAddViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dgJ-qA-ima"/>
+                        <viewControllerLayoutGuide type="bottom" id="Rf4-Rk-Jl2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qxv-Zn-ZiI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="姓名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTS-dc-4uT">
+                                <rect key="frame" x="58" y="120" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="电话" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWs-jl-MsN">
+                                <rect key="frame" x="58" y="164" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的姓名" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="2wr-Ej-Hc3">
+                                <rect key="frame" x="106" y="116" width="157" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入您的电话号码" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="kWb-Fe-yIv">
+                                <rect key="frame" x="106" y="160" width="157" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Bqy-Si-Wly">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Geq-qK-IlT">
+                            <connections>
+                                <action selector="cancel:" destination="9Ut-ol-MHm" id="NUd-Q2-5AT"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="KXY-GG-Pod">
+                            <connections>
+                                <action selector="save:" destination="9Ut-ol-MHm" id="TFD-8I-Zgk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="nameField" destination="2wr-Ej-Hc3" id="ORf-Oj-4EU"/>
+                        <outlet property="phoneField" destination="kWb-Fe-yIv" id="ymZ-tq-7Lp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qW9-a1-izb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-333" y="405"/>
         </scene>
     </scenes>
 </document>

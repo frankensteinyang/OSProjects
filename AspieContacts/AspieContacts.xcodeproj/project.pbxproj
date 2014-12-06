@@ -13,6 +13,8 @@
 		E47CE6C91A33A5120019DEB7 /* AspieContactsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6C81A33A5120019DEB7 /* AspieContactsTests.m */; };
 		E47CE6D41A33A5680019DEB7 /* AspieContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6D31A33A5680019DEB7 /* AspieContactsViewController.m */; };
 		E47CE6D61A33A5910019DEB7 /* AspieContactsStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47CE6D51A33A5910019DEB7 /* AspieContactsStoryboard.storyboard */; };
+		E47CE6DB1A33A8D10019DEB7 /* AspieContactsAddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6DA1A33A8D10019DEB7 /* AspieContactsAddViewController.m */; };
+		E47CE6DE1A33ADB30019DEB7 /* AspieContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = E47CE6DD1A33ADB30019DEB7 /* AspieContacts.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,10 @@
 		E47CE6D21A33A5680019DEB7 /* AspieContactsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspieContactsViewController.h; sourceTree = SOURCE_ROOT; };
 		E47CE6D31A33A5680019DEB7 /* AspieContactsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspieContactsViewController.m; sourceTree = SOURCE_ROOT; };
 		E47CE6D51A33A5910019DEB7 /* AspieContactsStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AspieContactsStoryboard.storyboard; sourceTree = "<group>"; };
+		E47CE6D91A33A8D10019DEB7 /* AspieContactsAddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspieContactsAddViewController.h; sourceTree = "<group>"; };
+		E47CE6DA1A33A8D10019DEB7 /* AspieContactsAddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspieContactsAddViewController.m; sourceTree = "<group>"; };
+		E47CE6DC1A33ADB30019DEB7 /* AspieContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AspieContacts.h; sourceTree = "<group>"; };
+		E47CE6DD1A33ADB30019DEB7 /* AspieContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AspieContacts.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +87,10 @@
 			children = (
 				E47CE6B01A33A5120019DEB7 /* AppDelegate.h */,
 				E47CE6B11A33A5120019DEB7 /* AppDelegate.m */,
-				E47CE6D21A33A5680019DEB7 /* AspieContactsViewController.h */,
-				E47CE6D31A33A5680019DEB7 /* AspieContactsViewController.m */,
+				E47CE6DC1A33ADB30019DEB7 /* AspieContacts.h */,
+				E47CE6DD1A33ADB30019DEB7 /* AspieContacts.m */,
+				E47CE6D81A33A8960019DEB7 /* Contacts */,
+				E47CE6D71A33A88C0019DEB7 /* Add */,
 				E47CE6D51A33A5910019DEB7 /* AspieContactsStoryboard.storyboard */,
 				E47CE6B91A33A5120019DEB7 /* Images.xcassets */,
 				E47CE6AC1A33A5120019DEB7 /* Supporting Files */,
@@ -114,6 +122,24 @@
 				E47CE6C71A33A5120019DEB7 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47CE6D71A33A88C0019DEB7 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				E47CE6D91A33A8D10019DEB7 /* AspieContactsAddViewController.h */,
+				E47CE6DA1A33A8D10019DEB7 /* AspieContactsAddViewController.m */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		E47CE6D81A33A8960019DEB7 /* Contacts */ = {
+			isa = PBXGroup;
+			children = (
+				E47CE6D21A33A5680019DEB7 /* AspieContactsViewController.h */,
+				E47CE6D31A33A5680019DEB7 /* AspieContactsViewController.m */,
+			);
+			name = Contacts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +241,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E47CE6DB1A33A8D10019DEB7 /* AspieContactsAddViewController.m in Sources */,
+				E47CE6DE1A33ADB30019DEB7 /* AspieContacts.m in Sources */,
 				E47CE6B21A33A5120019DEB7 /* AppDelegate.m in Sources */,
 				E47CE6AF1A33A5120019DEB7 /* main.m in Sources */,
 				E47CE6D41A33A5680019DEB7 /* AspieContactsViewController.m in Sources */,

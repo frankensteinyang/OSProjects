@@ -12,6 +12,6 @@
 
 @property (nonatomic, copy) NSString *furColor;
 @property (nonatomic, assign) double weight;
-@property (nonatomic, assign) int legs;
+@property (nonatomic, assign) BOOL isFly;
 
 @end

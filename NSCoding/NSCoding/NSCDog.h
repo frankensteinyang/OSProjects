@@ -10,4 +10,6 @@
 
 @interface NSCDog : NSCAnimal
 
+@property (nonatomic, assign) int legs;
+
 @end

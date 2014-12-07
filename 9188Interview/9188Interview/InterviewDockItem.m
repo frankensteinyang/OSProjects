@@ -27,4 +27,10 @@
     return  CGRectMake(0, titleY, titleW, titleH);
 }
 
+// 重写覆盖父类默认的高亮处理
+- (void)setHighlighted:(BOOL)highlighted {
+    
+//    [super setHighlighted:highlighted];
+}
+
 @end

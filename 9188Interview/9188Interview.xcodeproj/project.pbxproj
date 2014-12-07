@@ -22,6 +22,10 @@
 		E4CF41FB1A34C53500247E48 /* mylottery_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41EA1A34C53500247E48 /* mylottery_selected@2x.png */; };
 		E4CF41FD1A34C53500247E48 /* mylottery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41EC1A34C53500247E48 /* mylottery@2x.png */; };
 		E4CF42011A34D37C00247E48 /* InterviewDockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF42001A34D37C00247E48 /* InterviewDockItem.m */; };
+		E4CF42081A34F00D00247E48 /* InterviewLotteryHallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF42071A34F00D00247E48 /* InterviewLotteryHallViewController.m */; };
+		E4CF420B1A34F03800247E48 /* InterviewSyndicateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF420A1A34F03800247E48 /* InterviewSyndicateViewController.m */; };
+		E4CF420E1A34F06A00247E48 /* InterviewRunLotteryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF420D1A34F06A00247E48 /* InterviewRunLotteryViewController.m */; };
+		E4CF42111A34F0A800247E48 /* InterviewMyLotteriesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF42101A34F0A800247E48 /* InterviewMyLotteriesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +61,14 @@
 		E4CF41EC1A34C53500247E48 /* mylottery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mylottery@2x.png"; sourceTree = "<group>"; };
 		E4CF41FF1A34D37C00247E48 /* InterviewDockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewDockItem.h; sourceTree = "<group>"; };
 		E4CF42001A34D37C00247E48 /* InterviewDockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewDockItem.m; sourceTree = "<group>"; };
+		E4CF42061A34F00D00247E48 /* InterviewLotteryHallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewLotteryHallViewController.h; sourceTree = "<group>"; };
+		E4CF42071A34F00D00247E48 /* InterviewLotteryHallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewLotteryHallViewController.m; sourceTree = "<group>"; };
+		E4CF42091A34F03800247E48 /* InterviewSyndicateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewSyndicateViewController.h; sourceTree = "<group>"; };
+		E4CF420A1A34F03800247E48 /* InterviewSyndicateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewSyndicateViewController.m; sourceTree = "<group>"; };
+		E4CF420C1A34F06A00247E48 /* InterviewRunLotteryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewRunLotteryViewController.h; sourceTree = "<group>"; };
+		E4CF420D1A34F06A00247E48 /* InterviewRunLotteryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewRunLotteryViewController.m; sourceTree = "<group>"; };
+		E4CF420F1A34F0A800247E48 /* InterviewMyLotteriesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewMyLotteriesViewController.h; sourceTree = "<group>"; };
+		E4CF42101A34F0A800247E48 /* InterviewMyLotteriesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewMyLotteriesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +110,18 @@
 		E4CF41411A34ABF400247E48 /* 9188Interview */ = {
 			isa = PBXGroup;
 			children = (
+				E4CF42021A34EDD000247E48 /* LotteryHall */,
+				E4CF42031A34EE4000247E48 /* Syndicate */,
+				E4CF42041A34EED100247E48 /* RunLottery */,
+				E4CF42051A34EF0000247E48 /* MyLotteries */,
 				E4CF41B11A34C45600247E48 /* InterviewMainViewController.h */,
 				E4CF41B21A34C45600247E48 /* InterviewMainViewController.m */,
+				E4CF41FF1A34D37C00247E48 /* InterviewDockItem.h */,
+				E4CF42001A34D37C00247E48 /* InterviewDockItem.m */,
 				E4CF41A91A34C3C100247E48 /* AppDelegate.h */,
 				E4CF41AA1A34C3C100247E48 /* AppDelegate.m */,
 				E4CF41AB1A34C3C100247E48 /* Images.xcassets */,
 				E4CF41421A34ABF400247E48 /* Supporting Files */,
-				E4CF41FF1A34D37C00247E48 /* InterviewDockItem.h */,
-				E4CF42001A34D37C00247E48 /* InterviewDockItem.m */,
 			);
 			path = 9188Interview;
 			sourceTree = "<group>";
@@ -151,6 +167,42 @@
 				E4CF41EC1A34C53500247E48 /* mylottery@2x.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		E4CF42021A34EDD000247E48 /* LotteryHall */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF42061A34F00D00247E48 /* InterviewLotteryHallViewController.h */,
+				E4CF42071A34F00D00247E48 /* InterviewLotteryHallViewController.m */,
+			);
+			name = LotteryHall;
+			sourceTree = "<group>";
+		};
+		E4CF42031A34EE4000247E48 /* Syndicate */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF42091A34F03800247E48 /* InterviewSyndicateViewController.h */,
+				E4CF420A1A34F03800247E48 /* InterviewSyndicateViewController.m */,
+			);
+			name = Syndicate;
+			sourceTree = "<group>";
+		};
+		E4CF42041A34EED100247E48 /* RunLottery */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF420C1A34F06A00247E48 /* InterviewRunLotteryViewController.h */,
+				E4CF420D1A34F06A00247E48 /* InterviewRunLotteryViewController.m */,
+			);
+			name = RunLottery;
+			sourceTree = "<group>";
+		};
+		E4CF42051A34EF0000247E48 /* MyLotteries */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF420F1A34F0A800247E48 /* InterviewMyLotteriesViewController.h */,
+				E4CF42101A34F0A800247E48 /* InterviewMyLotteriesViewController.m */,
+			);
+			name = MyLotteries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +312,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CF420E1A34F06A00247E48 /* InterviewRunLotteryViewController.m in Sources */,
 				E4CF41B31A34C45600247E48 /* InterviewMainViewController.m in Sources */,
+				E4CF42081A34F00D00247E48 /* InterviewLotteryHallViewController.m in Sources */,
 				E4CF41AC1A34C3C100247E48 /* AppDelegate.m in Sources */,
+				E4CF42111A34F0A800247E48 /* InterviewMyLotteriesViewController.m in Sources */,
+				E4CF420B1A34F03800247E48 /* InterviewSyndicateViewController.m in Sources */,
 				E4CF41451A34ABF400247E48 /* main.m in Sources */,
 				E4CF42011A34D37C00247E48 /* InterviewDockItem.m in Sources */,
 			);

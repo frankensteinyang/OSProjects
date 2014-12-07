@@ -8,10 +8,18 @@
 
 #import "InterviewMainViewController.h"
 #import "InterviewDockItem.h"
+#import "InterviewLotteryHallViewController.h"
+#import "InterviewSyndicateViewController.h"
+#import "InterviewRunLotteryViewController.h"
+#import "InterviewMyLotteriesViewController.h"
+
+#define kDockItemCount 4
 
 @interface InterviewMainViewController () {
 
     UIView *_dock;
+    InterviewDockItem *_selectedItem;
+    NSArray *_allViewControllers;
 }
 
 @end
@@ -47,14 +55,26 @@
     // 我的彩票
     [self addDockItem:@"我的彩票" icon:@"mylottery.png" selectedIcon:@"mylottery_selected.png" index:3];
     
+    InterviewLotteryHallViewController *lotteryHall = [[InterviewLotteryHallViewController alloc] init];
+    InterviewSyndicateViewController *syndicate = [[InterviewSyndicateViewController alloc] init];
+    InterviewRunLotteryViewController *runLottery = [[InterviewRunLotteryViewController alloc] init];
+    InterviewMyLotteriesViewController *myLotteries = [[InterviewMyLotteriesViewController alloc] init];
+    
+    // 选项卡有顺序，控制器要有顺序，用数组
+    _allViewControllers = @[lotteryHall, syndicate, runLottery, myLotteries];
+    
 }
 
 - (void)addDockItem:(NSString *)title icon:(NSString *)icon selectedIcon:(NSString *)selectedIcon index:(int)index {
 
-    CGFloat itemW = _dock.frame.size.width / 4;
+    CGFloat itemW = _dock.frame.size.width / kDockItemCount;
     CGFloat itemH = _dock.frame.size.height;
     CGFloat itemX = index * itemW;
     InterviewDockItem *item = [InterviewDockItem buttonWithType:UIButtonTypeCustom];
+    
+    // 绑定位置Tag
+    item.tag = index;
+    
     item.frame = CGRectMake(itemX, 0, itemW, itemH);
     [item setImage:[UIImage imageNamed:icon] forState:UIControlStateNormal];
     [item setImage:[UIImage imageNamed:selectedIcon] forState:UIControlStateSelected];
@@ -64,14 +84,40 @@
     [item setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     item.titleLabel.font = [UIFont systemFontOfSize:11.0];
     
-    // 监听按钮的点击
-    [item addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchUpInside];
+    // 自定义选项卡按钮设计原则：用UIControlEventTouchDown，按下去就要触发点击事件，优化用户体验
+    [item addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchDown];
+    if (index == 0) {
+        [self itemClick:item];
+    }
     [_dock addSubview:item];
 }
 
 - (void)itemClick:(InterviewDockItem *)item {
+    
+    // 切换控制器
+    // （个人面试项目总结：控制器创建好，不一定代表view也创建了，创建的控制器不耗内存，耗内存的是view，view的结构太深）
+    // 移除旧控制器的view
+    UIViewController *oldController = _allViewControllers[_selectedItem.tag];
+    [oldController.view removeFromSuperview];
+    
+    // 添加新控制器的view
+    UIViewController *newController = _allViewControllers[item.tag];
+    CGFloat viewW = self.view.frame.size.width;
+    CGFloat viewH = self.view.frame.size.height - _dock.frame.size.height;
+    newController.view.frame = CGRectMake(0, 0, viewW, viewH);
+    [self.view addSubview:newController.view];
 
+    // 方法一
+    _selectedItem.selected = NO;
     item.selected = YES;
+    _selectedItem = item;
+    
+    // 方法二
+//    for (InterviewDockItem *item in _dock.subviews) {
+//        item.selected = NO;
+//    }
+//    item.selected = YES;
+    
 }
 
 @end

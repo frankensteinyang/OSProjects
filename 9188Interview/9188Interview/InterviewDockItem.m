@@ -12,6 +12,18 @@
 
 @implementation InterviewDockItem
 
+// - (id)init方法内部会调用initWithFrame:，故不用实现init
+- (id)initWithFrame:(CGRect)frame {
+
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.imageView.contentMode = UIViewContentModeCenter;
+        self.titleLabel.textAlignment = NSTextAlignmentCenter;
+        self.titleLabel.font = [UIFont systemFontOfSize:11.0];
+    }
+    return self;
+}
+
 - (CGRect)imageRectForContentRect:(CGRect)contentRect {
 
     CGFloat imgW = contentRect.size.width;

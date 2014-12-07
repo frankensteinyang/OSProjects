@@ -1,6 +1,6 @@
 //
-//  AspieContactsTests.m
-//  AspieContactsTests
+//  _188InterviewTests.m
+//  9188InterviewTests
 //
 //  Created by Hannibal Yang on 12/7/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface AspieContactsTests : XCTestCase
+@interface _188InterviewTests : XCTestCase
 
 @end
 
-@implementation AspieContactsTests
+@implementation _188InterviewTests
 
 - (void)setUp {
     [super setUp];

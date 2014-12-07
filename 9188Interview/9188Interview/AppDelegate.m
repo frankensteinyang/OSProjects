@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  AspieContacts
+//  9188Interview
 //
 //  Created by Hannibal Yang on 12/7/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
@@ -16,7 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    
+    [self.window makeKeyAndVisible];
     return YES;
 }
 

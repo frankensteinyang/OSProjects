@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
-               BuildableName = "AspieContacts.app"
-               BlueprintName = "AspieContacts"
-               ReferencedContainer = "container:AspieContacts.xcodeproj">
+               BlueprintIdentifier = "E4CF413E1A34ABF400247E48"
+               BuildableName = "9188Interview.app"
+               BlueprintName = "9188Interview"
+               ReferencedContainer = "container:9188Interview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E47CE6C11A33A5120019DEB7"
-               BuildableName = "AspieContactsTests.xctest"
-               BlueprintName = "AspieContactsTests"
-               ReferencedContainer = "container:AspieContacts.xcodeproj">
+               BlueprintIdentifier = "E4CF41571A34ABF400247E48"
+               BuildableName = "9188InterviewTests.xctest"
+               BlueprintName = "9188InterviewTests"
+               ReferencedContainer = "container:9188Interview.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E47CE6C11A33A5120019DEB7"
-               BuildableName = "AspieContactsTests.xctest"
-               BlueprintName = "AspieContactsTests"
-               ReferencedContainer = "container:AspieContacts.xcodeproj">
+               BlueprintIdentifier = "E4CF41571A34ABF400247E48"
+               BuildableName = "9188InterviewTests.xctest"
+               BlueprintName = "9188InterviewTests"
+               ReferencedContainer = "container:9188Interview.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
-            BuildableName = "AspieContacts.app"
-            BlueprintName = "AspieContacts"
-            ReferencedContainer = "container:AspieContacts.xcodeproj">
+            BlueprintIdentifier = "E4CF413E1A34ABF400247E48"
+            BuildableName = "9188Interview.app"
+            BlueprintName = "9188Interview"
+            ReferencedContainer = "container:9188Interview.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
-            BuildableName = "AspieContacts.app"
-            BlueprintName = "AspieContacts"
-            ReferencedContainer = "container:AspieContacts.xcodeproj">
+            BlueprintIdentifier = "E4CF413E1A34ABF400247E48"
+            BuildableName = "9188Interview.app"
+            BlueprintName = "9188Interview"
+            ReferencedContainer = "container:9188Interview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E47CE6A81A33A5120019DEB7"
-            BuildableName = "AspieContacts.app"
-            BlueprintName = "AspieContacts"
-            ReferencedContainer = "container:AspieContacts.xcodeproj">
+            BlueprintIdentifier = "E4CF413E1A34ABF400247E48"
+            BuildableName = "9188Interview.app"
+            BlueprintName = "9188Interview"
+            ReferencedContainer = "container:9188Interview.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

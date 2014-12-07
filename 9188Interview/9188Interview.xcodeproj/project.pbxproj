@@ -8,9 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		E4CF41451A34ABF400247E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41441A34ABF400247E48 /* main.m */; };
-		E4CF41481A34ABF400247E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41471A34ABF400247E48 /* AppDelegate.m */; };
-		E4CF41501A34ABF400247E48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CF414F1A34ABF400247E48 /* Images.xcassets */; };
 		E4CF415F1A34ABF500247E48 /* _188InterviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF415E1A34ABF500247E48 /* _188InterviewTests.m */; };
+		E4CF41AC1A34C3C100247E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41AA1A34C3C100247E48 /* AppDelegate.m */; };
+		E4CF41AD1A34C3C100247E48 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41AB1A34C3C100247E48 /* Images.xcassets */; };
+		E4CF41B31A34C45600247E48 /* InterviewMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41B21A34C45600247E48 /* InterviewMainViewController.m */; };
+		E4CF41ED1A34C53500247E48 /* bg_white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41DC1A34C53500247E48 /* bg_white@2x.png */; };
+		E4CF41EF1A34C53500247E48 /* faxian@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41DE1A34C53500247E48 /* faxian@2x.png */; };
+		E4CF41F11A34C53500247E48 /* faxianclike@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41E01A34C53500247E48 /* faxianclike@2x.png */; };
+		E4CF41F31A34C53500247E48 /* gcdt_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41E21A34C53500247E48 /* gcdt_selected@2x.png */; };
+		E4CF41F51A34C53500247E48 /* gcdt@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41E41A34C53500247E48 /* gcdt@2x.png */; };
+		E4CF41F71A34C53500247E48 /* hm_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41E61A34C53500247E48 /* hm_selected@2x.png */; };
+		E4CF41F91A34C53500247E48 /* hm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41E81A34C53500247E48 /* hm@2x.png */; };
+		E4CF41FB1A34C53500247E48 /* mylottery_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41EA1A34C53500247E48 /* mylottery_selected@2x.png */; };
+		E4CF41FD1A34C53500247E48 /* mylottery@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CF41EC1A34C53500247E48 /* mylottery@2x.png */; };
+		E4CF42011A34D37C00247E48 /* InterviewDockItem.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF42001A34D37C00247E48 /* InterviewDockItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +38,25 @@
 		E4CF413F1A34ABF400247E48 /* 9188Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9188Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF41431A34ABF400247E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CF41441A34ABF400247E48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		E4CF41461A34ABF400247E48 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		E4CF41471A34ABF400247E48 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E4CF414F1A34ABF400247E48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		E4CF41581A34ABF400247E48 /* 9188InterviewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = 9188InterviewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF415D1A34ABF400247E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CF415E1A34ABF500247E48 /* _188InterviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = _188InterviewTests.m; sourceTree = "<group>"; };
+		E4CF41A91A34C3C100247E48 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4CF41AA1A34C3C100247E48 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4CF41AB1A34C3C100247E48 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4CF41B11A34C45600247E48 /* InterviewMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewMainViewController.h; sourceTree = "<group>"; };
+		E4CF41B21A34C45600247E48 /* InterviewMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewMainViewController.m; sourceTree = "<group>"; };
+		E4CF41DC1A34C53500247E48 /* bg_white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bg_white@2x.png"; sourceTree = "<group>"; };
+		E4CF41DE1A34C53500247E48 /* faxian@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "faxian@2x.png"; sourceTree = "<group>"; };
+		E4CF41E01A34C53500247E48 /* faxianclike@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "faxianclike@2x.png"; sourceTree = "<group>"; };
+		E4CF41E21A34C53500247E48 /* gcdt_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gcdt_selected@2x.png"; sourceTree = "<group>"; };
+		E4CF41E41A34C53500247E48 /* gcdt@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gcdt@2x.png"; sourceTree = "<group>"; };
+		E4CF41E61A34C53500247E48 /* hm_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hm_selected@2x.png"; sourceTree = "<group>"; };
+		E4CF41E81A34C53500247E48 /* hm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hm@2x.png"; sourceTree = "<group>"; };
+		E4CF41EA1A34C53500247E48 /* mylottery_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mylottery_selected@2x.png"; sourceTree = "<group>"; };
+		E4CF41EC1A34C53500247E48 /* mylottery@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mylottery@2x.png"; sourceTree = "<group>"; };
+		E4CF41FF1A34D37C00247E48 /* InterviewDockItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewDockItem.h; sourceTree = "<group>"; };
+		E4CF42001A34D37C00247E48 /* InterviewDockItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewDockItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,10 +98,14 @@
 		E4CF41411A34ABF400247E48 /* 9188Interview */ = {
 			isa = PBXGroup;
 			children = (
-				E4CF41461A34ABF400247E48 /* AppDelegate.h */,
-				E4CF41471A34ABF400247E48 /* AppDelegate.m */,
-				E4CF414F1A34ABF400247E48 /* Images.xcassets */,
+				E4CF41B11A34C45600247E48 /* InterviewMainViewController.h */,
+				E4CF41B21A34C45600247E48 /* InterviewMainViewController.m */,
+				E4CF41A91A34C3C100247E48 /* AppDelegate.h */,
+				E4CF41AA1A34C3C100247E48 /* AppDelegate.m */,
+				E4CF41AB1A34C3C100247E48 /* Images.xcassets */,
 				E4CF41421A34ABF400247E48 /* Supporting Files */,
+				E4CF41FF1A34D37C00247E48 /* InterviewDockItem.h */,
+				E4CF42001A34D37C00247E48 /* InterviewDockItem.m */,
 			);
 			path = 9188Interview;
 			sourceTree = "<group>";
@@ -85,6 +113,7 @@
 		E4CF41421A34ABF400247E48 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4CF41FE1A34C59600247E48 /* Images */,
 				E4CF41431A34ABF400247E48 /* Info.plist */,
 				E4CF41441A34ABF400247E48 /* main.m */,
 			);
@@ -106,6 +135,22 @@
 				E4CF415D1A34ABF400247E48 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CF41FE1A34C59600247E48 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF41DC1A34C53500247E48 /* bg_white@2x.png */,
+				E4CF41DE1A34C53500247E48 /* faxian@2x.png */,
+				E4CF41E01A34C53500247E48 /* faxianclike@2x.png */,
+				E4CF41E21A34C53500247E48 /* gcdt_selected@2x.png */,
+				E4CF41E41A34C53500247E48 /* gcdt@2x.png */,
+				E4CF41E61A34C53500247E48 /* hm_selected@2x.png */,
+				E4CF41E81A34C53500247E48 /* hm@2x.png */,
+				E4CF41EA1A34C53500247E48 /* mylottery_selected@2x.png */,
+				E4CF41EC1A34C53500247E48 /* mylottery@2x.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,7 +233,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4CF41501A34ABF400247E48 /* Images.xcassets in Resources */,
+				E4CF41F71A34C53500247E48 /* hm_selected@2x.png in Resources */,
+				E4CF41AD1A34C3C100247E48 /* Images.xcassets in Resources */,
+				E4CF41F91A34C53500247E48 /* hm@2x.png in Resources */,
+				E4CF41EF1A34C53500247E48 /* faxian@2x.png in Resources */,
+				E4CF41FB1A34C53500247E48 /* mylottery_selected@2x.png in Resources */,
+				E4CF41F31A34C53500247E48 /* gcdt_selected@2x.png in Resources */,
+				E4CF41F11A34C53500247E48 /* faxianclike@2x.png in Resources */,
+				E4CF41ED1A34C53500247E48 /* bg_white@2x.png in Resources */,
+				E4CF41FD1A34C53500247E48 /* mylottery@2x.png in Resources */,
+				E4CF41F51A34C53500247E48 /* gcdt@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,8 +260,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4CF41481A34ABF400247E48 /* AppDelegate.m in Sources */,
+				E4CF41B31A34C45600247E48 /* InterviewMainViewController.m in Sources */,
+				E4CF41AC1A34C3C100247E48 /* AppDelegate.m in Sources */,
 				E4CF41451A34ABF400247E48 /* main.m in Sources */,
+				E4CF42011A34D37C00247E48 /* InterviewDockItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

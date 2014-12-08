@@ -9,8 +9,6 @@
 #import "InterviewDock.h"
 #import "InterviewDockItem.h"
 
-#define kDockItemCount 4
-
 @interface InterviewDock () {
 
     InterviewDockItem *_selectedItem;
@@ -27,28 +25,43 @@
 }
 */
 
-- (void)addDockItem:(NSString *)title icon:(NSString *)icon selectedIcon:(NSString *)selectedIcon index:(int)index {
+- (void)addDockItem:(NSString *)title icon:(NSString *)icon selectedIcon:(NSString *)sIcon {
     
-    CGFloat itemW = self.frame.size.width / kDockItemCount;
-    CGFloat itemH = self.frame.size.height;
-    CGFloat itemX = index * itemW;
     InterviewDockItem *item = [InterviewDockItem buttonWithType:UIButtonTypeCustom];
     
-    // 绑定位置Tag
-    item.tag = index;
-    
-    item.frame = CGRectMake(itemX, 0, itemW, itemH);
     [item setImage:[UIImage imageNamed:icon] forState:UIControlStateNormal];
-    [item setImage:[UIImage imageNamed:selectedIcon] forState:UIControlStateSelected];
+    [item setImage:[UIImage imageNamed:sIcon] forState:UIControlStateSelected];
     [item setTitle:title forState:UIControlStateNormal];
     [item setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     
     // 自定义选项卡按钮设计原则：用UIControlEventTouchDown，按下去就要触发点击事件，优化用户体验
     [item addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchDown];
-    if (index == 0) {
-        [self itemClick:item];
-    }
+
     [self addSubview:item];
+    
+    // 校正排列frame
+    [ self adjustItemFrame];
+}
+
+- (void)adjustItemFrame {
+
+    int count = self.subviews.count;
+    CGFloat itemW = self.frame.size.width / count;
+    CGFloat itemH = self.frame.size.height;
+    CGFloat itemY = 0;
+    for (int i = 0; i < count; i++) {
+        CGFloat itemX = i * itemW;
+        InterviewDockItem *child = self.subviews[i];
+        child.frame = CGRectMake(itemX, itemY, itemW, itemH);
+        
+        // 绑定位置Tag
+        child.tag = i;
+        
+        if (i == 0) {
+            // 默认选中最左边的按钮（相当于点击了这个按钮）
+            [self itemClick:child];
+        }
+    }
 }
 
 - (void)itemClick:(InterviewDockItem *)item {

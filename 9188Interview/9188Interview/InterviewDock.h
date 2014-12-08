@@ -20,6 +20,6 @@
 
 @property (nonatomic, weak) id<InterviewDockDelegate> delegate;
 
-- (void)addDockItem:(NSString *)title icon:(NSString *)icon selectedIcon:(NSString *)selectedIcon index:(int)index;
+- (void)addDockItem:(NSString *)title icon:(NSString *)icon selectedIcon:(NSString *)sIcon;
 
 @end

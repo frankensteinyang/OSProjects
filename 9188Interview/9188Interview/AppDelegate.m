@@ -19,7 +19,11 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    self.window.rootViewController = [[InterviewMainViewController alloc] init];
+    InterviewMainViewController *main = [[InterviewMainViewController alloc] init];
+    // 设置UINavigationController的navigationBar不会挡住顶端的cell
+    main.edgesForExtendedLayout = UIRectEdgeNone;
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:main];
+    self.window.rootViewController.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background.png"]];
     [self.window makeKeyAndVisible];
     return YES;
 }

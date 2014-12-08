@@ -33,6 +33,7 @@
     [item setImage:[UIImage imageNamed:sIcon] forState:UIControlStateSelected];
     [item setTitle:title forState:UIControlStateNormal];
     [item setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    [item setTitleColor:[UIColor colorWithRed:248/255.0 green:135/255.0 blue:28/255.0 alpha:1.0] forState:UIControlStateSelected];
     
     // 自定义选项卡按钮设计原则：用UIControlEventTouchDown，按下去就要触发点击事件，优化用户体验
     [item addTarget:self action:@selector(itemClick:) forControlEvents:UIControlEventTouchDown];

@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E47A0DFC1A360825003920D3 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A0DFB1A360825003920D3 /* background@2x.png */; };
+		E47A0E061A3619ED003920D3 /* InterviewUnionLottoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E051A3619ED003920D3 /* InterviewUnionLottoViewController.m */; };
+		E47A0E081A3631FC003920D3 /* NoticeIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E071A3631FC003920D3 /* NoticeIcon@2x.png */; };
+		E47A0E0C1A363F42003920D3 /* UIImage+Interview.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E0B1A363F42003920D3 /* UIImage+Interview.m */; };
+		E47A0E0F1A36411E003920D3 /* UINavigationItem+Interview.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E0E1A36411E003920D3 /* UINavigationItem+Interview.m */; };
+		E47A0E111A3651D1003920D3 /* left_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E101A3651D1003920D3 /* left_red@2x.png */; };
 		E4CF41451A34ABF400247E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41441A34ABF400247E48 /* main.m */; };
 		E4CF415F1A34ABF500247E48 /* _188InterviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF415E1A34ABF500247E48 /* _188InterviewTests.m */; };
 		E4CF41AC1A34C3C100247E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41AA1A34C3C100247E48 /* AppDelegate.m */; };
@@ -40,6 +46,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E47A0DFB1A360825003920D3 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		E47A0E041A3619ED003920D3 /* InterviewUnionLottoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewUnionLottoViewController.h; sourceTree = "<group>"; };
+		E47A0E051A3619ED003920D3 /* InterviewUnionLottoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewUnionLottoViewController.m; sourceTree = "<group>"; };
+		E47A0E071A3631FC003920D3 /* NoticeIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "NoticeIcon@2x.png"; sourceTree = "<group>"; };
+		E47A0E0A1A363F42003920D3 /* UIImage+Interview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Interview.h"; sourceTree = "<group>"; };
+		E47A0E0B1A363F42003920D3 /* UIImage+Interview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Interview.m"; sourceTree = "<group>"; };
+		E47A0E0D1A36411E003920D3 /* UINavigationItem+Interview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Interview.h"; sourceTree = "<group>"; };
+		E47A0E0E1A36411E003920D3 /* UINavigationItem+Interview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Interview.m"; sourceTree = "<group>"; };
+		E47A0E101A3651D1003920D3 /* left_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_red@2x.png"; sourceTree = "<group>"; };
 		E4CF413F1A34ABF400247E48 /* 9188Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9188Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF41431A34ABF400247E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CF41441A34ABF400247E48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -92,6 +107,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E47A0DFA1A360808003920D3 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E4CF41DC1A34C53500247E48 /* bg_white@2x.png */,
+				E4CF41DE1A34C53500247E48 /* faxian@2x.png */,
+				E4CF41E01A34C53500247E48 /* faxianclike@2x.png */,
+				E4CF41E21A34C53500247E48 /* gcdt_selected@2x.png */,
+				E4CF41E41A34C53500247E48 /* gcdt@2x.png */,
+				E4CF41E61A34C53500247E48 /* hm_selected@2x.png */,
+				E4CF41E81A34C53500247E48 /* hm@2x.png */,
+				E4CF41EA1A34C53500247E48 /* mylottery_selected@2x.png */,
+				E4CF41EC1A34C53500247E48 /* mylottery@2x.png */,
+			);
+			name = TabBar;
+			sourceTree = "<group>";
+		};
+		E47A0E031A3619A0003920D3 /* UnionLotto */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E041A3619ED003920D3 /* InterviewUnionLottoViewController.h */,
+				E47A0E051A3619ED003920D3 /* InterviewUnionLottoViewController.m */,
+			);
+			name = UnionLotto;
+			sourceTree = "<group>";
+		};
+		E47A0E091A363E6F003920D3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E0A1A363F42003920D3 /* UIImage+Interview.h */,
+				E47A0E0B1A363F42003920D3 /* UIImage+Interview.m */,
+				E47A0E0D1A36411E003920D3 /* UINavigationItem+Interview.h */,
+				E47A0E0E1A36411E003920D3 /* UINavigationItem+Interview.m */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
 		E4CF41361A34ABF400247E48 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +164,7 @@
 		E4CF41411A34ABF400247E48 /* 9188Interview */ = {
 			isa = PBXGroup;
 			children = (
+				E47A0E091A363E6F003920D3 /* Category */,
 				E4CF42021A34EDD000247E48 /* LotteryHall */,
 				E4CF42031A34EE4000247E48 /* Syndicate */,
 				E4CF42041A34EED100247E48 /* RunLottery */,
@@ -161,15 +213,10 @@
 		E4CF41FE1A34C59600247E48 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				E4CF41DC1A34C53500247E48 /* bg_white@2x.png */,
-				E4CF41DE1A34C53500247E48 /* faxian@2x.png */,
-				E4CF41E01A34C53500247E48 /* faxianclike@2x.png */,
-				E4CF41E21A34C53500247E48 /* gcdt_selected@2x.png */,
-				E4CF41E41A34C53500247E48 /* gcdt@2x.png */,
-				E4CF41E61A34C53500247E48 /* hm_selected@2x.png */,
-				E4CF41E81A34C53500247E48 /* hm@2x.png */,
-				E4CF41EA1A34C53500247E48 /* mylottery_selected@2x.png */,
-				E4CF41EC1A34C53500247E48 /* mylottery@2x.png */,
+				E47A0E101A3651D1003920D3 /* left_red@2x.png */,
+				E47A0E071A3631FC003920D3 /* NoticeIcon@2x.png */,
+				E47A0DFB1A360825003920D3 /* background@2x.png */,
+				E47A0DFA1A360808003920D3 /* TabBar */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -177,6 +224,7 @@
 		E4CF42021A34EDD000247E48 /* LotteryHall */ = {
 			isa = PBXGroup;
 			children = (
+				E47A0E031A3619A0003920D3 /* UnionLotto */,
 				E4CF42061A34F00D00247E48 /* InterviewLotteryHallViewController.h */,
 				E4CF42071A34F00D00247E48 /* InterviewLotteryHallViewController.m */,
 			);
@@ -291,13 +339,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CF41F71A34C53500247E48 /* hm_selected@2x.png in Resources */,
+				E47A0DFC1A360825003920D3 /* background@2x.png in Resources */,
 				E4CF41AD1A34C3C100247E48 /* Images.xcassets in Resources */,
 				E4CF41F91A34C53500247E48 /* hm@2x.png in Resources */,
 				E4CF41EF1A34C53500247E48 /* faxian@2x.png in Resources */,
 				E4CF41FB1A34C53500247E48 /* mylottery_selected@2x.png in Resources */,
 				E4CF41F31A34C53500247E48 /* gcdt_selected@2x.png in Resources */,
+				E47A0E111A3651D1003920D3 /* left_red@2x.png in Resources */,
 				E4CF41F11A34C53500247E48 /* faxianclike@2x.png in Resources */,
 				E4CF41ED1A34C53500247E48 /* bg_white@2x.png in Resources */,
+				E47A0E081A3631FC003920D3 /* NoticeIcon@2x.png in Resources */,
 				E4CF41FD1A34C53500247E48 /* mylottery@2x.png in Resources */,
 				E4CF41F51A34C53500247E48 /* gcdt@2x.png in Resources */,
 			);
@@ -320,9 +371,12 @@
 				E4CF420E1A34F06A00247E48 /* InterviewRunLotteryViewController.m in Sources */,
 				E4CF41B31A34C45600247E48 /* InterviewMainViewController.m in Sources */,
 				E4CF42081A34F00D00247E48 /* InterviewLotteryHallViewController.m in Sources */,
+				E47A0E061A3619ED003920D3 /* InterviewUnionLottoViewController.m in Sources */,
+				E47A0E0F1A36411E003920D3 /* UINavigationItem+Interview.m in Sources */,
 				E4CF41AC1A34C3C100247E48 /* AppDelegate.m in Sources */,
 				E4CF42111A34F0A800247E48 /* InterviewMyLotteriesViewController.m in Sources */,
 				E4CF42141A35125700247E48 /* InterviewDock.m in Sources */,
+				E47A0E0C1A363F42003920D3 /* UIImage+Interview.m in Sources */,
 				E4CF420B1A34F03800247E48 /* InterviewSyndicateViewController.m in Sources */,
 				E4CF41451A34ABF400247E48 /* main.m in Sources */,
 				E4CF42011A34D37C00247E48 /* InterviewDockItem.m in Sources */,
@@ -499,6 +553,7 @@
 				E4CF41641A34ABF500247E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E4CF41651A34ABF500247E48 /* Build configuration list for PBXNativeTarget "9188InterviewTests" */ = {
 			isa = XCConfigurationList;
@@ -507,6 +562,7 @@
 				E4CF41671A34ABF500247E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

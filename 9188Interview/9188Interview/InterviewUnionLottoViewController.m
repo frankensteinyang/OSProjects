@@ -1,22 +1,29 @@
 //
-//  InterviewMyLotteriesViewController.m
+//  InterviewUnionLottoViewController.m
 //  9188Interview
 //
-//  Created by Hannibal Yang on 12/8/14.
+//  Created by Hannibal Yang on 12/9/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
-#import "InterviewMyLotteriesViewController.h"
+#import "InterviewUnionLottoViewController.h"
 
-@interface InterviewMyLotteriesViewController ()
+@interface InterviewUnionLottoViewController ()
 
 @end
 
-@implementation InterviewMyLotteriesViewController
+@implementation InterviewUnionLottoViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view.
     
+    self.view.backgroundColor = [UIColor redColor];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
 /*

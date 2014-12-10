@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E47A0E211A365825003920D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E201A365825003920D3 /* main.m */; };
+		E47A0E241A365825003920D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E231A365825003920D3 /* AppDelegate.m */; };
+		E47A0E2A1A365825003920D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E281A365825003920D3 /* Main.storyboard */; };
+		E47A0E2C1A365825003920D3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E2B1A365825003920D3 /* Images.xcassets */; };
+		E47A0E2F1A365825003920D3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E2D1A365825003920D3 /* LaunchScreen.xib */; };
+		E47A0E3B1A365825003920D3 /* HardestGameFrankensteinTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E3A1A365825003920D3 /* HardestGameFrankensteinTests.m */; };
+		E47A0E481A365998003920D3 /* HGFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E471A365998003920D3 /* HGFHomeViewController.m */; };
+		E47A0E4B1A3669AB003920D3 /* home_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E4A1A3669AB003920D3 /* home_bg.jpg */; };
+		E47A0E4F1A3673AC003920D3 /* HGFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E4E1A3673AC003920D3 /* HGFSettingViewController.m */; };
+		E47A0E511A367632003920D3 /* setting_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E501A367632003920D3 /* setting_bg.jpg */; };
+		E47A0E531A3676BF003920D3 /* bt_back.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E521A3676BF003920D3 /* bt_back.png */; };
+		E47A0E551A3677C3003920D3 /* bt_green.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E541A3677C3003920D3 /* bt_green.png */; };
+		E47A0E591A36804D003920D3 /* HGFMissionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E581A36804D003920D3 /* HGFMissionViewController.m */; };
+		E47A0E5B1A36817F003920D3 /* select_easy_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E5A1A36817F003920D3 /* select_easy_bg.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E47A0E351A365825003920D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E47A0E131A365825003920D3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E47A0E1A1A365825003920D3;
+			remoteInfo = HardestGameFrankenstein;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E47A0E1B1A365825003920D3 /* HardestGameFrankenstein.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HardestGameFrankenstein.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47A0E1F1A365825003920D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47A0E201A365825003920D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E47A0E221A365825003920D3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E47A0E231A365825003920D3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E47A0E291A365825003920D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E47A0E2B1A365825003920D3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E47A0E2E1A365825003920D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E47A0E341A365825003920D3 /* HardestGameFrankensteinTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HardestGameFrankensteinTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E47A0E391A365825003920D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E47A0E3A1A365825003920D3 /* HardestGameFrankensteinTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HardestGameFrankensteinTests.m; sourceTree = "<group>"; };
+		E47A0E461A365998003920D3 /* HGFHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGFHomeViewController.h; sourceTree = "<group>"; };
+		E47A0E471A365998003920D3 /* HGFHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGFHomeViewController.m; sourceTree = "<group>"; };
+		E47A0E4A1A3669AB003920D3 /* home_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home_bg.jpg; sourceTree = "<group>"; };
+		E47A0E4D1A3673AC003920D3 /* HGFSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGFSettingViewController.h; sourceTree = "<group>"; };
+		E47A0E4E1A3673AC003920D3 /* HGFSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGFSettingViewController.m; sourceTree = "<group>"; };
+		E47A0E501A367632003920D3 /* setting_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = setting_bg.jpg; sourceTree = "<group>"; };
+		E47A0E521A3676BF003920D3 /* bt_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_back.png; sourceTree = "<group>"; };
+		E47A0E541A3677C3003920D3 /* bt_green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bt_green.png; sourceTree = "<group>"; };
+		E47A0E571A36804D003920D3 /* HGFMissionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGFMissionViewController.h; sourceTree = "<group>"; };
+		E47A0E581A36804D003920D3 /* HGFMissionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGFMissionViewController.m; sourceTree = "<group>"; };
+		E47A0E5A1A36817F003920D3 /* select_easy_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = select_easy_bg.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E47A0E181A365825003920D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47A0E311A365825003920D3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E47A0E121A365825003920D3 = {
+			isa = PBXGroup;
+			children = (
+				E47A0E1D1A365825003920D3 /* HardestGameFrankenstein */,
+				E47A0E371A365825003920D3 /* HardestGameFrankensteinTests */,
+				E47A0E1C1A365825003920D3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E47A0E1C1A365825003920D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E1B1A365825003920D3 /* HardestGameFrankenstein.app */,
+				E47A0E341A365825003920D3 /* HardestGameFrankensteinTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E47A0E1D1A365825003920D3 /* HardestGameFrankenstein */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E561A36802E003920D3 /* Mission */,
+				E47A0E4C1A367384003920D3 /* Setting */,
+				E47A0E451A36597A003920D3 /* Home */,
+				E47A0E221A365825003920D3 /* AppDelegate.h */,
+				E47A0E231A365825003920D3 /* AppDelegate.m */,
+				E47A0E281A365825003920D3 /* Main.storyboard */,
+				E47A0E2B1A365825003920D3 /* Images.xcassets */,
+				E47A0E2D1A365825003920D3 /* LaunchScreen.xib */,
+				E47A0E1E1A365825003920D3 /* Supporting Files */,
+			);
+			path = HardestGameFrankenstein;
+			sourceTree = "<group>";
+		};
+		E47A0E1E1A365825003920D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E491A365C4D003920D3 /* Images */,
+				E47A0E1F1A365825003920D3 /* Info.plist */,
+				E47A0E201A365825003920D3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47A0E371A365825003920D3 /* HardestGameFrankensteinTests */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E3A1A365825003920D3 /* HardestGameFrankensteinTests.m */,
+				E47A0E381A365825003920D3 /* Supporting Files */,
+			);
+			path = HardestGameFrankensteinTests;
+			sourceTree = "<group>";
+		};
+		E47A0E381A365825003920D3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E391A365825003920D3 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E47A0E451A36597A003920D3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E461A365998003920D3 /* HGFHomeViewController.h */,
+				E47A0E471A365998003920D3 /* HGFHomeViewController.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		E47A0E491A365C4D003920D3 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E5A1A36817F003920D3 /* select_easy_bg.jpg */,
+				E47A0E541A3677C3003920D3 /* bt_green.png */,
+				E47A0E521A3676BF003920D3 /* bt_back.png */,
+				E47A0E501A367632003920D3 /* setting_bg.jpg */,
+				E47A0E4A1A3669AB003920D3 /* home_bg.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		E47A0E4C1A367384003920D3 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E4D1A3673AC003920D3 /* HGFSettingViewController.h */,
+				E47A0E4E1A3673AC003920D3 /* HGFSettingViewController.m */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		E47A0E561A36802E003920D3 /* Mission */ = {
+			isa = PBXGroup;
+			children = (
+				E47A0E571A36804D003920D3 /* HGFMissionViewController.h */,
+				E47A0E581A36804D003920D3 /* HGFMissionViewController.m */,
+			);
+			path = Mission;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E47A0E1A1A365825003920D3 /* HardestGameFrankenstein */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47A0E3E1A365825003920D3 /* Build configuration list for PBXNativeTarget "HardestGameFrankenstein" */;
+			buildPhases = (
+				E47A0E171A365825003920D3 /* Sources */,
+				E47A0E181A365825003920D3 /* Frameworks */,
+				E47A0E191A365825003920D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HardestGameFrankenstein;
+			productName = HardestGameFrankenstein;
+			productReference = E47A0E1B1A365825003920D3 /* HardestGameFrankenstein.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E47A0E331A365825003920D3 /* HardestGameFrankensteinTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E47A0E411A365825003920D3 /* Build configuration list for PBXNativeTarget "HardestGameFrankensteinTests" */;
+			buildPhases = (
+				E47A0E301A365825003920D3 /* Sources */,
+				E47A0E311A365825003920D3 /* Frameworks */,
+				E47A0E321A365825003920D3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E47A0E361A365825003920D3 /* PBXTargetDependency */,
+			);
+			name = HardestGameFrankensteinTests;
+			productName = HardestGameFrankensteinTests;
+			productReference = E47A0E341A365825003920D3 /* HardestGameFrankensteinTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E47A0E131A365825003920D3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Hannibal Yang";
+				TargetAttributes = {
+					E47A0E1A1A365825003920D3 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E47A0E331A365825003920D3 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E47A0E1A1A365825003920D3;
+					};
+				};
+			};
+			buildConfigurationList = E47A0E161A365825003920D3 /* Build configuration list for PBXProject "HardestGameFrankenstein" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E47A0E121A365825003920D3;
+			productRefGroup = E47A0E1C1A365825003920D3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E47A0E1A1A365825003920D3 /* HardestGameFrankenstein */,
+				E47A0E331A365825003920D3 /* HardestGameFrankensteinTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E47A0E191A365825003920D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47A0E2A1A365825003920D3 /* Main.storyboard in Resources */,
+				E47A0E2F1A365825003920D3 /* LaunchScreen.xib in Resources */,
+				E47A0E5B1A36817F003920D3 /* select_easy_bg.jpg in Resources */,
+				E47A0E531A3676BF003920D3 /* bt_back.png in Resources */,
+				E47A0E2C1A365825003920D3 /* Images.xcassets in Resources */,
+				E47A0E551A3677C3003920D3 /* bt_green.png in Resources */,
+				E47A0E4B1A3669AB003920D3 /* home_bg.jpg in Resources */,
+				E47A0E511A367632003920D3 /* setting_bg.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47A0E321A365825003920D3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E47A0E171A365825003920D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47A0E241A365825003920D3 /* AppDelegate.m in Sources */,
+				E47A0E481A365998003920D3 /* HGFHomeViewController.m in Sources */,
+				E47A0E211A365825003920D3 /* main.m in Sources */,
+				E47A0E4F1A3673AC003920D3 /* HGFSettingViewController.m in Sources */,
+				E47A0E591A36804D003920D3 /* HGFMissionViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E47A0E301A365825003920D3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E47A0E3B1A365825003920D3 /* HardestGameFrankensteinTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E47A0E361A365825003920D3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E47A0E1A1A365825003920D3 /* HardestGameFrankenstein */;
+			targetProxy = E47A0E351A365825003920D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E47A0E281A365825003920D3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47A0E291A365825003920D3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E47A0E2D1A365825003920D3 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E47A0E2E1A365825003920D3 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E47A0E3C1A365825003920D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E47A0E3D1A365825003920D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E47A0E3F1A365825003920D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HardestGameFrankenstein/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E47A0E401A365825003920D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = HardestGameFrankenstein/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E47A0E421A365825003920D3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HardestGameFrankensteinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HardestGameFrankenstein.app/HardestGameFrankenstein";
+			};
+			name = Debug;
+		};
+		E47A0E431A365825003920D3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = HardestGameFrankensteinTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HardestGameFrankenstein.app/HardestGameFrankenstein";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E47A0E161A365825003920D3 /* Build configuration list for PBXProject "HardestGameFrankenstein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47A0E3C1A365825003920D3 /* Debug */,
+				E47A0E3D1A365825003920D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E47A0E3E1A365825003920D3 /* Build configuration list for PBXNativeTarget "HardestGameFrankenstein" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47A0E3F1A365825003920D3 /* Debug */,
+				E47A0E401A365825003920D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E47A0E411A365825003920D3 /* Build configuration list for PBXNativeTarget "HardestGameFrankensteinTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E47A0E421A365825003920D3 /* Debug */,
+				E47A0E431A365825003920D3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E47A0E131A365825003920D3 /* Project object */;
+}

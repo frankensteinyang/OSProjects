@@ -15,7 +15,8 @@
     HGFMission *mission = [[self alloc] init];
     mission.icon = dict[@"icon"];
     mission.title = dict[@"title"];
-    mission.introduction = dict[@"intro"];
+    // 字典会自动把\n转为\\n，所以这里要再次替换过来
+    mission.introduction = [dict[@"intro"] stringByReplacingOccurrencesOfString:@"\\n" withString:@"\n"];
     return mission;
 }
 

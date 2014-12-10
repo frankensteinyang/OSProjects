@@ -9,6 +9,11 @@
 #import "HGFMissionViewController.h"
 #import "HGFMission.h"
 #import "HGFMissionView.h"
+#import "HGFReadyViewController.h"
+
+@interface HGFMissionViewController () <HGFMissionViewDelegate>
+
+@end
 
 @implementation HGFMissionViewController
 
@@ -50,8 +55,23 @@
         // 传递模型给view
         missionView.mission = mission;
         
+        // 设置代理
+        missionView.delegate = self;
     }
     // 解析关卡数据，展示每一个关卡
+}
+
+#pragma mark - missionView的代理方法
+- (void)missionViewIconClick:(HGFMissionView *)missionView {
+
+    // 执行对应的线，并且传递模型数据（sender对应的模型数据会传给prepareForSegue方法的sender参数）
+    [self performSegueWithIdentifier:@"mission2Ready" sender:missionView.mission];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+
+    HGFReadyViewController *readyController = segue.destinationViewController;
+    readyController.mission = sender;
 }
 
 - (IBAction)back {

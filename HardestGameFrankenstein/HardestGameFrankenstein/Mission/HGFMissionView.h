@@ -8,13 +8,23 @@
 
 #import <UIKit/UIKit.h>
 #import "HGFMission.h"
+@class HGFMissionView;
 
+@protocol HGFMissionViewDelegate <NSObject>
+
+@optional
+- (void)missionViewIconClick:(HGFMissionView *)missionView;
+
+@end
 
 @interface HGFMissionView : UIView
 
 @property (nonatomic, strong) HGFMission *mission;
 @property (weak, nonatomic) IBOutlet UIButton *missionBtnImg;
 @property (weak, nonatomic) IBOutlet UIButton *missionBtnNum;
+@property (weak, nonatomic) id<HGFMissionViewDelegate> delegate;
+
+- (IBAction)go2Ready;
 
 + (id)missionView;
 

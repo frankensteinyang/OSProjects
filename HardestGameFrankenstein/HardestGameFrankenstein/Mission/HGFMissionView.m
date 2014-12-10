@@ -10,6 +10,13 @@
 
 @implementation HGFMissionView
 
+- (IBAction)go2Ready {
+    
+    if ([_delegate respondsToSelector:@selector(missionViewIconClick:)]) {
+        [_delegate missionViewIconClick:self];
+    }
+}
+
 + (id)missionView {
 
     return [[NSBundle mainBundle] loadNibNamed:@"HGFMissionView" owner:nil options:nil][0];

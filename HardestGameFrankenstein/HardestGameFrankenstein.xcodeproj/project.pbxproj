@@ -33,6 +33,13 @@
 		E4C53CC11A38A85B003AB6FE /* select_image05.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CBB1A38A85B003AB6FE /* select_image05.png */; };
 		E4C53CC21A38A85B003AB6FE /* select_image06.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CBC1A38A85B003AB6FE /* select_image06.png */; };
 		E4C53CC41A38A921003AB6FE /* select_stage_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CC31A38A921003AB6FE /* select_stage_normal.png */; };
+		E4C53CC81A38BF10003AB6FE /* HGFReadyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C53CC71A38BF10003AB6FE /* HGFReadyViewController.m */; };
+		E4C53CCD1A38C2F1003AB6FE /* ready_btplay.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CCA1A38C2F1003AB6FE /* ready_btplay.png */; };
+		E4C53CCE1A38C2F1003AB6FE /* ready_intro.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CCB1A38C2F1003AB6FE /* ready_intro.png */; };
+		E4C53CCF1A38C2F1003AB6FE /* ready_play.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CCC1A38C2F1003AB6FE /* ready_play.png */; };
+		E4C53CD31A38DE44003AB6FE /* HGFGuideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C53CD21A38DE44003AB6FE /* HGFGuideViewController.m */; };
+		E4C53CD71A38DECA003AB6FE /* guide00.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CD51A38DECA003AB6FE /* guide00.png */; };
+		E4C53CD81A38DECA003AB6FE /* guide01.png in Resources */ = {isa = PBXBuildFile; fileRef = E4C53CD61A38DECA003AB6FE /* guide01.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +89,15 @@
 		E4C53CBB1A38A85B003AB6FE /* select_image05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_image05.png; sourceTree = "<group>"; };
 		E4C53CBC1A38A85B003AB6FE /* select_image06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_image06.png; sourceTree = "<group>"; };
 		E4C53CC31A38A921003AB6FE /* select_stage_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = select_stage_normal.png; sourceTree = "<group>"; };
+		E4C53CC61A38BF10003AB6FE /* HGFReadyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGFReadyViewController.h; sourceTree = "<group>"; };
+		E4C53CC71A38BF10003AB6FE /* HGFReadyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGFReadyViewController.m; sourceTree = "<group>"; };
+		E4C53CCA1A38C2F1003AB6FE /* ready_btplay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ready_btplay.png; sourceTree = "<group>"; };
+		E4C53CCB1A38C2F1003AB6FE /* ready_intro.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ready_intro.png; sourceTree = "<group>"; };
+		E4C53CCC1A38C2F1003AB6FE /* ready_play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ready_play.png; sourceTree = "<group>"; };
+		E4C53CD11A38DE44003AB6FE /* HGFGuideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGFGuideViewController.h; sourceTree = "<group>"; };
+		E4C53CD21A38DE44003AB6FE /* HGFGuideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGFGuideViewController.m; sourceTree = "<group>"; };
+		E4C53CD51A38DECA003AB6FE /* guide00.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide00.png; sourceTree = "<group>"; };
+		E4C53CD61A38DECA003AB6FE /* guide01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = guide01.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +139,8 @@
 		E47A0E1D1A365825003920D3 /* HardestGameFrankenstein */ = {
 			isa = PBXGroup;
 			children = (
+				E4C53CD01A38DE2E003AB6FE /* Guide */,
+				E4C53CC51A38BEEF003AB6FE /* Ready */,
 				E47A0E561A36802E003920D3 /* Mission */,
 				E47A0E4C1A367384003920D3 /* Setting */,
 				E47A0E451A36597A003920D3 /* Home */,
@@ -176,6 +194,8 @@
 		E47A0E491A365C4D003920D3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				E4C53CD41A38DEBC003AB6FE /* Guide */,
+				E4C53CC91A38C2DA003AB6FE /* Ready */,
 				E4C53CB41A38A843003AB6FE /* Mission Images */,
 				E47A0E5A1A36817F003920D3 /* select_easy_bg.jpg */,
 				E47A0E541A3677C3003920D3 /* bt_green.png */,
@@ -222,6 +242,43 @@
 				E4C53CB51A38A851003AB6FE /* select_digital.png */,
 			);
 			path = "Mission Images";
+			sourceTree = "<group>";
+		};
+		E4C53CC51A38BEEF003AB6FE /* Ready */ = {
+			isa = PBXGroup;
+			children = (
+				E4C53CC61A38BF10003AB6FE /* HGFReadyViewController.h */,
+				E4C53CC71A38BF10003AB6FE /* HGFReadyViewController.m */,
+			);
+			path = Ready;
+			sourceTree = "<group>";
+		};
+		E4C53CC91A38C2DA003AB6FE /* Ready */ = {
+			isa = PBXGroup;
+			children = (
+				E4C53CCA1A38C2F1003AB6FE /* ready_btplay.png */,
+				E4C53CCB1A38C2F1003AB6FE /* ready_intro.png */,
+				E4C53CCC1A38C2F1003AB6FE /* ready_play.png */,
+			);
+			path = Ready;
+			sourceTree = "<group>";
+		};
+		E4C53CD01A38DE2E003AB6FE /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				E4C53CD11A38DE44003AB6FE /* HGFGuideViewController.h */,
+				E4C53CD21A38DE44003AB6FE /* HGFGuideViewController.m */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		E4C53CD41A38DEBC003AB6FE /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				E4C53CD51A38DECA003AB6FE /* guide00.png */,
+				E4C53CD61A38DECA003AB6FE /* guide01.png */,
+			);
+			path = Guide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,7 +365,9 @@
 				E47A0E2A1A365825003920D3 /* Main.storyboard in Resources */,
 				E4C53CB31A38A780003AB6FE /* HGFMissionView.xib in Resources */,
 				E47A0E2F1A365825003920D3 /* LaunchScreen.xib in Resources */,
+				E4C53CD71A38DECA003AB6FE /* guide00.png in Resources */,
 				E4C53CBF1A38A85B003AB6FE /* select_image03.png in Resources */,
+				E4C53CD81A38DECA003AB6FE /* guide01.png in Resources */,
 				E4C53CC41A38A921003AB6FE /* select_stage_normal.png in Resources */,
 				E47A0E5B1A36817F003920D3 /* select_easy_bg.jpg in Resources */,
 				E4C53CC01A38A85B003AB6FE /* select_image04.png in Resources */,
@@ -317,10 +376,13 @@
 				E4C53CAB1A38A1FE003AB6FE /* mission.plist in Resources */,
 				E4C53CB61A38A851003AB6FE /* select_digital.png in Resources */,
 				E47A0E2C1A365825003920D3 /* Images.xcassets in Resources */,
+				E4C53CCF1A38C2F1003AB6FE /* ready_play.png in Resources */,
 				E4C53CC11A38A85B003AB6FE /* select_image05.png in Resources */,
 				E4C53CC21A38A85B003AB6FE /* select_image06.png in Resources */,
 				E47A0E551A3677C3003920D3 /* bt_green.png in Resources */,
+				E4C53CCD1A38C2F1003AB6FE /* ready_btplay.png in Resources */,
 				E47A0E4B1A3669AB003920D3 /* home_bg.jpg in Resources */,
+				E4C53CCE1A38C2F1003AB6FE /* ready_intro.png in Resources */,
 				E47A0E511A367632003920D3 /* setting_bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -343,6 +405,8 @@
 				E47A0E241A365825003920D3 /* AppDelegate.m in Sources */,
 				E47A0E481A365998003920D3 /* HGFHomeViewController.m in Sources */,
 				E47A0E211A365825003920D3 /* main.m in Sources */,
+				E4C53CC81A38BF10003AB6FE /* HGFReadyViewController.m in Sources */,
+				E4C53CD31A38DE44003AB6FE /* HGFGuideViewController.m in Sources */,
 				E47A0E4F1A3673AC003920D3 /* HGFSettingViewController.m in Sources */,
 				E4C53CAE1A38A366003AB6FE /* HGFMission.m in Sources */,
 				E47A0E591A36804D003920D3 /* HGFMissionViewController.m in Sources */,

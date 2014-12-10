@@ -20,7 +20,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2F-9z-PoJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-789" y="280"/>
+            <point key="canvasLocation" x="-813" y="-494"/>
         </scene>
         <!--Mission View Controller-->
         <scene sceneID="1r4-ce-Bb6">
@@ -56,7 +56,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NkM-dV-IQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-333" y="-273"/>
+            <point key="canvasLocation" x="-357" y="-169"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="ufC-wZ-h7g">
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-343" y="280"/>
+            <point key="canvasLocation" x="-369" y="-899"/>
         </scene>
         <!--Setting View Controller-->
         <scene sceneID="pAC-cD-1EG">
@@ -109,14 +109,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5VB-C3-bhb">
-                                <rect key="frame" x="16" y="20" width="41" height="40"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting_bg.jpg" id="ey2-cz-Sdm">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JaK-pa-MQS">
+                                <rect key="frame" x="76" y="182" width="169" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="bt_back.png">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="音乐 [关]" backgroundImage="bt_green.png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <state key="selected" title="音乐 [开]">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                                 <connections>
-                                    <action selector="back" destination="ZmJ-su-b6m" eventType="touchUpInside" id="H40-oc-yIY"/>
+                                    <action selector="soundBtnClick:" destination="ZmJ-su-b6m" eventType="touchUpInside" id="KDh-ZS-0fK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bly-Zw-UiL">
@@ -135,26 +145,16 @@
                                     <action selector="soundBtnClick:" destination="ZmJ-su-b6m" eventType="touchUpInside" id="szf-hq-yA0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="JaK-pa-MQS">
-                                <rect key="frame" x="76" y="182" width="169" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5VB-C3-bhb">
+                                <rect key="frame" x="16" y="20" width="41" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <state key="normal" title="音乐 [关]" backgroundImage="bt_green.png">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" backgroundImage="bt_back.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="selected" title="音乐 [开]">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <action selector="soundBtnClick:" destination="ZmJ-su-b6m" eventType="touchUpInside" id="KDh-ZS-0fK"/>
+                                    <action selector="back" destination="ZmJ-su-b6m" eventType="touchUpInside" id="H40-oc-yIY"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="setting_bg.jpg" id="ey2-cz-Sdm">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -164,7 +164,150 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KLI-sO-0Hu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="61" y="286"/>
+            <point key="canvasLocation" x="132" y="-872"/>
+        </scene>
+        <!--Pause View Controller-->
+        <scene sceneID="i2V-OO-8F1">
+            <objects>
+                <viewController id="9M5-tH-SrP" customClass="HGFPauseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ShX-zh-UaR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pause_bg.jpg" id="xIn-Nv-GB1">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="YMM-w3-Hdh">
+                                <rect key="frame" x="30" y="372" width="56" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="bt_home.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="home" destination="9M5-tH-SrP" eventType="touchUpInside" id="wXG-1C-70M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oUW-S2-d46">
+                                <rect key="frame" x="127" y="372" width="56" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="bt_setting.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ZmJ-su-b6m" kind="push" id="w26-eC-3Gh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v7F-Tt-ASW">
+                                <rect key="frame" x="234" y="372" width="56" height="70"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <state key="normal" backgroundImage="bt_resume.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="resume" destination="9M5-tH-SrP" eventType="touchUpInside" id="NVd-51-UJJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="wFl-U3-Iep"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OOe-l7-43D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="701" y="-913"/>
+        </scene>
+        <!--Play View Controller-->
+        <scene sceneID="YSh-VY-qt0">
+            <objects>
+                <viewController id="von-pM-CpR" customClass="HGFPlayViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ba2-gr-k6g">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bbg1.jpeg" id="md1-J6-Ovr">
+                                <rect key="frame" x="214" y="0.0" width="107" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rbg1.jpeg" id="nSE-ap-tda">
+                                <rect key="frame" x="0.0" y="0.0" width="107" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ybg1.jpeg" id="BuZ-dH-SmH">
+                                <rect key="frame" x="107" y="0.0" width="107" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mqI-CW-nMd">
+                                <rect key="frame" x="0.0" y="373" width="107" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <inset key="contentEdgeInsets" minX="14" minY="25" maxX="14" maxY="25"/>
+                                <state key="normal" image="01-btfeather.png" backgroundImage="rbt.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="z9j-Fm-ePh">
+                                <rect key="frame" x="214" y="373" width="107" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <inset key="contentEdgeInsets" minX="14" minY="25" maxX="14" maxY="25"/>
+                                <state key="normal" image="01-btfeather.png" backgroundImage="bbt.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4VU-2F-88b">
+                                <rect key="frame" x="107" y="373" width="107" height="107"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
+                                <inset key="contentEdgeInsets" minX="14" minY="25" maxX="14" maxY="25"/>
+                                <state key="normal" image="01-btfeather.png" backgroundImage="ybt.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <view contentMode="scaleToFill" id="0iZ-uj-zg2" userLabel="脚">
+                                <rect key="frame" x="0.0" y="199" width="107" height="166"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="01-feet01.png" id="hgi-lN-2Ca">
+                                        <rect key="frame" x="0.0" y="0.0" width="107" height="161"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select_shadow.png" id="2m5-7N-iPw">
+                                        <rect key="frame" x="0.0" y="141" width="107" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="etl-31-uyN">
+                                <rect key="frame" x="269" y="91" width="77" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="ing_retry.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="2pD-5y-tAh">
+                                <rect key="frame" x="269" y="133" width="77" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="ing_pause.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="9M5-tH-SrP" kind="push" id="ZUs-i8-j98"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ehg-cp-0RI"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="footView" destination="0iZ-uj-zg2" id="4bd-zT-5hs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rcQ-er-OkY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="983" y="-331"/>
         </scene>
         <!--Guide View Controller-->
         <scene sceneID="XnX-uY-kjw">
@@ -174,10 +317,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="8LA-74-E48">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="guide00.png" id="8LA-74-E48">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VU7-UB-XDy">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="von-pM-CpR" kind="push" id="5BO-Xz-7Sw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -190,7 +343,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X5d-we-ZJL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="570" y="-329"/>
+            <point key="canvasLocation" x="510" y="-251"/>
         </scene>
         <!--Ready View Controller-->
         <scene sceneID="m4o-M3-2Wn">
@@ -263,20 +416,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="raC-dq-bwW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-329"/>
+            <point key="canvasLocation" x="74" y="-203"/>
         </scene>
     </scenes>
     <resources>
+        <image name="01-btfeather.png" width="156" height="114"/>
+        <image name="01-feet01.png" width="264" height="397"/>
+        <image name="bbg1.jpeg" width="214" height="1136"/>
+        <image name="bbt.png" width="214" height="208"/>
         <image name="bt_back.png" width="130" height="128"/>
         <image name="bt_green.png" width="468" height="119"/>
+        <image name="bt_home.png" width="137" height="168"/>
+        <image name="bt_resume.png" width="136" height="168"/>
+        <image name="bt_setting.png" width="136" height="170"/>
+        <image name="guide00.png" width="720" height="1136"/>
         <image name="home_bg.jpg" width="640" height="1136"/>
+        <image name="ing_pause.png" width="218" height="103"/>
+        <image name="ing_retry.png" width="215" height="94"/>
+        <image name="pause_bg.jpg" width="640" height="1136"/>
+        <image name="rbg1.jpeg" width="214" height="1136"/>
+        <image name="rbt.png" width="214" height="208"/>
         <image name="ready_btplay.png" width="124" height="115"/>
         <image name="ready_intro.png" width="618" height="706"/>
         <image name="ready_play.png" width="238" height="75"/>
         <image name="select_easy_bg.jpg" width="640" height="1136"/>
         <image name="select_image01.png" width="253" height="206"/>
+        <image name="select_shadow.png" width="132" height="25"/>
         <image name="select_stage_normal.png" width="299" height="254"/>
         <image name="setting_bg.jpg" width="640" height="1136"/>
+        <image name="ybg1.jpeg" width="215" height="1136"/>
+        <image name="ybt.png" width="214" height="208"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
@@ -285,5 +454,6 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="bAt-Ov-HGf"/>
+        <segue reference="w26-eC-3Gh"/>
     </inferredMetricsTieBreakers>
 </document>

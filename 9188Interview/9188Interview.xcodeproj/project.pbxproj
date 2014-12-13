@@ -14,6 +14,7 @@
 		E47A0E0C1A363F42003920D3 /* UIImage+Interview.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E0B1A363F42003920D3 /* UIImage+Interview.m */; };
 		E47A0E0F1A36411E003920D3 /* UINavigationItem+Interview.m in Sources */ = {isa = PBXBuildFile; fileRef = E47A0E0E1A36411E003920D3 /* UINavigationItem+Interview.m */; };
 		E47A0E111A3651D1003920D3 /* left_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = E47A0E101A3651D1003920D3 /* left_red@2x.png */; };
+		E4A8A27E1A3BE4DA0083CD83 /* InterviewNewsList.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A8A27D1A3BE4DA0083CD83 /* InterviewNewsList.m */; };
 		E4CF41451A34ABF400247E48 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41441A34ABF400247E48 /* main.m */; };
 		E4CF415F1A34ABF500247E48 /* _188InterviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF415E1A34ABF500247E48 /* _188InterviewTests.m */; };
 		E4CF41AC1A34C3C100247E48 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CF41AA1A34C3C100247E48 /* AppDelegate.m */; };
@@ -58,6 +59,8 @@
 		E47A0E0D1A36411E003920D3 /* UINavigationItem+Interview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationItem+Interview.h"; sourceTree = "<group>"; };
 		E47A0E0E1A36411E003920D3 /* UINavigationItem+Interview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationItem+Interview.m"; sourceTree = "<group>"; };
 		E47A0E101A3651D1003920D3 /* left_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "left_red@2x.png"; sourceTree = "<group>"; };
+		E4A8A27C1A3BE4DA0083CD83 /* InterviewNewsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterviewNewsList.h; sourceTree = "<group>"; };
+		E4A8A27D1A3BE4DA0083CD83 /* InterviewNewsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterviewNewsList.m; sourceTree = "<group>"; };
 		E4CF413F1A34ABF400247E48 /* 9188Interview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 9188Interview.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CF41431A34ABF400247E48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E4CF41441A34ABF400247E48 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -113,6 +116,7 @@
 		E46623CD1A38154B00B90D5B /* Notice */ = {
 			isa = PBXGroup;
 			children = (
+				E4A8A27B1A3BE4860083CD83 /* NewsList */,
 				E46623D11A38183B00B90D5B /* InterviewNoticeViewController.h */,
 				E46623D21A38183B00B90D5B /* InterviewNoticeViewController.m */,
 			);
@@ -153,6 +157,15 @@
 				E47A0E0E1A36411E003920D3 /* UINavigationItem+Interview.m */,
 			);
 			name = Category;
+			sourceTree = "<group>";
+		};
+		E4A8A27B1A3BE4860083CD83 /* NewsList */ = {
+			isa = PBXGroup;
+			children = (
+				E4A8A27C1A3BE4DA0083CD83 /* InterviewNewsList.h */,
+				E4A8A27D1A3BE4DA0083CD83 /* InterviewNewsList.m */,
+			);
+			name = NewsList;
 			sourceTree = "<group>";
 		};
 		E4CF41361A34ABF400247E48 = {
@@ -381,6 +394,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A8A27E1A3BE4DA0083CD83 /* InterviewNewsList.m in Sources */,
 				E4CF420E1A34F06A00247E48 /* InterviewRunLotteryViewController.m in Sources */,
 				E4CF41B31A34C45600247E48 /* InterviewMainViewController.m in Sources */,
 				E4CF42081A34F00D00247E48 /* InterviewLotteryHallViewController.m in Sources */,

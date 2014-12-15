@@ -8,6 +8,7 @@
 
 #import "InterviewNoticeViewController.h"
 #import "InterviewNewsList.h"
+#import "InterviewNewsViewController.h"
 
 @interface InterviewNoticeViewController () <NSXMLParserDelegate> {
 
@@ -23,6 +24,7 @@
 
     self.title = @"公告";
     [self loadXML];
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -32,8 +34,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
     }
-    
-//    cell.textLabel.text = @"";
+    InterviewNewsList *list = _dataList[indexPath.row];
+    cell.textLabel.text = list.ntitle;
     return cell;
 }
 
@@ -43,8 +45,9 @@
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    NSLog(@"***");
+    
+    InterviewNewsViewController *newsC = [[InterviewNewsViewController alloc] init];
+    [self.navigationController pushViewController:newsC animated:YES];
 }
 
 #pragma mark - 解析XML的代理方法
@@ -59,7 +62,7 @@
 // 解析一个节点
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
 
-    NSLog(@"解析一个节点:%@ %@", elementName, attributeDict);
+//    NSLog(@"解析一个节点:%@ %@", elementName, attributeDict);
     if ([elementName isEqualToString:@"row"]) {
         _newsList = [[InterviewNewsList alloc] init];
         _newsList.arcurl = attributeDict[@"arcurl"];
@@ -72,7 +75,7 @@
 // 查找节点内容
 - (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
     
-    NSLog(@"查找节点内容:%@", string);
+//    NSLog(@"查找节点内容:%@", string);
 }
 
 // 节点完成
@@ -81,10 +84,8 @@
     if ([elementName isEqualToString:@"row"]) {
         // 对象的属性填充完毕，添加到数组
         [_dataList addObject:_newsList];
-    } else if ([elementName isEqualToString:@""]) {
-    
     }
-    NSLog(@"节点完成:%@", elementName);
+    
 }
 
 // 解析完成
@@ -114,8 +115,7 @@
     [parser parse];
     
     if (data != nil) {
-        NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
-        NSLog(@"%@", result);
+//        NSString *result = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     } else if (error == nil) {
         NSLog(@"空数据！");
     } else {

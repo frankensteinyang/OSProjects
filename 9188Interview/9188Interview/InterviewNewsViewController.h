@@ -10,4 +10,6 @@
 
 @interface InterviewNewsViewController : UIViewController
 
+@property (nonatomic, copy) NSString *url;
+
 @end

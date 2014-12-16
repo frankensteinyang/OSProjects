@@ -15,16 +15,16 @@
     NSMutableArray *_dataList;
     // 当前解析的新闻列表模型对象
     InterviewNewsList *_newsList;
+    
 }
 @end
 
 @implementation InterviewNoticeViewController
 
 - (void)viewDidLoad {
-
+    
     self.title = @"公告";
     [self loadXML];
-    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -46,8 +46,11 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    InterviewNewsList *news = _dataList[indexPath.row];
     InterviewNewsViewController *newsC = [[InterviewNewsViewController alloc] init];
+    newsC.url = news.arcurl;
     [self.navigationController pushViewController:newsC animated:YES];
+    
 }
 
 #pragma mark - 解析XML的代理方法

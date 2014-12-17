@@ -10,6 +10,8 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) UIView *greenView;
+
 @end
 
 @implementation ViewController
@@ -22,7 +24,27 @@
  */
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    UIView *view = [[UIView alloc] initWithFrame:CGRectMake(80, 80, 100, 100)];
+    view.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:view];
+    self.greenView = view;
+}
+
+- (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
+
+    // 对于单点触摸，经常使用anyObject从集合中取到触摸对象
+    UITouch *touch = [touches anyObject];
+    
+    CGPoint location = [touch locationInView:self.view];
+    
+    // 解决移动时视图跳跃的情况
+    CGPoint preLocation = [touch previousLocationInView:self.view];
+    CGPoint offset = CGPointMake(location.x - preLocation.x, location.y - preLocation.y);
+    CGPoint center = CGPointMake(_greenView.center.x + offset.x, _greenView.center.y + offset.y);
+    
+//    self.greenView.center = location;
+    self.greenView.center = center;
 }
 
 @end

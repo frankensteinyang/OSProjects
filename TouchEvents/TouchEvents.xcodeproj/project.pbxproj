@@ -15,6 +15,8 @@
 		E49C5CFB1A41B9FB003125C1 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E49C5CF91A41B9FB003125C1 /* LaunchScreen.xib */; };
 		E49C5D071A41B9FB003125C1 /* TouchEventsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E49C5D061A41B9FB003125C1 /* TouchEventsTests.m */; };
 		E49C5D141A41D632003125C1 /* MultiTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49C5D131A41D632003125C1 /* MultiTouchViewController.m */; };
+		E49C5D181A41E818003125C1 /* ResponderChainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E49C5D171A41E818003125C1 /* ResponderChainViewController.m */; };
+		E49C5D1B1A41EEF7003125C1 /* ResponderView.m in Sources */ = {isa = PBXBuildFile; fileRef = E49C5D1A1A41EEF7003125C1 /* ResponderView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		E49C5D061A41B9FB003125C1 /* TouchEventsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchEventsTests.m; sourceTree = "<group>"; };
 		E49C5D121A41D632003125C1 /* MultiTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiTouchViewController.h; sourceTree = "<group>"; };
 		E49C5D131A41D632003125C1 /* MultiTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiTouchViewController.m; sourceTree = "<group>"; };
+		E49C5D161A41E818003125C1 /* ResponderChainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponderChainViewController.h; sourceTree = "<group>"; };
+		E49C5D171A41E818003125C1 /* ResponderChainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderChainViewController.m; sourceTree = "<group>"; };
+		E49C5D191A41EEF7003125C1 /* ResponderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResponderView.h; sourceTree = "<group>"; };
+		E49C5D1A1A41EEF7003125C1 /* ResponderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResponderView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,10 +90,11 @@
 		E49C5CE91A41B9FB003125C1 /* TouchEvents */ = {
 			isa = PBXGroup;
 			children = (
-				E49C5D111A41D5BD003125C1 /* Multiple Touch */,
 				E49C5CEE1A41B9FB003125C1 /* AppDelegate.h */,
 				E49C5CEF1A41B9FB003125C1 /* AppDelegate.m */,
 				E49C5D101A41D530003125C1 /* Single Touch */,
+				E49C5D111A41D5BD003125C1 /* Multiple Touch */,
+				E49C5D151A41E7A6003125C1 /* Responder Chain */,
 				E49C5CF41A41B9FB003125C1 /* Main.storyboard */,
 				E49C5CF71A41B9FB003125C1 /* Images.xcassets */,
 				E49C5CF91A41B9FB003125C1 /* LaunchScreen.xib */,
@@ -138,6 +145,17 @@
 				E49C5D131A41D632003125C1 /* MultiTouchViewController.m */,
 			);
 			name = "Multiple Touch";
+			sourceTree = "<group>";
+		};
+		E49C5D151A41E7A6003125C1 /* Responder Chain */ = {
+			isa = PBXGroup;
+			children = (
+				E49C5D161A41E818003125C1 /* ResponderChainViewController.h */,
+				E49C5D171A41E818003125C1 /* ResponderChainViewController.m */,
+				E49C5D191A41EEF7003125C1 /* ResponderView.h */,
+				E49C5D1A1A41EEF7003125C1 /* ResponderView.m */,
+			);
+			name = "Responder Chain";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,7 +261,9 @@
 				E49C5CF31A41B9FB003125C1 /* ViewController.m in Sources */,
 				E49C5CF01A41B9FB003125C1 /* AppDelegate.m in Sources */,
 				E49C5D141A41D632003125C1 /* MultiTouchViewController.m in Sources */,
+				E49C5D181A41E818003125C1 /* ResponderChainViewController.m in Sources */,
 				E49C5CED1A41B9FB003125C1 /* main.m in Sources */,
+				E49C5D1B1A41EEF7003125C1 /* ResponderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

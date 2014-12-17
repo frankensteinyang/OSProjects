@@ -44,6 +44,50 @@
             </objects>
             <point key="canvasLocation" x="-150" y="378"/>
         </scene>
+        <!--响应者链条-->
+        <scene sceneID="W3v-Sr-gxi">
+            <objects>
+                <viewController id="6Mm-Wp-kfC" customClass="ResponderChainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="O42-EZ-Yie"/>
+                        <viewControllerLayoutGuide type="bottom" id="YBV-k9-Wpz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tF9-52-Bzs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7WC-Fx-UJP">
+                                <rect key="frame" x="9" y="77" width="121" height="160"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1mR-Wn-x8S">
+                                <rect key="frame" x="93" y="77" width="121" height="160"/>
+                                <color key="backgroundColor" red="0.90170737519999999" green="1" blue="0.23110070499999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JF1-cA-Y59">
+                                <rect key="frame" x="9" y="195" width="125" height="160"/>
+                                <color key="backgroundColor" red="0.0" green="0.046141651309999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mKz-Ht-CIZ">
+                                <rect key="frame" x="93" y="195" width="121" height="160"/>
+                                <color key="backgroundColor" red="0.61008059160000006" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="响应者链条" id="yhR-KO-nK1"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="blueView" destination="JF1-cA-Y59" id="3de-ZW-fzp"/>
+                        <outlet property="greenView" destination="mKz-Ht-CIZ" id="ysz-AS-Y6R"/>
+                        <outlet property="redView" destination="7WC-Fx-UJP" id="M4S-SB-Xei"/>
+                        <outlet property="yellowView" destination="1mR-Wn-x8S" id="Uz4-Pe-IMv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aId-gk-X5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="274" y="385"/>
+        </scene>
         <!--手势触摸-->
         <scene sceneID="5bs-cX-dCt">
             <objects>
@@ -89,11 +133,22 @@
                                             <segue destination="hS4-6j-gI5" kind="show" id="GBe-HA-Hau"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="1qc-Wg-bUi">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="OXI-YI-A4f" style="IBUITableViewCellStyleDefault" id="1qc-Wg-bUi">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1qc-Wg-bUi" id="1Zv-d4-x7B">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="响应者链条" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OXI-YI-A4f">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6Mm-Wp-kfC" kind="show" id="9RD-bI-gtb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>

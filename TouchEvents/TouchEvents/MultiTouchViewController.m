@@ -51,6 +51,15 @@
         CGPoint location = [touch locationInView:self.view];
         UIImageView *imageView = [[UIImageView alloc] initWithImage:_images[i]];
         imageView.center = location;
+        
+        // 动画，让图片的透明度降低，逐渐消失
+        [UIView animateWithDuration:1.0f animations:^{
+            imageView.alpha = 0.5f;
+            
+        } completion:^(BOOL finished) {
+            [imageView removeFromSuperview];
+        }];
+        
         [self.view addSubview:imageView];
         i++;
     }

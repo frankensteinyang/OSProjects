@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  Friendshake
+//  GestureRecognizer
 //
 //  Created by Hannibal Yang on 12/19/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.

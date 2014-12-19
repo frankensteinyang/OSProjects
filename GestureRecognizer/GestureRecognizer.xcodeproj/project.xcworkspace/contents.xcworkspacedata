@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Friendshake.xcodeproj">
+      location = "self:GestureRecognizer.xcodeproj">
    </FileRef>
 </Workspace>

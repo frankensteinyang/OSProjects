@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Friendshake.xcscheme</key>
+		<key>GestureRecognizer.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4A4EEDF1A43A16E00E322C5</key>
+		<key>E49A12CD1A4466BB00FACAA0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4A4EEF81A43A16E00E322C5</key>
+		<key>E49A12E61A4466BB00FACAA0</key>
 		<dict>
 			<key>primary</key>
 			<true/>

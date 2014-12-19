@@ -1,6 +1,6 @@
 //
-//  FriendshakeTests.m
-//  FriendshakeTests
+//  GestureRecognizerTests.m
+//  GestureRecognizerTests
 //
 //  Created by Hannibal Yang on 12/19/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface FriendshakeTests : XCTestCase
+@interface GestureRecognizerTests : XCTestCase
 
 @end
 
-@implementation FriendshakeTests
+@implementation GestureRecognizerTests
 
 - (void)setUp {
     [super setUp];

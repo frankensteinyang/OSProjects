@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4A4EEDF1A43A16E00E322C5"
-               BuildableName = "Friendshake.app"
-               BlueprintName = "Friendshake"
-               ReferencedContainer = "container:Friendshake.xcodeproj">
+               BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
+               BuildableName = "GestureRecognizer.app"
+               BlueprintName = "GestureRecognizer"
+               ReferencedContainer = "container:GestureRecognizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4A4EEF81A43A16E00E322C5"
-               BuildableName = "FriendshakeTests.xctest"
-               BlueprintName = "FriendshakeTests"
-               ReferencedContainer = "container:Friendshake.xcodeproj">
+               BlueprintIdentifier = "E49A12E61A4466BB00FACAA0"
+               BuildableName = "GestureRecognizerTests.xctest"
+               BlueprintName = "GestureRecognizerTests"
+               ReferencedContainer = "container:GestureRecognizer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4A4EEF81A43A16E00E322C5"
-               BuildableName = "FriendshakeTests.xctest"
-               BlueprintName = "FriendshakeTests"
-               ReferencedContainer = "container:Friendshake.xcodeproj">
+               BlueprintIdentifier = "E49A12E61A4466BB00FACAA0"
+               BuildableName = "GestureRecognizerTests.xctest"
+               BlueprintName = "GestureRecognizerTests"
+               ReferencedContainer = "container:GestureRecognizer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4A4EEDF1A43A16E00E322C5"
-            BuildableName = "Friendshake.app"
-            BlueprintName = "Friendshake"
-            ReferencedContainer = "container:Friendshake.xcodeproj">
+            BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
+            BuildableName = "GestureRecognizer.app"
+            BlueprintName = "GestureRecognizer"
+            ReferencedContainer = "container:GestureRecognizer.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4A4EEDF1A43A16E00E322C5"
-            BuildableName = "Friendshake.app"
-            BlueprintName = "Friendshake"
-            ReferencedContainer = "container:Friendshake.xcodeproj">
+            BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
+            BuildableName = "GestureRecognizer.app"
+            BlueprintName = "GestureRecognizer"
+            ReferencedContainer = "container:GestureRecognizer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4A4EEDF1A43A16E00E322C5"
-            BuildableName = "Friendshake.app"
-            BlueprintName = "Friendshake"
-            ReferencedContainer = "container:Friendshake.xcodeproj">
+            BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
+            BuildableName = "GestureRecognizer.app"
+            BlueprintName = "GestureRecognizer"
+            ReferencedContainer = "container:GestureRecognizer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

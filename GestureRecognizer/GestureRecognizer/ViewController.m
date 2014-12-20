@@ -46,6 +46,33 @@
     // 三、拖动
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
     [imgView addGestureRecognizer:pan];
+    
+    // 四、捏合
+    UIPinchGestureRecognizer *pinch = [[UIPinchGestureRecognizer alloc] initWithTarget:self action:@selector(pinch:)];
+    [imgView addGestureRecognizer:pinch];
+    
+    // 五、旋转
+    UIRotationGestureRecognizer *rotation = [[UIRotationGestureRecognizer alloc] initWithTarget:self action:@selector(rotation:)];
+    [imgView addGestureRecognizer:rotation];
+    
+    // 六、轻扫/滑动
+    // 轻扫手势需要分别实例化4个方向的手势
+    UISwipeGestureRecognizer *swipeUp = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+    // 并
+    swipeUp.direction = UISwipeGestureRecognizerDirectionUp | UISwipeGestureRecognizerDirectionDown | UISwipeGestureRecognizerDirectionLeft | UISwipeGestureRecognizerDirectionRight;
+    [self.view addGestureRecognizer:swipeUp];
+    
+//    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+//    swipeDown.direction = UISwipeGestureRecognizerDirectionDown;
+//    [self.view addGestureRecognizer:swipeDown];
+//    
+//    UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+//    swipeRight.direction = UISwipeGestureRecognizerDirectionRight;
+//    [self.view addGestureRecognizer:swipeRight];
+//    
+//    UISwipeGestureRecognizer *swipeLeft = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(swipe:)];
+//    swipeLeft.direction = UISwipeGestureRecognizerDirectionLeft;
+//    [self.view addGestureRecognizer:swipeLeft];
 }
 
 #pragma mark - 点按手势
@@ -96,10 +123,45 @@
     
 }
 
-#pragma mark - 捏合
+#pragma mark - 捏合手势
+- (void)pinch:(UIPinchGestureRecognizer *)recognizer {
 
-#pragma mark - 旋转
+    if (UIGestureRecognizerStateChanged == recognizer.state) {
+        [recognizer.view setTransform:CGAffineTransformScale(recognizer.view.transform, recognizer.scale, recognizer.scale)];
+        // 在设置累加形变参数时，需要重置手势的缩放比例 CGAffineTransformScale
+        recognizer.scale = 1.0f;
+    }
+}
 
-#pragma mark - 轻扫
+#pragma mark - 旋转手势
+- (void)rotation:(UIRotationGestureRecognizer *)recognizer {
 
+    if (UIGestureRecognizerStateChanged == recognizer.state) {
+        recognizer.view.transform = CGAffineTransformRotate(recognizer.view.transform, recognizer.rotation);
+        // 重置旋转量 CGAffineTransformRotate
+        recognizer.rotation = 0.0f;
+    }
+}
+
+#pragma mark - 轻扫/滑动手势
+- (void)swipe:(UISwipeGestureRecognizer *)recognizer {
+
+    /*
+     二进制位移：
+     UISwipeGestureRecognizerDirectionRight = 1 << 0,
+     UISwipeGestureRecognizerDirectionLeft  = 1 << 1,
+     UISwipeGestureRecognizerDirectionUp    = 1 << 2,
+     UISwipeGestureRecognizerDirectionDown  = 1 << 3
+     */
+    NSLog(@"%d", recognizer.direction);
+    if (UISwipeGestureRecognizerDirectionUp == recognizer.direction) {
+        NSLog(@"向上！");
+    } else if (UISwipeGestureRecognizerDirectionDown == recognizer.direction) {
+        NSLog(@"向下！");
+    } else if (UISwipeGestureRecognizerDirectionRight == recognizer.direction) {
+        NSLog(@"向右！");
+    } else if (UISwipeGestureRecognizerDirectionLeft == recognizer.direction) {
+        NSLog(@"向左！");
+    }
+}
 @end

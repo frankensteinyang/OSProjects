@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>GestureRecognizer.xcscheme</key>
+		<key>Quartz2D.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E49A12CD1A4466BB00FACAA0</key>
+		<key>E4CCE8DF1A45B006003921AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E49A12E61A4466BB00FACAA0</key>
+		<key>E4CCE8F81A45B006003921AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

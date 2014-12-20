@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:GestureRecognizer.xcodeproj">
+      location = "self:Quartz2D.xcodeproj">
    </FileRef>
 </Workspace>

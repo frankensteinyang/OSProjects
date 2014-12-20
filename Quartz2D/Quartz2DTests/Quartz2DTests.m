@@ -1,19 +1,19 @@
 //
-//  GestureRecognizerTests.m
-//  GestureRecognizerTests
+//  Quartz2DTests.m
+//  Quartz2DTests
 //
-//  Created by Hannibal Yang on 12/19/14.
+//  Created by Hannibal Yang on 12/20/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface GestureRecognizerTests : XCTestCase
+@interface Quartz2DTests : XCTestCase
 
 @end
 
-@implementation GestureRecognizerTests
+@implementation Quartz2DTests
 
 - (void)setUp {
     [super setUp];

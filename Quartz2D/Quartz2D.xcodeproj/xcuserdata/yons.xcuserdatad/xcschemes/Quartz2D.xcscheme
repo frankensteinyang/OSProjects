@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
-               BuildableName = "GestureRecognizer.app"
-               BlueprintName = "GestureRecognizer"
-               ReferencedContainer = "container:GestureRecognizer.xcodeproj">
+               BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
+               BuildableName = "Quartz2D.app"
+               BlueprintName = "Quartz2D"
+               ReferencedContainer = "container:Quartz2D.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E49A12E61A4466BB00FACAA0"
-               BuildableName = "GestureRecognizerTests.xctest"
-               BlueprintName = "GestureRecognizerTests"
-               ReferencedContainer = "container:GestureRecognizer.xcodeproj">
+               BlueprintIdentifier = "E4CCE8F81A45B006003921AB"
+               BuildableName = "Quartz2DTests.xctest"
+               BlueprintName = "Quartz2DTests"
+               ReferencedContainer = "container:Quartz2D.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E49A12E61A4466BB00FACAA0"
-               BuildableName = "GestureRecognizerTests.xctest"
-               BlueprintName = "GestureRecognizerTests"
-               ReferencedContainer = "container:GestureRecognizer.xcodeproj">
+               BlueprintIdentifier = "E4CCE8F81A45B006003921AB"
+               BuildableName = "Quartz2DTests.xctest"
+               BlueprintName = "Quartz2DTests"
+               ReferencedContainer = "container:Quartz2D.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
-            BuildableName = "GestureRecognizer.app"
-            BlueprintName = "GestureRecognizer"
-            ReferencedContainer = "container:GestureRecognizer.xcodeproj">
+            BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
+            BuildableName = "Quartz2D.app"
+            BlueprintName = "Quartz2D"
+            ReferencedContainer = "container:Quartz2D.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
-            BuildableName = "GestureRecognizer.app"
-            BlueprintName = "GestureRecognizer"
-            ReferencedContainer = "container:GestureRecognizer.xcodeproj">
+            BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
+            BuildableName = "Quartz2D.app"
+            BlueprintName = "Quartz2D"
+            ReferencedContainer = "container:Quartz2D.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E49A12CD1A4466BB00FACAA0"
-            BuildableName = "GestureRecognizer.app"
-            BlueprintName = "GestureRecognizer"
-            ReferencedContainer = "container:GestureRecognizer.xcodeproj">
+            BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
+            BuildableName = "Quartz2D.app"
+            BlueprintName = "Quartz2D"
+            ReferencedContainer = "container:Quartz2D.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -16,6 +16,8 @@
 		E4CAADEA1A46CB5900B83A8D /* EPainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAADE91A46CB5900B83A8D /* EPainterTests.m */; };
 		E4CAADF51A46CBA000B83A8D /* EPPainterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAADF41A46CBA000B83A8D /* EPPainterView.m */; };
 		E4CAADF81A46F45600B83A8D /* EPDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAADF71A46F45600B83A8D /* EPDrawPath.m */; };
+		E4CAADFD1A470A6F00B83A8D /* EPToolsView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAADFC1A470A6F00B83A8D /* EPToolsView.m */; };
+		E4CAAE031A47222500B83A8D /* EPLinesView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAAE021A47222500B83A8D /* EPLinesView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,12 @@
 		E4CAADF41A46CBA000B83A8D /* EPPainterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPPainterView.m; sourceTree = "<group>"; };
 		E4CAADF61A46F45600B83A8D /* EPDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPDrawPath.h; sourceTree = "<group>"; };
 		E4CAADF71A46F45600B83A8D /* EPDrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPDrawPath.m; sourceTree = "<group>"; };
+		E4CAADFB1A470A6F00B83A8D /* EPToolsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPToolsView.h; sourceTree = "<group>"; };
+		E4CAADFC1A470A6F00B83A8D /* EPToolsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPToolsView.m; sourceTree = "<group>"; };
+		E4CAADFE1A4712F700B83A8D /* Common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		E4CAADFF1A47138200B83A8D /* EPainter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EPainter-Prefix.pch"; sourceTree = "<group>"; };
+		E4CAAE011A47222500B83A8D /* EPLinesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPLinesView.h; sourceTree = "<group>"; };
+		E4CAAE021A47222500B83A8D /* EPLinesView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPLinesView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,10 +99,9 @@
 				E4CAADD21A46CB5900B83A8D /* AppDelegate.m */,
 				E4CAADD41A46CB5900B83A8D /* ViewController.h */,
 				E4CAADD51A46CB5900B83A8D /* ViewController.m */,
-				E4CAADF31A46CBA000B83A8D /* EPPainterView.h */,
-				E4CAADF41A46CBA000B83A8D /* EPPainterView.m */,
-				E4CAADF61A46F45600B83A8D /* EPDrawPath.h */,
-				E4CAADF71A46F45600B83A8D /* EPDrawPath.m */,
+				E4CAAE001A47140E00B83A8D /* Tools */,
+				E4CAADFA1A470A2100B83A8D /* View */,
+				E4CAADF91A4709F000B83A8D /* Model */,
 				E4CAADD71A46CB5900B83A8D /* Main.storyboard */,
 				E4CAADDA1A46CB5900B83A8D /* Images.xcassets */,
 				E4CAADDC1A46CB5900B83A8D /* LaunchScreen.xib */,
@@ -108,6 +115,7 @@
 			children = (
 				E4CAADCE1A46CB5900B83A8D /* Info.plist */,
 				E4CAADCF1A46CB5900B83A8D /* main.m */,
+				E4CAADFF1A47138200B83A8D /* EPainter-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -127,6 +135,36 @@
 				E4CAADE81A46CB5900B83A8D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CAADF91A4709F000B83A8D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4CAADF61A46F45600B83A8D /* EPDrawPath.h */,
+				E4CAADF71A46F45600B83A8D /* EPDrawPath.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		E4CAADFA1A470A2100B83A8D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E4CAADF31A46CBA000B83A8D /* EPPainterView.h */,
+				E4CAADF41A46CBA000B83A8D /* EPPainterView.m */,
+				E4CAADFB1A470A6F00B83A8D /* EPToolsView.h */,
+				E4CAADFC1A470A6F00B83A8D /* EPToolsView.m */,
+				E4CAAE011A47222500B83A8D /* EPLinesView.h */,
+				E4CAAE021A47222500B83A8D /* EPLinesView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		E4CAAE001A47140E00B83A8D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				E4CAADFE1A4712F700B83A8D /* Common.h */,
+			);
+			name = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,7 +270,9 @@
 				E4CAADD61A46CB5900B83A8D /* ViewController.m in Sources */,
 				E4CAADF81A46F45600B83A8D /* EPDrawPath.m in Sources */,
 				E4CAADF51A46CBA000B83A8D /* EPPainterView.m in Sources */,
+				E4CAADFD1A470A6F00B83A8D /* EPToolsView.m in Sources */,
 				E4CAADD31A46CB5900B83A8D /* AppDelegate.m in Sources */,
+				E4CAAE031A47222500B83A8D /* EPLinesView.m in Sources */,
 				E4CAADD01A46CB5900B83A8D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -297,7 +337,9 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EPainter/EPainter-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -338,6 +380,8 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/EPainter/EPainter-Prefix.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

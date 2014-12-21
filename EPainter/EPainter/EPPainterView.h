@@ -10,4 +10,8 @@
 
 @interface EPPainterView : UIView
 
+@property (strong, nonatomic) UIColor *color;
+
+@property (assign, nonatomic) CGFloat lineWidth;
+
 @end

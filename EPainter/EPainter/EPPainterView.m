@@ -7,6 +7,7 @@
 //
 
 #import "EPPainterView.h"
+#import "EPDrawPath.h"
 
 @interface EPPainterView()
 
@@ -46,12 +47,12 @@
 #pragma mark - 重绘视图
 - (void)drawViewWithContext:(CGContextRef)context {
     
-    for (UIBezierPath *path in self.pathArray) {
-        // path.CGPath类型转换
-        CGContextAddPath(context, path.CGPath);
+    for (EPDrawPath *drawPath in self.pathArray) {
+        // 用.CGPath进行类型转换
+        CGContextAddPath(context, drawPath.path.CGPath);
         
-        [[UIColor brownColor] set];
-        CGContextSetLineWidth(context, 10.0f);
+        [drawPath.color set];
+        CGContextSetLineWidth(context, drawPath.lineWidth);
         CGContextSetLineCap(context, kCGLineCapRound);
         
         // 绘制路径
@@ -62,13 +63,13 @@
     CGContextAddPath(context, self.path);
     
     // 设置上下文属性
-    [[UIColor blueColor] set];
+    [self.color set];
     
     /*
      CGContextSetLineCap    设置线条顶点（起点、终点）的样式
      CGContextSetLineJoin   设置连接点样式
      */
-    CGContextSetLineWidth(context, 10.0f);
+    CGContextSetLineWidth(context, self.lineWidth);
     CGContextSetLineCap(context, kCGLineCapRound);
 //    CGContextSetLineJoin(context, kCGLineJoinBevel);
     
@@ -118,8 +119,12 @@
 
     // 将路径添加到数组
     // 在OC中提供了一个UIBezierPath对象，是对CGPath的封装
-    UIBezierPath *path = [UIBezierPath bezierPathWithCGPath:self.path];
+//    UIBezierPath *path = [UIBezierPath bezierPathWithCGPath:self.path];
+    
+    EPDrawPath *path = [EPDrawPath drawPathWith:self.path color:self.color lineWidth:self.lineWidth];
+    
     [self.pathArray addObject:path];
+    
     // 释放路径
     CGPathRelease(self.path);
 }

@@ -15,6 +15,7 @@
 		E4CAADDE1A46CB5900B83A8D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CAADDC1A46CB5900B83A8D /* LaunchScreen.xib */; };
 		E4CAADEA1A46CB5900B83A8D /* EPainterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAADE91A46CB5900B83A8D /* EPainterTests.m */; };
 		E4CAADF51A46CBA000B83A8D /* EPPainterView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAADF41A46CBA000B83A8D /* EPPainterView.m */; };
+		E4CAADF81A46F45600B83A8D /* EPDrawPath.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CAADF71A46F45600B83A8D /* EPDrawPath.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		E4CAADE91A46CB5900B83A8D /* EPainterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EPainterTests.m; sourceTree = "<group>"; };
 		E4CAADF31A46CBA000B83A8D /* EPPainterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPPainterView.h; sourceTree = "<group>"; };
 		E4CAADF41A46CBA000B83A8D /* EPPainterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPPainterView.m; sourceTree = "<group>"; };
+		E4CAADF61A46F45600B83A8D /* EPDrawPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EPDrawPath.h; sourceTree = "<group>"; };
+		E4CAADF71A46F45600B83A8D /* EPDrawPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EPDrawPath.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				E4CAADD51A46CB5900B83A8D /* ViewController.m */,
 				E4CAADF31A46CBA000B83A8D /* EPPainterView.h */,
 				E4CAADF41A46CBA000B83A8D /* EPPainterView.m */,
+				E4CAADF61A46F45600B83A8D /* EPDrawPath.h */,
+				E4CAADF71A46F45600B83A8D /* EPDrawPath.m */,
 				E4CAADD71A46CB5900B83A8D /* Main.storyboard */,
 				E4CAADDA1A46CB5900B83A8D /* Images.xcassets */,
 				E4CAADDC1A46CB5900B83A8D /* LaunchScreen.xib */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E4CAADD61A46CB5900B83A8D /* ViewController.m in Sources */,
+				E4CAADF81A46F45600B83A8D /* EPDrawPath.m in Sources */,
 				E4CAADF51A46CBA000B83A8D /* EPPainterView.m in Sources */,
 				E4CAADD31A46CB5900B83A8D /* AppDelegate.m in Sources */,
 				E4CAADD01A46CB5900B83A8D /* main.m in Sources */,

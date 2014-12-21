@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
-               BuildableName = "SliderRefreshesView.app"
-               BlueprintName = "SliderRefreshesView"
-               ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
+               BlueprintIdentifier = "E4CAADC91A46CB5900B83A8D"
+               BuildableName = "EPainter.app"
+               BlueprintName = "EPainter"
+               ReferencedContainer = "container:EPainter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CAADAD1A469C7B00B83A8D"
-               BuildableName = "SliderRefreshesViewTests.xctest"
-               BlueprintName = "SliderRefreshesViewTests"
-               ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
+               BlueprintIdentifier = "E4CAADE21A46CB5900B83A8D"
+               BuildableName = "EPainterTests.xctest"
+               BlueprintName = "EPainterTests"
+               ReferencedContainer = "container:EPainter.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CAADAD1A469C7B00B83A8D"
-               BuildableName = "SliderRefreshesViewTests.xctest"
-               BlueprintName = "SliderRefreshesViewTests"
-               ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
+               BlueprintIdentifier = "E4CAADE21A46CB5900B83A8D"
+               BuildableName = "EPainterTests.xctest"
+               BlueprintName = "EPainterTests"
+               ReferencedContainer = "container:EPainter.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
-            BuildableName = "SliderRefreshesView.app"
-            BlueprintName = "SliderRefreshesView"
-            ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
+            BlueprintIdentifier = "E4CAADC91A46CB5900B83A8D"
+            BuildableName = "EPainter.app"
+            BlueprintName = "EPainter"
+            ReferencedContainer = "container:EPainter.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
-            BuildableName = "SliderRefreshesView.app"
-            BlueprintName = "SliderRefreshesView"
-            ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
+            BlueprintIdentifier = "E4CAADC91A46CB5900B83A8D"
+            BuildableName = "EPainter.app"
+            BlueprintName = "EPainter"
+            ReferencedContainer = "container:EPainter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
-            BuildableName = "SliderRefreshesView.app"
-            BlueprintName = "SliderRefreshesView"
-            ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
+            BlueprintIdentifier = "E4CAADC91A46CB5900B83A8D"
+            BuildableName = "EPainter.app"
+            BlueprintName = "EPainter"
+            ReferencedContainer = "container:EPainter.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

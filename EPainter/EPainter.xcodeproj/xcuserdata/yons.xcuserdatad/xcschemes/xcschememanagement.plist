@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SliderRefreshesView.xcscheme</key>
+		<key>EPainter.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4CAAD941A469C7B00B83A8D</key>
+		<key>E4CAADC91A46CB5900B83A8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4CAADAD1A469C7B00B83A8D</key>
+		<key>E4CAADE21A46CB5900B83A8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

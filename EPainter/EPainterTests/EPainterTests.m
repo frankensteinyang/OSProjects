@@ -1,6 +1,6 @@
 //
-//  SliderRefreshesViewTests.m
-//  SliderRefreshesViewTests
+//  EPainterTests.m
+//  EPainterTests
 //
 //  Created by Hannibal Yang on 12/21/14.
 //  Copyright (c) 2014 Frankenstein Yang. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface SliderRefreshesViewTests : XCTestCase
+@interface EPainterTests : XCTestCase
 
 @end
 
-@implementation SliderRefreshesViewTests
+@implementation EPainterTests
 
 - (void)setUp {
     [super setUp];

@@ -23,4 +23,10 @@
     [self.text drawInRect:self.bounds withAttributes:dict];
 }
 
+- (void)setFontSize:(CGFloat)fontSize {
+
+    _fontSize = fontSize;
+    [self setNeedsDisplay];
+}
+
 @end

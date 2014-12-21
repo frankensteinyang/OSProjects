@@ -32,8 +32,8 @@
 - (IBAction)sliderChanged:(UISlider *)sender {
     
     self.displayView.fontSize = sender.value;
-    // 刷新
-    [self.displayView setNeedsDisplay];
+    // 刷新，让视图重新绘制
+//    [self.displayView setNeedsDisplay];
     
 }
 

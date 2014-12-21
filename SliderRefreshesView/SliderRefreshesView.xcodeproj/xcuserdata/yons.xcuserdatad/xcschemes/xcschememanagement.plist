@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>DrawPentagram.xcscheme</key>
+		<key>SliderRefreshesView.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4CCE9161A4673F4003921AB</key>
+		<key>E4CAAD941A469C7B00B83A8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4CCE92F1A4673F4003921AB</key>
+		<key>E4CAADAD1A469C7B00B83A8D</key>
 		<dict>
 			<key>primary</key>
 			<true/>

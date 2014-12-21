@@ -1,19 +1,19 @@
 //
-//  DrawPentagramTests.m
-//  DrawPentagramTests
+//  SliderRefreshesViewTests.m
+//  SliderRefreshesViewTests
 //
 //  Created by Hannibal Yang on 12/21/14.
-//  Copyright (c) 2014 Hannibal Yang. All rights reserved.
+//  Copyright (c) 2014 Frankenstein Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface DrawPentagramTests : XCTestCase
+@interface SliderRefreshesViewTests : XCTestCase
 
 @end
 
-@implementation DrawPentagramTests
+@implementation SliderRefreshesViewTests
 
 - (void)setUp {
     [super setUp];

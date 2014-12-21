@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
-               BuildableName = "DrawPentagram.app"
-               BlueprintName = "DrawPentagram"
-               ReferencedContainer = "container:DrawPentagram.xcodeproj">
+               BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
+               BuildableName = "SliderRefreshesView.app"
+               BlueprintName = "SliderRefreshesView"
+               ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CCE92F1A4673F4003921AB"
-               BuildableName = "DrawPentagramTests.xctest"
-               BlueprintName = "DrawPentagramTests"
-               ReferencedContainer = "container:DrawPentagram.xcodeproj">
+               BlueprintIdentifier = "E4CAADAD1A469C7B00B83A8D"
+               BuildableName = "SliderRefreshesViewTests.xctest"
+               BlueprintName = "SliderRefreshesViewTests"
+               ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CCE92F1A4673F4003921AB"
-               BuildableName = "DrawPentagramTests.xctest"
-               BlueprintName = "DrawPentagramTests"
-               ReferencedContainer = "container:DrawPentagram.xcodeproj">
+               BlueprintIdentifier = "E4CAADAD1A469C7B00B83A8D"
+               BuildableName = "SliderRefreshesViewTests.xctest"
+               BlueprintName = "SliderRefreshesViewTests"
+               ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
-            BuildableName = "DrawPentagram.app"
-            BlueprintName = "DrawPentagram"
-            ReferencedContainer = "container:DrawPentagram.xcodeproj">
+            BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
+            BuildableName = "SliderRefreshesView.app"
+            BlueprintName = "SliderRefreshesView"
+            ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
-            BuildableName = "DrawPentagram.app"
-            BlueprintName = "DrawPentagram"
-            ReferencedContainer = "container:DrawPentagram.xcodeproj">
+            BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
+            BuildableName = "SliderRefreshesView.app"
+            BlueprintName = "SliderRefreshesView"
+            ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
-            BuildableName = "DrawPentagram.app"
-            BlueprintName = "DrawPentagram"
-            ReferencedContainer = "container:DrawPentagram.xcodeproj">
+            BlueprintIdentifier = "E4CAAD941A469C7B00B83A8D"
+            BuildableName = "SliderRefreshesView.app"
+            BlueprintName = "SliderRefreshesView"
+            ReferencedContainer = "container:SliderRefreshesView.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

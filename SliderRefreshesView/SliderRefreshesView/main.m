@@ -1,9 +1,9 @@
 //
 //  main.m
-//  DrawPentagram
+//  SliderRefreshesView
 //
 //  Created by Hannibal Yang on 12/21/14.
-//  Copyright (c) 2014 Hannibal Yang. All rights reserved.
+//  Copyright (c) 2014 Frankenstein Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

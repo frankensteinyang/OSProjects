@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Quartz2D.xcscheme</key>
+		<key>DrawPentagram.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E4CCE8DF1A45B006003921AB</key>
+		<key>E4CCE9161A4673F4003921AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E4CCE8F81A45B006003921AB</key>
+		<key>E4CCE92F1A4673F4003921AB</key>
 		<dict>
 			<key>primary</key>
 			<true/>

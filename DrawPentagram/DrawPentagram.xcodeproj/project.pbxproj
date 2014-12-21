@@ -1,0 +1,433 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E4CCE91D1A4673F4003921AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE91C1A4673F4003921AB /* main.m */; };
+		E4CCE9201A4673F4003921AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE91F1A4673F4003921AB /* AppDelegate.m */; };
+		E4CCE9231A4673F4003921AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE9221A4673F4003921AB /* ViewController.m */; };
+		E4CCE9261A4673F4003921AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E4CCE9241A4673F4003921AB /* Main.storyboard */; };
+		E4CCE9281A4673F4003921AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4CCE9271A4673F4003921AB /* Images.xcassets */; };
+		E4CCE92B1A4673F4003921AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CCE9291A4673F4003921AB /* LaunchScreen.xib */; };
+		E4CCE9371A4673F4003921AB /* DrawPentagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE9361A4673F4003921AB /* DrawPentagramTests.m */; };
+		E4CCE9421A4674CC003921AB /* DPPentagramView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE9411A4674CC003921AB /* DPPentagramView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4CCE9311A4673F4003921AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4CCE90F1A4673F4003921AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4CCE9161A4673F4003921AB;
+			remoteInfo = DrawPentagram;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E4CCE9171A4673F4003921AB /* DrawPentagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawPentagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CCE91B1A4673F4003921AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CCE91C1A4673F4003921AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E4CCE91E1A4673F4003921AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E4CCE91F1A4673F4003921AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E4CCE9211A4673F4003921AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E4CCE9221A4673F4003921AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E4CCE9251A4673F4003921AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4CCE9271A4673F4003921AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E4CCE92A1A4673F4003921AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E4CCE9301A4673F4003921AB /* DrawPentagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DrawPentagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4CCE9351A4673F4003921AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4CCE9361A4673F4003921AB /* DrawPentagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DrawPentagramTests.m; sourceTree = "<group>"; };
+		E4CCE9401A4674CC003921AB /* DPPentagramView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPPentagramView.h; sourceTree = "<group>"; };
+		E4CCE9411A4674CC003921AB /* DPPentagramView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPPentagramView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4CCE9141A4673F4003921AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CCE92D1A4673F4003921AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E4CCE90E1A4673F4003921AB = {
+			isa = PBXGroup;
+			children = (
+				E4CCE9191A4673F4003921AB /* DrawPentagram */,
+				E4CCE9331A4673F4003921AB /* DrawPentagramTests */,
+				E4CCE9181A4673F4003921AB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E4CCE9181A4673F4003921AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCE9171A4673F4003921AB /* DrawPentagram.app */,
+				E4CCE9301A4673F4003921AB /* DrawPentagramTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4CCE9191A4673F4003921AB /* DrawPentagram */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCE91E1A4673F4003921AB /* AppDelegate.h */,
+				E4CCE91F1A4673F4003921AB /* AppDelegate.m */,
+				E4CCE9211A4673F4003921AB /* ViewController.h */,
+				E4CCE9221A4673F4003921AB /* ViewController.m */,
+				E4CCE9401A4674CC003921AB /* DPPentagramView.h */,
+				E4CCE9411A4674CC003921AB /* DPPentagramView.m */,
+				E4CCE9241A4673F4003921AB /* Main.storyboard */,
+				E4CCE9271A4673F4003921AB /* Images.xcassets */,
+				E4CCE9291A4673F4003921AB /* LaunchScreen.xib */,
+				E4CCE91A1A4673F4003921AB /* Supporting Files */,
+			);
+			path = DrawPentagram;
+			sourceTree = "<group>";
+		};
+		E4CCE91A1A4673F4003921AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCE91B1A4673F4003921AB /* Info.plist */,
+				E4CCE91C1A4673F4003921AB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E4CCE9331A4673F4003921AB /* DrawPentagramTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCE9361A4673F4003921AB /* DrawPentagramTests.m */,
+				E4CCE9341A4673F4003921AB /* Supporting Files */,
+			);
+			path = DrawPentagramTests;
+			sourceTree = "<group>";
+		};
+		E4CCE9341A4673F4003921AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4CCE9351A4673F4003921AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4CCE9161A4673F4003921AB /* DrawPentagram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CCE93A1A4673F4003921AB /* Build configuration list for PBXNativeTarget "DrawPentagram" */;
+			buildPhases = (
+				E4CCE9131A4673F4003921AB /* Sources */,
+				E4CCE9141A4673F4003921AB /* Frameworks */,
+				E4CCE9151A4673F4003921AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DrawPentagram;
+			productName = DrawPentagram;
+			productReference = E4CCE9171A4673F4003921AB /* DrawPentagram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4CCE92F1A4673F4003921AB /* DrawPentagramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4CCE93D1A4673F4003921AB /* Build configuration list for PBXNativeTarget "DrawPentagramTests" */;
+			buildPhases = (
+				E4CCE92C1A4673F4003921AB /* Sources */,
+				E4CCE92D1A4673F4003921AB /* Frameworks */,
+				E4CCE92E1A4673F4003921AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4CCE9321A4673F4003921AB /* PBXTargetDependency */,
+			);
+			name = DrawPentagramTests;
+			productName = DrawPentagramTests;
+			productReference = E4CCE9301A4673F4003921AB /* DrawPentagramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4CCE90F1A4673F4003921AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Hannibal Yang";
+				TargetAttributes = {
+					E4CCE9161A4673F4003921AB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					E4CCE92F1A4673F4003921AB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = E4CCE9161A4673F4003921AB;
+					};
+				};
+			};
+			buildConfigurationList = E4CCE9121A4673F4003921AB /* Build configuration list for PBXProject "DrawPentagram" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4CCE90E1A4673F4003921AB;
+			productRefGroup = E4CCE9181A4673F4003921AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4CCE9161A4673F4003921AB /* DrawPentagram */,
+				E4CCE92F1A4673F4003921AB /* DrawPentagramTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4CCE9151A4673F4003921AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CCE9261A4673F4003921AB /* Main.storyboard in Resources */,
+				E4CCE92B1A4673F4003921AB /* LaunchScreen.xib in Resources */,
+				E4CCE9281A4673F4003921AB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CCE92E1A4673F4003921AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4CCE9131A4673F4003921AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CCE9231A4673F4003921AB /* ViewController.m in Sources */,
+				E4CCE9201A4673F4003921AB /* AppDelegate.m in Sources */,
+				E4CCE9421A4674CC003921AB /* DPPentagramView.m in Sources */,
+				E4CCE91D1A4673F4003921AB /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4CCE92C1A4673F4003921AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4CCE9371A4673F4003921AB /* DrawPentagramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4CCE9321A4673F4003921AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4CCE9161A4673F4003921AB /* DrawPentagram */;
+			targetProxy = E4CCE9311A4673F4003921AB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4CCE9241A4673F4003921AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4CCE9251A4673F4003921AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4CCE9291A4673F4003921AB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4CCE92A1A4673F4003921AB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4CCE9381A4673F4003921AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E4CCE9391A4673F4003921AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4CCE93B1A4673F4003921AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DrawPentagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E4CCE93C1A4673F4003921AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DrawPentagram/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E4CCE93E1A4673F4003921AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DrawPentagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawPentagram.app/DrawPentagram";
+			};
+			name = Debug;
+		};
+		E4CCE93F1A4673F4003921AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = DrawPentagramTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DrawPentagram.app/DrawPentagram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4CCE9121A4673F4003921AB /* Build configuration list for PBXProject "DrawPentagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CCE9381A4673F4003921AB /* Debug */,
+				E4CCE9391A4673F4003921AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4CCE93A1A4673F4003921AB /* Build configuration list for PBXNativeTarget "DrawPentagram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CCE93B1A4673F4003921AB /* Debug */,
+				E4CCE93C1A4673F4003921AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E4CCE93D1A4673F4003921AB /* Build configuration list for PBXNativeTarget "DrawPentagramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4CCE93E1A4673F4003921AB /* Debug */,
+				E4CCE93F1A4673F4003921AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4CCE90F1A4673F4003921AB /* Project object */;
+}

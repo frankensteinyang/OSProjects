@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  Quartz2D
+//  DrawPentagram
 //
-//  Created by Hannibal Yang on 12/20/14.
+//  Created by Hannibal Yang on 12/21/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 

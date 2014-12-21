@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
-               BuildableName = "Quartz2D.app"
-               BlueprintName = "Quartz2D"
-               ReferencedContainer = "container:Quartz2D.xcodeproj">
+               BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
+               BuildableName = "DrawPentagram.app"
+               BlueprintName = "DrawPentagram"
+               ReferencedContainer = "container:DrawPentagram.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CCE8F81A45B006003921AB"
-               BuildableName = "Quartz2DTests.xctest"
-               BlueprintName = "Quartz2DTests"
-               ReferencedContainer = "container:Quartz2D.xcodeproj">
+               BlueprintIdentifier = "E4CCE92F1A4673F4003921AB"
+               BuildableName = "DrawPentagramTests.xctest"
+               BlueprintName = "DrawPentagramTests"
+               ReferencedContainer = "container:DrawPentagram.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "E4CCE8F81A45B006003921AB"
-               BuildableName = "Quartz2DTests.xctest"
-               BlueprintName = "Quartz2DTests"
-               ReferencedContainer = "container:Quartz2D.xcodeproj">
+               BlueprintIdentifier = "E4CCE92F1A4673F4003921AB"
+               BuildableName = "DrawPentagramTests.xctest"
+               BlueprintName = "DrawPentagramTests"
+               ReferencedContainer = "container:DrawPentagram.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
-            BuildableName = "Quartz2D.app"
-            BlueprintName = "Quartz2D"
-            ReferencedContainer = "container:Quartz2D.xcodeproj">
+            BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
+            BuildableName = "DrawPentagram.app"
+            BlueprintName = "DrawPentagram"
+            ReferencedContainer = "container:DrawPentagram.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
-            BuildableName = "Quartz2D.app"
-            BlueprintName = "Quartz2D"
-            ReferencedContainer = "container:Quartz2D.xcodeproj">
+            BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
+            BuildableName = "DrawPentagram.app"
+            BlueprintName = "DrawPentagram"
+            ReferencedContainer = "container:DrawPentagram.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "E4CCE8DF1A45B006003921AB"
-            BuildableName = "Quartz2D.app"
-            BlueprintName = "Quartz2D"
-            ReferencedContainer = "container:Quartz2D.xcodeproj">
+            BlueprintIdentifier = "E4CCE9161A4673F4003921AB"
+            BuildableName = "DrawPentagram.app"
+            BlueprintName = "DrawPentagram"
+            ReferencedContainer = "container:DrawPentagram.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

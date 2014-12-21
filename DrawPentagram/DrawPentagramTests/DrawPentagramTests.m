@@ -1,19 +1,19 @@
 //
-//  Quartz2DTests.m
-//  Quartz2DTests
+//  DrawPentagramTests.m
+//  DrawPentagramTests
 //
-//  Created by Hannibal Yang on 12/20/14.
+//  Created by Hannibal Yang on 12/21/14.
 //  Copyright (c) 2014 Hannibal Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface Quartz2DTests : XCTestCase
+@interface DrawPentagramTests : XCTestCase
 
 @end
 
-@implementation Quartz2DTests
+@implementation DrawPentagramTests
 
 - (void)setUp {
     [super setUp];

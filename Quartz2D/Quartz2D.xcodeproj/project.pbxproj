@@ -15,6 +15,7 @@
 		E4CCE8F41A45B006003921AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4CCE8F21A45B006003921AB /* LaunchScreen.xib */; };
 		E4CCE9001A45B006003921AB /* Quartz2DTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE8FF1A45B006003921AB /* Quartz2DTests.m */; };
 		E4CCE90B1A45B0B9003921AB /* Q2DView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4CCE90A1A45B0B9003921AB /* Q2DView.m */; };
+		E4CCE90D1A466934003921AB /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4CCE90C1A466934003921AB /* Icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,7 @@
 		E4CCE8FF1A45B006003921AB /* Quartz2DTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Quartz2DTests.m; sourceTree = "<group>"; };
 		E4CCE9091A45B0B9003921AB /* Q2DView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Q2DView.h; sourceTree = "<group>"; };
 		E4CCE90A1A45B0B9003921AB /* Q2DView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Q2DView.m; sourceTree = "<group>"; };
+		E4CCE90C1A466934003921AB /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		E4CCE8E31A45B006003921AB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E4CCE90C1A466934003921AB /* Icon.png */,
 				E4CCE8E41A45B006003921AB /* Info.plist */,
 				E4CCE8E51A45B006003921AB /* main.m */,
 			);
@@ -204,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4CCE90D1A466934003921AB /* Icon.png in Resources */,
 				E4CCE8EF1A45B006003921AB /* Main.storyboard in Resources */,
 				E4CCE8F41A45B006003921AB /* LaunchScreen.xib in Resources */,
 				E4CCE8F11A45B006003921AB /* Images.xcassets in Resources */,

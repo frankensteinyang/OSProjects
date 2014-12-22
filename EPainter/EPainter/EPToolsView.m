@@ -11,7 +11,7 @@
 #import "EPColorView.h"
 #import "EPLineWidthView.h"
 
-#define kMenuBarCommonHeight 44
+#define kSubviewHeight 44
 
 @interface EPToolsView() <EPColorViewDelegate, EPLineWidthViewDelegate>
 
@@ -79,13 +79,12 @@
     [self drawUnderlineWithBtn:button];
     
     switch (button.tag) {
-        case kToolsViewColor: // 颜色
-            [self showOrHideColorView];
+        case kToolsViewColor:
+            [self showColorView];
             break;
         
         case kToolsViewLineWidth:
-            // 显示/隐藏线宽视图
-            [self showOrHideLineWidthView];
+            [self showLineWidthView];
             break;
             
         default:
@@ -122,14 +121,14 @@
 #pragma mark - 子视图操作
 
 // 显示隐藏视图
-- (void)showOrHideView:(UIView *)view {
+- (void)showOrHideSubview:(UIView *)view {
     
     // 切换
     CGRect frame = self.frame;
     CGRect viewFrame = view.frame;
     if (viewFrame.origin.y < 0) {
         viewFrame.origin.y = self.bounds.size.height;
-        frame.size.height = kToolsViewHeight + kMenuBarCommonHeight;
+        frame.size.height = kToolsViewHeight + kSubviewHeight;
     } else {
         viewFrame.origin.y = -self.bounds.size.height;
         frame.size.height = kToolsViewHeight;
@@ -142,12 +141,12 @@
     
 }
 
-// 显示/隐藏颜色视图
-- (void)showOrHideColorView {
+// 显示颜色视图
+- (void)showColorView {
 
     if (self.colorView == nil) {
         // 初始在屏幕外面-self.bounds.size.height
-        EPColorView *view = [[EPColorView alloc] initWithFrame:CGRectMake(0, -self.bounds.size.height, self.bounds.size.width, kMenuBarCommonHeight)];
+        EPColorView *view = [[EPColorView alloc] initWithFrame:CGRectMake(0, -self.bounds.size.height, self.bounds.size.width, kSubviewHeight)];
         
         // 在视图的最底层插入视图
         [self insertSubview:view atIndex:0];
@@ -159,7 +158,7 @@
     }
     
     [self hideLineWidthView];
-    [self showOrHideView:self.colorView];
+    [self showOrHideSubview:self.colorView];
     
 }
 
@@ -167,17 +166,17 @@
 - (void)hideColorView {
 
     if (self.colorView.frame.origin.y > 0) {
-        [self showOrHideView:self.colorView];
+        [self showOrHideSubview:self.colorView];
     }
     
 }
 
-// 显示/隐藏线宽视图
-- (void)showOrHideLineWidthView {
+// 显示线宽视图
+- (void)showLineWidthView {
 
     // 懒（延迟）加载线宽视图
     if (self.lineWidthView == nil) {
-        CGRect rect = CGRectMake(0, -self.frame.size.height, self.frame.size.width, kMenuBarCommonHeight);
+        CGRect rect = CGRectMake(0, -self.frame.size.height, self.frame.size.width, kSubviewHeight);
         EPLineWidthView *view = [[EPLineWidthView alloc] initWithFrame:rect];
         [self insertSubview:view atIndex:0];
         
@@ -186,7 +185,7 @@
     }
     
     [self hideColorView];
-    [self showOrHideView:self.lineWidthView];
+    [self showOrHideSubview:self.lineWidthView];
     
 }
 
@@ -194,7 +193,7 @@
 - (void)hideLineWidthView {
 
     if (self.lineWidthView.frame.origin.y > 0) {
-        [self showOrHideView:self.lineWidthView];
+        [self showOrHideSubview:self.lineWidthView];
     }
     
 }
@@ -207,7 +206,7 @@
     [_delegate toolsViewSelectedColor:color];
     
     // 隐藏颜色视图
-    [self showOrHideColorView];
+    [self hideColorView];
     
 }
 
@@ -215,6 +214,9 @@
 - (void)lineWidthViewSelectedLineWidth:(CGFloat)lineWidth {
 
     [_delegate toolsViewSelectedLineWidth:lineWidth];
+    
+    // 隐藏线宽视图
+    [self hideLineWidthView];
     
 }
 @end

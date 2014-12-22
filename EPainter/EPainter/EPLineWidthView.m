@@ -20,6 +20,7 @@
 
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = [UIColor whiteColor];
         self.linewidths = @[@(1.0), @(2.0), @(5.0), @(8.0), @(10.0), @(12.0)];
         [self createButtonsWithArray:_linewidths];
     }

@@ -28,7 +28,7 @@
 
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundColor = [UIColor blackColor];
         [self createMenuBar];
     }
     return self;
@@ -54,8 +54,8 @@
         [btn setFrame:rect];
         
         // 设置按钮属性
-        [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
-        [btn.titleLabel setFont:[UIFont systemFontOfSize:14]];
+        [btn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [btn.titleLabel setFont:[UIFont systemFontOfSize:14.0f]];
         
         btn.tag = idx;
         [btn addTarget:self action:@selector(tapButton:) forControlEvents:UIControlEventTouchUpInside];

@@ -22,7 +22,7 @@
 
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor lightGrayColor];
+        self.backgroundColor = [UIColor whiteColor];
         
         _colors = @[[UIColor redColor], [UIColor greenColor], [UIColor blueColor],
                     [UIColor brownColor], [UIColor yellowColor], [UIColor cyanColor],

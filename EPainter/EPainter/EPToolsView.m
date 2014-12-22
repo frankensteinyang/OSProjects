@@ -9,26 +9,16 @@
 #import "EPToolsView.h"
 #import "EPLinesView.h"
 #import "EPColorView.h"
+#import "EPLineWidthView.h"
 
-#define kCommonHeight 44
+#define kMenuBarCommonHeight 44
 
-typedef enum {
-
-    kToolsViewColor = 0,
-    kToolsViewLineWidth,
-    kToolsViewEraser,
-    kToolsViewUndo,
-    kToolsViewClear,
-    kToolsViewPhoto,
-    kToolsViewSave
-    
-} kToolsViewFunction;
-
-@interface EPToolsView()
+@interface EPToolsView() <EPColorViewDelegate, EPLineWidthViewDelegate>
 
 @property (weak, nonatomic) UIButton *preSelectedBtn;
 @property (weak, nonatomic) EPLinesView *selectedLine;
 @property (weak, nonatomic) EPColorView *colorView;
+@property (weak, nonatomic) EPLineWidthView *lineWidthView;
 
 @end
 
@@ -50,25 +40,26 @@ typedef enum {
 
     NSArray *array = @[@"颜色", @"线宽", @"橡皮", @"撤销", @"清屏", @"相机", @"保存"];
     // 循环创建按钮
-    CGFloat btnWidth = self.bounds.size.width / array.count;
+    CGFloat w = self.bounds.size.width / array.count;
     CGFloat y = IS_IOS7 ? 20 : 0;
+    CGFloat h = self.bounds.size.height - y;
     
     // Block循环遍历
     [array enumerateObjectsUsingBlock:^(NSString *text, NSUInteger idx, BOOL *stop) {
+        
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
         [btn setTitle:text forState:UIControlStateNormal];
-        CGFloat x = idx * btnWidth;
-        [btn setFrame:CGRectMake(x, y, btnWidth, kCommonHeight)];
+        
+        CGRect rect = CGRectMake(idx * w, y, w, h);
+        [btn setFrame:rect];
         
         // 设置按钮属性
         [btn setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
         [btn.titleLabel setFont:[UIFont systemFontOfSize:14]];
-        [btn setTitleColor:[UIColor blueColor] forState:UIControlStateSelected];
         
         btn.tag = idx;
-        [self addSubview:btn];
-        
         [btn addTarget:self action:@selector(tapButton:) forControlEvents:UIControlEventTouchUpInside];
+        [self addSubview:btn];
         
     }];
     
@@ -88,11 +79,20 @@ typedef enum {
     [self drawUnderlineWithBtn:button];
     
     switch (button.tag) {
-        case kToolsViewColor:
+        case kToolsViewColor: // 颜色
             [self showOrHideColorView];
+            break;
+        
+        case kToolsViewLineWidth:
+            // 显示/隐藏线宽视图
+            [self showOrHideLineWidthView];
             break;
             
         default:
+            [self hideColorView];
+            [self hideLineWidthView];
+            // 通知视图控制器，选中了某项功能
+            [_delegate toolsViewSelectedFunction:button.tag];
             break;
     }
     
@@ -120,35 +120,101 @@ typedef enum {
 }
 
 #pragma mark - 子视图操作
-// 显示/隐藏颜色视图
-- (void)showOrHideColorView {
 
-    if (self.colorView == nil) {
-        // 初始在屏幕外面-self.bounds.size.height
-        EPColorView *view = [[EPColorView alloc] initWithFrame:CGRectMake(0, -self.bounds.size.height, self.bounds.size.width, kCommonHeight)];
-        
-        // 在视图的最底层插入视图
-        [self insertSubview:view atIndex:0];
-        
-        self.colorView = view;
-    }
+// 显示隐藏视图
+- (void)showOrHideView:(UIView *)view {
     
-    // 目标位置
+    // 切换
     CGRect frame = self.frame;
-    CGRect colorFrame = self.colorView.frame;
-    if (colorFrame.origin.y < 0) {
-        colorFrame.origin.y = self.bounds.size.height;
-        frame.size.height = kToolsViewHeight + colorFrame.size.height;
+    CGRect viewFrame = view.frame;
+    if (viewFrame.origin.y < 0) {
+        viewFrame.origin.y = self.bounds.size.height;
+        frame.size.height = kToolsViewHeight + kMenuBarCommonHeight;
     } else {
-        colorFrame.origin.y = -self.bounds.size.height;
+        viewFrame.origin.y = -self.bounds.size.height;
         frame.size.height = kToolsViewHeight;
     }
     
     [UIView animateWithDuration:0.4f animations:^{
-        [self.colorView setFrame:colorFrame];
+        [view setFrame:viewFrame];
         self.frame = frame;
     }];
     
 }
 
+// 显示/隐藏颜色视图
+- (void)showOrHideColorView {
+
+    if (self.colorView == nil) {
+        // 初始在屏幕外面-self.bounds.size.height
+        EPColorView *view = [[EPColorView alloc] initWithFrame:CGRectMake(0, -self.bounds.size.height, self.bounds.size.width, kMenuBarCommonHeight)];
+        
+        // 在视图的最底层插入视图
+        [self insertSubview:view atIndex:0];
+        
+        // 设置代理
+        view.delegate = self;
+        
+        self.colorView = view;
+    }
+    
+    [self hideLineWidthView];
+    [self showOrHideView:self.colorView];
+    
+}
+
+// 关闭颜色视图
+- (void)hideColorView {
+
+    if (self.colorView.frame.origin.y > 0) {
+        [self showOrHideView:self.colorView];
+    }
+    
+}
+
+// 显示/隐藏线宽视图
+- (void)showOrHideLineWidthView {
+
+    // 懒（延迟）加载线宽视图
+    if (self.lineWidthView == nil) {
+        CGRect rect = CGRectMake(0, -self.frame.size.height, self.frame.size.width, kMenuBarCommonHeight);
+        EPLineWidthView *view = [[EPLineWidthView alloc] initWithFrame:rect];
+        [self insertSubview:view atIndex:0];
+        
+        view.delegate = self;
+        self.lineWidthView = view;
+    }
+    
+    [self hideColorView];
+    [self showOrHideView:self.lineWidthView];
+    
+}
+
+// 关闭线宽视图
+- (void)hideLineWidthView {
+
+    if (self.lineWidthView.frame.origin.y > 0) {
+        [self showOrHideView:self.lineWidthView];
+    }
+    
+}
+
+#pragma mark - 选择颜色代理的方法实现
+// 代理（委托）模式，通常是用于上下级之间的消息传递
+- (void)colorViewSelectedColor:(UIColor *)color {
+
+    // 工具视图将颜色向上传递给视图控制器
+    [_delegate toolsViewSelectedColor:color];
+    
+    // 隐藏颜色视图
+    [self showOrHideColorView];
+    
+}
+
+#pragma mark - 选择线宽代理方法
+- (void)lineWidthViewSelectedLineWidth:(CGFloat)lineWidth {
+
+    [_delegate toolsViewSelectedLineWidth:lineWidth];
+    
+}
 @end

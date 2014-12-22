@@ -9,6 +9,13 @@
 #import "EPColorView.h"
 #define kBtnSpacing 10.0
 
+@interface EPColorView()
+
+// 供用户选择的颜色的数组
+@property (nonatomic, strong) NSArray *colors;
+
+@end
+
 @implementation EPColorView
 
 - (id)initWithFrame:(CGRect)frame {
@@ -16,7 +23,12 @@
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor lightGrayColor];
-        [self createBtn];
+        
+        _colors = @[[UIColor redColor], [UIColor greenColor], [UIColor blueColor],
+                    [UIColor brownColor], [UIColor yellowColor], [UIColor cyanColor],
+                    [UIColor purpleColor], [UIColor orangeColor], [UIColor magentaColor]];
+        
+        [self createBtnWithArray:_colors];
     }
     
     return self;
@@ -38,11 +50,7 @@
     
 }
 
-- (void)createBtn {
-
-    NSArray *colors = @[[UIColor redColor], [UIColor greenColor], [UIColor blueColor],
-                        [UIColor brownColor], [UIColor yellowColor], [UIColor cyanColor],
-                        [UIColor purpleColor], [UIColor orangeColor], [UIColor magentaColor]];
+- (void)createBtnWithArray:(NSArray *)colors {
     
     // 循环创建按钮
     CGFloat w = self.bounds.size.width / colors.count;
@@ -71,7 +79,8 @@
 #pragma mark - 按钮监听方法
 - (void)tapButton:(UIButton *)btn {
 
-    
+    UIColor *color = self.colors[btn.tag];
+    [_delegate colorViewSelectedColor:color];
 }
 
 @end

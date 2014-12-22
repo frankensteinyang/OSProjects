@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
+@class EPColorView;
+
+@protocol EPColorViewDelegate <NSObject>
+
+- (void)colorViewSelectedColor:(UIColor *)color;
+
+@end
+
 @interface EPColorView : UIView
+
+@property (nonatomic, weak) id <EPColorViewDelegate> delegate;
 
 @end

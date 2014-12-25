@@ -24,21 +24,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-    
-    NSURL *URL = [NSURL URLWithString:@"http://panfile.xuele.net/mupload.ashx"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
-    
-    NSURL *filePath = [NSURL fileURLWithPath:@"file://path/to/image.png"];
-    NSURLSessionUploadTask *uploadTask = [manager uploadTaskWithRequest:request fromFile:filePath progress:nil completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
-        if (error) {
-            NSLog(@"Error: %@", error);
-        } else {
-            NSLog(@"Success: %@ %@", response, responseObject);
-        }
-    }];
-    [uploadTask resume];
+    NSURL *url = [NSURL URLWithString:@"http://panfile.xuele.net/mupload.ashx"];
+//    _http
     
 }
 

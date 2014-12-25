@@ -1,6 +1,6 @@
 // AFURLConnectionOperation.h
 //
-// Copyright (c) 2013-2014 AFNetworking (http://afnetworking.com)
+// Copyright (c) 2011 Gowalla (http://gowalla.com/)
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to deal
@@ -23,9 +23,6 @@
 #import <Foundation/Foundation.h>
 
 #import <Availability.h>
-#import "AFURLRequestSerialization.h"
-#import "AFURLResponseSerialization.h"
-#import "AFSecurityPolicy.h"
 
 /**
  `AFURLConnectionOperation` is a subclass of `NSOperation` that implements `NSURLConnection` delegate methods.
@@ -46,29 +43,22 @@
  - `connection:didFailWithError:`
  - `connection:didSendBodyData:totalBytesWritten:totalBytesExpectedToWrite:`
  - `connection:willCacheResponse:`
+ - `connection:canAuthenticateAgainstProtectionSpace:`
+ - `connection:didReceiveAuthenticationChallenge:`
  - `connectionShouldUseCredentialStorage:`
- - `connection:needNewBodyStream:` 
- - `connection:willSendRequestForAuthenticationChallenge:`
+ - `connection:needNewBodyStream:`
 
  If any of these methods are overridden in a subclass, they _must_ call the `super` implementation first.
+
+ ## Class Constructors
+
+ Class constructors, or methods that return an unowned instance, are the preferred way for subclasses to encapsulate any particular logic for handling the setup or parsing of response data. For instance, `AFJSONRequestOperation` provides `JSONRequestOperationWithRequest:success:failure:`, which takes block arguments, whose parameter on for a successful request is the JSON object initialized from the `response data`.
 
  ## Callbacks and Completion Blocks
 
  The built-in `completionBlock` provided by `NSOperation` allows for custom behavior to be executed after the request finishes. It is a common pattern for class constructors in subclasses to take callback block parameters, and execute them conditionally in the body of its `completionBlock`. Make sure to handle cancelled operations appropriately when setting a `completionBlock` (i.e. returning early before parsing response data). See the implementation of any of the `AFHTTPRequestOperation` subclasses for an example of this.
 
  Subclasses are strongly discouraged from overriding `setCompletionBlock:`, as `AFURLConnectionOperation`'s implementation includes a workaround to mitigate retain cycles, and what Apple rather ominously refers to as ["The Deallocation Problem"](http://developer.apple.com/library/ios/#technotes/tn2109/).
- 
- ## SSL Pinning
- 
- Relying on the CA trust model to validate SSL certificates exposes your app to security vulnerabilities, such as man-in-the-middle attacks. For applications that connect to known servers, SSL certificate pinning provides an increased level of security, by checking server certificate validity against those specified in the app bundle.
- 
- SSL with certificate pinning is strongly recommended for any application that transmits sensitive information to an external webservice.
-
- Connections will be validated on all matching certificates with a `.cer` extension in the bundle root.
- 
- ## App Extensions
- 
- When using AFNetworking in an App Extension, `#define AF_APP_EXTENSIONS` to avoid using unavailable APIs.
 
  ## NSCoding & NSCopying Conformance
 
@@ -83,10 +73,14 @@
 
  - `-copy` and `-copyWithZone:` return a new operation with the `NSURLRequest` of the original. So rather than an exact copy of the operation at that particular instant, the copying mechanism returns a completely new instance, which can be useful for retrying operations.
  - A copy of an operation will not include the `outputStream` of the original.
- - Operation copies do not include `completionBlock`, as it often strongly captures a reference to `self`, which would otherwise have the unintuitive side-effect of pointing to the _original_ operation when copied.
+ - Operation copies do not include `completionBlock`. `completionBlock` often strongly captures a reference to `self`, which would otherwise have the unintuitive side-effect of pointing to the _original_ operation when copied.
  */
-
-@interface AFURLConnectionOperation : NSOperation <NSURLConnectionDelegate, NSURLConnectionDataDelegate, NSSecureCoding, NSCopying>
+@interface AFURLConnectionOperation : NSOperation <NSURLConnectionDelegate,
+#if (defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && __IPHONE_OS_VERSION_MIN_REQUIRED >= __IPHONE_5_0) || \
+    (defined(__MAC_OS_X_VERSION_MIN_REQUIRED) && __MAC_OS_X_VERSION_MIN_REQUIRED >= __MAC_10_8)
+NSURLConnectionDataDelegate, 
+#endif
+NSCoding, NSCopying>
 
 ///-------------------------------
 /// @name Accessing Run Loop Modes
@@ -133,9 +127,10 @@
 /**
  The string encoding of the response.
 
- If the response does not specify a valid string encoding, `responseStringEncoding` will return `NSUTF8StringEncoding`.
+ @discussion If the response does not specify a valid string encoding, `responseStringEncoding` will return `NSUTF8StringEncoding`.
  */
 @property (readonly, nonatomic, assign) NSStringEncoding responseStringEncoding;
+
 
 ///-------------------------------
 /// @name Managing URL Credentials
@@ -144,25 +139,16 @@
 /**
  Whether the URL connection should consult the credential storage for authenticating the connection. `YES` by default.
 
- This is the value that is returned in the `NSURLConnectionDelegate` method `-connectionShouldUseCredentialStorage:`.
+ @discussion This is the value that is returned in the `NSURLConnectionDelegate` method `-connectionShouldUseCredentialStorage:`.
  */
 @property (nonatomic, assign) BOOL shouldUseCredentialStorage;
 
 /**
  The credential used for authentication challenges in `-connection:didReceiveAuthenticationChallenge:`.
 
- This will be overridden by any shared credentials that exist for the username or password of the request URL, if present.
+ @discussion This will be overridden by any shared credentials that exist for the username or password of the request URL, if present.
  */
 @property (nonatomic, strong) NSURLCredential *credential;
-
-///-------------------------------
-/// @name Managing Security Policy
-///-------------------------------
-
-/**
- The security policy used to evaluate server trust for secure connections.
- */
-@property (nonatomic, strong) AFSecurityPolicy *securityPolicy;
 
 ///------------------------
 /// @name Accessing Streams
@@ -171,30 +157,16 @@
 /**
  The input stream used to read data to be sent during the request.
 
- This property acts as a proxy to the `HTTPBodyStream` property of `request`.
+ @discussion This property acts as a proxy to the `HTTPBodyStream` property of `request`.
  */
 @property (nonatomic, strong) NSInputStream *inputStream;
 
 /**
  The output stream that is used to write data received until the request is finished.
 
- By default, data is accumulated into a buffer that is stored into `responseData` upon completion of the request, with the intermediary `outputStream` property set to `nil`. When `outputStream` is set, the data will not be accumulated into an internal buffer, and as a result, the `responseData` property of the completed request will be `nil`. The output stream will be scheduled in the network thread runloop upon being set.
+ @discussion By default, data is accumulated into a buffer that is stored into `responseData` upon completion of the request. When `outputStream` is set, the data will not be accumulated into an internal buffer, and as a result, the `responseData` property of the completed request will be `nil`. The output stream will be scheduled in the network thread runloop upon being set.
  */
 @property (nonatomic, strong) NSOutputStream *outputStream;
-
-///---------------------------------
-/// @name Managing Callback Queues
-///---------------------------------
-
-/**
- The dispatch queue for `completionBlock`. If `NULL` (default), the main queue is used.
- */
-@property (nonatomic, strong) dispatch_queue_t completionQueue;
-
-/**
- The dispatch group for `completionBlock`. If `NULL` (default), a private dispatch group is used.
- */
-@property (nonatomic, strong) dispatch_group_t completionGroup;
 
 ///---------------------------------------------
 /// @name Managing Request Operation Information
@@ -211,12 +183,12 @@
 
 /**
  Initializes and returns a newly allocated operation object with a url connection configured with the specified url request.
- 
- This is the designated initializer.
- 
+
  @param urlRequest The request object to be used by the operation connection.
+
+ @discussion This is the designated initializer.
  */
-- (instancetype)initWithRequest:(NSURLRequest *)urlRequest NS_DESIGNATED_INITIALIZER;
+- (id)initWithRequest:(NSURLRequest *)urlRequest;
 
 ///----------------------------------
 /// @name Pausing / Resuming Requests
@@ -225,7 +197,7 @@
 /**
  Pauses the execution of the request operation.
 
- A paused operation returns `NO` for `-isReady`, `-isExecuting`, and `-isFinished`. As such, it will remain in an `NSOperationQueue` until it is either cancelled or resumed. Pausing a finished, cancelled, or paused operation has no effect.
+ @discussion A paused operation returns `NO` for `-isReady`, `-isExecuting`, and `-isFinished`. As such, it will remain in an `NSOperationQueue` until it is either cancelled or resumed. Pausing a finished, cancelled, or paused operation has no effect.
  */
 - (void)pause;
 
@@ -239,7 +211,7 @@
 /**
  Resumes the execution of the paused request operation.
 
- Pause/Resume behavior varies depending on the underlying implementation for the operation class. In its base implementation, resuming a paused requests restarts the original request. However, since HTTP defines a specification for how to request a specific content range, `AFHTTPRequestOperation` will resume downloading the request from where it left off, instead of restarting the original request.
+ @discussion Pause/Resume behavior varies depending on the underlying implementation for the operation class. In its base implementation, resuming a paused requests restarts the original request. However, since HTTP defines a specification for how to request a specific content range, `AFHTTPRequestOperation` will resume downloading the request from where it left off, instead of restarting the original request.
  */
 - (void)resume;
 
@@ -251,8 +223,8 @@
  Specifies that the operation should continue execution after the app has entered the background, and the expiration handler for that background task.
 
  @param handler A handler to be called shortly before the application’s remaining background time reaches 0. The handler is wrapped in a block that cancels the operation, and cleans up and marks the end of execution, unlike the `handler` parameter in `UIApplication -beginBackgroundTaskWithExpirationHandler:`, which expects this to be done in the handler itself. The handler is called synchronously on the main thread, thus blocking the application’s suspension momentarily while the application is notified.
-  */
-#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED) && !defined(AF_APP_EXTENSIONS)
+ */
+#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED)
 - (void)setShouldExecuteAsBackgroundTaskWithExpirationHandler:(void (^)(void))handler;
 #endif
 
@@ -279,16 +251,25 @@
 ///-------------------------------------------------
 
 /**
- Sets a block to be executed when the connection will authenticate a challenge in order to download its request, as handled by the `NSURLConnectionDelegate` method `connection:willSendRequestForAuthenticationChallenge:`.
- 
- @param block A block object to be executed when the connection will authenticate a challenge in order to download its request. The block has no return type and takes two arguments: the URL connection object, and the challenge that must be authenticated. This block must invoke one of the challenge-responder methods (NSURLAuthenticationChallengeSender protocol).
- 
- If `allowsInvalidSSLCertificate` is set to YES, `connection:willSendRequestForAuthenticationChallenge:` will attempt to have the challenge sender use credentials with invalid SSL certificates.
+ Sets a block to be executed to determine whether the connection should be able to respond to a protection space's form of authentication, as handled by the `NSURLConnectionDelegate` method `connection:canAuthenticateAgainstProtectionSpace:`.
+
+ @param block A block object to be executed to determine whether the connection should be able to respond to a protection space's form of authentication. The block has a `BOOL` return type and takes two arguments: the URL connection object, and the protection space to authenticate against.
+
+ @discussion If `_AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES_` is defined, `connection:canAuthenticateAgainstProtectionSpace:` will accept invalid SSL certificates, returning `YES` if the protection space authentication method is `NSURLAuthenticationMethodServerTrust`.
  */
-- (void)setWillSendRequestForAuthenticationChallengeBlock:(void (^)(NSURLConnection *connection, NSURLAuthenticationChallenge *challenge))block;
+- (void)setAuthenticationAgainstProtectionSpaceBlock:(BOOL (^)(NSURLConnection *connection, NSURLProtectionSpace *protectionSpace))block;
 
 /**
- Sets a block to be executed when the server redirects the request from one URL to another URL, or when the request URL changed by the `NSURLProtocol` subclass handling the request in order to standardize its format, as handled by the `NSURLConnectionDataDelegate` method `connection:willSendRequest:redirectResponse:`.
+ Sets a block to be executed when the connection must authenticate a challenge in order to download its request, as handled by the `NSURLConnectionDelegate` method `connection:didReceiveAuthenticationChallenge:`.
+
+ @param block A block object to be executed when the connection must authenticate a challenge in order to download its request. The block has no return type and takes two arguments: the URL connection object, and the challenge that must be authenticated.
+
+ @discussion If `_AFNETWORKING_ALLOW_INVALID_SSL_CERTIFICATES_` is defined, `connection:didReceiveAuthenticationChallenge:` will attempt to have the challenge sender use credentials with invalid SSL certificates.
+ */
+- (void)setAuthenticationChallengeBlock:(void (^)(NSURLConnection *connection, NSURLAuthenticationChallenge *challenge))block;
+
+/**
+ Sets a block to be executed when the server redirects the request from one URL to another URL, or when the request URL changed by the `NSURLProtocol` subclass handling the request in order to standardize its format, as handled by the `NSURLConnectionDelegate` method `connection:willSendRequest:redirectResponse:`.
 
  @param block A block object to be executed when the request URL was changed. The block returns an `NSURLRequest` object, the URL request to redirect, and takes three arguments: the URL connection object, the the proposed redirected request, and the URL response that caused the redirect.
  */
@@ -302,16 +283,42 @@
  */
 - (void)setCacheResponseBlock:(NSCachedURLResponse * (^)(NSURLConnection *connection, NSCachedURLResponse *cachedResponse))block;
 
-///
+@end
+
+///----------------
+/// @name Constants
+///----------------
 
 /**
+ ## User info dictionary keys
 
+ These keys may exist in the user info dictionary, in addition to those defined for NSError.
+
+ - `NSString * const AFNetworkingOperationFailingURLRequestErrorKey`
+ - `NSString * const AFNetworkingOperationFailingURLResponseErrorKey`
+
+ ### Constants
+
+ `AFNetworkingOperationFailingURLRequestErrorKey`
+ The corresponding value is an `NSURLRequest` containing the request of the operation associated with an error. This key is only present in the `AFNetworkingErrorDomain`.
+
+ `AFNetworkingOperationFailingURLResponseErrorKey`
+ The corresponding value is an `NSURLResponse` containing the response of the operation associated with an error. This key is only present in the `AFNetworkingErrorDomain`.
+
+ ## Error Domains
+
+ The following error domain is predefined.
+
+ - `NSString * const AFNetworkingErrorDomain`
+
+ ### Constants
+
+ `AFNetworkingErrorDomain`
+ AFNetworking errors. Error codes for `AFNetworkingErrorDomain` correspond to codes in `NSURLErrorDomain`.
  */
-+ (NSArray *)batchOfRequestOperations:(NSArray *)operations
-                        progressBlock:(void (^)(NSUInteger numberOfFinishedOperations, NSUInteger totalNumberOfOperations))progressBlock
-                      completionBlock:(void (^)(NSArray *operations))completionBlock;
-
-@end
+extern NSString * const AFNetworkingErrorDomain;
+extern NSString * const AFNetworkingOperationFailingURLRequestErrorKey;
+extern NSString * const AFNetworkingOperationFailingURLResponseErrorKey;
 
 ///--------------------
 /// @name Notifications

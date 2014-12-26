@@ -9,7 +9,10 @@
 #import "ViewController.h"
 #import "AFNetworking.h"
 
-@interface ViewController ()
+@interface ViewController () {
+
+    AFHTTPClient *_httpClient;
+}
 
 @end
 
@@ -24,14 +27,27 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSURL *url = [NSURL URLWithString:@"http://panfile.xuele.net/mupload.ashx"];
-//    _http
+    NSURL *url = [NSURL URLWithString:@"http://panfile.xuele.net/"];
+    _httpClient = [[AFHTTPClient alloc] initWithBaseURL:url];
+    
     
 }
 
 #pragma mark - 文件上传
 - (IBAction)uploadAttachment {
     
+    // 上传请求
+    NSURLRequest *request = [_httpClient multipartFormRequestWithMethod:@"Post" path:@"mupload.ashx" parameters:nil constructingBodyWithBlock:^(id<AFMultipartFormData> formData) {
+        
+        // 编写要上传的数据体
+        UIImage *image = [UIImage imageNamed:@""];
+        NSData *data = UIImagePNGRepresentation(image);
+        [formData appendPartWithFileData:data name:@"" fileName:@"" mimeType:@""];
+        
+    }];
+//    [request setValue:<#(id)#> forKey:<#(NSString *)#>]
+    AFHTTPRequestOperation *op = [[AFHTTPRequestOperation alloc] initWithRequest:request];
+    [_httpClient.operationQueue addOperation:op];
     
 }
 

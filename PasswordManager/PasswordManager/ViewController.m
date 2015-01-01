@@ -25,8 +25,15 @@
     [super viewDidLoad];
     [self openDB];
     [self createTable];
-    Password *p = [Password passwordWithID:0 account:@"fredisalmighty@hotmail.com" password:@"jinzhong" info:@"密保问题不是这个。"];
-    [self insertData:p];
+    
+//    NSArray *array = @[@"frankenstein@gmail.com", @"56464", @"wenti"];
+//    for (NSInteger i = 0; i < 10; i++) {
+//        NSString *account = [NSString stringWithFormat:@"%04d%@", arc4random_uniform(10000), array[arc4random_uniform(array.count)]];
+//        NSString *password = [NSString stringWithFormat:@"%04d%@", arc4random_uniform(1000000), array[arc4random_uniform(array.count)]];
+//        NSString *info = [NSString stringWithFormat:@"%04d%@", arc4random_uniform(100), array[arc4random_uniform(array.count)]];
+//        Password *p = [Password passwordWithID:0 account:account password:password info:info];
+//        [self insertData:p];
+//    }
     [self allPasswords];
 }
 
@@ -78,10 +85,22 @@
 #pragma mark 查询所有密码
 - (void)allPasswords {
 
-    NSString *sql = @"SELECT * FROM PasswordManager";
+    NSString *sql = @"SELECT ID, account, password, info FROM PasswordManager";
     sqlite3_stmt *stmt = NULL;
     if (SQLITE_OK == sqlite3_prepare_v2(_db, [sql UTF8String], -1, &stmt, NULL)) {
         NSLog(@"查询语句正确！");
+        while (SQLITE_ROW == sqlite3_step(stmt)) {
+            int ID = sqlite3_column_int(stmt, 0);
+            const unsigned char *account = sqlite3_column_text(stmt, 1);
+            NSString *accountUTF8 = [NSString stringWithUTF8String:(const char *)account];
+            const unsigned char *password = sqlite3_column_text(stmt, 2);
+            NSString *passwordUTF8 = [NSString stringWithUTF8String:(const char *)password];
+            const unsigned char *info = sqlite3_column_text(stmt, 3);
+            NSString *infoUTF8 = [NSString stringWithUTF8String:(const char *)info];
+            
+            Password *p = [Password passwordWithID:ID account:accountUTF8 password:passwordUTF8 info:infoUTF8];
+            NSLog(@"%@", p);
+        }
     } else {
         NSLog(@"查询语句错误！");
     }

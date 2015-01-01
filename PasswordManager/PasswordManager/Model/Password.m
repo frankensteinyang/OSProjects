@@ -22,4 +22,10 @@
     
 }
 
+- (NSString *)description {
+
+    return [NSString stringWithFormat:@"<Password: %p, ID: %d, account: %@, password: %@, info: %@>", self, _ID, _account, _password, _info];
+    
+}
+
 @end

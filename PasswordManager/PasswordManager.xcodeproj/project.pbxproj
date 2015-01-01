@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E4079F5B1A55441B00C91CAD /* Password.m in Sources */ = {isa = PBXBuildFile; fileRef = E4079F5A1A55441B00C91CAD /* Password.m */; };
 		E452296A1A5449BF009B398A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E45229691A5449BF009B398A /* main.m */; };
 		E452296D1A5449BF009B398A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E452296C1A5449BF009B398A /* AppDelegate.m */; };
 		E45229701A5449BF009B398A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E452296F1A5449BF009B398A /* ViewController.m */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E4079F591A55441B00C91CAD /* Password.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Password.h; sourceTree = "<group>"; };
+		E4079F5A1A55441B00C91CAD /* Password.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Password.m; sourceTree = "<group>"; };
 		E45229641A5449BF009B398A /* PasswordManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E45229681A5449BF009B398A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E45229691A5449BF009B398A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +72,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E4079F581A55433E00C91CAD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E4079F591A55441B00C91CAD /* Password.h */,
+				E4079F5A1A55441B00C91CAD /* Password.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		E452295B1A5449BF009B398A = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +103,7 @@
 		E45229661A5449BF009B398A /* PasswordManager */ = {
 			isa = PBXGroup;
 			children = (
+				E4079F581A55433E00C91CAD /* Model */,
 				E45229911A544F38009B398A /* Category */,
 				E452296B1A5449BF009B398A /* AppDelegate.h */,
 				E452296C1A5449BF009B398A /* AppDelegate.m */,
@@ -243,6 +256,7 @@
 			files = (
 				E45229701A5449BF009B398A /* ViewController.m in Sources */,
 				E45229961A544F38009B398A /* NSArray+Log.m in Sources */,
+				E4079F5B1A55441B00C91CAD /* Password.m in Sources */,
 				E45229971A544F38009B398A /* NSString+DocDir.m in Sources */,
 				E452296D1A5449BF009B398A /* AppDelegate.m in Sources */,
 				E452296A1A5449BF009B398A /* main.m in Sources */,
@@ -436,6 +450,7 @@
 				E45229891A5449C0009B398A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E452298A1A5449C0009B398A /* Build configuration list for PBXNativeTarget "PasswordManagerTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +459,7 @@
 				E452298C1A5449C0009B398A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

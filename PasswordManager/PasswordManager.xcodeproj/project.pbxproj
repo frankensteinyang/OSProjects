@@ -18,6 +18,7 @@
 		E45229961A544F38009B398A /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = E45229931A544F38009B398A /* NSArray+Log.m */; };
 		E45229971A544F38009B398A /* NSString+DocDir.m in Sources */ = {isa = PBXBuildFile; fileRef = E45229951A544F38009B398A /* NSString+DocDir.m */; };
 		E45229991A545330009B398A /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = E45229981A545330009B398A /* libsqlite3.dylib */; };
+		EFD9E3131A56F34200498AA8 /* PasswordDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD9E3121A56F34200498AA8 /* PasswordDBManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		E45229941A544F38009B398A /* NSString+DocDir.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+DocDir.h"; sourceTree = "<group>"; };
 		E45229951A544F38009B398A /* NSString+DocDir.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+DocDir.m"; sourceTree = "<group>"; };
 		E45229981A545330009B398A /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		EFD9E3111A56F34200498AA8 /* PasswordDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordDBManager.h; sourceTree = "<group>"; };
+		EFD9E3121A56F34200498AA8 /* PasswordDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PasswordDBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +106,7 @@
 		E45229661A5449BF009B398A /* PasswordManager */ = {
 			isa = PBXGroup;
 			children = (
+				EFD9E3101A56F2FB00498AA8 /* Services */,
 				E4079F581A55433E00C91CAD /* Model */,
 				E45229911A544F38009B398A /* Category */,
 				E452296B1A5449BF009B398A /* AppDelegate.h */,
@@ -152,6 +156,15 @@
 				E45229951A544F38009B398A /* NSString+DocDir.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		EFD9E3101A56F2FB00498AA8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EFD9E3111A56F34200498AA8 /* PasswordDBManager.h */,
+				EFD9E3121A56F34200498AA8 /* PasswordDBManager.m */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +271,7 @@
 				E45229961A544F38009B398A /* NSArray+Log.m in Sources */,
 				E4079F5B1A55441B00C91CAD /* Password.m in Sources */,
 				E45229971A544F38009B398A /* NSString+DocDir.m in Sources */,
+				EFD9E3131A56F34200498AA8 /* PasswordDBManager.m in Sources */,
 				E452296D1A5449BF009B398A /* AppDelegate.m in Sources */,
 				E452296A1A5449BF009B398A /* main.m in Sources */,
 			);

@@ -14,6 +14,7 @@
 		EFA9B6FD1A58431100CAD74A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFA9B6FC1A58431100CAD74A /* Images.xcassets */; };
 		EFA9B7001A58431100CAD74A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA9B6FE1A58431100CAD74A /* LaunchScreen.xib */; };
 		EFA9B70C1A58431100CAD74A /* TicketingSystemTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA9B70B1A58431100CAD74A /* TicketingSystemTests.m */; };
+		EFF6C6EA1A5991A900CFA608 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF6C6E91A5991A900CFA608 /* Ticket.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		EFA9B7051A58431100CAD74A /* TicketingSystemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketingSystemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFA9B70A1A58431100CAD74A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFA9B70B1A58431100CAD74A /* TicketingSystemTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketingSystemTests.m; sourceTree = "<group>"; };
+		EFF6C6E81A5991A900CFA608 /* Ticket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		EFF6C6E91A5991A900CFA608 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +88,8 @@
 				EFA9B6F41A58431100CAD74A /* AppDelegate.m */,
 				EFA9B6F61A58431100CAD74A /* ViewController.h */,
 				EFA9B6F71A58431100CAD74A /* ViewController.m */,
+				EFF6C6E81A5991A900CFA608 /* Ticket.h */,
+				EFF6C6E91A5991A900CFA608 /* Ticket.m */,
 				EFA9B6F91A58431100CAD74A /* Main.storyboard */,
 				EFA9B6FC1A58431100CAD74A /* Images.xcassets */,
 				EFA9B6FE1A58431100CAD74A /* LaunchScreen.xib */,
@@ -222,6 +227,7 @@
 				EFA9B6F81A58431100CAD74A /* ViewController.m in Sources */,
 				EFA9B6F51A58431100CAD74A /* AppDelegate.m in Sources */,
 				EFA9B6F21A58431100CAD74A /* main.m in Sources */,
+				EFF6C6EA1A5991A900CFA608 /* Ticket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +418,7 @@
 				EFA9B7111A58431100CAD74A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFA9B7121A58431100CAD74A /* Build configuration list for PBXNativeTarget "TicketingSystemTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +427,7 @@
 				EFA9B7141A58431100CAD74A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

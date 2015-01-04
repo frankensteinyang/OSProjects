@@ -8,6 +8,27 @@
 
 #import "Ticket.h"
 
+// 全局静态变量
+static Ticket *_instance;
+
 @implementation Ticket
+
+// 所有对象的实例化都会调用allocWithZone
++ (id)allocWithZone:(struct _NSZone *)zone {
+
+    // 单线程
+//    if (_instance == nil) {
+//        _instance = [super allocWithZone:zone];
+//    }
+//    return _instance;
+    
+    // 多线程 dispatch_once()
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _instance = [super allocWithZone:zone];
+    });
+    return _instance;
+    
+}
 
 @end

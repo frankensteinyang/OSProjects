@@ -10,7 +10,7 @@
 
 @interface Ticket : NSObject
 
-@property (nonatomic, assign) NSInteger tickets;
+@property (atomic, assign) NSInteger tickets;
 
 // instancetype限制类型
 + (instancetype)sharedTicket;

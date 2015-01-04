@@ -12,4 +12,7 @@
 
 @property (nonatomic, assign) NSInteger tickets;
 
+// instancetype限制类型
++ (instancetype)sharedTicket;
+
 @end

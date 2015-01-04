@@ -18,10 +18,12 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    Ticket *ticketA = [[Ticket alloc] init];
+    Ticket *ticketA = [Ticket sharedTicket];
+    [Ticket sharedTicket].tickets = 30;
     NSLog(@"%@", ticketA);
-    Ticket *ticketB = [[Ticket alloc] init];
-    NSLog(@"%@", ticketB);
+    
+    Ticket *ticketB = [Ticket sharedTicket];
+    NSLog(@"%@ %d", ticketB, ticketB.tickets);
     
 }
 

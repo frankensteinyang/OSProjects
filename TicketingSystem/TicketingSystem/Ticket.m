@@ -31,4 +31,12 @@ static Ticket *_instance;
     
 }
 
++ (instancetype)sharedTicket {
+
+    if (_instance == nil) {
+        _instance = [[Ticket alloc] init];
+    }
+    return _instance;
+}
+
 @end

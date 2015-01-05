@@ -9,10 +9,15 @@
 #import "ViewController.h"
 #import "Ticket.h"
 
-@interface ViewController ()
+@interface ViewController () {
 
+    // 全局操作队列
+    NSOperationQueue *_queue;
+    
+}
+    
 @property (weak, nonatomic) IBOutlet UITextView *textView;
-
+    
 @end
 
 @implementation ViewController
@@ -28,16 +33,19 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    Ticket *ticketA = [Ticket sharedTicket];
-    [Ticket sharedTicket].tickets = 30;
-    NSLog(@"%@", ticketA);
+//    Ticket *ticketA = [Ticket sharedTicket];
+//    [Ticket sharedTicket].tickets = 30;
+//    NSLog(@"%@", ticketA);
+//    
+//    Ticket *ticketB = [Ticket sharedTicket];
+//    NSLog(@"%@ %d", ticketB, ticketB.tickets);
+//    
+//    for (NSInteger i = 0; i < 10; i++) {
+//        [self appendText:@"Frankenstein"];
+//    }
     
-    Ticket *ticketB = [Ticket sharedTicket];
-    NSLog(@"%@ %d", ticketB, ticketB.tickets);
-    
-    for (NSInteger i = 0; i < 10; i++) {
-        [self appendText:@"Frankenstein"];
-    }
+    // 实例化操作队列
+    _queue = [[NSOperationQueue alloc] init];
     
 }
 
@@ -68,12 +76,30 @@
     
     // GCD异步
     dispatch_async(queue, ^{
-        [self gcdSaleWithName:@"GCD-1"];
+        [self gcdSaleWithName:@"GCD-A"];
     });
     
     dispatch_async(queue, ^{
-        [self gcdSaleWithName:@"GCD-2"];
+        [self gcdSaleWithName:@"GCD-B"];
     });
+    
+    dispatch_async(queue, ^{
+        [self gcdSaleWithName:@"GCD-C"];
+    });
+    
+}
+
+- (void)operationSaleWithName:(NSString *)name {
+
+    
+}
+
+- (IBAction)operationSale {
+    
+    [_queue addOperationWithBlock:^{
+//        [self ope]
+    }];
+    
     
 }
 

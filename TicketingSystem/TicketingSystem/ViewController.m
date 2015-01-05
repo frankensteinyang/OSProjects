@@ -22,14 +22,6 @@
 
 @implementation ViewController
 
-- (void)appendText:(NSString *)text {
-
-    NSMutableString *str = [NSMutableString stringWithString:_textView.text];
-    [str appendFormat:@"%@\n", text];
-    [_textView setText:str];
-    
-}
-
 - (void)viewDidLoad {
     
     [super viewDidLoad];
@@ -49,6 +41,17 @@
     
 }
 
+- (void)appendText:(NSString *)text {
+    
+    NSMutableString *str = [NSMutableString stringWithString:_textView.text];
+    [str appendFormat:@"%@\n", text];
+    [_textView setText:str];
+    
+//    NSRange range = NSMakeRange(str.length - 1, 1);
+//    [_textView scrollRangeToVisible:range];
+    
+}
+
 - (void)gcdSaleWithName:(NSString *)name {
 
     while (YES) {
@@ -64,43 +67,87 @@
                 break;
             }
         }
+        
+        // 模拟售票休息
+        if ([name isEqualToString:@"GCD-A"]) {
+            [NSThread sleepForTimeInterval:1.0f];
+        } else {
+            [NSThread sleepForTimeInterval:0.5f];
+        }
     }
 }
 
 - (IBAction)gcdSale {
     
-    [Ticket sharedTicket].tickets = 20;
+    [Ticket sharedTicket].tickets = 30;
+    
+    _textView.text = @"";
     
     // GCD队列
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     
     // GCD异步
-    dispatch_async(queue, ^{
+//    dispatch_async(queue, ^{
+//        [self gcdSaleWithName:@"GCD-A"];
+//    });
+//    
+//    dispatch_async(queue, ^{
+//        [self gcdSaleWithName:@"GCD-B"];
+//    });
+//    
+//    dispatch_async(queue, ^{
+//        [self gcdSaleWithName:@"GCD-C"];
+//    });
+
+    // 群组
+    dispatch_group_t group = dispatch_group_create();
+    dispatch_group_async(group, queue, ^{
         [self gcdSaleWithName:@"GCD-A"];
     });
-    
-    dispatch_async(queue, ^{
+    dispatch_group_async(group, queue, ^{
         [self gcdSaleWithName:@"GCD-B"];
     });
-    
-    dispatch_async(queue, ^{
-        [self gcdSaleWithName:@"GCD-C"];
+    dispatch_group_notify(group, queue, ^{
+        NSLog(@"卖完了！");
     });
     
 }
 
 - (void)operationSaleWithName:(NSString *)name {
 
+    while (YES) {
+        @synchronized (self) {
+            if ([Ticket sharedTicket].tickets > 0) {
+                [Ticket sharedTicket].tickets--;
+                NSString *str = [NSString stringWithFormat:@"剩余票数 %d %@", [Ticket sharedTicket].tickets, name];
+                // 更新UI
+                [[NSOperationQueue mainQueue] addOperationWithBlock:^{
+                    [self appendText:str];
+                }];
+            } else {
+                break;
+            }
+        }
+        if ([name isEqualToString:@"GCD-A"]) {
+            [NSThread sleepForTimeInterval:1.0f];
+        } else {
+            [NSThread sleepForTimeInterval:0.5f];
+        }
+    }
     
 }
 
 - (IBAction)operationSale {
     
+    [Ticket sharedTicket].tickets = 30;
+    _textView.text = @"";
     [_queue addOperationWithBlock:^{
-//        [self ope]
+        [self operationSaleWithName:@"Operation-A"];
     }];
     
-    
+    [_queue addOperationWithBlock:^{
+        [self operationSaleWithName:@"Operation-B"];
+    }];
 }
 
 @end

@@ -1,19 +1,19 @@
 //
-//  TicketingSystemTests.m
-//  TicketingSystemTests
+//  FMDBTests.m
+//  FMDBTests
 //
-//  Created by Frankenstein Yang on 1/3/15.
+//  Created by Frankenstein Yang on 1/8/15.
 //  Copyright (c) 2015 Frankenstein Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface TicketingSystemTests : XCTestCase
+@interface FMDBTests : XCTestCase
 
 @end
 
-@implementation TicketingSystemTests
+@implementation FMDBTests
 
 - (void)setUp {
     [super setUp];

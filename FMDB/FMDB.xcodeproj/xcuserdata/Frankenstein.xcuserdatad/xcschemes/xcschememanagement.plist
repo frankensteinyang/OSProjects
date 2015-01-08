@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>TicketingSystem.xcscheme</key>
+		<key>FMDB.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EFA9B6EB1A58431100CAD74A</key>
+		<key>EF55F2D91A5ED5EB00321895</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EFA9B7041A58431100CAD74A</key>
+		<key>EF55F2F21A5ED5EB00321895</key>
 		<dict>
 			<key>primary</key>
 			<true/>

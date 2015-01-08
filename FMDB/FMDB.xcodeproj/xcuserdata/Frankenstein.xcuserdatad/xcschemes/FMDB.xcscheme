@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EFA9B6EB1A58431100CAD74A"
-               BuildableName = "TicketingSystem.app"
-               BlueprintName = "TicketingSystem"
-               ReferencedContainer = "container:TicketingSystem.xcodeproj">
+               BlueprintIdentifier = "EF55F2D91A5ED5EB00321895"
+               BuildableName = "FMDB.app"
+               BlueprintName = "FMDB"
+               ReferencedContainer = "container:FMDB.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EFA9B7041A58431100CAD74A"
-               BuildableName = "TicketingSystemTests.xctest"
-               BlueprintName = "TicketingSystemTests"
-               ReferencedContainer = "container:TicketingSystem.xcodeproj">
+               BlueprintIdentifier = "EF55F2F21A5ED5EB00321895"
+               BuildableName = "FMDBTests.xctest"
+               BlueprintName = "FMDBTests"
+               ReferencedContainer = "container:FMDB.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EFA9B7041A58431100CAD74A"
-               BuildableName = "TicketingSystemTests.xctest"
-               BlueprintName = "TicketingSystemTests"
-               ReferencedContainer = "container:TicketingSystem.xcodeproj">
+               BlueprintIdentifier = "EF55F2F21A5ED5EB00321895"
+               BuildableName = "FMDBTests.xctest"
+               BlueprintName = "FMDBTests"
+               ReferencedContainer = "container:FMDB.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EFA9B6EB1A58431100CAD74A"
-            BuildableName = "TicketingSystem.app"
-            BlueprintName = "TicketingSystem"
-            ReferencedContainer = "container:TicketingSystem.xcodeproj">
+            BlueprintIdentifier = "EF55F2D91A5ED5EB00321895"
+            BuildableName = "FMDB.app"
+            BlueprintName = "FMDB"
+            ReferencedContainer = "container:FMDB.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EFA9B6EB1A58431100CAD74A"
-            BuildableName = "TicketingSystem.app"
-            BlueprintName = "TicketingSystem"
-            ReferencedContainer = "container:TicketingSystem.xcodeproj">
+            BlueprintIdentifier = "EF55F2D91A5ED5EB00321895"
+            BuildableName = "FMDB.app"
+            BlueprintName = "FMDB"
+            ReferencedContainer = "container:FMDB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EFA9B6EB1A58431100CAD74A"
-            BuildableName = "TicketingSystem.app"
-            BlueprintName = "TicketingSystem"
-            ReferencedContainer = "container:TicketingSystem.xcodeproj">
+            BlueprintIdentifier = "EF55F2D91A5ED5EB00321895"
+            BuildableName = "FMDB.app"
+            BlueprintName = "FMDB"
+            ReferencedContainer = "container:FMDB.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

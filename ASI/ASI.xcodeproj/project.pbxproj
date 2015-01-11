@@ -25,7 +25,6 @@
 		EF0FF5141A60001E00B19BF4 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = EF0FF50B1A60001E00B19BF4 /* Reachability.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EF0FF5161A60037000B19BF4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0FF5151A60037000B19BF4 /* MobileCoreServices.framework */; };
 		EF0FF5181A60038800B19BF4 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0FF5171A60038800B19BF4 /* libz.1.2.5.dylib */; };
-		EFE361511A61709600C13D1A /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE361501A61709600C13D1A /* DACircularProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,8 +75,6 @@
 		EF0FF50B1A60001E00B19BF4 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		EF0FF5151A60037000B19BF4 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		EF0FF5171A60038800B19BF4 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		EFE3614F1A61709600C13D1A /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
-		EFE361501A61709600C13D1A /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +120,6 @@
 		EF0FF4CD1A5FFEAD00B19BF4 /* ASI */ = {
 			isa = PBXGroup;
 			children = (
-				EFE3614E1A61709600C13D1A /* DACircularProgress */,
 				EF0FF4F41A60001E00B19BF4 /* ASIHTTPRequest */,
 				EF0FF4D21A5FFEAD00B19BF4 /* AppDelegate.h */,
 				EF0FF4D31A5FFEAD00B19BF4 /* AppDelegate.m */,
@@ -198,16 +194,6 @@
 				EF0FF50B1A60001E00B19BF4 /* Reachability.m */,
 			);
 			path = Reachability;
-			sourceTree = "<group>";
-		};
-		EFE3614E1A61709600C13D1A /* DACircularProgress */ = {
-			isa = PBXGroup;
-			children = (
-				EFE3614F1A61709600C13D1A /* DACircularProgressView.h */,
-				EFE361501A61709600C13D1A /* DACircularProgressView.m */,
-			);
-			name = DACircularProgress;
-			path = ../DACircularProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,7 +308,6 @@
 				EF0FF50E1A60001E00B19BF4 /* ASIDataDecompressor.m in Sources */,
 				EF0FF5141A60001E00B19BF4 /* Reachability.m in Sources */,
 				EF0FF50F1A60001E00B19BF4 /* ASIDownloadCache.m in Sources */,
-				EFE361511A61709600C13D1A /* DACircularProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -513,7 +498,6 @@
 				EF0FF4F01A5FFEAD00B19BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 		EF0FF4F11A5FFEAD00B19BF4 /* Build configuration list for PBXNativeTarget "ASITests" */ = {
 			isa = XCConfigurationList;
@@ -522,7 +506,6 @@
 				EF0FF4F31A5FFEAD00B19BF4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

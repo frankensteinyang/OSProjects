@@ -34,16 +34,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SfR-UI-PLs" customClass="DACircularProgressView">
-                                <rect key="frame" x="110" y="340" width="100" height="100"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.86750017599999996" blue="0.61033665579999996" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="circularView" destination="SfR-UI-PLs" id="rKU-wr-FIc"/>
                         <outlet property="progressView" destination="1mV-KX-LAF" id="Prk-Lo-nkm"/>
                     </connections>
                 </viewController>

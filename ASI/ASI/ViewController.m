@@ -9,13 +9,10 @@
 #import "ViewController.h"
 #import "ASIHTTPRequest.h"
 #import "ASIFormDataRequest.h"
-#import "DACircularProgressView.h"
 
 @interface ViewController () <ASIHTTPRequestDelegate, ASIProgressDelegate>
 
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
-
-@property (weak, nonatomic) IBOutlet DACircularProgressView *circularView;
 
 @property (nonatomic, strong) ASIHTTPRequest *request;
 
@@ -25,8 +22,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.circularView.trackTintColor = [UIColor blueColor];
-    self.circularView.progressTintColor = [UIColor yellowColor];
+    // Do any additional setup after loading the view, typically from a nib.
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
@@ -70,11 +66,11 @@
 #pragma mark - 下载
 - (IBAction)btnDownload {
     
-    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/FrankensteinServer/resources/smartwatch.mp4"];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/FrankensteinServer/resources/videos/minion_01.mp4"];
     ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url];
     // 设置所下载文件的存储路径
     NSString *cache = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
-    NSString *filepath = [cache stringByAppendingPathComponent:@"smartwatch.mp4"];
+    NSString *filepath = [cache stringByAppendingPathComponent:@"minion_01.mp4"];
     request.downloadDestinationPath = filepath;
     
 //    [request setDataReceivedBlock:^(NSData *data) {
@@ -83,8 +79,7 @@
     
     // 设置下载代理
 //    request.downloadProgressDelegate = self;
-//    request.downloadProgressDelegate = self.progressView;
-    request.downloadProgressDelegate = self.circularView;
+    request.downloadProgressDelegate = self.progressView;
     
     // 断点下载
     request.allowResumeForFileDownloads = YES;

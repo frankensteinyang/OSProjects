@@ -11,7 +11,7 @@
 #import "ASIFormDataRequest.h"
 #import "DACircularProgressView.h"
 
-@interface ViewController () <ASIHTTPRequestDelegate, ASIProgressDelegate>
+@interface ViewController () <ASIHTTPRequestDelegate, ASIProgressDelegate, UINavigationControllerDelegate, UIImagePickerControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (weak, nonatomic) IBOutlet DACircularProgressView *circularView;
@@ -26,6 +26,20 @@
     [super viewDidLoad];
     self.circularView.trackTintColor = [UIColor purpleColor];
     self.circularView.progressTintColor = [UIColor yellowColor];
+    
+//    [ASIHTTPRequest setShouldUpdateNetworkActivityIndicator:NO];
+//    [self write2Album];
+    
+}
+
+#pragma mark - 添加图片到相册
+- (void)write2Album {
+
+    for (NSInteger i = 0; i < 5; i++) {
+        NSString *name = [NSString stringWithFormat:@"minion_0%d", i + 1];
+        UIImage *img = [UIImage imageNamed:name];
+        UIImageWriteToSavedPhotosAlbum(img, nil, nil, nil);
+    }
     
 }
 
@@ -66,6 +80,101 @@
     // 重点（必须在控制器销毁的时候，取消请求/清除代理）
     [self.request clearDelegatesAndCancel];
 }
+
+#pragma mark - 上传大文件
+- (IBAction)uploadLargeFile {
+    
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/FrankensteinServer/upload"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    
+    // 长传文件的路径
+    NSString *caches = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject];
+    NSString *file = [caches stringByAppendingPathComponent:@"iOS.mp4"];
+    [request setFile:file forKey:@"file"];
+    NSLog(@"%@", file);
+    request.uploadProgressDelegate = self.circularView;
+    [request setPostValue:@"Frankie" forKey:@"username"];
+    [request startAsynchronous];
+    request.shouldContinueWhenAppEntersBackground = YES;
+    [request setCompletionBlock:^{
+        NSLog(@"大文件上传完毕！");
+    }];
+    
+}
+
+#pragma mark - 上传相册中的图片（直接上传二进制数据）
+- (IBAction)uploadPhotoFromAlbum {
+    
+    UIImagePickerController *ipc = [[UIImagePickerController alloc] init];
+    // UIImagePickerControllerSourceTypePhotoLibrary
+    ipc.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+    ipc.delegate = self;
+    [self presentViewController:ipc animated:YES completion:nil];
+    
+}
+
+#pragma mark - 选择图片的代理方法
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+
+    // 销毁图片选择控制器
+    [picker dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"%@", info);
+    // 得到用户选中的图片
+    UIImage *img = info[UIImagePickerControllerOriginalImage];
+    // 上传图片
+    [self uploadImage:img];
+    
+}
+
+- (void)uploadImage:(UIImage *)img {
+
+    // 创建请求
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/FrankensteinServer/upload"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    
+    // 转为二进制
+    NSData *data = UIImagePNGRepresentation(img);
+    [request setData:data withFileName:@"minion.png" andContentType:@"image/png" forKey:@"file"];
+    [request setPostValue:@"Frankie" forKey:@"username"];
+    [request startAsynchronous];
+    [request setCompletionBlock:^{
+        NSLog(@"成功上传到相册！");
+    }];
+    
+}
+
+#pragma mark - 上传（POST）
+- (IBAction)btnUpload {
+    
+    // 创建请求
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/FrankensteinServer/upload"];
+    ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
+    
+    // 设置上传文件路径
+    NSString *file = [[NSBundle mainBundle] pathForResource:@"iOS.mp4" ofType:nil];
+    [request addFile:file forKey:@"file"];
+    
+    /**
+     *  addFile的file对应多个文件，setFile对应一个文件
+     */
+//    [request addFile:file forKey:@"file"];
+//    [request setFile:file forKey:@"file"];
+
+    [request setFile:file withFileName:@"frankie.mp4" andContentType:@"video/mp4" forKey:@"file"];
+    // 设置其他请求参数
+    [request setPostValue:@"Frankenstein" forKey:@"username"];
+    request.uploadProgressDelegate = self.progressView;
+    
+    // 发送请求
+    [request startAsynchronous];
+    
+    NSLog(@"%@", file);
+    // 监听请求
+    [request setCompletionBlock:^{
+        NSLog(@"上传完毕！");
+    }];
+}
+
 
 #pragma mark - 下载（请求资源，GET）
 - (IBAction)btnDownload {

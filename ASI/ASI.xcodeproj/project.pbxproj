@@ -26,6 +26,11 @@
 		EF0FF5161A60037000B19BF4 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0FF5151A60037000B19BF4 /* MobileCoreServices.framework */; };
 		EF0FF5181A60038800B19BF4 /* libz.1.2.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF0FF5171A60038800B19BF4 /* libz.1.2.5.dylib */; };
 		EF8047041A62A5180067C5F0 /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF8047031A62A5180067C5F0 /* DACircularProgressView.m */; };
+		EF80470D1A62AF070067C5F0 /* minion_01.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8047081A62AF070067C5F0 /* minion_01.png */; };
+		EF80470E1A62AF070067C5F0 /* minion_02.png in Resources */ = {isa = PBXBuildFile; fileRef = EF8047091A62AF070067C5F0 /* minion_02.png */; };
+		EF80470F1A62AF070067C5F0 /* minion_03.png in Resources */ = {isa = PBXBuildFile; fileRef = EF80470A1A62AF070067C5F0 /* minion_03.png */; };
+		EF8047101A62AF070067C5F0 /* minion_04.png in Resources */ = {isa = PBXBuildFile; fileRef = EF80470B1A62AF070067C5F0 /* minion_04.png */; };
+		EF8047111A62AF070067C5F0 /* minion_05.png in Resources */ = {isa = PBXBuildFile; fileRef = EF80470C1A62AF070067C5F0 /* minion_05.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,11 @@
 		EF0FF5171A60038800B19BF4 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
 		EF8047021A62A5180067C5F0 /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
 		EF8047031A62A5180067C5F0 /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
+		EF8047081A62AF070067C5F0 /* minion_01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minion_01.png; sourceTree = "<group>"; };
+		EF8047091A62AF070067C5F0 /* minion_02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minion_02.png; sourceTree = "<group>"; };
+		EF80470A1A62AF070067C5F0 /* minion_03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minion_03.png; sourceTree = "<group>"; };
+		EF80470B1A62AF070067C5F0 /* minion_04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minion_04.png; sourceTree = "<group>"; };
+		EF80470C1A62AF070067C5F0 /* minion_05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minion_05.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +150,11 @@
 		EF0FF4CE1A5FFEAD00B19BF4 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EF8047081A62AF070067C5F0 /* minion_01.png */,
+				EF8047091A62AF070067C5F0 /* minion_02.png */,
+				EF80470A1A62AF070067C5F0 /* minion_03.png */,
+				EF80470B1A62AF070067C5F0 /* minion_04.png */,
+				EF80470C1A62AF070067C5F0 /* minion_05.png */,
 				EF0FF4CF1A5FFEAD00B19BF4 /* Info.plist */,
 				EF0FF4D01A5FFEAD00B19BF4 /* main.m */,
 			);
@@ -290,8 +305,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF0FF4DA1A5FFEAD00B19BF4 /* Main.storyboard in Resources */,
+				EF8047111A62AF070067C5F0 /* minion_05.png in Resources */,
 				EF0FF4DF1A5FFEAD00B19BF4 /* LaunchScreen.xib in Resources */,
 				EF0FF4DC1A5FFEAD00B19BF4 /* Images.xcassets in Resources */,
+				EF80470D1A62AF070067C5F0 /* minion_01.png in Resources */,
+				EF8047101A62AF070067C5F0 /* minion_04.png in Resources */,
+				EF80470E1A62AF070067C5F0 /* minion_02.png in Resources */,
+				EF80470F1A62AF070067C5F0 /* minion_03.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

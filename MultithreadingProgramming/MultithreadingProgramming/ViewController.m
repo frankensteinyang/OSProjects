@@ -61,6 +61,64 @@
 }
 
 /**
+ *  GCD
+ *
+ *  @param IBAction GCD
+ *
+ *  @return GCD
+ */
+- (IBAction)btnGCD {
+    
+    // 创建串行队列
+    dispatch_queue_t queueA = dispatch_queue_create("frankie", NULL);
+    // 添加任务到队列中
+//    dispatch_async(queueA, ^{
+//        NSLog(@"异步串行A %@", [NSThread currentThread]);
+//    });
+//    dispatch_async(queueA, ^{
+//        NSLog(@"异步串行B %@", [NSThread currentThread]);
+//    });
+//    dispatch_async(queueA, ^{
+//        NSLog(@"异步串行C %@", [NSThread currentThread]);
+//    });
+    dispatch_sync(queueA, ^{
+        NSLog(@"同步串行A %@", [NSThread currentThread]);
+    });
+    dispatch_sync(queueA, ^{
+        NSLog(@"同步串行B %@", [NSThread currentThread]);
+    });
+    dispatch_sync(queueA, ^{
+        NSLog(@"同步串行C %@", [NSThread currentThread]);
+    });
+    
+    // 获得全局并发队列
+    dispatch_queue_t queueB = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
+    // 添加任务到队列中
+    // 异步：具备开启新线程的能力
+//    dispatch_async(queueB, ^{
+//        NSLog(@"异步并行A %@", [NSThread currentThread]);
+//    });
+//    dispatch_async(queueB, ^{
+//        NSLog(@"异步并行B %@", [NSThread currentThread]);
+//    });
+//    dispatch_async(queueB, ^{
+//        NSLog(@"异步并行C %@", [NSThread currentThread]);
+//    });
+    
+    // 同步：不具备开启新线程的能力
+    dispatch_sync(queueB, ^{
+        NSLog(@"同步并行A %@", [NSThread currentThread]);
+    });
+    dispatch_sync(queueB, ^{
+        NSLog(@"同步并行B %@", [NSThread currentThread]);
+    });
+    dispatch_sync(queueB, ^{
+        NSLog(@"同步并行C %@", [NSThread currentThread]);
+    });
+    
+}
+
+/**
  *  线程间通信
  *
  *  @param IBAction 下载图片

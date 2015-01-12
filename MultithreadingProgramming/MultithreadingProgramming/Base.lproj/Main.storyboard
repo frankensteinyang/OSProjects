@@ -33,7 +33,7 @@
                                 </segments>
                             </segmentedControl>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xqr-3m-7QG">
-                                <rect key="frame" x="121" y="159" width="79" height="30"/>
+                                <rect key="frame" x="121" y="127" width="79" height="30"/>
                                 <state key="normal" title="NSThread">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LSv-zH-tgK">
-                                <rect key="frame" x="122" y="225" width="76" height="30"/>
+                                <rect key="frame" x="122" y="165" width="76" height="30"/>
                                 <state key="normal" title="生命周期">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -50,10 +50,34 @@
                                     <action selector="btnLifeCycle" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yVk-uB-apM"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lGI-wO-a7x">
+                                <rect key="frame" x="123" y="194" width="74" height="30"/>
+                                <state key="normal" title="线程安全">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnThreadSafety" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZJN-b4-OmY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ykT-pY-BT9">
+                                <rect key="frame" x="130" y="225" width="60" height="30"/>
+                                <state key="normal" title="下载图片">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnDownloadImg" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gLn-l6-Syp"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5BM-AC-lFf">
+                                <rect key="frame" x="37" y="263" width="247" height="197"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.805300601" green="0.89468408070000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="5BM-AC-lFf" id="Wfv-xI-pdk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

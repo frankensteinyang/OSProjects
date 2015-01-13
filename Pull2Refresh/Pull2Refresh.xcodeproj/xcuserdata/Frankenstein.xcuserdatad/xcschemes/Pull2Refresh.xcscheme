@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF62C6011A62C27200B9754F"
-               BuildableName = "MultithreadingProgramming.app"
-               BlueprintName = "MultithreadingProgramming"
-               ReferencedContainer = "container:MultithreadingProgramming.xcodeproj">
+               BlueprintIdentifier = "EFC0070A1A656C9600DA90B3"
+               BuildableName = "Pull2Refresh.app"
+               BlueprintName = "Pull2Refresh"
+               ReferencedContainer = "container:Pull2Refresh.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
          <BuildActionEntry
@@ -28,10 +28,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF62C61A1A62C27200B9754F"
-               BuildableName = "MultithreadingProgrammingTests.xctest"
-               BlueprintName = "MultithreadingProgrammingTests"
-               ReferencedContainer = "container:MultithreadingProgramming.xcodeproj">
+               BlueprintIdentifier = "EFC007231A656C9600DA90B3"
+               BuildableName = "Pull2RefreshTests.xctest"
+               BlueprintName = "Pull2RefreshTests"
+               ReferencedContainer = "container:Pull2Refresh.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,20 +46,20 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EF62C61A1A62C27200B9754F"
-               BuildableName = "MultithreadingProgrammingTests.xctest"
-               BlueprintName = "MultithreadingProgrammingTests"
-               ReferencedContainer = "container:MultithreadingProgramming.xcodeproj">
+               BlueprintIdentifier = "EFC007231A656C9600DA90B3"
+               BuildableName = "Pull2RefreshTests.xctest"
+               BlueprintName = "Pull2RefreshTests"
+               ReferencedContainer = "container:Pull2Refresh.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF62C6011A62C27200B9754F"
-            BuildableName = "MultithreadingProgramming.app"
-            BlueprintName = "MultithreadingProgramming"
-            ReferencedContainer = "container:MultithreadingProgramming.xcodeproj">
+            BlueprintIdentifier = "EFC0070A1A656C9600DA90B3"
+            BuildableName = "Pull2Refresh.app"
+            BlueprintName = "Pull2Refresh"
+            ReferencedContainer = "container:Pull2Refresh.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -75,10 +75,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF62C6011A62C27200B9754F"
-            BuildableName = "MultithreadingProgramming.app"
-            BlueprintName = "MultithreadingProgramming"
-            ReferencedContainer = "container:MultithreadingProgramming.xcodeproj">
+            BlueprintIdentifier = "EFC0070A1A656C9600DA90B3"
+            BuildableName = "Pull2Refresh.app"
+            BlueprintName = "Pull2Refresh"
+            ReferencedContainer = "container:Pull2Refresh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -93,10 +93,10 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EF62C6011A62C27200B9754F"
-            BuildableName = "MultithreadingProgramming.app"
-            BlueprintName = "MultithreadingProgramming"
-            ReferencedContainer = "container:MultithreadingProgramming.xcodeproj">
+            BlueprintIdentifier = "EFC0070A1A656C9600DA90B3"
+            BuildableName = "Pull2Refresh.app"
+            BlueprintName = "Pull2Refresh"
+            ReferencedContainer = "container:Pull2Refresh.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

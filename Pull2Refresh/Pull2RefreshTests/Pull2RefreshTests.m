@@ -1,19 +1,19 @@
 //
-//  MultithreadingProgrammingTests.m
-//  MultithreadingProgrammingTests
+//  Pull2RefreshTests.m
+//  Pull2RefreshTests
 //
-//  Created by Frankenstein Yang on 1/11/15.
+//  Created by Frankenstein Yang on 1/13/15.
 //  Copyright (c) 2015 Frankenstein Yang. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface MultithreadingProgrammingTests : XCTestCase
+@interface Pull2RefreshTests : XCTestCase
 
 @end
 
-@implementation MultithreadingProgrammingTests
+@implementation Pull2RefreshTests
 
 - (void)setUp {
     [super setUp];

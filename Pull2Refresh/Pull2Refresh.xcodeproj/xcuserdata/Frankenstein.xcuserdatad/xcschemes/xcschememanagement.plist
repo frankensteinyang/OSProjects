@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>MultithreadingProgramming.xcscheme</key>
+		<key>Pull2Refresh.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>EF62C6011A62C27200B9754F</key>
+		<key>EFC0070A1A656C9600DA90B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EF62C61A1A62C27200B9754F</key>
+		<key>EFC007231A656C9600DA90B3</key>
 		<dict>
 			<key>primary</key>
 			<true/>

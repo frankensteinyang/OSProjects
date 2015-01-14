@@ -10,10 +10,25 @@
 		EF9EA8981A66AD7100C85295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA8971A66AD7100C85295 /* main.m */; };
 		EF9EA89B1A66AD7100C85295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA89A1A66AD7100C85295 /* AppDelegate.m */; };
 		EF9EA89E1A66AD7100C85295 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA89D1A66AD7100C85295 /* ViewController.m */; };
-		EF9EA8A11A66AD7100C85295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA89F1A66AD7100C85295 /* Main.storyboard */; };
 		EF9EA8A31A66AD7100C85295 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8A21A66AD7100C85295 /* Images.xcassets */; };
-		EF9EA8A61A66AD7100C85295 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8A41A66AD7100C85295 /* LaunchScreen.xib */; };
 		EF9EA8B21A66AD7100C85295 /* BiCiTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA8B11A66AD7100C85295 /* BiCiTests.m */; };
+		EF9EA8C01A66B4AE00C85295 /* FrankensteinParallaxView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA8BF1A66B4AE00C85295 /* FrankensteinParallaxView.m */; };
+		EF9EA8C31A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA8C21A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.m */; };
+		EF9EA8C81A66BC2B00C85295 /* FrankensteinCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA8C71A66BC2B00C85295 /* FrankensteinCollectionViewCell.m */; };
+		EF9EA8E81A66EA0600C85295 /* UIImage+Scale.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA8E71A66EA0600C85295 /* UIImage+Scale.m */; };
+		EF9EA8FF1A67005700C85295 /* bicycle0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8F41A67005700C85295 /* bicycle0.jpg */; };
+		EF9EA9001A67005700C85295 /* bicycle1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8F51A67005700C85295 /* bicycle1.jpg */; };
+		EF9EA9011A67005700C85295 /* bicycle2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8F61A67005700C85295 /* bicycle2.jpg */; };
+		EF9EA9021A67005700C85295 /* bicycle3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8F71A67005700C85295 /* bicycle3.jpg */; };
+		EF9EA9031A67005700C85295 /* bicycle4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8F81A67005700C85295 /* bicycle4.jpg */; };
+		EF9EA9041A67005700C85295 /* bicycle5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8F91A67005700C85295 /* bicycle5.jpg */; };
+		EF9EA9051A67005700C85295 /* bicycle6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FA1A67005700C85295 /* bicycle6.jpg */; };
+		EF9EA9061A67005700C85295 /* bicycle7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FB1A67005700C85295 /* bicycle7.jpg */; };
+		EF9EA9071A67005700C85295 /* bicycle8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FC1A67005700C85295 /* bicycle8.jpg */; };
+		EF9EA9081A67005700C85295 /* bicycle9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FD1A67005700C85295 /* bicycle9.jpg */; };
+		EF9EA9091A67005700C85295 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FE1A67005700C85295 /* header_logo.png */; };
+		EF9EA90D1A67064900C85295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA89F1A66AD7100C85295 /* Main.storyboard */; };
+		EF9EA90E1A67064A00C85295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA89F1A66AD7100C85295 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +55,26 @@
 		EF9EA8AB1A66AD7100C85295 /* BiCiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiCiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9EA8B01A66AD7100C85295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF9EA8B11A66AD7100C85295 /* BiCiTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BiCiTests.m; sourceTree = "<group>"; };
+		EF9EA8BE1A66B4AE00C85295 /* FrankensteinParallaxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrankensteinParallaxView.h; sourceTree = "<group>"; };
+		EF9EA8BF1A66B4AE00C85295 /* FrankensteinParallaxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrankensteinParallaxView.m; sourceTree = "<group>"; };
+		EF9EA8C11A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrankensteinParallaxCollectionViewLayout.h; sourceTree = "<group>"; };
+		EF9EA8C21A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrankensteinParallaxCollectionViewLayout.m; sourceTree = "<group>"; };
+		EF9EA8C61A66BC2B00C85295 /* FrankensteinCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FrankensteinCollectionViewCell.h; sourceTree = "<group>"; };
+		EF9EA8C71A66BC2B00C85295 /* FrankensteinCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FrankensteinCollectionViewCell.m; sourceTree = "<group>"; };
+		EF9EA8E61A66EA0600C85295 /* UIImage+Scale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Scale.h"; sourceTree = "<group>"; };
+		EF9EA8E71A66EA0600C85295 /* UIImage+Scale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Scale.m"; sourceTree = "<group>"; };
+		EF9EA8F41A67005700C85295 /* bicycle0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle0.jpg; sourceTree = "<group>"; };
+		EF9EA8F51A67005700C85295 /* bicycle1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle1.jpg; sourceTree = "<group>"; };
+		EF9EA8F61A67005700C85295 /* bicycle2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle2.jpg; sourceTree = "<group>"; };
+		EF9EA8F71A67005700C85295 /* bicycle3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle3.jpg; sourceTree = "<group>"; };
+		EF9EA8F81A67005700C85295 /* bicycle4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle4.jpg; sourceTree = "<group>"; };
+		EF9EA8F91A67005700C85295 /* bicycle5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle5.jpg; sourceTree = "<group>"; };
+		EF9EA8FA1A67005700C85295 /* bicycle6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle6.jpg; sourceTree = "<group>"; };
+		EF9EA8FB1A67005700C85295 /* bicycle7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle7.jpg; sourceTree = "<group>"; };
+		EF9EA8FC1A67005700C85295 /* bicycle8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle8.jpg; sourceTree = "<group>"; };
+		EF9EA8FD1A67005700C85295 /* bicycle9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle9.jpg; sourceTree = "<group>"; };
+		EF9EA8FE1A67005700C85295 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
+		EF9EA90C1A6705E100C85295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +116,10 @@
 		EF9EA8941A66AD7100C85295 /* BiCi */ = {
 			isa = PBXGroup;
 			children = (
+				EF9EA8F31A66FE3000C85295 /* Resources */,
+				EF9EA8E51A66E99400C85295 /* Common */,
+				EF9EA8C51A66BB5500C85295 /* CustomCells */,
+				EF9EA8BD1A66B38B00C85295 /* Classes */,
 				EF9EA8991A66AD7100C85295 /* AppDelegate.h */,
 				EF9EA89A1A66AD7100C85295 /* AppDelegate.m */,
 				EF9EA89C1A66AD7100C85295 /* ViewController.h */,
@@ -117,6 +156,53 @@
 				EF9EA8B01A66AD7100C85295 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF9EA8BD1A66B38B00C85295 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EA8BE1A66B4AE00C85295 /* FrankensteinParallaxView.h */,
+				EF9EA8BF1A66B4AE00C85295 /* FrankensteinParallaxView.m */,
+				EF9EA8C11A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.h */,
+				EF9EA8C21A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EF9EA8C51A66BB5500C85295 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EA8C61A66BC2B00C85295 /* FrankensteinCollectionViewCell.h */,
+				EF9EA8C71A66BC2B00C85295 /* FrankensteinCollectionViewCell.m */,
+			);
+			path = CustomCells;
+			sourceTree = "<group>";
+		};
+		EF9EA8E51A66E99400C85295 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EA8E61A66EA0600C85295 /* UIImage+Scale.h */,
+				EF9EA8E71A66EA0600C85295 /* UIImage+Scale.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		EF9EA8F31A66FE3000C85295 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EA8F41A67005700C85295 /* bicycle0.jpg */,
+				EF9EA8F51A67005700C85295 /* bicycle1.jpg */,
+				EF9EA8F61A67005700C85295 /* bicycle2.jpg */,
+				EF9EA8F71A67005700C85295 /* bicycle3.jpg */,
+				EF9EA8F81A67005700C85295 /* bicycle4.jpg */,
+				EF9EA8F91A67005700C85295 /* bicycle5.jpg */,
+				EF9EA8FA1A67005700C85295 /* bicycle6.jpg */,
+				EF9EA8FB1A67005700C85295 /* bicycle7.jpg */,
+				EF9EA8FC1A67005700C85295 /* bicycle8.jpg */,
+				EF9EA8FD1A67005700C85295 /* bicycle9.jpg */,
+				EF9EA8FE1A67005700C85295 /* header_logo.png */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,8 +285,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF9EA8A11A66AD7100C85295 /* Main.storyboard in Resources */,
-				EF9EA8A61A66AD7100C85295 /* LaunchScreen.xib in Resources */,
+				EF9EA9011A67005700C85295 /* bicycle2.jpg in Resources */,
+				EF9EA8FF1A67005700C85295 /* bicycle0.jpg in Resources */,
+				EF9EA9041A67005700C85295 /* bicycle5.jpg in Resources */,
+				EF9EA9081A67005700C85295 /* bicycle9.jpg in Resources */,
+				EF9EA9001A67005700C85295 /* bicycle1.jpg in Resources */,
+				EF9EA9061A67005700C85295 /* bicycle7.jpg in Resources */,
+				EF9EA9051A67005700C85295 /* bicycle6.jpg in Resources */,
+				EF9EA90D1A67064900C85295 /* Main.storyboard in Resources */,
+				EF9EA9091A67005700C85295 /* header_logo.png in Resources */,
+				EF9EA9021A67005700C85295 /* bicycle3.jpg in Resources */,
+				EF9EA9031A67005700C85295 /* bicycle4.jpg in Resources */,
+				EF9EA9071A67005700C85295 /* bicycle8.jpg in Resources */,
 				EF9EA8A31A66AD7100C85295 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +305,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9EA90E1A67064A00C85295 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,8 +316,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF9EA8E81A66EA0600C85295 /* UIImage+Scale.m in Sources */,
 				EF9EA89E1A66AD7100C85295 /* ViewController.m in Sources */,
+				EF9EA8C01A66B4AE00C85295 /* FrankensteinParallaxView.m in Sources */,
 				EF9EA89B1A66AD7100C85295 /* AppDelegate.m in Sources */,
+				EF9EA8C31A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.m in Sources */,
+				EF9EA8C81A66BC2B00C85295 /* FrankensteinCollectionViewCell.m in Sources */,
 				EF9EA8981A66AD7100C85295 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +349,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				EF9EA8A01A66AD7100C85295 /* Base */,
+				EF9EA90C1A6705E100C85295 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -343,6 +445,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BiCi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = BiCi/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +516,7 @@
 				EF9EA8B71A66AD7100C85295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF9EA8B81A66AD7100C85295 /* Build configuration list for PBXNativeTarget "BiCiTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +525,7 @@
 				EF9EA8BA1A66AD7100C85295 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

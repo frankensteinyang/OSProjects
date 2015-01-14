@@ -1,4 +1,2 @@
-# Pull2Refresh
-Pull to refresh. iOS. 
+# BiCi
 
-下拉刷新！

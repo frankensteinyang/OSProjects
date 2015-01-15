@@ -8,7 +8,9 @@
 
 #define kIMAGE_VIEW_TAG 100
 #define kIMAGE_SCROLL_VIEW_TAG 101
+#define kCONTENT_IMAGE_VIEW_TAG 102
 #define kImageHeaderHeight self.view.frame.size.height * 0.70f
+#define kImageFooterHeight self.view.frame.size.height *0.30f
 #define kHeaderHeight 187.0f
 
 #import "ViewController.h"
@@ -30,7 +32,7 @@
     [super viewDidLoad];
     
     _imageHeaderHeight = kImageHeaderHeight;
-    
+    self.navigationController.navigationBarHidden = YES;
     FrankensteinParallaxView *parallaxView = [[FrankensteinParallaxView alloc]initWithFrame:CGRectMake(0.0f,0.0f, self.view.frame.size.width, self.view.frame.size.height)];
     [parallaxView registerClass:[FrankensteinCollectionViewCell class] forCellWithReuseIdentifier:[FrankensteinCollectionViewCell reuseIdentifier]];
     parallaxView.delegate = self;
@@ -108,7 +110,9 @@
 #pragma mark - UITableView的代理方法
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
+    tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     tableView.backgroundColor = [UIColor blackColor];
+    
     UITableViewCell *cell;
     if (indexPath.row == 0) {
         static NSString *headerID = @"headerCell";
@@ -152,16 +156,43 @@
         imageView.image = scaledImage;
         
     } else {
-        static NSString * detailId = @"detailCell";
-        cell = [tableView dequeueReusableCellWithIdentifier:detailId];
+        static NSString *CellIdentifier = @"cellIdentifier";
+        cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
         if(!cell) {
-            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:detailId];
-            
+            cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+            UIImageView * imageView = [[UIImageView alloc]initWithFrame:CGRectMake(0.0f, 0.0f, self.view.frame.size.width, kImageFooterHeight)];
+            imageView.tag = kCONTENT_IMAGE_VIEW_TAG;
+            [cell.contentView addSubview:imageView];
         }
+        UIImageView *imageView = (UIImageView*)[cell viewWithTag:kCONTENT_IMAGE_VIEW_TAG];
+        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"content-%i",(tableView.tag%3) + 1]];
+        
     }
     
     return cell;
     
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSArray *classes = [NSArray arrayWithObjects:
+                        @"AnimateGridViewController",
+                        @"CompressibleStickerViewController",
+                        nil];
+    UIViewController *controller = [[NSClassFromString([classes objectAtIndex:indexPath.row]) alloc] init];
+    [self.navigationController pushViewController:controller animated:YES];
+    
+}
+
+- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+
+    if (indexPath.row != 0) {
+        cell.backgroundColor = [UIColor blackColor];
+        cell.textLabel.textColor = [UIColor whiteColor];
+        cell.selectionStyle = UITableViewCellSelectionStyleNone;
+//        cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
+//        cell.selectedBackgroundView.backgroundColor = [UIColor blueColor];
+    }
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -181,7 +212,7 @@
     if (indexPath.row == 0) {
         return _imageHeaderHeight;
     }
-    return self.view.frame.size.height;
+    return kImageFooterHeight;
 }
 
 @end

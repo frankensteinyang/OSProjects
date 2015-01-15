@@ -29,6 +29,14 @@
 		EF9EA9091A67005700C85295 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FE1A67005700C85295 /* header_logo.png */; };
 		EF9EA90D1A67064900C85295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA89F1A66AD7100C85295 /* Main.storyboard */; };
 		EF9EA90E1A67064A00C85295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA89F1A66AD7100C85295 /* Main.storyboard */; };
+		EF9EA9101A6717D500C85295 /* content-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA90F1A6717D500C85295 /* content-2.png */; };
+		EF9EA9151A671BDA00C85295 /* CompressibleStickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9141A671BDA00C85295 /* CompressibleStickerViewController.m */; };
+		EF9EA9181A671BF900C85295 /* AnimateGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9171A671BF900C85295 /* AnimateGridViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EF9EA91A1A671CB000C85295 /* CompressibleStickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA9191A671CB000C85295 /* CompressibleStickerViewController.xib */; };
+		EF9EA91D1A6721B600C85295 /* UIView+Screenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA91C1A6721B600C85295 /* UIView+Screenshot.m */; };
+		EF9EA9231A673FCF00C85295 /* AnimateGridControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9221A673FCF00C85295 /* AnimateGridControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EF9EA9261A6740A300C85295 /* AnimateGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9251A6740A300C85295 /* AnimateGridLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EF9EA9291A67431500C85295 /* AnimateGridImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9281A67431500C85295 /* AnimateGridImageViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +83,20 @@
 		EF9EA8FD1A67005700C85295 /* bicycle9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle9.jpg; sourceTree = "<group>"; };
 		EF9EA8FE1A67005700C85295 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
 		EF9EA90C1A6705E100C85295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF9EA90F1A6717D500C85295 /* content-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content-2.png"; sourceTree = "<group>"; };
+		EF9EA9131A671BDA00C85295 /* CompressibleStickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressibleStickerViewController.h; sourceTree = "<group>"; };
+		EF9EA9141A671BDA00C85295 /* CompressibleStickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressibleStickerViewController.m; sourceTree = "<group>"; };
+		EF9EA9161A671BF900C85295 /* AnimateGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateGridViewController.h; sourceTree = "<group>"; };
+		EF9EA9171A671BF900C85295 /* AnimateGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateGridViewController.m; sourceTree = "<group>"; };
+		EF9EA9191A671CB000C85295 /* CompressibleStickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CompressibleStickerViewController.xib; sourceTree = "<group>"; };
+		EF9EA91B1A6721B600C85295 /* UIView+Screenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Screenshot.h"; sourceTree = "<group>"; };
+		EF9EA91C1A6721B600C85295 /* UIView+Screenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Screenshot.m"; sourceTree = "<group>"; };
+		EF9EA9211A673FCF00C85295 /* AnimateGridControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateGridControl.h; sourceTree = "<group>"; };
+		EF9EA9221A673FCF00C85295 /* AnimateGridControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateGridControl.m; sourceTree = "<group>"; };
+		EF9EA9241A6740A300C85295 /* AnimateGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateGridLayer.h; sourceTree = "<group>"; };
+		EF9EA9251A6740A300C85295 /* AnimateGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateGridLayer.m; sourceTree = "<group>"; };
+		EF9EA9271A67431500C85295 /* AnimateGridImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateGridImageViewController.h; sourceTree = "<group>"; };
+		EF9EA9281A67431500C85295 /* AnimateGridImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateGridImageViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +138,8 @@
 		EF9EA8941A66AD7100C85295 /* BiCi */ = {
 			isa = PBXGroup;
 			children = (
+				EF9EA9121A671B0600C85295 /* CompressibleSticker */,
+				EF9EA9111A671AE700C85295 /* AnimateGrid */,
 				EF9EA8F31A66FE3000C85295 /* Resources */,
 				EF9EA8E51A66E99400C85295 /* Common */,
 				EF9EA8C51A66BB5500C85295 /* CustomCells */,
@@ -183,6 +207,8 @@
 			children = (
 				EF9EA8E61A66EA0600C85295 /* UIImage+Scale.h */,
 				EF9EA8E71A66EA0600C85295 /* UIImage+Scale.m */,
+				EF9EA91B1A6721B600C85295 /* UIView+Screenshot.h */,
+				EF9EA91C1A6721B600C85295 /* UIView+Screenshot.m */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -190,6 +216,7 @@
 		EF9EA8F31A66FE3000C85295 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				EF9EA90F1A6717D500C85295 /* content-2.png */,
 				EF9EA8F41A67005700C85295 /* bicycle0.jpg */,
 				EF9EA8F51A67005700C85295 /* bicycle1.jpg */,
 				EF9EA8F61A67005700C85295 /* bicycle2.jpg */,
@@ -201,8 +228,33 @@
 				EF9EA8FC1A67005700C85295 /* bicycle8.jpg */,
 				EF9EA8FD1A67005700C85295 /* bicycle9.jpg */,
 				EF9EA8FE1A67005700C85295 /* header_logo.png */,
+				EF9EA9191A671CB000C85295 /* CompressibleStickerViewController.xib */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		EF9EA9111A671AE700C85295 /* AnimateGrid */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EA9161A671BF900C85295 /* AnimateGridViewController.h */,
+				EF9EA9171A671BF900C85295 /* AnimateGridViewController.m */,
+				EF9EA9211A673FCF00C85295 /* AnimateGridControl.h */,
+				EF9EA9221A673FCF00C85295 /* AnimateGridControl.m */,
+				EF9EA9241A6740A300C85295 /* AnimateGridLayer.h */,
+				EF9EA9251A6740A300C85295 /* AnimateGridLayer.m */,
+				EF9EA9271A67431500C85295 /* AnimateGridImageViewController.h */,
+				EF9EA9281A67431500C85295 /* AnimateGridImageViewController.m */,
+			);
+			path = AnimateGrid;
+			sourceTree = "<group>";
+		};
+		EF9EA9121A671B0600C85295 /* CompressibleSticker */ = {
+			isa = PBXGroup;
+			children = (
+				EF9EA9131A671BDA00C85295 /* CompressibleStickerViewController.h */,
+				EF9EA9141A671BDA00C85295 /* CompressibleStickerViewController.m */,
+			);
+			path = CompressibleSticker;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +341,7 @@
 				EF9EA8FF1A67005700C85295 /* bicycle0.jpg in Resources */,
 				EF9EA9041A67005700C85295 /* bicycle5.jpg in Resources */,
 				EF9EA9081A67005700C85295 /* bicycle9.jpg in Resources */,
+				EF9EA9101A6717D500C85295 /* content-2.png in Resources */,
 				EF9EA9001A67005700C85295 /* bicycle1.jpg in Resources */,
 				EF9EA9061A67005700C85295 /* bicycle7.jpg in Resources */,
 				EF9EA9051A67005700C85295 /* bicycle6.jpg in Resources */,
@@ -298,6 +351,7 @@
 				EF9EA9031A67005700C85295 /* bicycle4.jpg in Resources */,
 				EF9EA9071A67005700C85295 /* bicycle8.jpg in Resources */,
 				EF9EA8A31A66AD7100C85295 /* Images.xcassets in Resources */,
+				EF9EA91A1A671CB000C85295 /* CompressibleStickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,11 +372,17 @@
 			files = (
 				EF9EA8E81A66EA0600C85295 /* UIImage+Scale.m in Sources */,
 				EF9EA89E1A66AD7100C85295 /* ViewController.m in Sources */,
+				EF9EA9151A671BDA00C85295 /* CompressibleStickerViewController.m in Sources */,
 				EF9EA8C01A66B4AE00C85295 /* FrankensteinParallaxView.m in Sources */,
+				EF9EA91D1A6721B600C85295 /* UIView+Screenshot.m in Sources */,
+				EF9EA9231A673FCF00C85295 /* AnimateGridControl.m in Sources */,
 				EF9EA89B1A66AD7100C85295 /* AppDelegate.m in Sources */,
+				EF9EA9261A6740A300C85295 /* AnimateGridLayer.m in Sources */,
 				EF9EA8C31A66B54700C85295 /* FrankensteinParallaxCollectionViewLayout.m in Sources */,
 				EF9EA8C81A66BC2B00C85295 /* FrankensteinCollectionViewCell.m in Sources */,
 				EF9EA8981A66AD7100C85295 /* main.m in Sources */,
+				EF9EA9181A671BF900C85295 /* AnimateGridViewController.m in Sources */,
+				EF9EA9291A67431500C85295 /* AnimateGridImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

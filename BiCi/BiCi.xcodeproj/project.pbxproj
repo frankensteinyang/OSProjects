@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF1216641A6962B3006D3BCD /* content-0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF12165A1A6962B3006D3BCD /* content-0.jpg */; };
+		EF1216651A6962B3006D3BCD /* content-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF12165B1A6962B3006D3BCD /* content-1.jpg */; };
+		EF12166D1A6962B3006D3BCD /* content-9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF1216631A6962B3006D3BCD /* content-9.jpg */; };
+		EF1216751A6963F4006D3BCD /* content-2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF12166E1A6963F4006D3BCD /* content-2.jpg */; };
+		EF1216761A6963F4006D3BCD /* content-3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF12166F1A6963F4006D3BCD /* content-3.jpg */; };
+		EF1216771A6963F4006D3BCD /* content-4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF1216701A6963F4006D3BCD /* content-4.jpg */; };
+		EF1216781A6963F4006D3BCD /* content-5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF1216711A6963F4006D3BCD /* content-5.jpg */; };
+		EF1216791A6963F4006D3BCD /* content-6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF1216721A6963F4006D3BCD /* content-6.jpg */; };
+		EF12167A1A6963F4006D3BCD /* content-7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF1216731A6963F4006D3BCD /* content-7.jpg */; };
+		EF12167B1A6963F4006D3BCD /* content-8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF1216741A6963F4006D3BCD /* content-8.jpg */; };
 		EF9EA8981A66AD7100C85295 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA8971A66AD7100C85295 /* main.m */; };
 		EF9EA89B1A66AD7100C85295 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA89A1A66AD7100C85295 /* AppDelegate.m */; };
 		EF9EA89E1A66AD7100C85295 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA89D1A66AD7100C85295 /* ViewController.m */; };
@@ -25,11 +35,7 @@
 		EF9EA9051A67005700C85295 /* bicycle6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FA1A67005700C85295 /* bicycle6.jpg */; };
 		EF9EA9061A67005700C85295 /* bicycle7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FB1A67005700C85295 /* bicycle7.jpg */; };
 		EF9EA9071A67005700C85295 /* bicycle8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FC1A67005700C85295 /* bicycle8.jpg */; };
-		EF9EA9081A67005700C85295 /* bicycle9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FD1A67005700C85295 /* bicycle9.jpg */; };
 		EF9EA9091A67005700C85295 /* header_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA8FE1A67005700C85295 /* header_logo.png */; };
-		EF9EA90D1A67064900C85295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA89F1A66AD7100C85295 /* Main.storyboard */; };
-		EF9EA90E1A67064A00C85295 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA89F1A66AD7100C85295 /* Main.storyboard */; };
-		EF9EA9101A6717D500C85295 /* content-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA90F1A6717D500C85295 /* content-2.png */; };
 		EF9EA9151A671BDA00C85295 /* CompressibleStickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9141A671BDA00C85295 /* CompressibleStickerViewController.m */; };
 		EF9EA9181A671BF900C85295 /* AnimateGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9171A671BF900C85295 /* AnimateGridViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EF9EA91A1A671CB000C85295 /* CompressibleStickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF9EA9191A671CB000C85295 /* CompressibleStickerViewController.xib */; };
@@ -37,6 +43,7 @@
 		EF9EA9231A673FCF00C85295 /* AnimateGridControl.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9221A673FCF00C85295 /* AnimateGridControl.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EF9EA9261A6740A300C85295 /* AnimateGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9251A6740A300C85295 /* AnimateGridLayer.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		EF9EA9291A67431500C85295 /* AnimateGridImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF9EA9281A67431500C85295 /* AnimateGridImageViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		EFBC461E1A691F71005A5477 /* bicycle9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFBC461D1A691F71005A5477 /* bicycle9.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +57,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF12165A1A6962B3006D3BCD /* content-0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-0.jpg"; sourceTree = "<group>"; };
+		EF12165B1A6962B3006D3BCD /* content-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-1.jpg"; sourceTree = "<group>"; };
+		EF1216631A6962B3006D3BCD /* content-9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-9.jpg"; sourceTree = "<group>"; };
+		EF12166E1A6963F4006D3BCD /* content-2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-2.jpg"; sourceTree = "<group>"; };
+		EF12166F1A6963F4006D3BCD /* content-3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-3.jpg"; sourceTree = "<group>"; };
+		EF1216701A6963F4006D3BCD /* content-4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-4.jpg"; sourceTree = "<group>"; };
+		EF1216711A6963F4006D3BCD /* content-5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-5.jpg"; sourceTree = "<group>"; };
+		EF1216721A6963F4006D3BCD /* content-6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-6.jpg"; sourceTree = "<group>"; };
+		EF1216731A6963F4006D3BCD /* content-7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-7.jpg"; sourceTree = "<group>"; };
+		EF1216741A6963F4006D3BCD /* content-8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "content-8.jpg"; sourceTree = "<group>"; };
 		EF9EA8921A66AD7100C85295 /* BiCi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BiCi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9EA8961A66AD7100C85295 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF9EA8971A66AD7100C85295 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,7 +74,6 @@
 		EF9EA89A1A66AD7100C85295 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EF9EA89C1A66AD7100C85295 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EF9EA89D1A66AD7100C85295 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EF9EA8A01A66AD7100C85295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF9EA8A21A66AD7100C85295 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EF9EA8A51A66AD7100C85295 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		EF9EA8AB1A66AD7100C85295 /* BiCiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BiCiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,10 +96,7 @@
 		EF9EA8FA1A67005700C85295 /* bicycle6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle6.jpg; sourceTree = "<group>"; };
 		EF9EA8FB1A67005700C85295 /* bicycle7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle7.jpg; sourceTree = "<group>"; };
 		EF9EA8FC1A67005700C85295 /* bicycle8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle8.jpg; sourceTree = "<group>"; };
-		EF9EA8FD1A67005700C85295 /* bicycle9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle9.jpg; sourceTree = "<group>"; };
 		EF9EA8FE1A67005700C85295 /* header_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = header_logo.png; sourceTree = "<group>"; };
-		EF9EA90C1A6705E100C85295 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EF9EA90F1A6717D500C85295 /* content-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "content-2.png"; sourceTree = "<group>"; };
 		EF9EA9131A671BDA00C85295 /* CompressibleStickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompressibleStickerViewController.h; sourceTree = "<group>"; };
 		EF9EA9141A671BDA00C85295 /* CompressibleStickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompressibleStickerViewController.m; sourceTree = "<group>"; };
 		EF9EA9161A671BF900C85295 /* AnimateGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateGridViewController.h; sourceTree = "<group>"; };
@@ -97,6 +110,7 @@
 		EF9EA9251A6740A300C85295 /* AnimateGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateGridLayer.m; sourceTree = "<group>"; };
 		EF9EA9271A67431500C85295 /* AnimateGridImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimateGridImageViewController.h; sourceTree = "<group>"; };
 		EF9EA9281A67431500C85295 /* AnimateGridImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimateGridImageViewController.m; sourceTree = "<group>"; };
+		EFBC461D1A691F71005A5477 /* bicycle9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bicycle9.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +162,6 @@
 				EF9EA89A1A66AD7100C85295 /* AppDelegate.m */,
 				EF9EA89C1A66AD7100C85295 /* ViewController.h */,
 				EF9EA89D1A66AD7100C85295 /* ViewController.m */,
-				EF9EA89F1A66AD7100C85295 /* Main.storyboard */,
 				EF9EA8A21A66AD7100C85295 /* Images.xcassets */,
 				EF9EA8A41A66AD7100C85295 /* LaunchScreen.xib */,
 				EF9EA8951A66AD7100C85295 /* Supporting Files */,
@@ -216,7 +229,16 @@
 		EF9EA8F31A66FE3000C85295 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EF9EA90F1A6717D500C85295 /* content-2.png */,
+				EF12165A1A6962B3006D3BCD /* content-0.jpg */,
+				EF12165B1A6962B3006D3BCD /* content-1.jpg */,
+				EF12166E1A6963F4006D3BCD /* content-2.jpg */,
+				EF12166F1A6963F4006D3BCD /* content-3.jpg */,
+				EF1216701A6963F4006D3BCD /* content-4.jpg */,
+				EF1216711A6963F4006D3BCD /* content-5.jpg */,
+				EF1216721A6963F4006D3BCD /* content-6.jpg */,
+				EF1216731A6963F4006D3BCD /* content-7.jpg */,
+				EF1216741A6963F4006D3BCD /* content-8.jpg */,
+				EF1216631A6962B3006D3BCD /* content-9.jpg */,
 				EF9EA8F41A67005700C85295 /* bicycle0.jpg */,
 				EF9EA8F51A67005700C85295 /* bicycle1.jpg */,
 				EF9EA8F61A67005700C85295 /* bicycle2.jpg */,
@@ -226,7 +248,7 @@
 				EF9EA8FA1A67005700C85295 /* bicycle6.jpg */,
 				EF9EA8FB1A67005700C85295 /* bicycle7.jpg */,
 				EF9EA8FC1A67005700C85295 /* bicycle8.jpg */,
-				EF9EA8FD1A67005700C85295 /* bicycle9.jpg */,
+				EFBC461D1A691F71005A5477 /* bicycle9.jpg */,
 				EF9EA8FE1A67005700C85295 /* header_logo.png */,
 				EF9EA9191A671CB000C85295 /* CompressibleStickerViewController.xib */,
 			);
@@ -337,20 +359,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF1216791A6963F4006D3BCD /* content-6.jpg in Resources */,
 				EF9EA9011A67005700C85295 /* bicycle2.jpg in Resources */,
 				EF9EA8FF1A67005700C85295 /* bicycle0.jpg in Resources */,
+				EF1216751A6963F4006D3BCD /* content-2.jpg in Resources */,
 				EF9EA9041A67005700C85295 /* bicycle5.jpg in Resources */,
-				EF9EA9081A67005700C85295 /* bicycle9.jpg in Resources */,
-				EF9EA9101A6717D500C85295 /* content-2.png in Resources */,
 				EF9EA9001A67005700C85295 /* bicycle1.jpg in Resources */,
 				EF9EA9061A67005700C85295 /* bicycle7.jpg in Resources */,
+				EF12167A1A6963F4006D3BCD /* content-7.jpg in Resources */,
 				EF9EA9051A67005700C85295 /* bicycle6.jpg in Resources */,
-				EF9EA90D1A67064900C85295 /* Main.storyboard in Resources */,
+				EF1216641A6962B3006D3BCD /* content-0.jpg in Resources */,
+				EF12166D1A6962B3006D3BCD /* content-9.jpg in Resources */,
+				EF1216781A6963F4006D3BCD /* content-5.jpg in Resources */,
 				EF9EA9091A67005700C85295 /* header_logo.png in Resources */,
 				EF9EA9021A67005700C85295 /* bicycle3.jpg in Resources */,
 				EF9EA9031A67005700C85295 /* bicycle4.jpg in Resources */,
 				EF9EA9071A67005700C85295 /* bicycle8.jpg in Resources */,
 				EF9EA8A31A66AD7100C85295 /* Images.xcassets in Resources */,
+				EF1216771A6963F4006D3BCD /* content-4.jpg in Resources */,
+				EF1216651A6962B3006D3BCD /* content-1.jpg in Resources */,
+				EF1216761A6963F4006D3BCD /* content-3.jpg in Resources */,
+				EF12167B1A6963F4006D3BCD /* content-8.jpg in Resources */,
+				EFBC461E1A691F71005A5477 /* bicycle9.jpg in Resources */,
 				EF9EA91A1A671CB000C85295 /* CompressibleStickerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -359,7 +389,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF9EA90E1A67064A00C85295 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,15 +434,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EF9EA89F1A66AD7100C85295 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EF9EA8A01A66AD7100C85295 /* Base */,
-				EF9EA90C1A6705E100C85295 /* en */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EF9EA8A41A66AD7100C85295 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (

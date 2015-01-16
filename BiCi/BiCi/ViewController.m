@@ -16,7 +16,7 @@
 #import "ViewController.h"
 #import "UIImage+Scale.h"
 #import "FrankensteinParallaxView.h"
-#include "FrankensteinCollectionViewCell.h"
+#import "FrankensteinCollectionViewCell.h"
 
 @interface ViewController () <FrankensteinParallaxViewDatasource, FrankensteinParallaxViewDelegate, UITableViewDelegate, UITableViewDataSource> {
 
@@ -28,11 +28,16 @@
 
 @implementation ViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    self.navigationController.navigationBar.hidden = YES;
+    
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     _imageHeaderHeight = kImageHeaderHeight;
-    self.navigationController.navigationBarHidden = YES;
     FrankensteinParallaxView *parallaxView = [[FrankensteinParallaxView alloc]initWithFrame:CGRectMake(0.0f,0.0f, self.view.frame.size.width, self.view.frame.size.height)];
     [parallaxView registerClass:[FrankensteinCollectionViewCell class] forCellWithReuseIdentifier:[FrankensteinCollectionViewCell reuseIdentifier]];
     parallaxView.delegate = self;
@@ -165,7 +170,7 @@
             [cell.contentView addSubview:imageView];
         }
         UIImageView *imageView = (UIImageView*)[cell viewWithTag:kCONTENT_IMAGE_VIEW_TAG];
-        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"content-%i",(tableView.tag%3) + 1]];
+        imageView.image = [UIImage imageNamed:[NSString stringWithFormat:@"content-%i.jpg", tableView.tag]];
         
     }
     
@@ -180,7 +185,8 @@
                         @"CompressibleStickerViewController",
                         nil];
     UIViewController *controller = [[NSClassFromString([classes objectAtIndex:indexPath.row]) alloc] init];
-    [self.navigationController pushViewController:controller animated:YES];
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
+    [self presentViewController:nav animated:YES completion:nil];
     
 }
 
@@ -190,8 +196,6 @@
         cell.backgroundColor = [UIColor blackColor];
         cell.textLabel.textColor = [UIColor whiteColor];
         cell.selectionStyle = UITableViewCellSelectionStyleNone;
-//        cell.selectedBackgroundView = [[UIView alloc] initWithFrame:cell.frame];
-//        cell.selectedBackgroundView.backgroundColor = [UIColor blueColor];
     }
 }
 

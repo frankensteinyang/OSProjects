@@ -23,6 +23,7 @@
     [self removeOutletsAndControls_AnimateGridController];
     [transitionLayer release];
     [images release];
+    [titles release];
     [super dealloc];
 }
 
@@ -42,17 +43,34 @@
     
     self = [super init];
     if (self) {
-        self.title = @"Grid Control";
-        images = [[NSArray alloc] initWithObjects:@"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", @"bicycle5.jpg",
-                  @"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", @"bicycle5.jpg",
-                  @"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", @"bicycle5.jpg",
-                  @"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", @"bicycle5.jpg", nil];
+        self.title = @"自行车上带着思想";
+        self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back)] autorelease];
+        images = [[NSArray alloc] initWithObjects:
+                  @"bicycle0.jpg",
+                  @"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", @"bicycle0.jpg",
+                  @"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", @"bicycle0.jpg",
+                  @"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", @"bicycle0.jpg",
+                  @"bicycle1.jpg", @"bicycle2.jpg", @"bicycle3.jpg", @"bicycle4.jpg", nil];
+        
+        titles = [[NSArray alloc] initWithObjects:
+                  @"启孜",
+                  @"Specialized", @"TIME", @"Solomo", @"Colnago", @"BMC",
+                  @"Trek", @"Schwinn", @"Marin", @"Huffy", @"Mongoose",
+                  @"Cannondale", @"NICOLAI", @"Airnimal", @"启孜工程车", @"启孜智能",
+                  @"启孜收藏版", @"启孜4s", @"启孜7s", @"启孜城市车", nil];
+        
         imageViewController = [[AnimateGridImageViewController alloc] init];
         imageViewController.delegate = self;
         imageNavController = [[UINavigationController alloc] initWithRootViewController:imageViewController];
         imageNavController.navigationBar.barStyle = UIBarStyleBlackTranslucent;
     }
     return self;
+    
+}
+
+- (void)back {
+
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     
 }
 
@@ -85,7 +103,7 @@
     [CATransaction commit];
     [control performSelector:@selector(resetSelection) withObject:nil afterDelay:0.0];
     self.transitionLayer = nil;
-    [self dismissModalViewControllerAnimated:NO];
+    [self dismissViewControllerAnimated:NO completion:nil];
     
 }
 
@@ -103,7 +121,7 @@
 {
     UIImage *image = [UIImage imageNamed:[images objectAtIndex:inIndex]];
     imageViewController.image = image;
-    imageViewController.title = [images objectAtIndex:inIndex];
+    imageViewController.title = [titles objectAtIndex:inIndex];
     UIImage *screenshot = [imageNavController.view screenshot];
     
     self.transitionLayer = (AnimateGridLayer *)inLayer;
@@ -125,7 +143,6 @@
     
     CATransition *t = [CATransition animation];
     t.type = @"flip";
-    //	t.type = @"cube";
     t.subtype = kCATransitionFromRight;
     t.duration = 0.25;
     self.transitionLayer.contents = (id)screenshot.CGImage;
@@ -146,7 +163,6 @@
         self.transitionLayer.hidden = YES;
         
         [self presentViewController:imageNavController animated:NO completion:nil];
-//        [self.navigationController presentModalViewController:imageNavController animated:NO];
     }
 }
 

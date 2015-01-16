@@ -18,11 +18,21 @@
 - (id)init
 {
     
+    
     self = [super initWithNibName:NSStringFromClass([CompressibleStickerViewController class]) bundle:[NSBundle mainBundle]];
     if (self) {
         
+        self.title = @"启孜";
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"返回" style:UIBarButtonItemStylePlain target:self action:@selector(back)];
+        
     }
     return self;
+    
+}
+
+- (void)back {
+    
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
     
 }
 
@@ -67,13 +77,6 @@
     [CATransaction setValue:(id)kCFBooleanTrue forKey:kCATransactionDisableActions];
     imageLayer.frame = aFrame;
     [CATransaction commit];
-    
-}
-
-- (IBAction)back {
-    
-    ViewController *vc = [[ViewController alloc] init];
-    [self presentViewController:vc animated:YES completion:nil];
     
 }
 

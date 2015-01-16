@@ -50,7 +50,7 @@
     label.numberOfLines = 3;
     label.textColor = [UIColor whiteColor];
     label.backgroundColor = [UIColor clearColor];
-    label.text = @"Lorem ipsum dolor sit amet, odio quis adipiscing ligula. Augue tellus amet diam justo et nulla";
+    label.text = @"启孜智能自行车把，前方有情况震动提醒，可寻骑友。";
     label.font = [UIFont boldSystemFontOfSize:13.0];
     [self.view addSubview:label];
     
@@ -59,7 +59,7 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStylePlain target:self action:@selector(close:)];
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:@"关闭" style:UIBarButtonItemStylePlain target:self action:@selector(close)];
     self.navigationItem.leftBarButtonItem = item;
     [item release];
     
@@ -78,9 +78,10 @@
     [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault animated:animated];
 }
 
-- (IBAction)close:(id)sender
-{
+- (void)close {
+    
     [delegate imageViewControllerDidClose:self];
+    
 }
 
 - (void)setImage:(UIImage *)inImage {

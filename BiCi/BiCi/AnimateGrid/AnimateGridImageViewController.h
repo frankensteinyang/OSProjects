@@ -25,8 +25,6 @@
     
 }
 
-- (IBAction)close:(id)sender;
-
 @property (assign, nonatomic) id <AnimateGridImageViewControllerDelegate> delegate;
 @property (retain, nonatomic) UIImage *image;
 @property (retain, nonatomic) UILabel *label;

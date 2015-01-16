@@ -18,19 +18,18 @@
     {
       "size" : "40x40",
       "idiom" : "iphone",
-      "filename" : "logo60@2.png",
+      "filename" : "60@2x.png",
       "scale" : "3x"
     },
     {
       "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "logo60@2-1.png",
+      "filename" : "60@2x-1.png",
       "scale" : "2x"
     },
     {
-      "size" : "60x60",
       "idiom" : "iphone",
-      "filename" : "logo60@3x.png",
+      "size" : "60x60",
       "scale" : "3x"
     }
   ],

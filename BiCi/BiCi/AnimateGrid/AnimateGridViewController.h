@@ -17,6 +17,7 @@
     AnimateGridImageViewController *imageViewController;
     UINavigationController *imageNavController;
     NSArray *images;
+    NSArray *titles;
     
     AnimateGridLayer *transitionLayer;
     

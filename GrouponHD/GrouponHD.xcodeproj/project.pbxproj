@@ -15,13 +15,24 @@
 		EF1216CF1A698D45006D3BCD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EF1216C81A698CE7006D3BCD /* LaunchScreen.xib */; };
 		EF1217471A69D767006D3BCD /* DPAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1217431A69D767006D3BCD /* DPAPI.m */; };
 		EF1217481A69D767006D3BCD /* DPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1217461A69D767006D3BCD /* DPRequest.m */; };
-		EFCA325C1A6AA3D400A7F8D1 /* GHDShop.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA325B1A6AA3D400A7F8D1 /* GHDShop.m */; };
+		EFB498B71A6BEB8A00C3893C /* categories.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFB498B31A6BEB8A00C3893C /* categories.plist */; };
+		EFB498B81A6BEB8A00C3893C /* cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFB498B41A6BEB8A00C3893C /* cities.plist */; };
+		EFB498B91A6BEB8A00C3893C /* cityGroups.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFB498B51A6BEB8A00C3893C /* cityGroups.plist */; };
+		EFB498BA1A6BEB8A00C3893C /* sorts.plist in Resources */ = {isa = PBXBuildFile; fileRef = EFB498B61A6BEB8A00C3893C /* sorts.plist */; };
+		EFB498C01A6BEC9C00C3893C /* GHDFindGrouponsParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498BD1A6BEC9C00C3893C /* GHDFindGrouponsParam.m */; };
+		EFB498C11A6BEC9C00C3893C /* GHDFindGrouponsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498BF1A6BEC9C00C3893C /* GHDFindGrouponsResult.m */; };
+		EFB498C71A6BECAC00C3893C /* GHDGetSingleGrouponParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498C41A6BECAC00C3893C /* GHDGetSingleGrouponParam.m */; };
+		EFB498C81A6BECAC00C3893C /* GHDGetSingleGrouponResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498C61A6BECAC00C3893C /* GHDGetSingleGrouponResult.m */; };
+		EFB498CE1A6BECB300C3893C /* GHDGroupon.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498CB1A6BECB300C3893C /* GHDGroupon.m */; };
+		EFB498CF1A6BECB300C3893C /* GHDShop.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498CD1A6BECB300C3893C /* GHDShop.m */; };
+		EFB498D31A6BEDE100C3893C /* GHDGrouponCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498D21A6BEDE100C3893C /* GHDGrouponCategory.m */; };
+		EFB498D61A6BEE3600C3893C /* GHDSort.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498D51A6BEE3600C3893C /* GHDSort.m */; };
+		EFB498D91A6BEE9200C3893C /* GHDCity.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498D81A6BEE9200C3893C /* GHDCity.m */; };
+		EFB498DC1A6BEF2800C3893C /* GHDDistrict.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498DB1A6BEF2800C3893C /* GHDDistrict.m */; };
+		EFB498DF1A6BF19D00C3893C /* GHDCityGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498DE1A6BF19D00C3893C /* GHDCityGroup.m */; };
+		EFB498E21A6BF26E00C3893C /* GHDMetadataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498E11A6BF26E00C3893C /* GHDMetadataTool.m */; };
+		EFB498E41A6BF71800C3893C /* GHDMetadataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498E31A6BF71800C3893C /* GHDMetadataTest.m */; };
 		EFCA325F1A6AA45000A7F8D1 /* GHDAPITool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA325E1A6AA45000A7F8D1 /* GHDAPITool.m */; };
-		EFCA32621A6AA54300A7F8D1 /* GHDGroupon.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32611A6AA54300A7F8D1 /* GHDGroupon.m */; };
-		EFCA32651A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32641A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.m */; };
-		EFCA32681A6AA6F600A7F8D1 /* GHDGetSingleGrouponParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32671A6AA6F600A7F8D1 /* GHDGetSingleGrouponParam.m */; };
-		EFCA326B1A6AA78900A7F8D1 /* GHDFindGrouponsParam.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA326A1A6AA78900A7F8D1 /* GHDFindGrouponsParam.m */; };
-		EFCA326E1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA326D1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.m */; };
 		EFCA32891A6AA98A00A7F8D1 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32731A6AA98A00A7F8D1 /* MJArgument.m */; };
 		EFCA328A1A6AA98A00A7F8D1 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32751A6AA98A00A7F8D1 /* MJConst.m */; };
 		EFCA328B1A6AA98A00A7F8D1 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32781A6AA98A00A7F8D1 /* MJFoundation.m */; };
@@ -70,20 +81,37 @@
 		EF1217441A69D767006D3BCD /* DPConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPConstants.h; sourceTree = "<group>"; };
 		EF1217451A69D767006D3BCD /* DPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DPRequest.h; sourceTree = "<group>"; };
 		EF1217461A69D767006D3BCD /* DPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DPRequest.m; sourceTree = "<group>"; };
-		EFCA325A1A6AA3D400A7F8D1 /* GHDShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDShop.h; sourceTree = "<group>"; };
-		EFCA325B1A6AA3D400A7F8D1 /* GHDShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDShop.m; sourceTree = "<group>"; };
+		EFB498B31A6BEB8A00C3893C /* categories.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = categories.plist; sourceTree = "<group>"; };
+		EFB498B41A6BEB8A00C3893C /* cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cities.plist; sourceTree = "<group>"; };
+		EFB498B51A6BEB8A00C3893C /* cityGroups.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityGroups.plist; sourceTree = "<group>"; };
+		EFB498B61A6BEB8A00C3893C /* sorts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sorts.plist; sourceTree = "<group>"; };
+		EFB498BC1A6BEC9C00C3893C /* GHDFindGrouponsParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDFindGrouponsParam.h; sourceTree = "<group>"; };
+		EFB498BD1A6BEC9C00C3893C /* GHDFindGrouponsParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDFindGrouponsParam.m; sourceTree = "<group>"; };
+		EFB498BE1A6BEC9C00C3893C /* GHDFindGrouponsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDFindGrouponsResult.h; sourceTree = "<group>"; };
+		EFB498BF1A6BEC9C00C3893C /* GHDFindGrouponsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDFindGrouponsResult.m; sourceTree = "<group>"; };
+		EFB498C31A6BECAC00C3893C /* GHDGetSingleGrouponParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGetSingleGrouponParam.h; sourceTree = "<group>"; };
+		EFB498C41A6BECAC00C3893C /* GHDGetSingleGrouponParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGetSingleGrouponParam.m; sourceTree = "<group>"; };
+		EFB498C51A6BECAC00C3893C /* GHDGetSingleGrouponResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGetSingleGrouponResult.h; sourceTree = "<group>"; };
+		EFB498C61A6BECAC00C3893C /* GHDGetSingleGrouponResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGetSingleGrouponResult.m; sourceTree = "<group>"; };
+		EFB498CA1A6BECB300C3893C /* GHDGroupon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGroupon.h; sourceTree = "<group>"; };
+		EFB498CB1A6BECB300C3893C /* GHDGroupon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGroupon.m; sourceTree = "<group>"; };
+		EFB498CC1A6BECB300C3893C /* GHDShop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDShop.h; sourceTree = "<group>"; };
+		EFB498CD1A6BECB300C3893C /* GHDShop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDShop.m; sourceTree = "<group>"; };
+		EFB498D11A6BEDE100C3893C /* GHDGrouponCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGrouponCategory.h; sourceTree = "<group>"; };
+		EFB498D21A6BEDE100C3893C /* GHDGrouponCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGrouponCategory.m; sourceTree = "<group>"; };
+		EFB498D41A6BEE3600C3893C /* GHDSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDSort.h; sourceTree = "<group>"; };
+		EFB498D51A6BEE3600C3893C /* GHDSort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDSort.m; sourceTree = "<group>"; };
+		EFB498D71A6BEE9200C3893C /* GHDCity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDCity.h; sourceTree = "<group>"; };
+		EFB498D81A6BEE9200C3893C /* GHDCity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDCity.m; sourceTree = "<group>"; };
+		EFB498DA1A6BEF2800C3893C /* GHDDistrict.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDDistrict.h; sourceTree = "<group>"; };
+		EFB498DB1A6BEF2800C3893C /* GHDDistrict.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDDistrict.m; sourceTree = "<group>"; };
+		EFB498DD1A6BF19D00C3893C /* GHDCityGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDCityGroup.h; sourceTree = "<group>"; };
+		EFB498DE1A6BF19D00C3893C /* GHDCityGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDCityGroup.m; sourceTree = "<group>"; };
+		EFB498E01A6BF26E00C3893C /* GHDMetadataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDMetadataTool.h; sourceTree = "<group>"; };
+		EFB498E11A6BF26E00C3893C /* GHDMetadataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDMetadataTool.m; sourceTree = "<group>"; };
+		EFB498E31A6BF71800C3893C /* GHDMetadataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDMetadataTest.m; sourceTree = "<group>"; };
 		EFCA325D1A6AA45000A7F8D1 /* GHDAPITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDAPITool.h; sourceTree = "<group>"; };
 		EFCA325E1A6AA45000A7F8D1 /* GHDAPITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDAPITool.m; sourceTree = "<group>"; };
-		EFCA32601A6AA54300A7F8D1 /* GHDGroupon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGroupon.h; sourceTree = "<group>"; };
-		EFCA32611A6AA54300A7F8D1 /* GHDGroupon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGroupon.m; sourceTree = "<group>"; };
-		EFCA32631A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGetSingleGrouponResult.h; sourceTree = "<group>"; };
-		EFCA32641A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGetSingleGrouponResult.m; sourceTree = "<group>"; };
-		EFCA32661A6AA6F600A7F8D1 /* GHDGetSingleGrouponParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGetSingleGrouponParam.h; sourceTree = "<group>"; };
-		EFCA32671A6AA6F600A7F8D1 /* GHDGetSingleGrouponParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGetSingleGrouponParam.m; sourceTree = "<group>"; };
-		EFCA32691A6AA78900A7F8D1 /* GHDFindGrouponsParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDFindGrouponsParam.h; sourceTree = "<group>"; };
-		EFCA326A1A6AA78900A7F8D1 /* GHDFindGrouponsParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDFindGrouponsParam.m; sourceTree = "<group>"; };
-		EFCA326C1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDFindGrouponsResult.h; sourceTree = "<group>"; };
-		EFCA326D1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDFindGrouponsResult.m; sourceTree = "<group>"; };
 		EFCA32721A6AA98A00A7F8D1 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
 		EFCA32731A6AA98A00A7F8D1 /* MJArgument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJArgument.m; sourceTree = "<group>"; };
 		EFCA32741A6AA98A00A7F8D1 /* MJConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJConst.h; sourceTree = "<group>"; };
@@ -169,6 +197,7 @@
 		EF1216881A69727F006D3BCD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				EFB498B21A6BEB8A00C3893C /* JSON */,
 				EF1216C81A698CE7006D3BCD /* LaunchScreen.xib */,
 				EF1216CA1A698CE7006D3BCD /* Main.storyboard */,
 				EF1216951A69727F006D3BCD /* Images.xcassets */,
@@ -183,6 +212,7 @@
 			children = (
 				EF1216A41A697280006D3BCD /* GrouponHDTests.m */,
 				EF1216A21A697280006D3BCD /* Supporting Files */,
+				EFB498E31A6BF71800C3893C /* GHDMetadataTest.m */,
 			);
 			path = GrouponHDTests;
 			sourceTree = "<group>";
@@ -222,6 +252,8 @@
 				EFCA325E1A6AA45000A7F8D1 /* GHDAPITool.m */,
 				EFCA32941A6AAA2800A7F8D1 /* GHDGrouponTool.h */,
 				EFCA32951A6AAA2800A7F8D1 /* GHDGrouponTool.m */,
+				EFB498E01A6BF26E00C3893C /* GHDMetadataTool.h */,
+				EFB498E11A6BF26E00C3893C /* GHDMetadataTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -273,20 +305,73 @@
 		EF4CFDF71A69F9FF003B6F0C /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EFCA325A1A6AA3D400A7F8D1 /* GHDShop.h */,
-				EFCA325B1A6AA3D400A7F8D1 /* GHDShop.m */,
-				EFCA32601A6AA54300A7F8D1 /* GHDGroupon.h */,
-				EFCA32611A6AA54300A7F8D1 /* GHDGroupon.m */,
-				EFCA32631A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.h */,
-				EFCA32641A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.m */,
-				EFCA32661A6AA6F600A7F8D1 /* GHDGetSingleGrouponParam.h */,
-				EFCA32671A6AA6F600A7F8D1 /* GHDGetSingleGrouponParam.m */,
-				EFCA32691A6AA78900A7F8D1 /* GHDFindGrouponsParam.h */,
-				EFCA326A1A6AA78900A7F8D1 /* GHDFindGrouponsParam.m */,
-				EFCA326C1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.h */,
-				EFCA326D1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.m */,
+				EFB498D01A6BED8700C3893C /* Metadata */,
+				EFB498C91A6BECB300C3893C /* Groupon */,
+				EFB498C21A6BECAC00C3893C /* GetSingleGroupon */,
+				EFB498BB1A6BEC9C00C3893C /* FindGroupons */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EFB498B21A6BEB8A00C3893C /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				EFB498B31A6BEB8A00C3893C /* categories.plist */,
+				EFB498B41A6BEB8A00C3893C /* cities.plist */,
+				EFB498B51A6BEB8A00C3893C /* cityGroups.plist */,
+				EFB498B61A6BEB8A00C3893C /* sorts.plist */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		EFB498BB1A6BEC9C00C3893C /* FindGroupons */ = {
+			isa = PBXGroup;
+			children = (
+				EFB498BC1A6BEC9C00C3893C /* GHDFindGrouponsParam.h */,
+				EFB498BD1A6BEC9C00C3893C /* GHDFindGrouponsParam.m */,
+				EFB498BE1A6BEC9C00C3893C /* GHDFindGrouponsResult.h */,
+				EFB498BF1A6BEC9C00C3893C /* GHDFindGrouponsResult.m */,
+			);
+			path = FindGroupons;
+			sourceTree = "<group>";
+		};
+		EFB498C21A6BECAC00C3893C /* GetSingleGroupon */ = {
+			isa = PBXGroup;
+			children = (
+				EFB498C31A6BECAC00C3893C /* GHDGetSingleGrouponParam.h */,
+				EFB498C41A6BECAC00C3893C /* GHDGetSingleGrouponParam.m */,
+				EFB498C51A6BECAC00C3893C /* GHDGetSingleGrouponResult.h */,
+				EFB498C61A6BECAC00C3893C /* GHDGetSingleGrouponResult.m */,
+			);
+			path = GetSingleGroupon;
+			sourceTree = "<group>";
+		};
+		EFB498C91A6BECB300C3893C /* Groupon */ = {
+			isa = PBXGroup;
+			children = (
+				EFB498CA1A6BECB300C3893C /* GHDGroupon.h */,
+				EFB498CB1A6BECB300C3893C /* GHDGroupon.m */,
+				EFB498CC1A6BECB300C3893C /* GHDShop.h */,
+				EFB498CD1A6BECB300C3893C /* GHDShop.m */,
+			);
+			path = Groupon;
+			sourceTree = "<group>";
+		};
+		EFB498D01A6BED8700C3893C /* Metadata */ = {
+			isa = PBXGroup;
+			children = (
+				EFB498D11A6BEDE100C3893C /* GHDGrouponCategory.h */,
+				EFB498D21A6BEDE100C3893C /* GHDGrouponCategory.m */,
+				EFB498D41A6BEE3600C3893C /* GHDSort.h */,
+				EFB498D51A6BEE3600C3893C /* GHDSort.m */,
+				EFB498D71A6BEE9200C3893C /* GHDCity.h */,
+				EFB498D81A6BEE9200C3893C /* GHDCity.m */,
+				EFB498DA1A6BEF2800C3893C /* GHDDistrict.h */,
+				EFB498DB1A6BEF2800C3893C /* GHDDistrict.m */,
+				EFB498DD1A6BF19D00C3893C /* GHDCityGroup.h */,
+				EFB498DE1A6BF19D00C3893C /* GHDCityGroup.m */,
+			);
+			path = Metadata;
 			sourceTree = "<group>";
 		};
 		EFCA32711A6AA96800A7F8D1 /* MJExtension */ = {
@@ -436,9 +521,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB498B71A6BEB8A00C3893C /* categories.plist in Resources */,
 				EF1216CF1A698D45006D3BCD /* LaunchScreen.xib in Resources */,
+				EFB498BA1A6BEB8A00C3893C /* sorts.plist in Resources */,
 				EF1216CE1A698D40006D3BCD /* Main.storyboard in Resources */,
+				EFB498B81A6BEB8A00C3893C /* cities.plist in Resources */,
 				EF1216961A69727F006D3BCD /* Images.xcassets in Resources */,
+				EFB498B91A6BEB8A00C3893C /* cityGroups.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,34 +545,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFCA326E1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.m in Sources */,
 				EFCA32921A6AA98A00A7F8D1 /* NSObject+MJKeyValue.m in Sources */,
+				EFB498DC1A6BEF2800C3893C /* GHDDistrict.m in Sources */,
+				EFB498E21A6BF26E00C3893C /* GHDMetadataTool.m in Sources */,
 				EFCA32A91A6AE4DD00A7F8D1 /* AwesomeMenu.m in Sources */,
 				EFCA325F1A6AA45000A7F8D1 /* GHDAPITool.m in Sources */,
-				EFCA32621A6AA54300A7F8D1 /* GHDGroupon.m in Sources */,
+				EFB498D61A6BEE3600C3893C /* GHDSort.m in Sources */,
 				EFCA32AF1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m in Sources */,
 				EFCA32A11A6ADED500A7F8D1 /* GHDNavigationController.m in Sources */,
 				EFCA328D1A6AA98A00A7F8D1 /* MJMember.m in Sources */,
 				EFCA328A1A6AA98A00A7F8D1 /* MJConst.m in Sources */,
 				EFCA32911A6AA98A00A7F8D1 /* NSObject+MJCoding.m in Sources */,
+				EFB498CE1A6BECB300C3893C /* GHDGroupon.m in Sources */,
 				EF1217471A69D767006D3BCD /* DPAPI.m in Sources */,
 				EFCA32901A6AA98A00A7F8D1 /* MJTypeEncoding.m in Sources */,
-				EFCA325C1A6AA3D400A7F8D1 /* GHDShop.m in Sources */,
+				EFB498C71A6BECAC00C3893C /* GHDGetSingleGrouponParam.m in Sources */,
 				EFCA328B1A6AA98A00A7F8D1 /* MJFoundation.m in Sources */,
+				EFB498C11A6BEC9C00C3893C /* GHDFindGrouponsResult.m in Sources */,
+				EFB498D31A6BEDE100C3893C /* GHDGrouponCategory.m in Sources */,
+				EFB498D91A6BEE9200C3893C /* GHDCity.m in Sources */,
 				EFCA328E1A6AA98A00A7F8D1 /* MJMethod.m in Sources */,
 				EF1216B91A697420006D3BCD /* AppDelegate.m in Sources */,
 				EF1216BA1A697420006D3BCD /* main.m in Sources */,
 				EFCA32961A6AAA2800A7F8D1 /* GHDGrouponTool.m in Sources */,
+				EFB498CF1A6BECB300C3893C /* GHDShop.m in Sources */,
+				EFB498C81A6BECAC00C3893C /* GHDGetSingleGrouponResult.m in Sources */,
 				EFCA328C1A6AA98A00A7F8D1 /* MJIvar.m in Sources */,
 				EFCA32931A6AA98A00A7F8D1 /* NSObject+MJMember.m in Sources */,
 				EFCA329D1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m in Sources */,
 				EF1217481A69D767006D3BCD /* DPRequest.m in Sources */,
-				EFCA326B1A6AA78900A7F8D1 /* GHDFindGrouponsParam.m in Sources */,
 				EFCA32AA1A6AE4DD00A7F8D1 /* AwesomeMenuItem.m in Sources */,
-				EFCA32651A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.m in Sources */,
 				EFCA328F1A6AA98A00A7F8D1 /* MJType.m in Sources */,
+				EFB498C01A6BEC9C00C3893C /* GHDFindGrouponsParam.m in Sources */,
 				EFCA32891A6AA98A00A7F8D1 /* MJArgument.m in Sources */,
-				EFCA32681A6AA6F600A7F8D1 /* GHDGetSingleGrouponParam.m in Sources */,
+				EFB498DF1A6BF19D00C3893C /* GHDCityGroup.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +586,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB498E41A6BF71800C3893C /* GHDMetadataTest.m in Sources */,
 				EF1216A51A697280006D3BCD /* GrouponHDTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

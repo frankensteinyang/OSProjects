@@ -8,16 +8,6 @@
 
 #import "GHDGrouponsTopMenu.h"
 
-@interface GHDGrouponsTopMenu ()
-
-@property (weak, nonatomic) IBOutlet UIButton *imageBtn;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
-@property (weak, nonatomic) IBOutlet UILabel *subtitleLabel;
-
-- (IBAction)imageBtnClick;
-
-@end
-
 @implementation GHDGrouponsTopMenu
 
 /*
@@ -37,12 +27,17 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
 
     if (self = [super initWithCoder:aDecoder]) {
+        // 禁止默认的拉伸现象
         self.autoresizingMask = UIViewAutoresizingNone;
     }
     return self;
     
 }
 
-- (IBAction)imageBtnClick {
+- (void)addTarget:(id)target action:(SEL)action {
+
+    [self.imageBtn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
+    
 }
+
 @end

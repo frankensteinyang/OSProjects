@@ -36,6 +36,11 @@
 		EFB498EA1A6C0E9400C3893C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498E91A6C0E9400C3893C /* UIView+Extension.m */; };
 		EFB498EE1A6C131500C3893C /* GHDGrouponsTopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498ED1A6C131500C3893C /* GHDGrouponsTopMenu.m */; };
 		EFB498F01A6C139400C3893C /* GHDGrouponsTopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB498EF1A6C139400C3893C /* GHDGrouponsTopMenu.xib */; };
+		EFB498F31A6C275400C3893C /* GHDCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498F21A6C275400C3893C /* GHDCategoryViewController.m */; };
+		EFB498F61A6C278600C3893C /* GHDRegionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498F51A6C278600C3893C /* GHDRegionViewController.m */; };
+		EFB498FA1A6C282400C3893C /* GHDSortViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498F81A6C282400C3893C /* GHDSortViewController.m */; };
+		EFB498FB1A6C282400C3893C /* GHDSortViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB498F91A6C282400C3893C /* GHDSortViewController.xib */; };
+		EFB498FE1A6C35C500C3893C /* UIButton+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498FD1A6C35C500C3893C /* UIButton+Extension.m */; };
 		EFCA325F1A6AA45000A7F8D1 /* GHDAPITool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA325E1A6AA45000A7F8D1 /* GHDAPITool.m */; };
 		EFCA32891A6AA98A00A7F8D1 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32731A6AA98A00A7F8D1 /* MJArgument.m */; };
 		EFCA328A1A6AA98A00A7F8D1 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32751A6AA98A00A7F8D1 /* MJConst.m */; };
@@ -121,6 +126,15 @@
 		EFB498EC1A6C131500C3893C /* GHDGrouponsTopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGrouponsTopMenu.h; sourceTree = "<group>"; };
 		EFB498ED1A6C131500C3893C /* GHDGrouponsTopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGrouponsTopMenu.m; sourceTree = "<group>"; };
 		EFB498EF1A6C139400C3893C /* GHDGrouponsTopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHDGrouponsTopMenu.xib; sourceTree = "<group>"; };
+		EFB498F11A6C275400C3893C /* GHDCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDCategoryViewController.h; sourceTree = "<group>"; };
+		EFB498F21A6C275400C3893C /* GHDCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDCategoryViewController.m; sourceTree = "<group>"; };
+		EFB498F41A6C278600C3893C /* GHDRegionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDRegionViewController.h; sourceTree = "<group>"; };
+		EFB498F51A6C278600C3893C /* GHDRegionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDRegionViewController.m; sourceTree = "<group>"; };
+		EFB498F71A6C282400C3893C /* GHDSortViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDSortViewController.h; sourceTree = "<group>"; };
+		EFB498F81A6C282400C3893C /* GHDSortViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDSortViewController.m; sourceTree = "<group>"; };
+		EFB498F91A6C282400C3893C /* GHDSortViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHDSortViewController.xib; sourceTree = "<group>"; };
+		EFB498FC1A6C35C500C3893C /* UIButton+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Extension.h"; sourceTree = "<group>"; };
+		EFB498FD1A6C35C500C3893C /* UIButton+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Extension.m"; sourceTree = "<group>"; };
 		EFCA325D1A6AA45000A7F8D1 /* GHDAPITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDAPITool.h; sourceTree = "<group>"; };
 		EFCA325E1A6AA45000A7F8D1 /* GHDAPITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDAPITool.m; sourceTree = "<group>"; };
 		EFCA32721A6AA98A00A7F8D1 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
@@ -285,6 +299,8 @@
 		EF1216B41A697420006D3BCD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EFB498FC1A6C35C500C3893C /* UIButton+Extension.h */,
+				EFB498FD1A6C35C500C3893C /* UIButton+Extension.m */,
 				EFB498E81A6C0E9400C3893C /* UIView+Extension.h */,
 				EFB498E91A6C0E9400C3893C /* UIView+Extension.m */,
 				EFB498E51A6C004E00C3893C /* UIBarButtonItem+Extension.h */,
@@ -443,6 +459,13 @@
 			children = (
 				EFCA329B1A6AAD1700A7F8D1 /* GHDGrouponsViewController.h */,
 				EFCA329C1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m */,
+				EFB498F11A6C275400C3893C /* GHDCategoryViewController.h */,
+				EFB498F21A6C275400C3893C /* GHDCategoryViewController.m */,
+				EFB498F41A6C278600C3893C /* GHDRegionViewController.h */,
+				EFB498F51A6C278600C3893C /* GHDRegionViewController.m */,
+				EFB498F71A6C282400C3893C /* GHDSortViewController.h */,
+				EFB498F81A6C282400C3893C /* GHDSortViewController.m */,
+				EFB498F91A6C282400C3893C /* GHDSortViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -549,6 +572,7 @@
 			files = (
 				EFB498B71A6BEB8A00C3893C /* categories.plist in Resources */,
 				EF1216CF1A698D45006D3BCD /* LaunchScreen.xib in Resources */,
+				EFB498FB1A6C282400C3893C /* GHDSortViewController.xib in Resources */,
 				EFB498BA1A6BEB8A00C3893C /* sorts.plist in Resources */,
 				EF1216CE1A698D40006D3BCD /* Main.storyboard in Resources */,
 				EFB498B81A6BEB8A00C3893C /* cities.plist in Resources */,
@@ -578,11 +602,13 @@
 				EFCA32A91A6AE4DD00A7F8D1 /* AwesomeMenu.m in Sources */,
 				EFCA325F1A6AA45000A7F8D1 /* GHDAPITool.m in Sources */,
 				EFB498D61A6BEE3600C3893C /* GHDSort.m in Sources */,
+				EFB498F61A6C278600C3893C /* GHDRegionViewController.m in Sources */,
 				EFCA32AF1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m in Sources */,
 				EFCA32A11A6ADED500A7F8D1 /* GHDNavigationController.m in Sources */,
 				EFCA328D1A6AA98A00A7F8D1 /* MJMember.m in Sources */,
 				EFCA328A1A6AA98A00A7F8D1 /* MJConst.m in Sources */,
 				EFCA32911A6AA98A00A7F8D1 /* NSObject+MJCoding.m in Sources */,
+				EFB498FA1A6C282400C3893C /* GHDSortViewController.m in Sources */,
 				EFB498CE1A6BECB300C3893C /* GHDGroupon.m in Sources */,
 				EF1217471A69D767006D3BCD /* DPAPI.m in Sources */,
 				EFCA32901A6AA98A00A7F8D1 /* MJTypeEncoding.m in Sources */,
@@ -602,6 +628,8 @@
 				EFCA328C1A6AA98A00A7F8D1 /* MJIvar.m in Sources */,
 				EFCA32931A6AA98A00A7F8D1 /* NSObject+MJMember.m in Sources */,
 				EFCA329D1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m in Sources */,
+				EFB498F31A6C275400C3893C /* GHDCategoryViewController.m in Sources */,
+				EFB498FE1A6C35C500C3893C /* UIButton+Extension.m in Sources */,
 				EF1217481A69D767006D3BCD /* DPRequest.m in Sources */,
 				EFB498E71A6C004E00C3893C /* UIBarButtonItem+Extension.m in Sources */,
 				EFCA32AA1A6AE4DD00A7F8D1 /* AwesomeMenuItem.m in Sources */,

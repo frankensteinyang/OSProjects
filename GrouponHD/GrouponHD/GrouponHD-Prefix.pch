@@ -14,5 +14,7 @@
 #import "MJExtension.h"
 #import "UIView+AutoLayout.h"
 #import "UIView+Extension.h"
+#import "GHDMetadataTool.h"
+#import "UIButton+Extension.h"
 
 #endif

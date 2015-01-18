@@ -12,9 +12,13 @@
 #import "AwesomeMenuItem.h"
 #import "GHDGrouponsTopMenu.h"
 #import "UIBarButtonItem+Extension.h"
+#import "GHDCategoryViewController.h"
+#import "GHDRegionViewController.h"
+#import "GHDSortViewController.h"
 
 @interface GHDGrouponsViewController () <AwesomeMenuDelegate>
 
+/** 顶部菜单 */
 /** 分类菜单 */
 @property (weak, nonatomic) GHDGrouponsTopMenu *categoryMenu;
 /** 区域菜单 */
@@ -22,9 +26,47 @@
 /** 排序菜单 */
 @property (weak, nonatomic) GHDGrouponsTopMenu *sortMenu;
 
+/** 点击顶部菜单后弹出的Popover */
+/** 分类Popover */
+@property (strong, nonatomic) UIPopoverController *categoryPopover;
+/** 区域Popover */
+@property (strong, nonatomic) UIPopoverController *regionPopover;
+/** 排序Popover */
+@property (strong, nonatomic) UIPopoverController *sortPopover;
+
 @end
 
 @implementation GHDGrouponsViewController
+
+#pragma mark - 懒加载
+- (UIPopoverController *)categoryPopover {
+
+    if (_categoryPopover == nil) {
+        GHDCategoryViewController *cv = [[GHDCategoryViewController alloc] init];
+        
+        self.categoryPopover = [[UIPopoverController alloc] initWithContentViewController:cv];
+    }
+    return _categoryPopover;
+    
+}
+
+- (UIPopoverController *)regionPopover
+{
+    if (!_regionPopover) {
+        GHDRegionViewController *rv = [[GHDRegionViewController alloc] init];
+        self.regionPopover = [[UIPopoverController alloc] initWithContentViewController:rv];
+    }
+    return _regionPopover;
+}
+
+- (UIPopoverController *)sortPopover
+{
+    if (!_sortPopover) {
+        GHDSortViewController *sv = [[GHDSortViewController alloc] init];
+        self.sortPopover = [[UIPopoverController alloc] initWithContentViewController:sv];
+    }
+    return _sortPopover;
+}
 
 static NSString * const reuseIdentifier = @"Cell";
 
@@ -68,16 +110,22 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // 2.分类
     GHDGrouponsTopMenu *categoryMenu = [GHDGrouponsTopMenu menu];
+    [categoryMenu addTarget:self action:@selector(categoryMenuClick)];
     UIBarButtonItem *categoryItem = [[UIBarButtonItem alloc] initWithCustomView:categoryMenu];
     self.categoryMenu = categoryMenu;
     
     // 3.区域
     GHDGrouponsTopMenu *regionMenu = [GHDGrouponsTopMenu menu];
+    [regionMenu addTarget:self action:@selector(regionMenuClick)];
     UIBarButtonItem *regionItem = [[UIBarButtonItem alloc] initWithCustomView:regionMenu];
     self.regionMenu = regionMenu;
     
     // 4.排序
     GHDGrouponsTopMenu *sortMenu = [GHDGrouponsTopMenu menu];
+    [sortMenu addTarget:self action:@selector(sortMenuClick)];
+    sortMenu.imageBtn.image = @"icon_sort";
+    sortMenu.imageBtn.highlightedImage = @"icon_sort_highlighted";
+    sortMenu.titleLabel.text = @"排序";
     UIBarButtonItem *sortItem = [[UIBarButtonItem alloc] initWithCustomView:sortMenu];
     self.sortMenu = sortMenu;
     
@@ -100,17 +148,39 @@ static NSString * const reuseIdentifier = @"Cell";
     
 }
 
-- (void)mapClick {
-
+#pragma mark - 导航栏左边事件处理
+/** 分类菜单 */
+- (void)categoryMenuClick
+{
+    [self.categoryPopover presentPopoverFromRect:self.categoryMenu.bounds inView:self.categoryMenu permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
 }
 
-- (void)searchClick {
+/** 区域菜单 */
+- (void)regionMenuClick
+{
+    [self.regionPopover presentPopoverFromRect:self.regionMenu.bounds inView:self.regionMenu permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+/** 排序菜单 */
+- (void)sortMenuClick
+{
+    [self.sortPopover presentPopoverFromRect:self.sortMenu.bounds inView:self.sortMenu permittedArrowDirections:UIPopoverArrowDirectionAny animated:YES];
+}
+
+#pragma mark - 导航栏右边事件处理
+/** 搜索 */
+- (void)searchClick
+{
     
 }
 
-/**
- *  用户菜单
- */
+/** 地图 */
+- (void)mapClick
+{
+    
+}
+
+#pragma mark - 用户菜单
 - (void)setupUserMenu {
 
     // 1.周边的item

@@ -10,8 +10,17 @@
 #import "GHDGrouponTool.h"
 #import "AwesomeMenu.h"
 #import "AwesomeMenuItem.h"
+#import "GHDGrouponsTopMenu.h"
+#import "UIBarButtonItem+Extension.h"
 
 @interface GHDGrouponsViewController () <AwesomeMenuDelegate>
+
+/** 分类菜单 */
+@property (weak, nonatomic) GHDGrouponsTopMenu *categoryMenu;
+/** 区域菜单 */
+@property (weak, nonatomic) GHDGrouponsTopMenu *regionMenu;
+/** 排序菜单 */
+@property (weak, nonatomic) GHDGrouponsTopMenu *sortMenu;
 
 @end
 
@@ -24,6 +33,12 @@ static NSString * const reuseIdentifier = @"Cell";
     
     // 用户菜单
     [self setupUserMenu];
+    
+    // 设置导航栏左边的内容
+    [self setupNavLeft];
+    
+    // 设置导航栏右边的内容
+    [self setupNavRight];
     
     //    GHDFindDealsParam *param = [[GHDFindDealsParam alloc] init];
     //    param.city = @"北京";
@@ -41,6 +56,55 @@ static NSString * const reuseIdentifier = @"Cell";
         NSLog(@"搜索失败 %@", error);
     }];
     
+    
+}
+
+#pragma mark - 设置导航栏左边的内容
+- (void)setupNavLeft {
+    
+    // 1.logo
+    UIBarButtonItem *logoItem = [UIBarButtonItem itemWithImageName:@"icon_meituan_logo" highImageName:@"icon_meituan_logo" target:nil action:nil];
+    logoItem.customView.userInteractionEnabled = NO;
+    
+    // 2.分类
+    GHDGrouponsTopMenu *categoryMenu = [GHDGrouponsTopMenu menu];
+    UIBarButtonItem *categoryItem = [[UIBarButtonItem alloc] initWithCustomView:categoryMenu];
+    self.categoryMenu = categoryMenu;
+    
+    // 3.区域
+    GHDGrouponsTopMenu *regionMenu = [GHDGrouponsTopMenu menu];
+    UIBarButtonItem *regionItem = [[UIBarButtonItem alloc] initWithCustomView:regionMenu];
+    self.regionMenu = regionMenu;
+    
+    // 4.排序
+    GHDGrouponsTopMenu *sortMenu = [GHDGrouponsTopMenu menu];
+    UIBarButtonItem *sortItem = [[UIBarButtonItem alloc] initWithCustomView:sortMenu];
+    self.sortMenu = sortMenu;
+    
+    self.navigationItem.leftBarButtonItems = @[logoItem, categoryItem, regionItem, sortItem];
+    
+}
+
+#pragma mark - 设置导航栏右边的内容
+- (void)setupNavRight {
+
+    UIBarButtonItem *mapItem = [UIBarButtonItem itemWithImageName:@"icon_map" highImageName:@"icon_map_highlighted" target:self action:@selector(mapClick)];
+    mapItem.customView.width = 50;
+    mapItem.customView.height = 27;
+    
+    UIBarButtonItem *searchItem = [UIBarButtonItem itemWithImageName:@"icon_search" highImageName:@"icon_search_highlighted" target:self action:@selector(searchClick)];
+    searchItem.customView.width = mapItem.customView.width;
+    searchItem.customView.height = mapItem.customView.height;
+    
+    self.navigationItem.rightBarButtonItems = @[mapItem, searchItem];
+    
+}
+
+- (void)mapClick {
+
+}
+
+- (void)searchClick {
     
 }
 

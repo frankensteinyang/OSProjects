@@ -32,6 +32,10 @@
 		EFB498DF1A6BF19D00C3893C /* GHDCityGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498DE1A6BF19D00C3893C /* GHDCityGroup.m */; };
 		EFB498E21A6BF26E00C3893C /* GHDMetadataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498E11A6BF26E00C3893C /* GHDMetadataTool.m */; };
 		EFB498E41A6BF71800C3893C /* GHDMetadataTest.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498E31A6BF71800C3893C /* GHDMetadataTest.m */; };
+		EFB498E71A6C004E00C3893C /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498E61A6C004E00C3893C /* UIBarButtonItem+Extension.m */; };
+		EFB498EA1A6C0E9400C3893C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498E91A6C0E9400C3893C /* UIView+Extension.m */; };
+		EFB498EE1A6C131500C3893C /* GHDGrouponsTopMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB498ED1A6C131500C3893C /* GHDGrouponsTopMenu.m */; };
+		EFB498F01A6C139400C3893C /* GHDGrouponsTopMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFB498EF1A6C139400C3893C /* GHDGrouponsTopMenu.xib */; };
 		EFCA325F1A6AA45000A7F8D1 /* GHDAPITool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA325E1A6AA45000A7F8D1 /* GHDAPITool.m */; };
 		EFCA32891A6AA98A00A7F8D1 /* MJArgument.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32731A6AA98A00A7F8D1 /* MJArgument.m */; };
 		EFCA328A1A6AA98A00A7F8D1 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32751A6AA98A00A7F8D1 /* MJConst.m */; };
@@ -110,6 +114,13 @@
 		EFB498E01A6BF26E00C3893C /* GHDMetadataTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDMetadataTool.h; sourceTree = "<group>"; };
 		EFB498E11A6BF26E00C3893C /* GHDMetadataTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDMetadataTool.m; sourceTree = "<group>"; };
 		EFB498E31A6BF71800C3893C /* GHDMetadataTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDMetadataTest.m; sourceTree = "<group>"; };
+		EFB498E51A6C004E00C3893C /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		EFB498E61A6C004E00C3893C /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		EFB498E81A6C0E9400C3893C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		EFB498E91A6C0E9400C3893C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
+		EFB498EC1A6C131500C3893C /* GHDGrouponsTopMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGrouponsTopMenu.h; sourceTree = "<group>"; };
+		EFB498ED1A6C131500C3893C /* GHDGrouponsTopMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGrouponsTopMenu.m; sourceTree = "<group>"; };
+		EFB498EF1A6C139400C3893C /* GHDGrouponsTopMenu.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GHDGrouponsTopMenu.xib; sourceTree = "<group>"; };
 		EFCA325D1A6AA45000A7F8D1 /* GHDAPITool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDAPITool.h; sourceTree = "<group>"; };
 		EFCA325E1A6AA45000A7F8D1 /* GHDAPITool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDAPITool.m; sourceTree = "<group>"; };
 		EFCA32721A6AA98A00A7F8D1 /* MJArgument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJArgument.h; sourceTree = "<group>"; };
@@ -274,6 +285,10 @@
 		EF1216B41A697420006D3BCD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EFB498E81A6C0E9400C3893C /* UIView+Extension.h */,
+				EFB498E91A6C0E9400C3893C /* UIView+Extension.m */,
+				EFB498E51A6C004E00C3893C /* UIBarButtonItem+Extension.h */,
+				EFB498E61A6C004E00C3893C /* UIBarButtonItem+Extension.m */,
 				EFCA32AB1A6AEC1F00A7F8D1 /* UIView+AutoLayout.h */,
 				EFCA32AC1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m */,
 			);
@@ -374,6 +389,16 @@
 			path = Metadata;
 			sourceTree = "<group>";
 		};
+		EFB498EB1A6C12D500C3893C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EFB498EC1A6C131500C3893C /* GHDGrouponsTopMenu.h */,
+				EFB498ED1A6C131500C3893C /* GHDGrouponsTopMenu.m */,
+				EFB498EF1A6C139400C3893C /* GHDGrouponsTopMenu.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		EFCA32711A6AA96800A7F8D1 /* MJExtension */ = {
 			isa = PBXGroup;
 			children = (
@@ -407,6 +432,7 @@
 		EFCA32991A6AAC9F00A7F8D1 /* Groupons */ = {
 			isa = PBXGroup;
 			children = (
+				EFB498EB1A6C12D500C3893C /* View */,
 				EFCA329A1A6AACA700A7F8D1 /* Controller */,
 			);
 			path = Groupons;
@@ -528,6 +554,7 @@
 				EFB498B81A6BEB8A00C3893C /* cities.plist in Resources */,
 				EF1216961A69727F006D3BCD /* Images.xcassets in Resources */,
 				EFB498B91A6BEB8A00C3893C /* cityGroups.plist in Resources */,
+				EFB498F01A6C139400C3893C /* GHDGrouponsTopMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,10 +590,12 @@
 				EFCA328B1A6AA98A00A7F8D1 /* MJFoundation.m in Sources */,
 				EFB498C11A6BEC9C00C3893C /* GHDFindGrouponsResult.m in Sources */,
 				EFB498D31A6BEDE100C3893C /* GHDGrouponCategory.m in Sources */,
+				EFB498EA1A6C0E9400C3893C /* UIView+Extension.m in Sources */,
 				EFB498D91A6BEE9200C3893C /* GHDCity.m in Sources */,
 				EFCA328E1A6AA98A00A7F8D1 /* MJMethod.m in Sources */,
 				EF1216B91A697420006D3BCD /* AppDelegate.m in Sources */,
 				EF1216BA1A697420006D3BCD /* main.m in Sources */,
+				EFB498EE1A6C131500C3893C /* GHDGrouponsTopMenu.m in Sources */,
 				EFCA32961A6AAA2800A7F8D1 /* GHDGrouponTool.m in Sources */,
 				EFB498CF1A6BECB300C3893C /* GHDShop.m in Sources */,
 				EFB498C81A6BECAC00C3893C /* GHDGetSingleGrouponResult.m in Sources */,
@@ -574,6 +603,7 @@
 				EFCA32931A6AA98A00A7F8D1 /* NSObject+MJMember.m in Sources */,
 				EFCA329D1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m in Sources */,
 				EF1217481A69D767006D3BCD /* DPRequest.m in Sources */,
+				EFB498E71A6C004E00C3893C /* UIBarButtonItem+Extension.m in Sources */,
 				EFCA32AA1A6AE4DD00A7F8D1 /* AwesomeMenuItem.m in Sources */,
 				EFCA328F1A6AA98A00A7F8D1 /* MJType.m in Sources */,
 				EFB498C01A6BEC9C00C3893C /* GHDFindGrouponsParam.m in Sources */,

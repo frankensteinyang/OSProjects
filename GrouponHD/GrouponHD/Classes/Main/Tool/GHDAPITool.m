@@ -9,7 +9,7 @@
 #import "GHDAPITool.h"
 #import "DPAPI.h"
 
-@interface GHDAPITool() <DPRequestDelegate>
+@interface GHDAPITool () <DPRequestDelegate>
 
 @property (nonatomic, strong) DPAPI *api;
 

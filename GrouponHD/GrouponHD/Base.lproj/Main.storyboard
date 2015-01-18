@@ -11,7 +11,7 @@
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="fMU-DY-fyd">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.56310599439999998" green="0.39191109740000002" blue="0.85485716540000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="MHV-Ik-2zy">
                             <size key="itemSize" width="50" height="50"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -43,7 +43,7 @@
         <!--Navigation Controller-->
         <scene sceneID="zva-kZ-xow">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRc-Qi-xif" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tRc-Qi-xif" customClass="GHDNavigationController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vy5-mr-FZq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

@@ -35,6 +35,10 @@
 		EFCA32931A6AA98A00A7F8D1 /* NSObject+MJMember.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32881A6AA98A00A7F8D1 /* NSObject+MJMember.m */; };
 		EFCA32961A6AAA2800A7F8D1 /* GHDGrouponTool.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32951A6AAA2800A7F8D1 /* GHDGrouponTool.m */; };
 		EFCA329D1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA329C1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m */; };
+		EFCA32A11A6ADED500A7F8D1 /* GHDNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32A01A6ADED500A7F8D1 /* GHDNavigationController.m */; };
+		EFCA32A91A6AE4DD00A7F8D1 /* AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32A61A6AE4DD00A7F8D1 /* AwesomeMenu.m */; };
+		EFCA32AA1A6AE4DD00A7F8D1 /* AwesomeMenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32A81A6AE4DD00A7F8D1 /* AwesomeMenuItem.m */; };
+		EFCA32AF1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = EFCA32AC1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +111,14 @@
 		EFCA32951A6AAA2800A7F8D1 /* GHDGrouponTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGrouponTool.m; sourceTree = "<group>"; };
 		EFCA329B1A6AAD1700A7F8D1 /* GHDGrouponsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDGrouponsViewController.h; sourceTree = "<group>"; };
 		EFCA329C1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDGrouponsViewController.m; sourceTree = "<group>"; };
+		EFCA329F1A6ADED500A7F8D1 /* GHDNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHDNavigationController.h; sourceTree = "<group>"; };
+		EFCA32A01A6ADED500A7F8D1 /* GHDNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHDNavigationController.m; sourceTree = "<group>"; };
+		EFCA32A51A6AE4DD00A7F8D1 /* AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenu.h; sourceTree = "<group>"; };
+		EFCA32A61A6AE4DD00A7F8D1 /* AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenu.m; sourceTree = "<group>"; };
+		EFCA32A71A6AE4DD00A7F8D1 /* AwesomeMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuItem.h; sourceTree = "<group>"; };
+		EFCA32A81A6AE4DD00A7F8D1 /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuItem.m; sourceTree = "<group>"; };
+		EFCA32AB1A6AEC1F00A7F8D1 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		EFCA32AC1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +208,7 @@
 		EF1216AF1A697420006D3BCD /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EFCA329E1A6ADE5300A7F8D1 /* Controller */,
 				EF4CFDF71A69F9FF003B6F0C /* Model */,
 				EF1216B01A697420006D3BCD /* Tool */,
 			);
@@ -229,6 +242,8 @@
 		EF1216B41A697420006D3BCD /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				EFCA32AB1A6AEC1F00A7F8D1 /* UIView+AutoLayout.h */,
+				EFCA32AC1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -236,6 +251,7 @@
 		EF1216B51A697420006D3BCD /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				EFCA32A41A6AE4DD00A7F8D1 /* AwesomeMenu */,
 				EFCA32711A6AA96800A7F8D1 /* MJExtension */,
 				EF1217411A69D767006D3BCD /* DPAPI */,
 			);
@@ -318,6 +334,26 @@
 				EFCA329C1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFCA329E1A6ADE5300A7F8D1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA329F1A6ADED500A7F8D1 /* GHDNavigationController.h */,
+				EFCA32A01A6ADED500A7F8D1 /* GHDNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		EFCA32A41A6AE4DD00A7F8D1 /* AwesomeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EFCA32A51A6AE4DD00A7F8D1 /* AwesomeMenu.h */,
+				EFCA32A61A6AE4DD00A7F8D1 /* AwesomeMenu.m */,
+				EFCA32A71A6AE4DD00A7F8D1 /* AwesomeMenuItem.h */,
+				EFCA32A81A6AE4DD00A7F8D1 /* AwesomeMenuItem.m */,
+			);
+			path = AwesomeMenu;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -422,8 +458,11 @@
 			files = (
 				EFCA326E1A6AA83E00A7F8D1 /* GHDFindGrouponsResult.m in Sources */,
 				EFCA32921A6AA98A00A7F8D1 /* NSObject+MJKeyValue.m in Sources */,
+				EFCA32A91A6AE4DD00A7F8D1 /* AwesomeMenu.m in Sources */,
 				EFCA325F1A6AA45000A7F8D1 /* GHDAPITool.m in Sources */,
 				EFCA32621A6AA54300A7F8D1 /* GHDGroupon.m in Sources */,
+				EFCA32AF1A6AEC1F00A7F8D1 /* UIView+AutoLayout.m in Sources */,
+				EFCA32A11A6ADED500A7F8D1 /* GHDNavigationController.m in Sources */,
 				EFCA328D1A6AA98A00A7F8D1 /* MJMember.m in Sources */,
 				EFCA328A1A6AA98A00A7F8D1 /* MJConst.m in Sources */,
 				EFCA32911A6AA98A00A7F8D1 /* NSObject+MJCoding.m in Sources */,
@@ -440,6 +479,7 @@
 				EFCA329D1A6AAD1700A7F8D1 /* GHDGrouponsViewController.m in Sources */,
 				EF1217481A69D767006D3BCD /* DPRequest.m in Sources */,
 				EFCA326B1A6AA78900A7F8D1 /* GHDFindGrouponsParam.m in Sources */,
+				EFCA32AA1A6AE4DD00A7F8D1 /* AwesomeMenuItem.m in Sources */,
 				EFCA32651A6AA60900A7F8D1 /* GHDGetSingleGrouponResult.m in Sources */,
 				EFCA328F1A6AA98A00A7F8D1 /* MJType.m in Sources */,
 				EFCA32891A6AA98A00A7F8D1 /* MJArgument.m in Sources */,
@@ -569,6 +609,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GrouponHD/GrouponHD-Prefix.pch";
 				INFOPLIST_FILE = GrouponHD/Info.plist;
@@ -581,6 +622,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GrouponHD/GrouponHD-Prefix.pch";
 				INFOPLIST_FILE = GrouponHD/Info.plist;

@@ -8,7 +8,10 @@
 <div class="list-box-heading" style="font-weight:bold;background-color:#79bcff;">
 <a style="color:#ffffff;padding:5px;display:block;outline:0px;text-decoration:none;background-color:#79bcff;">VIP ONE/Kuaidi One Utilities</a>
 </div>
-<div class="list-box-inner-wrap" style="position:relative;height:auto;overflow:hidden;display:block;"><div class="list-box-inner" style="border-top-width:1px;border-top-style:solid;border-top-color:#79bcff;"><table class="table table-hover ke-zeroborder" style="border-collapse:collapse;border-spacing:0px;width:1020px;"><colgroup><col width="26%" /><col width="60%" /><col width="7%" /><col width="7%" /></colgroup><thead></thead><tbody>
+<div class="list-box-inner-wrap" style="position:relative;height:auto;overflow:hidden;display:block;"><div class="list-box-inner" style="border-top-width:1px;border-top-style:solid;border-top-color:#79bcff;"><table class="table table-hover ke-zeroborder" style="border-collapse:collapse;border-spacing:0px;width:1020px;">
+<colgroup><col width="26%" /><col width="60%" /><col width="7%" /><col width="7%" /></colgroup><thead></thead>
+<tbody>
+
 <tr>
 <td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><a href="https://www.processon.com/tour" target="_blank" style="color:#007fff;"><span class="Apple-converted-space">&nbsp;</span>ProcessOn</a>
 </td>
@@ -18,9 +21,20 @@
 <td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
 </td>
 </tr>
+
+<tr>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><a href="https://github.com/cikelengfeng/RPAXU" target="_blank" style="color:#007fff;"><span class="Apple-converted-space">&nbsp;</span>RPAXU</a>
+</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;">Xcode升级之后插件失效修复脚本。</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
+</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
+</td>
 </tr>
+
 </tbody>
 </table>
+
 </div>
 </div>
 </div>

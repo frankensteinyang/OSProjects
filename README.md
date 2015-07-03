@@ -42,6 +42,16 @@
 </td>
 </tr>
 
+<tr>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><a href="http://luics.com/" target="_blank" style="color:#007fff;"><span class="Apple-converted-space">&nbsp;</span>鬼道（徐凯）</a>
+</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;">鬼道（徐凯），天猫客户端 Pad 团队 Leader，同时负责天猫 Web 前端架构。</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
+</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
+</td>
+</tr>
+
 </tbody>
 </table>
 

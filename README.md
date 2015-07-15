@@ -177,6 +177,37 @@
 
 </tbody>
 </table>
+
+</div>
+</div>
+</div>
+<div id=readercontainer>
+<div class="list-box" style="border:1px solid #007ff;color:#000000;font-family:Helvetica, 'Microsoft Yahei', 微软雅黑, Arial, sans-serif;font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:normal;orphans:auto;text-align:start;text-indent:0px;text-transform:none;white-space:normal;widows:auto;word-spacing:0px;-webkit-text-stroke-width:0px;"><div class="list-box-heading" style="font-weight:bold;background-color:#007fff;">
+<a style="color:#ffffff;padding:5px;display:block;outline:0px;text-decoration:none;background-color:#007fff;">学习资料</a></div>
+<div class="list-box-inner-wrap" style="position:relative;height:auto;overflow:hidden;display:block;">
+<div class="list-box-inner" style="border-top-width:1px;border-top-style:solid;border-top-color:#007fff;">
+<div class="list-box" style="border:1px solid #79bcff;">
+<div class="list-box-heading" style="font-weight:bold;background-color:#79bcff;">
+<a style="color:#ffffff;padding:5px;display:block;outline:0px;text-decoration:none;background-color:#79bcff;">Frankenstein Yang</a>
+</div>
+<div class="list-box-inner-wrap" style="position:relative;height:auto;overflow:hidden;display:block;"><div class="list-box-inner" style="border-top-width:1px;border-top-style:solid;border-top-color:#79bcff;">
+<table class="table table-hover ke-zeroborder" style="border-collapse:collapse;border-spacing:0px;width:1020px;"><colgroup><col width="26%" /><col width="60%" /><col width="7%" /><col width="7%" /></colgroup><thead></thead><tbody>
+
+<tr>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;">
+<a href="www.baidu.com/" target="_blank" style="color:#007fff;">
+<span class="Apple-converted-space">&nbsp;</span>yangjinzhong</a>
+</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;">补充中。</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
+</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
+</td>
+</tr>
+
+</tbody>
+</table>
+
 </div>
 </div>
 </div>

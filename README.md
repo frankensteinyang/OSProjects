@@ -63,9 +63,9 @@
 </tr>
 
 <tr>
-<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><a href="http://blogwall.us/" target="_blank" style="color:#007fff;"><span class="Apple-converted-space">&nbsp;</span>程序员博客墙</a>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><a href="https://github.com/tangqiaoboy/iOSBlogCN" target="_blank" style="color:#007fff;"><span class="Apple-converted-space">&nbsp;</span>iOS博客列表CN</a>
 </td>
-<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;">程序员博客墙是一个收集国内外程序员个人博客的网站，目的是通过博客建立程序员的社交圈，方便大家交流认识。</td>
+<td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;">中文 iOS/Mac 开发博客列表。</td>
 <td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
 </td>
 <td style="padding:5px;line-height:20px;text-align:left;vertical-align:top;border-top-width:0px;"><br />
